@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b1c">
+  <meta name="description" content="불을 깨우고, 불 사이를 여행하세요. 앰버의 정밀 이동과 환경 퍼즐을 직접 플레이하는 작은 모험입니다.">
+  <title>EMBER — 잿빛 정원의 불씨</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'%3E%3Cpath d='M13 1C16 11 7 11 10 17C4 16 5 10 5 10C-2 19 0 30 11.7 31C24 30 27 18 19 11C20 19 13 21 14 15C17 10 16 6 13 1Z' fill='%23f2a958'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="levels.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Ember 처음 화면">
+        <svg class="brand-flame" width="24" height="32" viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M13 1C16 11 7 11 10 17C4 16 5 10 5 10C-2 19 0 30 11.7 31C24 30 27 18 19 11C20 19 13 21 14 15C17 10 16 6 13 1Z" fill="currentColor"/><path d="M11.5 22C7 26 9 29 12 29C16 29 17 25 14 23C14 26 11 27 11.5 22Z" fill="#fff1ce"/></svg>
+        <span>EMBER<span class="brand-caption">잿빛 정원의 불씨</span></span>
+      </a>
+      <div class="header-actions">
+        <span class="edition-label">PLAYABLE CHAPTER / 01</span>
+        <button class="text-button" id="artButton" type="button">아트워크 <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M4 3H13V12" stroke="currentColor" stroke-width="1.3"/></svg></button>
+      </div>
+    </header>
+
+    <main>
+      <div class="chapter-heading">
+        <div>
+          <p class="eyebrow"><span class="live-mark"></span> THE ASHEN GARDEN</p>
+          <h1>꺼진 세상에, <span>작은 불 하나.</span></h1>
+          <p class="intro">불을 깨우고 그 안으로 뛰어드세요. 다음 길은 당신이 만듭니다.</p>
+        </div>
+        <button class="primary-button header-start" id="startButton" type="button">모험 시작 <span aria-hidden="true">→</span></button>
+      </div>
+
+      <section class="game-section" aria-label="앰버 게임">
+        <div class="game-topbar">
+          <div class="level-heading">
+            <span id="levelCounter" class="level-number">01 / 08</span>
+            <div><h2 id="levelName">첫 번째 불씨</h2><p id="levelSubtitle">모든 시작은 작은 움직임에서</p></div>
+          </div>
+          <div class="run-stats">
+            <div class="stat"><span class="stat-label">시간</span><span id="timerValue">00:00</span></div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="stat"><span class="stat-label">다시 피어난 횟수</span><span id="deathCount">0</span></div>
+          </div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="960" height="540" tabindex="0" aria-label="앰버 정밀 이동 게임. WASD 이동, Space 점프, Shift 점화, 마우스 오른쪽 버튼으로 흡수.">이 게임은 Canvas를 지원하는 브라우저에서 플레이할 수 있습니다.</canvas>
+          <div id="gameOverlay" class="game-overlay">
+            <div class="overlay-inner">
+              <span class="overlay-eyebrow">A LITTLE FLAME. A LONG WAY HOME.</span>
+              <div class="overlay-flame" aria-hidden="true"><svg width="46" height="64" viewBox="0 0 24 32" fill="none"><path d="M13 1C16 11 7 11 10 17C4 16 5 10 5 10C-2 19 0 30 11.7 31C24 30 27 18 19 11C20 19 13 21 14 15C17 10 16 6 13 1Z" fill="currentColor"/><path d="M11.5 22C7 26 9 29 12 29C16 29 17 25 14 23C14 26 11 27 11.5 22Z" fill="#fff1ce"/></svg></div>
+              <h2 id="overlayTitle">당신 안의 불씨를 깨워요.</h2>
+              <p id="overlayText">8개의 방을 건너 잿빛 정원에 불을 되돌려 주세요.<br>실패해도 괜찮아요. 불씨는 다시 피어납니다.</p>
+              <button class="primary-button" id="overlayButton" type="button">모험 시작 <span aria-hidden="true">→</span></button>
+              <p class="overlay-note">키보드와 마우스로 플레이</p>
+            </div>
+          </div>
+          <div class="canvas-vignette" aria-hidden="true"></div>
+        </div>
+
+        <div class="game-bottombar">
+          <div class="ability-status"><span class="ability-light" aria-hidden="true"></span><span id="abilityStatus">불씨가 기다리고 있어요</span></div>
+          <div id="progressDots" class="progress-dots" aria-label="방 진행 상황"></div>
+          <div class="game-actions">
+            <button id="restartButton" class="icon-button" type="button" title="현재 방 다시 시작 (R)" aria-label="현재 방 다시 시작"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10A8 8 0 1 1 5 17M4 4V10H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button id="pauseButton" class="icon-button" type="button" title="일시정지 (Esc)" aria-label="일시정지"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5V19M16 5V19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+            <button id="soundButton" class="icon-button" type="button" title="소리 켜기 / 끄기" aria-label="소리 켜기 / 끄기" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 4L6 8H3V16H6L11 20V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15 8C17 10 17 14 15 16M18 5C22 9 22 15 18 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+            <span class="action-divider" aria-hidden="true"></span>
+            <button id="helpButton" class="icon-button" type="button" title="조작 안내" aria-label="조작 안내"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M9.5 9A2.5 2.5 0 0 1 14.5 9C14.5 11 12 11 12 13M12 16V16.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          </div>
+        </div>
+      </section>
+
+      <div class="play-guidance">
+        <p id="hintText"><span class="hint-label">작은 힌트</span> 첫 번째 발판을 향해 움직여 보세요.</p>
+        <p class="mobile-note">키보드와 마우스가 있는 컴퓨터에서 플레이해 주세요.</p>
+      </div>
+
+      <div class="controls-strip" aria-label="기본 조작">
+        <div><span class="key-group"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><span>이동 · 방향</span></div>
+        <div><kbd class="wide-key">SPACE</kbd><span>점프 · 발사 · 대시</span></div>
+        <div><kbd class="wide-key">SHIFT</kbd><span>점화</span></div>
+        <div><span class="mouse-key">우클릭</span><span>흡수</span></div>
+        <div><span class="mouse-key">좌클릭</span><span>불씨 발사</span></div>
+      </div>
+    </main>
+
+    <footer class="site-footer"><span>불은 길을 기억합니다.</span><span>EMBER <span class="footer-dot">·</span> 작은 플레이 실험</span></footer>
+    <div id="statusMessage" class="sr-only" role="status" aria-live="polite"></div>
+  </div>
+
+  <dialog id="helpDialog" class="help-dialog">
+    <div class="dialog-header"><p class="eyebrow">HOW TO PLAY</p><button id="closeHelpButton" class="close-button" type="button" aria-label="조작 안내 닫기">×</button></div>
+    <h2>불을 타고, 길을 만들어요.</h2>
+    <p class="dialog-intro">능력은 방을 지나며 하나씩 열립니다. 화면 아래 힌트를 확인해 주세요.</p>
+    <dl class="help-list">
+      <div><dt><kbd>A</kbd> <kbd>D</kbd></dt><dd><strong>좌우 이동</strong><span>WASD로 발사·대시 방향을 정해요.</span></dd></div>
+      <div><dt><kbd class="wide-key">SPACE</kbd></dt><dd><strong>점프 · 발사 · 대시</strong><span>짧게 눌러 낮게, 길게 눌러 높게 점프해요. 공중에서 한 번 더 점프할 수 있어요. 불 안에서는 발사, 점화 링 안에서는 대시합니다.</span></dd></div>
+      <div><dt><kbd class="wide-key">SHIFT</kbd></dt><dd><strong>점화</strong><span>주변 횃불에 불을 붙이고 잠깐 점화 링을 펼쳐요. 착지하거나 불에 들어가면 다시 사용할 수 있어요.</span></dd></div>
+      <div><dt><span class="mouse-key">우클릭</span></dt><dd><strong>불꽃 흡수</strong><span>커서와 가까운 켜진 횃불로 들어갑니다. 불 안에서 WASD와 Space로 다음 길을 향해 발사하세요.</span></dd></div>
+      <div><dt><span class="mouse-key">좌클릭</span></dt><dd><strong>불씨 발사</strong><span>7번 방에서 열려요. 마우스로 겨냥하고 왼쪽 버튼을 눌렀다 놓아 먼 횃불을 켜세요. 길게 당기면 불씨가 더 빨라집니다.</span></dd></div>
+      <div><dt><kbd>R</kbd> <kbd class="wide-key">ESC</kbd></dt><dd><strong>다시 시작 · 일시정지</strong><span>실패하면 현재 방에서 바로 다시 시작합니다.</span></dd></div>
+    </dl>
+    <p class="help-tip">목표는 오른쪽의 출구. 마지막 방에서는 멈추지 말고 불 사이를 이어 달리세요.</p>
+  </dialog>
+
+  <dialog id="artDialog" class="art-dialog">
+    <div class="dialog-header"><p class="eyebrow">WORLD &amp; CHARACTER</p><button id="closeArtButton" class="close-button" type="button" aria-label="아트워크 닫기">×</button></div>
+    <h2>잿빛 정원에 남은 온기</h2>
+    <p class="dialog-intro">차가운 폐허와, 길을 깨우는 작은 앰버.</p>
+    <figure class="scene-figure"><img src="assets/ember-scene.png" alt="청록빛 고대 폐허 속에서 불꽃 정령 앰버가 횃불을 깨우는 게임 장면" width="1672" height="941"><figcaption><span>01</span> 잿빛 정원 — 장면 컨셉</figcaption></figure>
+    <figure class="atlas-figure"><div class="atlas-background"><img src="assets/ember-atlas.png" alt="게임에 사용하는 앰버의 대기·달리기·점프·대시와 횃불 애니메이션 16프레임 스프라이트 시트" width="1254" height="1254"></div><figcaption><span>02</span> 앰버와 횃불 — 16프레임 스프라이트</figcaption></figure>
+  </dialog>
+</body>
+</html>

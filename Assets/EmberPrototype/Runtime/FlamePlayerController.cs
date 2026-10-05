@@ -1,99 +1,148 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 namespace EmberPrototype
 {
     [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(PlayerAbilityUnlocks))]
+    [RequireComponent(typeof(BurstDashAbility))]
+    [RequireComponent(typeof(FlameShotAbility))]
+    [RequireComponent(typeof(PlayerAbilityInputRouter))]
     public sealed class FlamePlayerController : MonoBehaviour
     {
         private enum FlameState { Free, Bursting, BurstDashing, Travelling, Anchored }
 
         [Header("Platforming")]
+        [Tooltip("좌우 입력으로 이동할 때 목표로 삼는 수평 속도입니다. (월드 단위/초)")]
         [SerializeField, Min(0f)] private float moveSpeed = 7f;
+        [Tooltip("점프를 시작할 때 적용되는 기본 위쪽 속도입니다. 상승 중 중력 보정에 따라 최종 점프 높이는 달라질 수 있습니다.")]
         [SerializeField, Min(0f)] private float jumpSpeed = 12f;
-        [Tooltip("Number of extra jumps available after leaving the ground.")]
+        [Tooltip("땅을 떠난 뒤 공중에서 추가로 점프할 수 있는 횟수입니다. 0이면 공중 점프를 사용할 수 없습니다.")]
         [SerializeField, Min(0)] private int maxAirJumps = 1;
+        [Tooltip("플레이어 발밑에서 바닥을 검사하는 최대 거리입니다. 접지 판정이 불안정하면 조금 늘려보세요.")]
         [SerializeField, Min(0f)] private float groundProbeDistance = 0.12f;
+        [Tooltip("발판 끝에서 떨어진 직후에도 점프를 받아주는 유예 시간입니다. (초)")]
         [SerializeField, Min(0f)] private float coyoteTime = 0.12f;
+        [Tooltip("점프 입력을 미리 저장해 착지 직후 점프하게 해주는 시간입니다. (초)")]
         [SerializeField, Min(0f)] private float jumpBuffer = 0.12f;
+        [Tooltip("땅에서 좌우 입력 방향으로 가속하는 정도입니다. 값이 클수록 목표 속도에 빨리 도달합니다.")]
         [SerializeField, Min(0f)] private float groundAcceleration = 65f;
+        [Tooltip("땅에서 입력을 놓았을 때 수평 속도가 줄어드는 정도입니다.")]
         [SerializeField, Min(0f)] private float groundDeceleration = 85f;
+        [Tooltip("공중에서 좌우 입력 방향으로 가속하는 정도입니다.")]
         [SerializeField, Min(0f)] private float airAcceleration = 22f;
+        [Tooltip("공중에서 입력을 놓았을 때 수평 속도가 줄어드는 정도입니다.")]
         [SerializeField, Min(0f)] private float airDeceleration = 14f;
+        [Tooltip("불 발사나 대시로 일반 이동 속도를 넘었을 때, 같은 방향 입력을 유지하며 추진 속도를 소진하는 정도입니다.")]
+        [SerializeField, Min(0f)] private float overspeedDeceleration = 8f;
+        [Tooltip("이동 중 반대 방향을 눌러 방향을 바꿀 때 적용되는 가속도입니다.")]
         [SerializeField, Min(0f)] private float turnAcceleration = 95f;
+        [Tooltip("낙하 중 허용되는 최대 아래쪽 속도입니다.")]
         [SerializeField, Min(0f)] private float maxFallSpeed = 22f;
+        [Tooltip("착지가 임박한 낙하 중 Z 입력은 공중 점프 대신 착지 점프로 예약하는 최대 시간입니다. 0이면 즉시 공중 점프합니다.")]
+        [SerializeField, Min(0f)] private float landingJumpBufferTime = 0.07f;
+
+        [Header("Launch Control")]
+        [Tooltip("불에서 발사한 직후 추진 방향을 유지하는 시간입니다. 반대 방향 제동은 이 시간에도 허용됩니다.")]
+        [SerializeField, Min(0f)] private float fireLaunchControlLockTime = 0.25f;
+        [Tooltip("대시가 끝난 뒤 추진 방향을 유지하는 시간입니다. 반대 방향 제동은 이 시간에도 허용됩니다.")]
+        [SerializeField, Min(0f)] private float burstDashExitControlLockTime = 0.08f;
 
         [Header("Celeste-Style Jump Feel")]
+        [Tooltip("점프 상승 초반에 적용하는 중력 배수입니다. 값이 클수록 더 빠르게 올라가며, 기본 점프 높이는 보정됩니다.")]
+        [SerializeField, Range(1f, 2f)] private float riseGravityMultiplier = 1.4f;
+        [Tooltip("점프 정점 부근에서 적용하는 중력 배수입니다. 낮출수록 정점에서 더 오래 체공합니다.")]
         [SerializeField, Range(0.1f, 1f)] private float apexGravityMultiplier = 0.5f;
+        [Tooltip("낙하 중 적용하는 중력 배수입니다. 값이 클수록 더 빠르게 떨어집니다.")]
         [SerializeField, Min(1f)] private float fallGravityMultiplier = 1.3f;
+        [Tooltip("점프 버튼을 누르는 동안 수직 속도의 절댓값이 이 값 이하이면 정점 구간용 낮은 중력을 적용합니다.")]
         [SerializeField, Min(0f)] private float apexVelocityThreshold = 2.2f;
+        [Tooltip("점프 중 머리가 모서리에 걸릴 때 옆으로 이동해 충돌을 보정하는 최대 거리입니다.")]
         [SerializeField, Min(0f)] private float cornerCorrectionDistance = 0.24f;
+        [Tooltip("모서리 보정 위치를 탐색하는 간격입니다. 작을수록 더 세밀하게 검사합니다.")]
         [SerializeField, Min(0.01f)] private float cornerCorrectionStep = 0.04f;
-        [Tooltip("Briefly restores horizontal speed if the player clears a wall just after hitting it.")]
+        [Tooltip("벽에 부딪힌 직후 벽을 벗어나면 수평 이동 속도를 잠시 유지해주는 시간입니다.")]
         [SerializeField, Min(0f)] private float wallSpeedRetentionTime = 0.06f;
 
         [Header("Respawn")]
-        [Tooltip("Optional. If empty, the player's position when the scene starts is used.")]
+        [Tooltip("리스폰 위치로 사용할 Transform입니다. 비워두면 씬 시작 시 플레이어 위치를 사용합니다.")]
         [SerializeField] private Transform respawnPoint;
 
         [Header("Fire Absorb (X)")]
+        [Tooltip("불꽃 흡수 대상을 고를 때 입력 방향과 대상 방향이 얼마나 일치해야 하는지 정합니다. 1에 가까울수록 방향이 정확히 맞아야 합니다.")]
         [SerializeField, Range(-1f, 1f)] private float fireTargetDirectionDot = 0.35f;
 
         [Header("Fire Absorb Target Line")]
+        [Tooltip("불꽃 안에서 X로 이동할 수 있는 목표를 안내하는 선을 표시합니다.")]
         [SerializeField] private bool showAbsorbTargetLine = true;
+        [Tooltip("목표 안내선의 기본 두께입니다. (월드 단위)")]
         [SerializeField, Min(0.001f)] private float absorbTargetLineWidth = 0.045f;
+        [Tooltip("목표 안내선의 기본 색과 투명도입니다.")]
         [SerializeField] private Color absorbTargetLineColor = new Color(1f, 0.68f, 0.16f, 0.9f);
+        [Tooltip("목표 안내선에 사용할 머티리얼입니다. 비워두면 스크립트가 기본 효과용 머티리얼을 만듭니다.")]
         [SerializeField] private Material absorbTargetLineMaterial;
+        [Tooltip("플레이어의 Sorting Order를 기준으로 안내선을 앞쪽에 그릴 순서 차이입니다.")]
         [SerializeField, Min(0)] private int absorbTargetLineSortingOrderOffset = 10;
-        [Tooltip("More segments make the animated flame guide curve smoother.")]
+        [Tooltip("곡선 안내선을 나누어 그릴 구간 수입니다. 값이 클수록 곡선이 부드러워집니다.")]
         [SerializeField, Range(4, 24)] private int absorbTargetLineSegments = 14;
-        [Tooltip("Maximum sideways movement of the flame guide, in world units.")]
+        [Tooltip("불꽃 안내선이 좌우로 흔들리는 최대 폭입니다. 0이면 흔들리지 않습니다. (월드 단위)")]
         [SerializeField, Min(0f)] private float absorbTargetLineWobbleAmount = 0.035f;
-        [Tooltip("Speed of the smooth, irregular flame motion.")]
+        [Tooltip("불꽃 안내선의 불규칙한 흔들림 속도입니다.")]
         [SerializeField, Min(0.01f)] private float absorbTargetLineWobbleSpeed = 2.8f;
-        [Tooltip("Speed that the flame texture drifts along the guide.")]
+        [Tooltip("불꽃 안내선의 텍스처가 선을 따라 흐르는 속도입니다.")]
         [SerializeField, Min(0f)] private float absorbTargetLineTextureScrollSpeed = 0.6f;
-        [Tooltip("Width of the soft outer glow relative to the main line.")]
+        [Tooltip("안내선 바깥쪽 부드러운 광선의 두께 배수입니다. 기본 선 두께에 곱해집니다.")]
         [SerializeField, Range(2f, 5f)] private float absorbTargetLineGlowWidthMultiplier = 3.5f;
 
+        [Header("Fire Absorb Target Glow")]
+        [Tooltip("현재 선택된 불꽃을 강조하는 빛을 표시합니다.")]
+        [SerializeField] private bool showAbsorbTargetGlow = true;
+        [Tooltip("선택된 불꽃을 강조하는 빛의 색입니다.")]
+        [SerializeField] private Color absorbTargetGlowColor = new Color(1f, 0.75f, 0.3f);
+        [Tooltip("목표 강조 빛의 기본 밝기입니다.")]
+        [SerializeField, Min(0f)] private float absorbTargetGlowIntensity = 1.1f;
+        [Tooltip("빛이 맥동할 때 기본 밝기에서 변하는 폭입니다.")]
+        [SerializeField, Min(0f)] private float absorbTargetGlowPulseAmount = 0.3f;
+        [Tooltip("목표 강조 빛이 맥동하는 주기 속도입니다.")]
+        [SerializeField, Min(0f)] private float absorbTargetGlowPulseSpeed = 2.5f;
+        [Tooltip("목표 강조 빛의 바깥쪽 반경입니다. (월드 단위)")]
+        [SerializeField, Min(0.1f)] private float absorbTargetGlowRadius = 1.4f;
+
         [Header("Ignition Burst (C)")]
+        [Tooltip("C를 눌렀을 때 원형 폭발로 불을 붙이는 범위입니다. (월드 단위)")]
         [SerializeField, Min(0.1f)] private float ignitionBurstRadius = 1.5f;
+        [Tooltip("C 폭발 직후 불의 고리 상태가 유지되는 시간입니다. 이 시간 안에 Z 대시나 X 조준을 시작할 수 있습니다. (초)")]
         [InspectorName("Ignition Burst Pause Time")]
         [SerializeField, Min(0f)] private float ignitionBurstChargeTime = 0.5f;
+        [Tooltip("원형 폭발 시각 효과가 커지며 사라지는 시간입니다. (초)")]
         [SerializeField, Min(0.01f)] private float ignitionBurstVisualTime = 0.18f;
 
-        [Header("Burst Dash (C, then Z)")]
-        [SerializeField, Min(0f)] private float burstDashSpeed = 16f;
-        [SerializeField, Min(0.01f)] private float burstDashDuration = 0.15f;
-        [SerializeField, Range(0f, 1f)] private float burstDashEndSpeedMultiplier = 0.55f;
-        [Tooltip("Optional smaller collider used only during burst dash. Leave empty to keep the normal collider.")]
-        [SerializeField] private Collider2D burstDashCollider;
-        [Tooltip("Short look-ahead used to nudge a dash around nearby corners.")]
-        [SerializeField, Min(0f)] private float burstDashObstacleAssistDistance = 0.45f;
-        [SerializeField, Range(0f, 90f)] private float burstDashObstacleAssistAngle = 22f;
-        [SerializeField, Range(0, 4)] private int burstDashObstacleAssistSteps = 3;
-
         [Header("Fire Network")]
+        [Tooltip("선택한 불꽃을 향해 이동할 때 도달하는 최대 속도입니다.")]
         [SerializeField, Min(0f)] private float fireTravelSpeed = 20f;
+        [Tooltip("불꽃 이동이 정지 상태에서 최대 속도까지 가속되는 시간입니다. 0이면 즉시 최대 속도로 이동합니다. (초)")]
+        [SerializeField, Min(0f)] private float fireTravelAccelerationTime = 0.16f;
+        [Tooltip("불꽃 흡수 대상으로 탐색할 최대 거리입니다. (월드 단위)")]
         [SerializeField, Min(0f)] private float fireTravelRange = 9f;
-        [Tooltip("Solid layers that block travel between the player and a fire. Nothing falls back to all layers for safety.")]
+        [Tooltip("불꽃 이동 경로를 막는 장애물 레이어입니다. 아무 레이어도 선택하지 않으면 전체 레이어를 검사합니다.")]
         [SerializeField] private LayerMask fireTravelObstacleMask = ~0;
-        [Tooltip("Uses a slightly smaller copy of the player's collider so standing on the floor does not block travel.")]
+        [Tooltip("불꽃 이동 경로를 검사할 때 사용하는 플레이어 콜라이더 크기 배율입니다. 작게 설정하면 바닥이나 모서리에 덜 걸리지만 좁은 틈을 통과 가능하다고 판정할 수 있습니다.")]
         [SerializeField, Range(0.25f, 1f)] private float fireTravelCollisionScale = 0.75f;
-        [Tooltip("Maximum sideways correction used to flow around a small corner. Set to 0 to disable assist.")]
+        [Tooltip("직선 경로가 막혔을 때 모서리를 피해 우회할 최대 옆 방향 거리입니다. 0이면 우회 보정을 끕니다. (월드 단위)")]
         [SerializeField, Min(0f)] private float fireTravelCornerAssistDistance = 1f;
+        [Tooltip("불꽃 이동 우회 경로를 탐색할 때 옆으로 이동해 검사하는 간격입니다. (월드 단위)")]
         [SerializeField, Min(0.05f)] private float fireTravelCornerAssistStep = 0.25f;
-        [Tooltip("Speed retained after fire travel hits a solid obstacle.")]
-        [SerializeField, Min(0f)] private float fireTravelBounceSpeed = 15f;
-        [SerializeField, Min(1f)] private float fireTravelGroundBounceMultiplier = 1.2f;
-        [SerializeField, Range(0f, 1f)] private float fireTravelWallUpwardBias = 0.25f;
-        [SerializeField, Min(0f)] private float fireTravelBounceAfterimageDuration = 0.16f;
+        [Tooltip("플레이어가 불꽃 안에 있을 때 이 거리 안의 불은 다음 목표로 선택될 우선순위가 높아집니다. (월드 단위)")]
         [SerializeField, Min(0.1f)] private float fireNetworkStepRange = 1.65f;
+        [Tooltip("가까운 불꽃을 우선 목표로 삼기 위해 필요한 최소 방향 일치도입니다. 값이 높을수록 입력 방향과 더 비슷해야 합니다.")]
         [SerializeField, Range(-1f, 1f)] private float fireNetworkDirectionDot = 0.45f;
+        [Tooltip("불꽃 안에서 방향키를 눌러 튀어나올 때 적용되는 속도입니다.")]
         [SerializeField, Min(0f)] private float launchSpeed = 15f;
+        [Tooltip("불꽃에서 튀어나온 뒤 잔상 효과를 유지하는 시간입니다. (초)")]
         [SerializeField, Min(0f)] private float launchAfterimageDuration = 0.22f;
-        [Tooltip("Small sideways adjustment allowed when leaving a fire beside a wall.")]
+        [Tooltip("불꽃에서 나올 위치가 벽에 막히면 옆으로 이동해 안전한 위치를 찾는 최대 보정 거리입니다. (월드 단위)")]
         [SerializeField, Min(0f)] private float fireLaunchCornerAssistDistance = 0.24f;
 
         private Rigidbody2D body;
@@ -104,6 +153,7 @@ namespace EmberPrototype
         private LineRenderer absorbTargetLine;
         private LineRenderer absorbTargetLineGlow;
         private LineRenderer absorbTargetLineCore;
+        private Light2D absorbTargetGlowLight;
         private Material runtimeAbsorbTargetLineMaterial;
         private Texture2D runtimeAbsorbTargetLineTexture;
         private Vector3[] absorbTargetLinePositions;
@@ -113,11 +163,12 @@ namespace EmberPrototype
         private float jumpRemaining;
         private float launchProtection;
         private float burstChargeRemaining;
-        private float burstDashRemaining;
-        private Vector2 burstDashDirection;
+        private float fireTravelCurrentSpeed;
+        private Vector2 anchoredAimDirection;
         private bool jumpReleased;
         private bool jumpHeld;
         private bool normalJump;
+        private bool jumpRiseActive;
         private bool cornerCorrectionUsed;
         private int airJumpsRemaining;
         private bool burstAvailable = true;
@@ -133,26 +184,41 @@ namespace EmberPrototype
         private GameObject activeBurstEffect;
         private PlayerFlameFeedback flameFeedback;
         private PlayerAfterimageEffect afterimageEffect;
+        private BurstDashAbility burstDashAbility;
+        private FlameShotAbility flameShotAbility;
+        private PlayerAbilityUnlocks abilityUnlocks;
         private bool groundStateInitialized;
         private bool wasGrounded;
+        private Vector2 appliedPlatformVelocity;
+        private bool controlsLocked;
+        private RigidbodyConstraints2D constraintsBeforeControlLock;
+        private float gravityBeforeControlLock;
+        private TrialAltar nearbyTrialAltar;
         private Vector2 fireTravelProbeSize;
         private Vector2 fireTravelProbeOffset;
         private Vector2 fireTravelWaypoint;
         private bool hasFireTravelWaypoint;
         private readonly RaycastHit2D[] fireTravelCastHits = new RaycastHit2D[8];
         private readonly RaycastHit2D[] wallClearanceCastHits = new RaycastHit2D[8];
+        private readonly RaycastHit2D[] groundHits = new RaycastHit2D[16];
         private Collider2D[] fireTargetHits = new Collider2D[32];
+
+        public bool ControlsLocked => controlsLocked;
+        public float NormalMoveSpeed => moveSpeed;
+        public bool CanStartTrialCeremony => isActiveAndEnabled && !controlsLocked && state == FlameState.Free;
+        internal bool IsAirborneForAnimation =>
+            (state == FlameState.Free || state == FlameState.Bursting || state == FlameState.BurstDashing)
+            && groundStateInitialized
+            && !wasGrounded;
+        internal bool IsInsideFire => state == FlameState.Anchored;
+        internal bool IsInIgnitionRing => state == FlameState.Bursting;
+        internal bool CanUseFreeAbilities => !controlsLocked && state == FlameState.Free;
+        internal bool IsRingShotAiming => flameShotAbility != null && flameShotAbility.IsAiming;
 
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
             bodyCollider = GetComponent<Collider2D>();
-            if (burstDashCollider == null)
-            {
-                Transform dashColliderTransform = transform.Find("Dash Collider");
-                if (dashColliderTransform != null) burstDashCollider = dashColliderTransform.GetComponent<Collider2D>();
-            }
-            if (burstDashCollider != null) burstDashCollider.enabled = false;
 
             if (bodyCollider == null)
             {
@@ -160,6 +226,15 @@ namespace EmberPrototype
                 enabled = false;
                 return;
             }
+
+            abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
+            if (abilityUnlocks == null) abilityUnlocks = gameObject.AddComponent<PlayerAbilityUnlocks>();
+            burstDashAbility = GetComponent<BurstDashAbility>();
+            if (burstDashAbility == null) burstDashAbility = gameObject.AddComponent<BurstDashAbility>();
+            flameShotAbility = GetComponent<FlameShotAbility>();
+            if (flameShotAbility == null) flameShotAbility = gameObject.AddComponent<FlameShotAbility>();
+            if (GetComponent<PlayerAbilityInputRouter>() == null)
+                gameObject.AddComponent<PlayerAbilityInputRouter>();
 
             initialScale = transform.localScale;
             initialGravity = body.gravityScale;
@@ -178,63 +253,72 @@ namespace EmberPrototype
 
         private void OnDisable()
         {
+            flameShotAbility?.CancelAim();
+            burstDashAbility?.Cancel();
+            if (nearbyTrialAltar != null) nearbyTrialAltar.CancelCeremonyFor(this);
+            SetControlsLocked(false);
             StopAllCoroutines();
             ClearBurstEffect();
-            SetBurstDashCollider(false);
             SetAbsorbTargetPreview(null);
+            if (absorbTargetGlowLight != null) absorbTargetGlowLight.enabled = false;
             flameFeedback?.HideLaunchRing();
             afterimageEffect?.StopTrail();
         }
 
         private void Update()
         {
-            if (Keyboard.current == null) return;
+            if (controlsLocked) return;
+
+            Keyboard keyboard = Keyboard.current;
+            if (keyboard == null)
+            {
+                horizontalInput = jumpRemaining = 0f;
+                jumpHeld = false;
+                jumpReleased = true;
+                return;
+            }
+            Vector2 heldDirection = ReadHeldDirection();
+            // Walking is one-dimensional; aiming diagonally must not slow it down.
+            horizontalInput = (keyboard.rightArrowKey.isPressed ? 1f : 0f)
+                - (keyboard.leftArrowKey.isPressed ? 1f : 0f);
+            jumpHeld = keyboard.zKey.isPressed;
+            if (keyboard.zKey.wasPressedThisFrame)
+            {
+                jumpReleased = false;
+                if (state == FlameState.Free || state == FlameState.BurstDashing)
+                    jumpRemaining = jumpBuffer;
+            }
+            if (keyboard.zKey.wasReleasedThisFrame) jumpReleased = true;
 
             if (state == FlameState.Anchored)
             {
                 body.linearVelocity = Vector2.zero;
-                if (Keyboard.current.zKey.wasPressedThisFrame)
-                {
-                    LaunchFromFire();
-                    return;
-                }
-
-                Vector2 direction = ReadPressedDirection();
-                if (direction != Vector2.zero) TryMoveInsideFire(direction);
+                Vector2 anchoredDirection = heldDirection;
+                if (anchoredDirection != Vector2.zero) anchoredAimDirection = anchoredDirection;
+                if (anchoredDirection.x != 0f) facingDirection = anchoredDirection.x > 0f ? 1 : -1;
+                UpdateAbsorbTargetPreview(anchoredAimDirection);
                 return;
             }
 
-            if (state == FlameState.Bursting)
-            {
-                if (Keyboard.current.zKey.wasPressedThisFrame)
-                    StartBurstDash();
-                return;
-            }
+            if (state != FlameState.Free) return;
 
-            if (state == FlameState.Travelling || state == FlameState.BurstDashing) return;
-
-            Vector2 heldDirection = ReadHeldDirection();
-            horizontalInput = heldDirection.x;
-            jumpHeld = Keyboard.current.zKey.isPressed;
             if (horizontalInput != 0f) facingDirection = horizontalInput > 0f ? 1 : -1;
             UpdateAbsorbTargetPreview(heldDirection);
-
-            if (Keyboard.current.zKey.wasPressedThisFrame)
-            {
-                jumpRemaining = jumpBuffer;
-                jumpReleased = false;
-            }
-            if (Keyboard.current.zKey.wasReleasedThisFrame) jumpReleased = true;
-            if (Keyboard.current.xKey.wasPressedThisFrame) TryAbsorb();
-            if (Keyboard.current.cKey.wasPressedThisFrame) TryIgnitionBurst();
         }
 
         private void FixedUpdate()
         {
+            if (controlsLocked) { appliedPlatformVelocity = Vector2.zero; return; }
+            if (state != FlameState.Free) appliedPlatformVelocity = Vector2.zero;
+
+            // A jump pressed near the end of a dash survives until Free, but expires normally.
+            if (state != FlameState.Free)
+                jumpRemaining = Mathf.Max(0f, jumpRemaining - Time.fixedDeltaTime);
+
             if (state == FlameState.Bursting)
             {
                 body.linearVelocity = Vector2.zero;
-                burstChargeRemaining -= Time.fixedDeltaTime;
+                if (!IsRingShotAiming) burstChargeRemaining -= Time.fixedDeltaTime;
                 if (burstChargeRemaining <= 0f)
                 {
                     state = FlameState.Free;
@@ -246,22 +330,28 @@ namespace EmberPrototype
 
             if (state == FlameState.BurstDashing)
             {
-                if (TryCastFireTravelStep(burstDashDirection,
-                    burstDashSpeed * Time.fixedDeltaTime, out _))
+                float dashSpeed = burstDashAbility.AdvanceSpeed(Time.fixedDeltaTime);
+                float dashStepDistance = dashSpeed * Time.fixedDeltaTime;
+                if (TryCastFireTravelStep(burstDashAbility.Direction, dashStepDistance))
                 {
                     EndBurstDash(true);
                     return;
                 }
 
-                body.linearVelocity = burstDashDirection * burstDashSpeed;
-                burstDashRemaining -= Time.fixedDeltaTime;
-                if (burstDashRemaining <= 0f) EndBurstDash(false);
+                body.linearVelocity = burstDashAbility.Direction * dashSpeed;
+                if (burstDashAbility.AdvanceDuration(Time.fixedDeltaTime)) EndBurstDash(false);
                 return;
             }
 
             if (state == FlameState.Free)
             {
-                bool grounded = body.linearVelocity.y <= 0.1f && IsGrounded();
+                // Solve walking and jump gravity relative to the platform, then add its motion once.
+                Vector2 velocity = body.linearVelocity - appliedPlatformVelocity;
+                appliedPlatformVelocity = Vector2.zero;
+                RaycastHit2D groundHit = default;
+                bool grounded = velocity.y <= 0.1f && TryFindGround(groundProbeDistance, out groundHit);
+                PathMovingBlock platform = grounded && groundHit.rigidbody != null
+                    ? groundHit.rigidbody.GetComponent<PathMovingBlock>() : null;
                 if (!groundStateInitialized)
                 {
                     groundStateInitialized = true;
@@ -282,10 +372,10 @@ namespace EmberPrototype
                 }
                 else coyoteRemaining -= Time.fixedDeltaTime;
 
-                Vector2 velocity = body.linearVelocity;
                 bool jumpedThisStep = false;
                 launchProtection -= Time.fixedDeltaTime;
-                if (launchProtection <= 0f)
+                bool brakingLaunch = horizontalInput * velocity.x < 0f;
+                if (launchProtection <= 0f || brakingLaunch)
                 {
                     float targetSpeed = horizontalInput * moveSpeed;
                     float acceleration = SelectHorizontalAcceleration(velocity.x, targetSpeed, grounded);
@@ -294,35 +384,44 @@ namespace EmberPrototype
                 }
                 if (jumpRemaining > 0f && coyoteRemaining > 0f)
                 {
-                    velocity.y = jumpSpeed;
+                    velocity.y = GetJumpLaunchSpeed();
                     jumpRemaining = coyoteRemaining = 0f;
                     normalJump = true;
+                    jumpRiseActive = true;
                     cornerCorrectionUsed = false;
                     jumpedThisStep = true;
                     flameFeedback.PlayJump(false);
                 }
-                else if (jumpRemaining > 0f && airJumpsRemaining > 0)
+                else if (jumpRemaining > 0f && airJumpsRemaining > 0 && !ShouldWaitForLanding(velocity))
                 {
-                    velocity.y = jumpSpeed;
+                    velocity.y = GetJumpLaunchSpeed();
                     jumpRemaining = 0f;
                     airJumpsRemaining--;
                     normalJump = true;
+                    jumpRiseActive = true;
                     cornerCorrectionUsed = false;
                     jumpedThisStep = true;
                     flameFeedback.PlayJump(true);
                 }
                 jumpRemaining -= Time.fixedDeltaTime;
-                if (normalJump && jumpReleased && velocity.y > 0f)
+                if (normalJump && (jumpReleased || !jumpHeld) && velocity.y > 0f)
                 {
-                    velocity.y *= 0.5f;
+                    velocity.y = Mathf.Min(velocity.y * 0.5f, jumpSpeed * 0.5f);
                     normalJump = false;
+                    jumpRiseActive = false;
                 }
-                if (velocity.y <= 0f) normalJump = false;
+                if (velocity.y <= 0f)
+                {
+                    normalJump = false;
+                    jumpRiseActive = false;
+                }
                 velocity.y = Mathf.Max(velocity.y, -maxFallSpeed);
                 UpdateJumpGravity(velocity.y, grounded);
                 upwardVelocityBeforeCollision = Mathf.Max(0f, velocity.y);
                 horizontalVelocityBeforeCollision = velocity.x;
-                body.linearVelocity = velocity;
+                if (grounded && !jumpedThisStep && platform != null && platform.isActiveAndEnabled)
+                    appliedPlatformVelocity = platform.StepVelocity;
+                body.linearVelocity = velocity + appliedPlatformVelocity;
                 wasGrounded = grounded && !jumpedThisStep;
                 return;
             }
@@ -336,11 +435,16 @@ namespace EmberPrototype
             }
 
             Vector2 displacement = destination - body.position;
-            float stepDistance = Mathf.Min(displacement.magnitude, fireTravelSpeed * Time.fixedDeltaTime);
+            fireTravelCurrentSpeed = AccelerateToMaximumSpeed(
+                fireTravelCurrentSpeed,
+                fireTravelSpeed,
+                fireTravelAccelerationTime,
+                Time.fixedDeltaTime);
+            float stepDistance = Mathf.Min(displacement.magnitude, fireTravelCurrentSpeed * Time.fixedDeltaTime);
             if (stepDistance > 0.001f
-                && TryCastFireTravelStep(displacement / displacement.magnitude, stepDistance, out Vector2 surfaceNormal))
+                && TryCastFireTravelStep(displacement / displacement.magnitude, stepDistance))
             {
-                BounceFromFireTravel(surfaceNormal);
+                StopFireTravelAtObstacle();
                 return;
             }
 
@@ -353,18 +457,19 @@ namespace EmberPrototype
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            if (controlsLocked) return;
             HandleFlammableContact(collision.collider);
 
-            if (state == FlameState.BurstDashing && IsDashBlocked(collision))
+            if (state == FlameState.BurstDashing && burstDashAbility.IsBlocked(collision))
             {
                 EndBurstDash(true);
                 return;
             }
 
             if (state == FlameState.Travelling
-                && TryGetFireTravelBlockingNormal(collision, out Vector2 blockingNormal))
+                && IsFireTravelBlocked(collision))
             {
-                BounceFromFireTravel(blockingNormal);
+                StopFireTravelAtObstacle();
                 return;
             }
 
@@ -374,32 +479,23 @@ namespace EmberPrototype
 
         private void OnCollisionStay2D(Collision2D collision)
         {
-            if (state == FlameState.BurstDashing && IsDashBlocked(collision))
+            if (controlsLocked) return;
+            if (state == FlameState.BurstDashing && burstDashAbility.IsBlocked(collision))
             {
                 EndBurstDash(true);
                 return;
             }
 
             if (state == FlameState.Travelling
-                && TryGetFireTravelBlockingNormal(collision, out Vector2 blockingNormal))
+                && IsFireTravelBlocked(collision))
             {
-                BounceFromFireTravel(blockingNormal);
+                StopFireTravelAtObstacle();
                 return;
             }
 
             TryCornerCorrection(collision);
         }
         private void OnTriggerEnter2D(Collider2D other) => HandleFlammableContact(other);
-
-        private bool IsDashBlocked(Collision2D collision)
-        {
-            for (int i = 0; i < collision.contactCount; i++)
-            {
-                if (Vector2.Dot(burstDashDirection, collision.GetContact(i).normal) < -0.2f)
-                    return true;
-            }
-            return false;
-        }
 
         private void RememberWallSpeed(Collision2D collision)
         {
@@ -452,6 +548,11 @@ namespace EmberPrototype
             bool reversing = !Mathf.Approximately(currentSpeed, 0f)
                 && Mathf.Sign(currentSpeed) != Mathf.Sign(targetSpeed);
             if (reversing) return turnAcceleration;
+            if (!grounded && Mathf.Abs(currentSpeed) > Mathf.Abs(targetSpeed))
+            {
+                // Holding forward preserves a boost better than releasing the direction.
+                return Mathf.Min(overspeedDeceleration, airDeceleration);
+            }
             return grounded ? groundAcceleration : airAcceleration;
         }
 
@@ -471,10 +572,25 @@ namespace EmberPrototype
             {
                 body.gravityScale = initialGravity * fallGravityMultiplier;
             }
+            else if (jumpRiseActive && verticalSpeed > apexVelocityThreshold)
+            {
+                body.gravityScale = initialGravity * riseGravityMultiplier;
+            }
             else
             {
                 body.gravityScale = initialGravity;
             }
+        }
+
+        private float GetJumpLaunchSpeed()
+        {
+            if (riseGravityMultiplier <= 1f || jumpSpeed <= apexVelocityThreshold)
+                return jumpSpeed;
+
+            // Increase the upward acceleration while preserving the old height at the apex threshold.
+            float thresholdSpeedSquared = apexVelocityThreshold * apexVelocityThreshold;
+            float baselineRiseSpeedSquared = jumpSpeed * jumpSpeed - thresholdSpeedSquared;
+            return Mathf.Sqrt(thresholdSpeedSquared + baselineRiseSpeedSquared * riseGravityMultiplier);
         }
 
         private void TryCornerCorrection(Collision2D collision)
@@ -529,14 +645,45 @@ namespace EmberPrototype
 
         private bool IsGrounded()
         {
+            return HasGroundBelow(groundProbeDistance);
+        }
+
+        private bool ShouldWaitForLanding(Vector2 velocity)
+        {
+            if (velocity.y >= 0f || landingJumpBufferTime <= 0f) return false;
+            float lookAheadTime = Mathf.Min(landingJumpBufferTime, jumpRemaining);
+            float gravity = Mathf.Abs(Physics2D.gravity.y) * initialGravity * fallGravityMultiplier;
+            float distance = -velocity.y * lookAheadTime + 0.5f * gravity * lookAheadTime * lookAheadTime;
+            return HasGroundBelow(Mathf.Max(groundProbeDistance, distance));
+        }
+
+        private bool HasGroundBelow(float distance)
+        {
+            return TryFindGround(distance, out _);
+        }
+
+        private bool TryFindGround(float distance, out RaycastHit2D closestHit)
+        {
+            closestHit = default;
+            float closestDistance = float.PositiveInfinity;
             Bounds bounds = bodyCollider.bounds;
             Vector2 origin = new Vector2(bounds.center.x, bounds.min.y + 0.02f);
-            RaycastHit2D[] hits = Physics2D.BoxCastAll(origin, new Vector2(bounds.size.x * 0.8f, 0.05f), 0f, Vector2.down, groundProbeDistance);
-            foreach (RaycastHit2D hit in hits)
+            ContactFilter2D filter = new ContactFilter2D();
+            filter.SetLayerMask(Physics2D.AllLayers);
+            filter.useTriggers = false;
+            int hitCount = Physics2D.BoxCast(origin, new Vector2(bounds.size.x * 0.8f, 0.05f),
+                0f, Vector2.down, filter, groundHits, distance);
+            for (int i = 0; i < hitCount; i++)
             {
-                if (hit.collider != bodyCollider && !hit.collider.isTrigger) return true;
+                RaycastHit2D hit = groundHits[i];
+                if (hit.collider != null && hit.collider.attachedRigidbody != body
+                    && !hit.collider.isTrigger && hit.normal.y > 0.65f && hit.distance < closestDistance)
+                {
+                    closestDistance = hit.distance;
+                    closestHit = hit;
+                }
             }
-            return false;
+            return closestHit.collider != null;
         }
 
         private Vector2 ReadHeldDirection()
@@ -549,21 +696,77 @@ namespace EmberPrototype
             return direction == Vector2.zero ? Vector2.zero : direction.normalized;
         }
 
-        private Vector2 ReadPressedDirection()
-        {
-            Vector2 direction = Vector2.zero;
-            if (Keyboard.current.leftArrowKey.wasPressedThisFrame) direction.x -= 1f;
-            if (Keyboard.current.rightArrowKey.wasPressedThisFrame) direction.x += 1f;
-            if (Keyboard.current.upArrowKey.wasPressedThisFrame) direction.y += 1f;
-            if (Keyboard.current.downArrowKey.wasPressedThisFrame) direction.y -= 1f;
-            return direction == Vector2.zero ? Vector2.zero : direction.normalized;
-        }
-
         private void LateUpdate()
         {
-            if (state != FlameState.Free || (absorbTargetPreview != null && !absorbTargetPreview.IsBurning))
+            if ((state != FlameState.Free && state != FlameState.Anchored)
+                || (absorbTargetPreview != null && !absorbTargetPreview.IsBurning))
                 SetAbsorbTargetPreview(null);
             UpdateAbsorbTargetLine();
+            UpdateAbsorbTargetGlow();
+        }
+
+        internal bool TryInteractWithNearbyTrialAltar()
+        {
+            return nearbyTrialAltar != null && nearbyTrialAltar.TryBeginCeremony(this);
+        }
+
+        internal void RequestFireAbsorb()
+        {
+            if (controlsLocked || abilityUnlocks == null
+                || !abilityUnlocks.IsUnlocked(PlayerAbility.FireAbsorb)) return;
+            TryAbsorb();
+        }
+
+        internal void RequestLaunchFromFire()
+        {
+            if (!controlsLocked && state == FlameState.Anchored) LaunchFromFire();
+        }
+
+        internal void RequestIgnitionRing()
+        {
+            if (controlsLocked || state != FlameState.Free || abilityUnlocks == null
+                || !abilityUnlocks.IsUnlocked(PlayerAbility.IgnitionRing)) return;
+            TryIgnitionBurst();
+        }
+
+        internal void RequestBurstDash(Vector2 desiredDirection)
+        {
+            if (controlsLocked || state != FlameState.Bursting || abilityUnlocks == null
+                || !abilityUnlocks.IsUnlocked(PlayerAbility.BurstDash)) return;
+            StartBurstDash(desiredDirection);
+        }
+
+        internal void BeginRingShotAim()
+        {
+            if (controlsLocked || state != FlameState.Bursting || burstChargeRemaining <= 0f
+                || abilityUnlocks == null || !abilityUnlocks.IsUnlocked(PlayerAbility.FlameShot)) return;
+            flameShotAbility.BeginAim();
+        }
+
+        internal void UpdateRingShotAim(Vector2 requestedDirection)
+        {
+            flameShotAbility?.UpdateAim(requestedDirection);
+        }
+
+        internal void CancelRingShotAim()
+        {
+            flameShotAbility?.CancelAim();
+        }
+
+        internal void ReleaseRingShotAim()
+        {
+            if (state != FlameState.Bursting || flameShotAbility == null) return;
+
+            Vector2 direction = flameShotAbility.EndAim();
+            if (direction == Vector2.zero || burstChargeRemaining <= 0f) return;
+
+            flameShotAbility.Fire(direction);
+            burstChargeRemaining = 0f;
+            state = FlameState.Free;
+            body.gravityScale = initialGravity;
+            body.linearVelocity = Vector2.zero;
+            flameFeedback.HideLaunchRing();
+            flameFeedback.PlayLaunch(direction);
         }
 
         private void TryAbsorb()
@@ -574,6 +777,11 @@ namespace EmberPrototype
 
         private void UpdateAbsorbTargetPreview(Vector2 inputDirection)
         {
+            if (state == FlameState.Anchored && inputDirection == Vector2.zero)
+            {
+                SetAbsorbTargetPreview(null);
+                return;
+            }
             Vector2 direction = inputDirection == Vector2.zero ? Vector2.right * facingDirection : inputDirection;
             SetAbsorbTargetPreview(FindBurningFire(direction));
         }
@@ -584,6 +792,35 @@ namespace EmberPrototype
             absorbTargetPreview = preview;
             SetAbsorbTargetLineEnabled(preview != null);
             UpdateAbsorbTargetLine();
+            UpdateAbsorbTargetGlow();
+        }
+
+        private void UpdateAbsorbTargetGlow()
+        {
+            if (!showAbsorbTargetGlow || absorbTargetPreview == null || !absorbTargetPreview.IsBurning
+                || (state != FlameState.Free && state != FlameState.Anchored))
+            {
+                if (absorbTargetGlowLight != null) absorbTargetGlowLight.enabled = false;
+                return;
+            }
+
+            if (absorbTargetGlowLight == null)
+            {
+                GameObject glowObject = new GameObject("Absorb Target Preview Glow");
+                absorbTargetGlowLight = glowObject.AddComponent<Light2D>();
+                absorbTargetGlowLight.lightType = Light2D.LightType.Point;
+                absorbTargetGlowLight.pointLightInnerRadius = 0.05f;
+            }
+
+            Vector2 position = absorbTargetPreview.AnchorPosition;
+            absorbTargetGlowLight.transform.position = new Vector3(
+                position.x, position.y, absorbTargetPreview.transform.position.z);
+            absorbTargetGlowLight.color = absorbTargetGlowColor;
+            absorbTargetGlowLight.pointLightOuterRadius = absorbTargetGlowRadius;
+            absorbTargetGlowLight.intensity = Mathf.Max(0f, absorbTargetGlowIntensity
+                + Mathf.Sin(Time.time * absorbTargetGlowPulseSpeed * Mathf.PI * 2f)
+                * absorbTargetGlowPulseAmount);
+            absorbTargetGlowLight.enabled = true;
         }
 
         private void CreateAbsorbTargetLine()
@@ -721,7 +958,8 @@ namespace EmberPrototype
             }
 
             if (absorbTargetLine == null) return;
-            if (state != FlameState.Free || absorbTargetPreview == null || !absorbTargetPreview.IsBurning)
+            if ((state != FlameState.Free && state != FlameState.Anchored)
+                || absorbTargetPreview == null || !absorbTargetPreview.IsBurning)
             {
                 SetAbsorbTargetLineEnabled(false);
                 return;
@@ -762,6 +1000,7 @@ namespace EmberPrototype
 
         private void OnDestroy()
         {
+            if (absorbTargetGlowLight != null) Destroy(absorbTargetGlowLight.gameObject);
             if (runtimeAbsorbTargetLineMaterial != null) Destroy(runtimeAbsorbTargetLineMaterial);
             if (runtimeAbsorbTargetLineTexture != null) Destroy(runtimeAbsorbTargetLineTexture);
         }
@@ -781,12 +1020,16 @@ namespace EmberPrototype
                 Collider2D hit = fireTargetHits[i];
                 if (hit == null) continue;
                 if (!hit.TryGetComponent(out FlammableTile tile) || !tile.IsBurning) continue;
+                if (state == FlameState.Anchored && tile == targetFire) continue;
                 Vector2 offset = tile.AnchorPosition - body.position;
                 float distance = offset.magnitude;
                 if (distance <= 0.05f) continue;
                 float directionMatch = Vector2.Dot(offset / distance, direction);
                 if (directionMatch < fireTargetDirectionDot) continue;
                 float score = directionMatch * 2f - distance / fireTravelRange;
+                if (state == FlameState.Anchored && distance <= fireNetworkStepRange
+                    && directionMatch >= fireNetworkDirectionDot)
+                    score += 0.4f;
                 if (score > bestScore)
                 {
                     bestScore = score;
@@ -798,7 +1041,8 @@ namespace EmberPrototype
 
         private void TryIgnitionBurst()
         {
-            if (!burstAvailable) return;
+            if (state != FlameState.Free || !burstAvailable) return;
+            appliedPlatformVelocity = Vector2.zero;
             SetAbsorbTargetPreview(null);
             burstAvailable = false;
             TriggerIgnitionBurst();
@@ -809,25 +1053,23 @@ namespace EmberPrototype
             body.gravityScale = 0f;
             body.linearVelocity = Vector2.zero;
             normalJump = false;
+            jumpRiseActive = false;
             flameFeedback.ShowTimedLaunchRing(ignitionBurstChargeTime);
         }
 
-        private void StartBurstDash()
+        private void StartBurstDash(Vector2 desiredDirection)
         {
             if (burstChargeRemaining <= 0f) return;
 
-            burstDashDirection = ReadHeldDirection();
-            if (burstDashDirection == Vector2.zero) burstDashDirection = Vector2.up;
-            SetBurstDashCollider(true);
-            burstDashDirection = FindDashAssistDirection(burstDashDirection);
+            if (!burstDashAbility.TryBegin(desiredDirection, fireTravelObstacleMask.value)) return;
             burstChargeRemaining = 0f;
-            burstDashRemaining = burstDashDuration;
+            jumpRemaining = 0f;
             state = FlameState.BurstDashing;
             body.gravityScale = 0f;
             body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-            body.linearVelocity = burstDashDirection * burstDashSpeed;
+            body.linearVelocity = Vector2.zero;
             flameFeedback.HideLaunchRing();
-            flameFeedback.PlayLaunch(burstDashDirection);
+            flameFeedback.PlayLaunch(burstDashAbility.Direction);
             Camera.main?.GetComponent< CelesteRoomCamera >()?.ShakeDash();
             afterimageEffect.BeginTrail();
         }
@@ -836,17 +1078,31 @@ namespace EmberPrototype
         {
             if (state != FlameState.BurstDashing) return;
 
+            Vector2 exitVelocity = burstDashAbility.End(blocked);
+            if (burstDashAbility.NeedsSafeReset)
+            {
+                KillAndRespawn();
+                return;
+            }
             state = FlameState.Free;
             body.gravityScale = initialGravity;
             body.collisionDetectionMode = initialCollisionDetectionMode;
-            SetBurstDashCollider(false);
-            body.linearVelocity = blocked
-                ? Vector2.zero
-                : burstDashDirection * (burstDashSpeed * burstDashEndSpeedMultiplier);
-            launchProtection = blocked ? 0f : 0.08f;
+            body.linearVelocity = exitVelocity;
+            launchProtection = blocked ? 0f : burstDashExitControlLockTime;
             afterimageEffect.StopTrail();
-            burstDashRemaining = 0f;
             wasGrounded = false;
+        }
+
+        private static float AccelerateToMaximumSpeed(
+            float currentSpeed,
+            float maximumSpeed,
+            float accelerationTime,
+            float deltaTime)
+        {
+            if (maximumSpeed <= 0f || accelerationTime <= 0f) return maximumSpeed;
+
+            float acceleration = maximumSpeed / accelerationTime;
+            return Mathf.MoveTowards(currentSpeed, maximumSpeed, acceleration * deltaTime);
         }
 
         private void TriggerIgnitionBurst()
@@ -913,35 +1169,11 @@ namespace EmberPrototype
             activeBurstEffect = null;
         }
 
-        private void TryMoveInsideFire(Vector2 direction)
-        {
-            if (targetFire == null || !targetFire.IsBurning) return;
-            Collider2D[] nearby = Physics2D.OverlapCircleAll(targetFire.AnchorPosition, fireNetworkStepRange);
-            FlammableTile bestTile = null;
-            float bestScore = float.NegativeInfinity;
-            foreach (Collider2D hit in nearby)
-            {
-                if (!hit.TryGetComponent(out FlammableTile tile) || tile == targetFire || !tile.IsBurning) continue;
-                Vector2 offset = tile.AnchorPosition - targetFire.AnchorPosition;
-                float distance = offset.magnitude;
-                if (distance <= 0.001f || distance > fireNetworkStepRange) continue;
-                float match = Vector2.Dot(offset / distance, direction);
-                if (match < fireNetworkDirectionDot) continue;
-                float score = match * 2f - distance / fireNetworkStepRange;
-                if (score > bestScore)
-                {
-                    bestScore = score;
-                    bestTile = tile;
-                }
-            }
-            if (bestTile != null) BeginFireTravel(bestTile);
-        }
-
         private void BeginFireTravel(FlammableTile destination)
         {
+            appliedPlatformVelocity = Vector2.zero;
             SetAbsorbTargetPreview(null);
             flameFeedback.HideLaunchRing();
-            Camera.main?.GetComponent<CelesteRoomCamera>()?.ShakeAbsorb();
             FlammableTile source = state == FlameState.Anchored ? targetFire : null;
             bool hasSafeRoute = TryBuildFireTravelPath(
                 body.position,
@@ -951,14 +1183,16 @@ namespace EmberPrototype
                 out bool useWaypoint);
             if (!hasSafeRoute)
             {
-                // A blocked target is still valid: the player travels into the obstacle and ricochets.
+                // A blocked target remains selectable, but travel stops safely at the obstacle.
                 waypoint = default;
                 useWaypoint = false;
             }
 
             jumpRemaining = coyoteRemaining = burstChargeRemaining = 0f;
             normalJump = false;
+            jumpRiseActive = false;
             wallSpeedRetentionRemaining = 0f;
+            fireTravelCurrentSpeed = 0f;
             travelSourceFire = source;
             targetFire = destination;
             fireTravelWaypoint = waypoint;
@@ -971,34 +1205,25 @@ namespace EmberPrototype
             afterimageEffect.BeginTrail();
         }
 
-        private bool TryGetFireTravelBlockingNormal(Collision2D collision, out Vector2 blockingNormal)
+        private bool IsFireTravelBlocked(Collision2D collision)
         {
-            blockingNormal = Vector2.zero;
             if (targetFire == null) return false;
 
             Vector2 travelDirection = CurrentFireTravelDestination() - body.position;
             if (travelDirection.sqrMagnitude <= 0.0001f) return false;
             travelDirection.Normalize();
 
-            float mostBlockingDot = -0.2f;
-            bool found = false;
-
             for (int i = 0; i < collision.contactCount; i++)
             {
                 ContactPoint2D contact = collision.GetContact(i);
-                float dot = Vector2.Dot(travelDirection, contact.normal);
-                if (dot >= mostBlockingDot) continue;
-                mostBlockingDot = dot;
-                blockingNormal = contact.normal;
-                found = true;
+                if (Vector2.Dot(travelDirection, contact.normal) < -0.2f) return true;
             }
 
-            return found;
+            return false;
         }
 
-        private bool TryCastFireTravelStep(Vector2 direction, float distance, out Vector2 surfaceNormal)
+        private bool TryCastFireTravelStep(Vector2 direction, float distance)
         {
-            surfaceNormal = Vector2.zero;
             int obstacleMask = fireTravelObstacleMask.value == 0
                 ? Physics2D.AllLayers
                 : fireTravelObstacleMask.value;
@@ -1006,95 +1231,19 @@ namespace EmberPrototype
             filter.SetLayerMask(obstacleMask);
             filter.useTriggers = false;
 
-            Collider2D castCollider = state == FlameState.BurstDashing && burstDashCollider != null
-                ? burstDashCollider : bodyCollider;
+            Collider2D castCollider = state == FlameState.BurstDashing
+                ? burstDashAbility.CastCollider : bodyCollider;
             int hitCount = castCollider.Cast(direction, filter, fireTravelCastHits, distance + 0.03f);
-            float closestDistance = float.PositiveInfinity;
 
             for (int i = 0; i < hitCount; i++)
             {
                 RaycastHit2D hit = fireTravelCastHits[i];
                 if (hit.collider == null || hit.distance <= 0.001f) continue;
                 if (Vector2.Dot(direction, hit.normal) >= -0.2f) continue;
-                if (hit.distance >= closestDistance) continue;
-
-                closestDistance = hit.distance;
-                surfaceNormal = hit.normal;
+                return true;
             }
 
-            return closestDistance < float.PositiveInfinity;
-        }
-
-        private Vector2 FindDashAssistDirection(Vector2 desired)
-        {
-            if (burstDashObstacleAssistDistance <= 0f || burstDashObstacleAssistSteps <= 0)
-                return desired;
-
-            if (IsDashDirectionClear(desired)) return desired;
-            for (int step = 1; step <= burstDashObstacleAssistSteps; step++)
-            {
-                float angle = burstDashObstacleAssistAngle * step;
-                Vector2 left = Rotate(desired, angle);
-                if (IsDashDirectionClear(left)) return left;
-                Vector2 right = Rotate(desired, -angle);
-                if (IsDashDirectionClear(right)) return right;
-            }
-            return desired;
-        }
-
-        private bool IsDashDirectionClear(Vector2 direction)
-        {
-            int obstacleMask = fireTravelObstacleMask.value == 0 ? Physics2D.AllLayers : fireTravelObstacleMask.value;
-            ContactFilter2D filter = new ContactFilter2D();
-            filter.SetLayerMask(obstacleMask);
-            filter.useTriggers = false;
-            Collider2D dashCollider = burstDashCollider != null ? burstDashCollider : bodyCollider;
-            return dashCollider.Cast(direction, filter, fireTravelCastHits, burstDashObstacleAssistDistance) == 0;
-        }
-
-        private static Vector2 Rotate(Vector2 value, float degrees)
-        {
-            float radians = degrees * Mathf.Deg2Rad;
-            float cos = Mathf.Cos(radians);
-            float sin = Mathf.Sin(radians);
-            return new Vector2(value.x * cos - value.y * sin, value.x * sin + value.y * cos).normalized;
-        }
-
-        private void BounceFromFireTravel(Vector2 surfaceNormal)
-        {
-            Vector2 incomingDirection = CurrentFireTravelDestination() - body.position;
-            if (incomingDirection.sqrMagnitude <= 0.0001f) incomingDirection = -surfaceNormal;
-            incomingDirection.Normalize();
-
-            Vector2 bounceDirection = Vector2.Reflect(incomingDirection, surfaceNormal).normalized;
-            if (Mathf.Abs(surfaceNormal.x) > 0.5f)
-            {
-                bounceDirection.y = Mathf.Max(bounceDirection.y, fireTravelWallUpwardBias);
-                bounceDirection.Normalize();
-            }
-
-            float speed = fireTravelBounceSpeed;
-            if (surfaceNormal.y > 0.5f) speed *= fireTravelGroundBounceMultiplier;
-
-            afterimageEffect.StopTrail();
-            state = FlameState.Free;
-            targetFire = null;
-            travelSourceFire = null;
-            hasFireTravelWaypoint = false;
-            body.gravityScale = initialGravity;
-            body.collisionDetectionMode = initialCollisionDetectionMode;
-            SetBurstDashCollider(false);
-            bodyCollider.enabled = true;
-            transform.localScale = initialScale;
-            body.linearVelocity = bounceDirection * speed;
-            upwardVelocityBeforeCollision = Mathf.Max(0f, body.linearVelocity.y);
-            normalJump = false;
-            cornerCorrectionUsed = false;
-            wallSpeedRetentionRemaining = 0f;
-            launchProtection = 0.16f;
-            wasGrounded = false;
-            flameFeedback.PlayLaunch(bounceDirection);
-            afterimageEffect.PlayTimedTrail(fireTravelBounceAfterimageDuration);
+            return false;
         }
 
         private Vector2 CurrentFireTravelDestination()
@@ -1189,18 +1338,26 @@ namespace EmberPrototype
             return true;
         }
 
-        private void CancelFireTravel()
+        private void StopFireTravelAtObstacle()
         {
             afterimageEffect.StopTrail();
             state = FlameState.Free;
             targetFire = null;
             travelSourceFire = null;
             hasFireTravelWaypoint = false;
+            fireTravelCurrentSpeed = 0f;
             wallSpeedRetentionRemaining = 0f;
+            horizontalVelocityBeforeCollision = 0f;
+            upwardVelocityBeforeCollision = 0f;
+            burstDashAbility.Cancel();
+            normalJump = false;
+            jumpRiseActive = false;
+            cornerCorrectionUsed = false;
+            launchProtection = 0f;
+            wasGrounded = false;
             body.gravityScale = initialGravity;
             body.collisionDetectionMode = initialCollisionDetectionMode;
             body.linearVelocity = Vector2.zero;
-            bodyCollider.enabled = true;
             transform.localScale = initialScale;
         }
 
@@ -1211,22 +1368,27 @@ namespace EmberPrototype
             body.position = targetFire.AnchorPosition;
             travelSourceFire = null;
             hasFireTravelWaypoint = false;
+            fireTravelCurrentSpeed = 0f;
             body.collisionDetectionMode = initialCollisionDetectionMode;
             body.linearVelocity = Vector2.zero;
             bodyCollider.enabled = false;
             transform.localScale = Vector3.one * 0.45f;
+            anchoredAimDirection = Vector2.zero;
             airJumpsRemaining = maxAirJumps;
             burstAvailable = true;
             SetAbsorbTargetPreview(null);
             flameFeedback.ShowAnchoredLaunchRing();
+            Camera.main?.GetComponent<CelesteRoomCamera>()?.ShakeAbsorb();
         }
 
         private void LaunchFromFire()
         {
+            appliedPlatformVelocity = Vector2.zero;
             Vector2 direction = ReadHeldDirection();
             if (direction == Vector2.zero) direction = Vector2.up;
             if (!TryFindSafeFireLaunchPosition(direction, out Vector2 launchPosition)) return;
 
+            SetAbsorbTargetPreview(null);
             flameFeedback.HideLaunchRing();
             state = FlameState.Free;
             targetFire = null;
@@ -1240,8 +1402,10 @@ namespace EmberPrototype
             body.position = launchPosition;
             body.linearVelocity = direction * launchSpeed;
             upwardVelocityBeforeCollision = Mathf.Max(0f, body.linearVelocity.y);
+            normalJump = false;
+            jumpRiseActive = false;
             cornerCorrectionUsed = false;
-            launchProtection = 0.25f;
+            launchProtection = fireLaunchControlLockTime;
             flameFeedback.PlayLaunch(direction);
             Camera.main?.GetComponent<CelesteRoomCamera>()?.ShakeFireLaunch();
             afterimageEffect.PlayTimedTrail(launchAfterimageDuration);
@@ -1301,17 +1465,65 @@ namespace EmberPrototype
             return true;
         }
 
+        public void SetNearbyTrialAltar(TrialAltar altar)
+        {
+            nearbyTrialAltar = altar;
+        }
+
+        public void ClearNearbyTrialAltar(TrialAltar altar)
+        {
+            if (nearbyTrialAltar == altar) nearbyTrialAltar = null;
+        }
+
+        public void SetControlsLocked(bool locked)
+        {
+            if (body == null || controlsLocked == locked) return;
+
+            if (locked)
+            {
+                CancelRingShotAim();
+                constraintsBeforeControlLock = body.constraints;
+                gravityBeforeControlLock = body.gravityScale;
+                controlsLocked = true;
+                horizontalInput = jumpRemaining = 0f;
+                jumpHeld = false;
+                body.linearVelocity = Vector2.zero;
+                body.angularVelocity = 0f;
+                body.gravityScale = 0f;
+                body.constraints = RigidbodyConstraints2D.FreezeAll;
+                SetAbsorbTargetPreview(null);
+            }
+            else
+            {
+                body.constraints = constraintsBeforeControlLock;
+                body.gravityScale = gravityBeforeControlLock;
+                body.linearVelocity = Vector2.zero;
+                controlsLocked = false;
+                horizontalInput = jumpRemaining = 0f;
+                jumpHeld = false;
+            }
+        }
+
         public void ResetAt(Vector2 position)
         {
+            appliedPlatformVelocity = Vector2.zero;
             if (body == null || bodyCollider == null) return;
+
+            CancelRingShotAim();
+            burstDashAbility.Cancel();
+            if (nearbyTrialAltar != null) nearbyTrialAltar.CancelCeremonyFor(this);
+            SetControlsLocked(false);
+            SetAbsorbTargetPreview(null);
 
             state = FlameState.Free;
             targetFire = null;
             travelSourceFire = null;
             hasFireTravelWaypoint = false;
-            horizontalInput = jumpRemaining = coyoteRemaining = launchProtection = burstChargeRemaining = burstDashRemaining = 0f;
-            burstDashDirection = Vector2.zero;
+            horizontalInput = jumpRemaining = coyoteRemaining = launchProtection = burstChargeRemaining = 0f;
+            fireTravelCurrentSpeed = 0f;
+            anchoredAimDirection = Vector2.zero;
             normalJump = jumpReleased = jumpHeld = cornerCorrectionUsed = false;
+            jumpRiseActive = false;
             upwardVelocityBeforeCollision = 0f;
             horizontalVelocityBeforeCollision = retainedWallSpeedX = wallSpeedRetentionRemaining = 0f;
             airJumpsRemaining = maxAirJumps;
@@ -1341,13 +1553,6 @@ namespace EmberPrototype
         public void SetRespawnPoint(Transform newRespawnPoint)
         {
             respawnPoint = newRespawnPoint;
-        }
-
-        private void SetBurstDashCollider(bool dashActive)
-        {
-            if (burstDashCollider == null) return;
-            bodyCollider.enabled = !dashActive;
-            burstDashCollider.enabled = dashActive;
         }
 
         private void OnDrawGizmosSelected()

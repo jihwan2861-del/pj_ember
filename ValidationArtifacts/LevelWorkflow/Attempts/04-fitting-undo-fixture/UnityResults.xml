@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="21" result="Failed(Child)" total="21" passed="20" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:41Z" duration="0.3136288">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="42" result="Failed" site="Child" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:41Z" duration="0.313629" total="21" passed="20" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1048" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberMovementQA-20261004/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="42" result="Failed" site="Child" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:41Z" duration="0.308813" total="21" passed="20" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="40176" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1050" name="EmberLevelWorkflow" fullname="EmberLevelWorkflow" runstate="Runnable" testcasecount="21" result="Failed" site="Child" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:41Z" duration="0.308335" total="21" passed="20" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1025" name="EditorWorkflowTests" fullname="EmberLevelWorkflow.EditorWorkflowTests" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.168505" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1030" name="BoxHazardsStillCreateOneTriggerColliderWhenMissing" fullname="EmberLevelWorkflow.EditorWorkflowTests.BoxHazardsStillCreateOneTriggerColliderWhenMissing" methodname="BoxHazardsStillCreateOneTriggerColliderWhenMissing" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="12140789" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.019718" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1032" name="ConnectingCameraPreservesExistingTargetAndTransformAndSupportsUndo" fullname="EmberLevelWorkflow.EditorWorkflowTests.ConnectingCameraPreservesExistingTargetAndTransformAndSupportsUndo" methodname="ConnectingCameraPreservesExistingTargetAndTransformAndSupportsUndo" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="852823375" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.036319" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1029" name="FittingCameraBoundsUsesWorldViewportAndPreservesRoomCenter" fullname="EmberLevelWorkflow.EditorWorkflowTests.FittingCameraBoundsUsesWorldViewportAndPreservesRoomCenter" methodname="FittingCameraBoundsUsesWorldViewportAndPreservesRoomCenter" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="75400312" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.019580" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1031" name="FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone" fullname="EmberLevelWorkflow.EditorWorkflowTests.FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone" methodname="FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="27937552" result="Failed" label="Error" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.024727" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+  ----> UnityEngine.MissingReferenceException : The object of type 'EmberPrototype.CameraRoom' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+              <stack-trace><![CDATA[  at System.Reflection.RuntimePropertyInfo.GetValue (System.Object obj, System.Object[] index) [0x00096] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.Reflection.PropertyInfo.GetValue (System.Object obj) [0x00000] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone () [0x00221] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:165 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+--MissingReferenceException
+  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.Component.get_transform () [0x00006] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberPrototype.CameraRoom.get_WorldBounds () [0x00000] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Runtime\CameraRoom.cs:20 
+  at (wrapper delegate-invoke) System.Reflection.RuntimePropertyInfo+Getter`2[EmberPrototype.CameraRoom,UnityEngine.Bounds].invoke_R_T(EmberPrototype.CameraRoom)
+  at System.Reflection.RuntimePropertyInfo.GetterAdapterFrame[T,R] (System.Reflection.RuntimePropertyInfo+Getter`2[T,R] getter, System.Object obj) [0x00000] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.Reflection.RuntimePropertyInfo.GetValue (System.Object obj, System.Object[] index) [0x00082] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+            <output><![CDATA[Workflow fitting diagnostic: origin=(0, 0, 0), size=(5, 6, 1), cells=Position: (0, 0, 0), Size: (5, 6, 1), local=Center: (2.50, 3.00, 0.00), Extents: (2.50, 3.00, 0.00)
+Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1027" name="PaintedTerrainAutomaticallyMergesAndSpikesUseOnlyTheirPaintedCells" fullname="EmberLevelWorkflow.EditorWorkflowTests.PaintedTerrainAutomaticallyMergesAndSpikesUseOnlyTheirPaintedCells" methodname="PaintedTerrainAutomaticallyMergesAndSpikesUseOnlyTheirPaintedCells" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="2082381968" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.018911" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1028" name="RoomCreationCanBeUndoneAndRedoneAsOneAction" fullname="EmberLevelWorkflow.EditorWorkflowTests.RoomCreationCanBeUndoneAndRedoneAsOneAction" methodname="RoomCreationCanBeUndoneAndRedoneAsOneAction" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="1335314559" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.018816" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1026" name="RoomTemplateSeparatesTerrainSpikesAndDecorationAndPreservesTileScale" fullname="EmberLevelWorkflow.EditorWorkflowTests.RoomTemplateSeparatesTerrainSpikesAndDecorationAndPreservesTileScale" methodname="RoomTemplateSeparatesTerrainSpikesAndDecorationAndPreservesTileScale" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="931890024" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.019166" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1033" name="PathWorkflowTests" fullname="EmberLevelWorkflow.PathWorkflowTests" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:41Z" duration="0.138876" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1040" name="ArrivalListenerResetOverridesQueuedEndpointMoveInNativePhysics" fullname="EmberLevelWorkflow.PathWorkflowTests.ArrivalListenerResetOverridesQueuedEndpointMoveInNativePhysics" methodname="ArrivalListenerResetOverridesQueuedEndpointMoveInNativePhysics" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="400251110" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.013546" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1039" name="AutomaticStartUsesExistingActivateOnStartField" fullname="EmberLevelWorkflow.PathWorkflowTests.AutomaticStartUsesExistingActivateOnStartField" methodname="AutomaticStartUsesExistingActivateOnStartField" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1363162478" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.007469" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1035" name="CircleHasExactWorldRadiusDirectionAndClosedStartWithNoWaypoints" fullname="EmberLevelWorkflow.PathWorkflowTests.CircleHasExactWorldRadiusDirectionAndClosedStartWithNoWaypoints" methodname="CircleHasExactWorldRadiusDirectionAndClosedStartWithNoWaypoints" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="67255455" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.008611" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1047" name="CircleLoopHonorsEndWaitThenContinuesForwardWithoutTeleport" fullname="EmberLevelWorkflow.PathWorkflowTests.CircleLoopHonorsEndWaitThenContinuesForwardWithoutTeleport" methodname="CircleLoopHonorsEndWaitThenContinuesForwardWithoutTeleport" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="587084223" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.007698" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1042" name="CircleLoopWrapsContinuouslyAndPreservesFixedStepOvershoot" fullname="EmberLevelWorkflow.PathWorkflowTests.CircleLoopWrapsContinuouslyAndPreservesFixedStepOvershoot" methodname="CircleLoopWrapsContinuouslyAndPreservesFixedStepOvershoot" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="601524402" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.007958" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1036" name="ClosedSmoothCurveIncludesReturnSegmentAndMatchingSeamTangents" fullname="EmberLevelWorkflow.PathWorkflowTests.ClosedSmoothCurveIncludesReturnSegmentAndMatchingSeamTangents" methodname="ClosedSmoothCurveIncludesReturnSegmentAndMatchingSeamTangents" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="82386176" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.008113" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1038" name="DefaultOnceActivationArrivalAndResetRemainCompatible" fullname="EmberLevelWorkflow.PathWorkflowTests.DefaultOnceActivationArrivalAndResetRemainCompatible" methodname="DefaultOnceActivationArrivalAndResetRemainCompatible" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1811968020" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.008030" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1044" name="EditorAddingAndRemovingChildWaypointsSupportsUndoAndRedo" fullname="EmberLevelWorkflow.PathWorkflowTests.EditorAddingAndRemovingChildWaypointsSupportsUndoAndRedo" methodname="EditorAddingAndRemovingChildWaypointsSupportsUndoAndRedo" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1207817394" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:40Z" duration="0.012963" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1045" name="GhostEditorCreationLeavesRealBlockPositionUntouched" fullname="EmberLevelWorkflow.PathWorkflowTests.GhostEditorCreationLeavesRealBlockPositionUntouched" methodname="GhostEditorCreationLeavesRealBlockPositionUntouched" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1451776497" result="Passed" start-time="2026-10-05 04:27:40Z" end-time="2026-10-05 04:27:41Z" duration="0.017146" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1034" name="LegacyLinearAndSmoothValuesAndOpenEndpointsArePreserved" fullname="EmberLevelWorkflow.PathWorkflowTests.LegacyLinearAndSmoothValuesAndOpenEndpointsArePreserved" methodname="LegacyLinearAndSmoothValuesAndOpenEndpointsArePreserved" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1698346287" result="Passed" start-time="2026-10-05 04:27:41Z" end-time="2026-10-05 04:27:41Z" duration="0.007793" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1037" name="MissingWaypointInvalidatesPathWithoutException" fullname="EmberLevelWorkflow.PathWorkflowTests.MissingWaypointInvalidatesPathWithoutException" methodname="MissingWaypointInvalidatesPathWithoutException" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1024314714" result="Passed" start-time="2026-10-05 04:27:41Z" end-time="2026-10-05 04:27:41Z" duration="0.008054" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1043" name="OpenLoopIsRejectedWithoutMovingOrWrapping" fullname="EmberLevelWorkflow.PathWorkflowTests.OpenLoopIsRejectedWithoutMovingOrWrapping" methodname="OpenLoopIsRejectedWithoutMovingOrWrapping" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="2007895212" result="Passed" start-time="2026-10-05 04:27:41Z" end-time="2026-10-05 04:27:41Z" duration="0.009206" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[PathMovingBlock Loop requires a closed path or Circle. Use PingPong for an open path.
+Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1046" name="PingPongEndpointWaitRemainsStationaryForManyNativePhysicsSteps" fullname="EmberLevelWorkflow.PathWorkflowTests.PingPongEndpointWaitRemainsStationaryForManyNativePhysicsSteps" methodname="PingPongEndpointWaitRemainsStationaryForManyNativePhysicsSteps" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="574694612" result="Passed" start-time="2026-10-05 04:27:41Z" end-time="2026-10-05 04:27:41Z" duration="0.007992" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+          </test-case>
+          <test-case id="1041" name="PingPongWaitsAtEachEndpointThenReversesAndResetClearsWait" fullname="EmberLevelWorkflow.PathWorkflowTests.PingPongWaitsAtEachEndpointThenReversesAndResetClearsWait" methodname="PingPongWaitsAtEachEndpointThenReversesAndResetClearsWait" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="813896327" result="Passed" start-time="2026-10-05 04:27:41Z" end-time="2026-10-05 04:27:41Z" duration="0.008400" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

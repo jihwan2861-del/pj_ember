@@ -27,6 +27,10 @@ namespace EmberPrototype
         [SerializeField, Min(0f)] private float absorbShakeDuration = 0.08f;
         [Tooltip("Fire absorption shake amplitude in world units.")]
         [SerializeField, Min(0f)] private float absorbShakeMagnitude = 0.08f;
+        [Tooltip("Fire absorption shake duration while the camera follows the player outside a CameraRoom.")]
+        [SerializeField, Min(0f)] private float followAbsorbShakeDuration = 0.07f;
+        [Tooltip("Fire absorption shake amplitude while the camera follows the player outside a CameraRoom.")]
+        [SerializeField, Min(0f)] private float followAbsorbShakeMagnitude = 0.06f;
         [Tooltip("Shake when launching out of a burning tile with Z.")]
         [SerializeField, Min(0f)] private float fireLaunchShakeDuration = 0.12f;
         [SerializeField, Min(0f)] private float fireLaunchShakeMagnitude = 0.12f;
@@ -39,6 +43,14 @@ namespace EmberPrototype
         private float shakeDuration;
         private float shakeMagnitude;
         private float shakeSeed;
+        private float normalOrthographicSize;
+        private bool cinematicActive;
+        private bool cinematicReturning;
+        private Transform cinematicFocus;
+        private float cinematicOrthographicSize;
+        private float cinematicBlendSeconds;
+        private float cinematicFocusScreenX = 0.5f;
+        private float cinematicFocusScreenY = 0.5f;
 
         public CameraRoom CurrentRoom => currentRoom;
 
@@ -46,6 +58,7 @@ namespace EmberPrototype
         {
             viewCamera = GetComponent<Camera>();
             cameraDepth = transform.position.z;
+            normalOrthographicSize = viewCamera.orthographicSize;
             if (!viewCamera.orthographic)
             {
                 Debug.LogError("CelesteRoomCamera requires an orthographic Camera.", this);
@@ -67,18 +80,96 @@ namespace EmberPrototype
         private void LateUpdate()
         {
             ResolveTarget();
+            if (cinematicActive)
+            {
+                Vector2 focusPosition = cinematicFocus != null ? cinematicFocus.position : TargetPosition;
+                float cinematicBlend = CinematicBlend(cinematicBlendSeconds);
+                viewCamera.orthographicSize = Mathf.Lerp(
+                    viewCamera.orthographicSize, cinematicOrthographicSize, cinematicBlend);
+                float halfHeight = viewCamera.orthographicSize;
+                float halfWidth = halfHeight * viewCamera.aspect;
+                Vector2 framedPosition = focusPosition + new Vector2(
+                    (0.5f - cinematicFocusScreenX) * 2f * halfWidth,
+                    (0.5f - cinematicFocusScreenY) * 2f * halfHeight);
+                SetCameraPosition(Vector2.LerpUnclamped(transform.position, framedPosition, cinematicBlend));
+                ApplyShake();
+                return;
+            }
+
             if (target == null) return;
 
             UpdateCurrentRoom();
+            if (cinematicReturning)
+            {
+                viewCamera.orthographicSize = Mathf.Lerp(
+                    viewCamera.orthographicSize, normalOrthographicSize,
+                    CinematicBlend(cinematicBlendSeconds));
+            }
             Vector2 from = transform.position;
             Vector2 destination = CalculateTargetPosition();
-            float blend = 1f - Mathf.Pow(remainingDistanceAfterOneSecond, Time.deltaTime);
+            float blend = cinematicReturning
+                ? CinematicBlend(cinematicBlendSeconds)
+                : 1f - Mathf.Pow(remainingDistanceAfterOneSecond, Time.deltaTime);
             SetCameraPosition(Vector2.LerpUnclamped(from, destination, blend));
+            if (cinematicReturning
+                && Mathf.Abs(viewCamera.orthographicSize - normalOrthographicSize) < 0.005f
+                && Vector2.Distance(transform.position, destination) < 0.02f)
+            {
+                viewCamera.orthographicSize = normalOrthographicSize;
+                cinematicReturning = false;
+            }
             ApplyShake();
         }
 
+        private void OnDisable()
+        {
+            cinematicActive = false;
+            cinematicReturning = false;
+            cinematicFocus = null;
+            if (viewCamera != null) viewCamera.orthographicSize = normalOrthographicSize;
+        }
+
+        public void BeginCinematic(Transform focus, float zoomMultiplier, float blendSeconds,
+            float focusScreenY = 0.5f, float focusScreenX = 0.5f)
+        {
+            cinematicFocus = focus;
+            cinematicOrthographicSize = normalOrthographicSize * Mathf.Clamp(zoomMultiplier, 0.1f, 1f);
+            cinematicBlendSeconds = Mathf.Max(0f, blendSeconds);
+            cinematicFocusScreenX = Mathf.Clamp01(focusScreenX);
+            cinematicFocusScreenY = Mathf.Clamp01(focusScreenY);
+            cinematicReturning = false;
+            cinematicActive = true;
+        }
+
+        public void EndCinematic(float blendSeconds)
+        {
+            cinematicActive = false;
+            cinematicFocus = null;
+            cinematicBlendSeconds = Mathf.Max(0f, blendSeconds);
+            cinematicReturning = blendSeconds > 0f;
+            if (cinematicReturning) return;
+
+            viewCamera.orthographicSize = normalOrthographicSize;
+            ResolveTarget();
+            if (target == null) return;
+            UpdateCurrentRoom();
+            SetCameraPosition(CalculateTargetPosition());
+        }
+
+        private static float CinematicBlend(float duration)
+        {
+            return duration <= 0f ? 1f : 1f - Mathf.Exp(-4.6f * Time.deltaTime / duration);
+        }
+
         public void ShakeDash() => Shake(dashShakeDuration, dashShakeMagnitude);
-        public void ShakeAbsorb() => Shake(absorbShakeDuration, absorbShakeMagnitude);
+        public void ShakeAbsorb()
+        {
+            UpdateCurrentRoom();
+            if (currentRoom == null)
+                Shake(followAbsorbShakeDuration, followAbsorbShakeMagnitude);
+            else
+                Shake(absorbShakeDuration, absorbShakeMagnitude);
+        }
         public void ShakeFireLaunch() => Shake(fireLaunchShakeDuration, fireLaunchShakeMagnitude);
 
         public void Shake(float duration, float magnitude)
@@ -187,6 +278,8 @@ namespace EmberPrototype
             dashShakeMagnitude = Mathf.Max(0f, dashShakeMagnitude);
             absorbShakeDuration = Mathf.Max(0f, absorbShakeDuration);
             absorbShakeMagnitude = Mathf.Max(0f, absorbShakeMagnitude);
+            followAbsorbShakeDuration = Mathf.Max(0f, followAbsorbShakeDuration);
+            followAbsorbShakeMagnitude = Mathf.Max(0f, followAbsorbShakeMagnitude);
             fireLaunchShakeDuration = Mathf.Max(0f, fireLaunchShakeDuration);
             fireLaunchShakeMagnitude = Mathf.Max(0f, fireLaunchShakeMagnitude);
         }

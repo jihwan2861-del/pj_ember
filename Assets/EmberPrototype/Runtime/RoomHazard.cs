@@ -4,24 +4,23 @@ namespace EmberPrototype
 {
     [AddComponentMenu("Ember Prototype/Death Hazard")]
     [DisallowMultipleComponent]
-    [RequireComponent(typeof(BoxCollider2D))]
     public sealed class RoomHazard : MonoBehaviour
     {
-        private BoxCollider2D hazardCollider;
+        private Collider2D hazardCollider;
 
         private void Awake()
         {
-            ConfigureCollider();
+            ConfigureCollider(true);
         }
 
         private void Reset()
         {
-            ConfigureCollider();
+            ConfigureCollider(true);
         }
 
         private void OnValidate()
         {
-            ConfigureCollider();
+            ConfigureCollider(false);
         }
 
         private void OnTriggerEnter2D(Collider2D other) => TryKill(other);
@@ -43,9 +42,10 @@ namespace EmberPrototype
             player.KillAndRespawn();
         }
 
-        private void ConfigureCollider()
+        private void ConfigureCollider(bool createIfMissing)
         {
-            if (hazardCollider == null) hazardCollider = GetComponent<BoxCollider2D>();
+            if (hazardCollider == null) hazardCollider = GetComponent<Collider2D>();
+            if (hazardCollider == null && createIfMissing) hazardCollider = gameObject.AddComponent<BoxCollider2D>();
             if (hazardCollider != null) hazardCollider.isTrigger = true;
         }
     }

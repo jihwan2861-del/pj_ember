@@ -1,0 +1,76 @@
+{
+  "capturedAt": "2026-10-05T12:05:29.4677682+09:00",
+  "beforeSceneSha256": "2A126F3A412EF82C5C4B3B5EEFF2ECB8DD0771655A03639B3AB37A6289C892DE",
+  "afterSceneSha256": "0019647EFA1F015738232A69497F67195C8D04D99D2D300A34963D0CDA8363EB",
+  "terrainObjectIds": [
+    "218775023",
+    "218775024",
+    "218775025",
+    "1924296175",
+    "1924296176",
+    "1924296177",
+    "1924296178",
+    "1924296179",
+    "1924296180",
+    "1924296181"
+  ],
+  "sceneExport": "Original native scene documents for Grid, Tilemap, renderer, collider and added Rigidbody/Composite; original cells, tile GUIDs and transforms preserved. Other gameplay objects excluded.",
+  "finalCheckedAt": "2026-10-05T12:06:05.2650378+09:00",
+  "files": [
+    {
+      "kind": "original-before",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\ValidationArtifacts\\MovementFeel\\TilemapSticking\\scene2-before.unity.txt",
+      "sha256": "2A126F3A412EF82C5C4B3B5EEFF2ECB8DD0771655A03639B3AB37A6289C892DE"
+    },
+    {
+      "kind": "original-after",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\Assets\\Scenes\\2.unity",
+      "sha256": "0019647EFA1F015738232A69497F67195C8D04D99D2D300A34963D0CDA8363EB"
+    },
+    {
+      "kind": "native-extracted-before",
+      "path": "C:\\Users\\admin\\AppData\\Local\\Temp\\EmberMovementQA-20261004\\Assets\\TileFixtures\\Scene2TerrainBefore.unity",
+      "sha256": "94560AE0062C3113CB1F829F16CEB42B63B04951A50D82805E2C6AB4917C2E0D"
+    },
+    {
+      "kind": "native-extracted-after",
+      "path": "C:\\Users\\admin\\AppData\\Local\\Temp\\EmberMovementQA-20261004\\Assets\\TileFixtures\\Scene2TerrainAfter.unity",
+      "sha256": "21F1872BF0ADD83C8ACD5459BE7497984E750AA50096E9E9E39576F9FA0B736A"
+    },
+    {
+      "kind": "rule-tile",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\Assets\\tile\\Mossy Tileset\\Autotile\\Mossy Terrain RuleTile.asset",
+      "sha256": "1E2ED0BBCB5D13C21942C1A36774F04C331F88D5FCC5D0ECF5E9598DBDB2C10A"
+    },
+    {
+      "kind": "rule-tile-meta",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\Assets\\tile\\Mossy Tileset\\Autotile\\Mossy Terrain RuleTile.asset.meta",
+      "sha256": "94C3AF1607DBF108E44431FE7930329FE08B49E4D3AC81EC265BF8D9A557311A"
+    },
+    {
+      "kind": "atlas",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\Assets\\tile\\Mossy Tileset\\Mossy - TileSet.png",
+      "sha256": "2C30B5FB82047AE0B602C1FB7A3C7AA62051E39477A9E4E8E3A138340F521348"
+    },
+    {
+      "kind": "atlas-meta",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\Assets\\tile\\Mossy Tileset\\Mossy - TileSet.png.meta",
+      "sha256": "BD293B1F856706F8508C971FDC6C0164F3AB26D9458272B9C085089B9C052E85"
+    },
+    {
+      "kind": "tilemap-fixture",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\Validation\\Movement\\Scene2TilemapTests.cs",
+      "sha256": "9F8B952E430D3154BCD61227CCBB1533AD7F1AB78022A6447A3579FB71C0442A"
+    },
+    {
+      "kind": "preserved-native-extracted-before",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\ValidationArtifacts\\MovementFeel\\TilemapSticking\\Scene2TerrainBefore.unity.txt",
+      "sha256": "94560AE0062C3113CB1F829F16CEB42B63B04951A50D82805E2C6AB4917C2E0D"
+    },
+    {
+      "kind": "preserved-native-extracted-after",
+      "path": "C:\\Users\\admin\\Desktop\\게임 그래픽 게임\\project Ember\\ValidationArtifacts\\MovementFeel\\TilemapSticking\\Scene2TerrainAfter.unity.txt",
+      "sha256": "21F1872BF0ADD83C8ACD5459BE7497984E750AA50096E9E9E39576F9FA0B736A"
+    }
+  ]
+}

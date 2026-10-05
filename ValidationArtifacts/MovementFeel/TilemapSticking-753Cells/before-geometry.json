@@ -1,0 +1,22 @@
+{
+    "cells": 753,
+    "tilemapShapes": 753,
+    "compositePaths": 0,
+    "compositePoints": 0,
+    "compositePhysicsShapes": 0,
+    "compositePathsOnOpen": 0,
+    "compositePathsAfterProcess": 0,
+    "missingComposite": true,
+    "missingAttachedBody": true,
+    "inspectorWarningCondition": true,
+    "tilemapScale": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 1.0
+    },
+    "gridPosition": {
+        "x": 0.03999999910593033,
+        "y": 0.0,
+        "z": 0.0
+    }
+}

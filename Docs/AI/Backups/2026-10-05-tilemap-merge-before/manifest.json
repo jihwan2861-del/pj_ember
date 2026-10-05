@@ -1,0 +1,10 @@
+{
+  "capturedAtUtc": "2026-10-05T03:02:35.667Z",
+  "source": "Assets/Scenes/2.unity",
+  "snapshot": "2.unity",
+  "exactRawBytes": true,
+  "sha256": "2a126f3a412ef82c5c4b3b5eeff2ecb8dd0771655a03639b3ab37a6289c892de",
+  "unityVersion": "6000.5.2f1",
+  "tileCells": 751,
+  "scope": "Latest scene before reapplying only Static Rigidbody2D and CompositeCollider2D to Tilemap."
+}

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="20" result="Failed(Child)" total="20" passed="0" failed="20" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.0308981">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="41" result="Failed" site="Child" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.030898" total="20" passed="0" failed="20" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1047" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberMovementQA-20261004/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="41" result="Failed" site="Child" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.024411" total="20" passed="0" failed="20" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="33768" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1049" name="EmberLevelWorkflow" fullname="EmberLevelWorkflow" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.023679" total="20" passed="0" failed="20" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1025" name="EditorWorkflowTests" fullname="EmberLevelWorkflow.EditorWorkflowTests" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.019290" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1030" name="BoxHazardsStillCreateOneTriggerColliderWhenMissing" fullname="EmberLevelWorkflow.EditorWorkflowTests.BoxHazardsStillCreateOneTriggerColliderWhenMissing" methodname="BoxHazardsStillCreateOneTriggerColliderWhenMissing" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="1842790655" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.008590" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1032" name="ConnectingCameraPreservesExistingTargetAndTransformAndSupportsUndo" fullname="EmberLevelWorkflow.EditorWorkflowTests.ConnectingCameraPreservesExistingTargetAndTransformAndSupportsUndo" methodname="ConnectingCameraPreservesExistingTargetAndTransformAndSupportsUndo" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="2014742993" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000222" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1029" name="FittingCameraBoundsUsesWorldViewportAndPreservesRoomCenter" fullname="EmberLevelWorkflow.EditorWorkflowTests.FittingCameraBoundsUsesWorldViewportAndPreservesRoomCenter" methodname="FittingCameraBoundsUsesWorldViewportAndPreservesRoomCenter" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="1161521812" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000094" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1031" name="FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone" fullname="EmberLevelWorkflow.EditorWorkflowTests.FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone" methodname="FittingPaintedTilemapsAccountsForGridScaleAndCanBeUndone" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="1360490451" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000079" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1027" name="PaintedTerrainAutomaticallyMergesAndSpikesUseOnlyTheirPaintedCells" fullname="EmberLevelWorkflow.EditorWorkflowTests.PaintedTerrainAutomaticallyMergesAndSpikesUseOnlyTheirPaintedCells" methodname="PaintedTerrainAutomaticallyMergesAndSpikesUseOnlyTheirPaintedCells" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="1134014611" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000077" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1028" name="RoomCreationCanBeUndoneAndRedoneAsOneAction" fullname="EmberLevelWorkflow.EditorWorkflowTests.RoomCreationCanBeUndoneAndRedoneAsOneAction" methodname="RoomCreationCanBeUndoneAndRedoneAsOneAction" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="151519536" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000071" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1026" name="RoomTemplateSeparatesTerrainSpikesAndDecorationAndPreservesTileScale" fullname="EmberLevelWorkflow.EditorWorkflowTests.RoomTemplateSeparatesTerrainSpikesAndDecorationAndPreservesTileScale" methodname="RoomTemplateSeparatesTerrainSpikesAndDecorationAndPreservesTileScale" classname="EmberLevelWorkflow.EditorWorkflowTests" runstate="Runnable" seed="1756885356" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000072" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.EditorWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\EditorWorkflowTests.cs:23 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1033" name="PathWorkflowTests" fullname="EmberLevelWorkflow.PathWorkflowTests" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" testcasecount="13" result="Failed" site="Child" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.002972" total="13" passed="0" failed="13" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1039" name="AutomaticStartUsesExistingActivateOnStartField" fullname="EmberLevelWorkflow.PathWorkflowTests.AutomaticStartUsesExistingActivateOnStartField" methodname="AutomaticStartUsesExistingActivateOnStartField" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1386727321" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000615" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1035" name="CircleHasExactWorldRadiusDirectionAndClosedStartWithNoWaypoints" fullname="EmberLevelWorkflow.PathWorkflowTests.CircleHasExactWorldRadiusDirectionAndClosedStartWithNoWaypoints" methodname="CircleHasExactWorldRadiusDirectionAndClosedStartWithNoWaypoints" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1123409800" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000122" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1046" name="CircleLoopHonorsEndWaitThenContinuesForwardWithoutTeleport" fullname="EmberLevelWorkflow.PathWorkflowTests.CircleLoopHonorsEndWaitThenContinuesForwardWithoutTeleport" methodname="CircleLoopHonorsEndWaitThenContinuesForwardWithoutTeleport" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="831480657" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000085" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1041" name="CircleLoopWrapsContinuouslyAndPreservesFixedStepOvershoot" fullname="EmberLevelWorkflow.PathWorkflowTests.CircleLoopWrapsContinuouslyAndPreservesFixedStepOvershoot" methodname="CircleLoopWrapsContinuouslyAndPreservesFixedStepOvershoot" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1240105459" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000077" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1036" name="ClosedSmoothCurveIncludesReturnSegmentAndMatchingSeamTangents" fullname="EmberLevelWorkflow.PathWorkflowTests.ClosedSmoothCurveIncludesReturnSegmentAndMatchingSeamTangents" methodname="ClosedSmoothCurveIncludesReturnSegmentAndMatchingSeamTangents" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="2131951687" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000075" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1038" name="DefaultOnceActivationArrivalAndResetRemainCompatible" fullname="EmberLevelWorkflow.PathWorkflowTests.DefaultOnceActivationArrivalAndResetRemainCompatible" methodname="DefaultOnceActivationArrivalAndResetRemainCompatible" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="217623895" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000069" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1043" name="EditorAddingAndRemovingChildWaypointsSupportsUndoAndRedo" fullname="EmberLevelWorkflow.PathWorkflowTests.EditorAddingAndRemovingChildWaypointsSupportsUndoAndRedo" methodname="EditorAddingAndRemovingChildWaypointsSupportsUndoAndRedo" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="503763736" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000070" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1044" name="GhostEditorCreationLeavesRealBlockPositionUntouched" fullname="EmberLevelWorkflow.PathWorkflowTests.GhostEditorCreationLeavesRealBlockPositionUntouched" methodname="GhostEditorCreationLeavesRealBlockPositionUntouched" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1719057264" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000074" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1034" name="LegacyLinearAndSmoothValuesAndOpenEndpointsArePreserved" fullname="EmberLevelWorkflow.PathWorkflowTests.LegacyLinearAndSmoothValuesAndOpenEndpointsArePreserved" methodname="LegacyLinearAndSmoothValuesAndOpenEndpointsArePreserved" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="577830481" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000070" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1037" name="MissingWaypointInvalidatesPathWithoutException" fullname="EmberLevelWorkflow.PathWorkflowTests.MissingWaypointInvalidatesPathWithoutException" methodname="MissingWaypointInvalidatesPathWithoutException" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1900658642" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000070" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1042" name="OpenLoopIsRejectedWithoutMovingOrWrapping" fullname="EmberLevelWorkflow.PathWorkflowTests.OpenLoopIsRejectedWithoutMovingOrWrapping" methodname="OpenLoopIsRejectedWithoutMovingOrWrapping" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="206487094" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000067" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1045" name="PingPongEndpointWaitRemainsStationaryForManyNativePhysicsSteps" fullname="EmberLevelWorkflow.PathWorkflowTests.PingPongEndpointWaitRemainsStationaryForManyNativePhysicsSteps" methodname="PingPongEndpointWaitRemainsStationaryForManyNativePhysicsSteps" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1581584604" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000072" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1040" name="PingPongWaitsAtEachEndpointThenReversesAndResetClearsWait" fullname="EmberLevelWorkflow.PathWorkflowTests.PingPongWaitsAtEachEndpointThenReversesAndResetClearsWait" methodname="PingPongWaitsAtEachEndpointThenReversesAndResetClearsWait" classname="EmberLevelWorkflow.PathWorkflowTests" runstate="Runnable" seed="1214433504" result="Failed" label="Error" start-time="2026-10-05 04:23:10Z" end-time="2026-10-05 04:23:10Z" duration="0.000070" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00008] in <5bc40c3d370d4c0ba31a7d683af28bc8>:0 
+  at EmberLevelWorkflow.PathWorkflowTests.SetUp () [0x0000b] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\PathWorkflowTests.cs:25 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+            </failure>
+            <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,9 @@
+{
+  "capturedAtUtc": "2026-10-04T12:48:50.8691363Z",
+  "source": "Assets/Scenes/2.unity",
+  "snapshot": "2.unity",
+  "exactRawBytes": true,
+  "sha256": "47345F898C22DED8B7B82672D885CC3DD2D8AFD50C88C00B162B4945991A2300",
+  "unityVersion": "6000.5.2f1",
+  "scope": "Before adding Static Rigidbody2D and CompositeCollider2D to Tilemap only."
+}

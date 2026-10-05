@@ -1,0 +1,30 @@
+[
+  {
+    "source": "Assets/Scenes/2.unity",
+    "snapshot": "2.unity",
+    "originalReadback": "reconstructed inverse of this turn patch",
+    "beforeSha256": "4a011ff817d0a0000c877ffc5e1fd8a3782fb599fc8f3c47ecc6f25f53d90d3f",
+    "afterSha256": "47345f898c22ded8b7b82672d885cc3dd2d8afd50c88c00b162b4945991a2300"
+  },
+  {
+    "source": "Assets/EmberPrototype/Runtime/PlayerAnimatorDriver.cs",
+    "snapshot": "PlayerAnimatorDriver.cs",
+    "originalReadback": "reconstructed inverse of this turn patch",
+    "beforeSha256": "9bc4182c69f4709e0ef61702b23b88ea220aa24ae499849cfa332b57e77e8ef4",
+    "afterSha256": "2589b6faaec99684118a0814eae5e00736bee12f387c136b0790bd21ac26c279"
+  },
+  {
+    "source": "Assets/EmberPrototype/Editor/PlayerJumpAnimationSetup.cs",
+    "snapshot": "PlayerJumpAnimationSetup.cs",
+    "originalReadback": "reconstructed inverse of this turn patch",
+    "beforeSha256": "df084d9b7a21e3dda97ec0f0f0e33bae85b3b914646b230e54db068fba17c1b5",
+    "afterSha256": "19146d1d81d511f03dc33413802ac4d71a417a2c96d5dd34f4be943b7c11713b"
+  },
+  {
+    "source": "Assets/player/new_Player/animaition/New_Player_Animator.controller",
+    "snapshot": "New_Player_Animator.controller",
+    "originalReadback": "reconstructed inverse of this turn patch",
+    "beforeSha256": "ad3a953023ebe3cafbefdb348a21497de13982bff80cedf40dea9510495deaa2",
+    "afterSha256": "c061fc24cdd33fcd30e23333ef570c9464c9765e7c3244e93bf7ca4aadd2a81e"
+  }
+]

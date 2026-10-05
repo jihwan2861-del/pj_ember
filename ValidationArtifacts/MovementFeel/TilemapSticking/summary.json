@@ -1,0 +1,144 @@
+{
+  "unityVersion": "6000.5.2f1",
+  "result": "Passed",
+  "total": 4,
+  "passed": 4,
+  "failed": 0,
+  "physicsStepSeconds": 0.02,
+  "testNames": [
+    "EmberMovementRegression.InputAndPhysicsTests.TilemapDashStopsAtActualRaisedWallAndRestoresBodyBeforeAfter",
+    "EmberMovementRegression.InputAndPhysicsTests.TilemapLandingThenWalkingOnActualFloorBeforeAfter",
+    "EmberMovementRegression.InputAndPhysicsTests.TilemapNativeSceneImportsOriginalCellsAndCompositeGeometry",
+    "EmberMovementRegression.InputAndPhysicsTests.TilemapWalkOnActualLongFlatFloorBeforeAfterAndExtrusionComparison"
+  ],
+  "beforeGeometry": {
+    "cells": 751,
+    "tilemapShapes": 751,
+    "compositePaths": 0,
+    "compositePoints": 0,
+    "compositePhysicsShapes": 0,
+    "compositePathsOnOpen": 0,
+    "compositePathsAfterProcess": 0,
+    "missingComposite": true,
+    "missingAttachedBody": true,
+    "inspectorWarningCondition": true,
+    "tilemapScale": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 1.0
+    },
+    "gridPosition": {
+      "x": 0.03999999910593033,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "afterGeometry": {
+    "cells": 751,
+    "tilemapShapes": 0,
+    "compositePaths": 5,
+    "compositePoints": 80,
+    "compositePhysicsShapes": 37,
+    "compositePathsOnOpen": 5,
+    "compositePathsAfterProcess": 5,
+    "missingComposite": false,
+    "missingAttachedBody": false,
+    "inspectorWarningCondition": false,
+    "tilemapScale": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 1.0
+    },
+    "gridPosition": {
+      "x": 0.03999999910593033,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "metrics": [
+    {
+      "case": "walk-before",
+      "distance": 1.017145037651062,
+      "stalledTicks": 83,
+      "horizontalContactTicks": 83,
+      "firstHorizontalContact": [
+        {
+          "tick": 17,
+          "x": -0.18285499513149261,
+          "y": -2.6991822719573975,
+          "vx": 0.0,
+          "vy": 0.0,
+          "horizontalContact": true,
+          "sideNormal": {
+            "x": -1.0,
+            "y": 0.0
+          },
+          "sidePoint": {
+            "x": 0.03135950118303299,
+            "y": -2.9800000190734863
+          }
+        }
+      ],
+      "endY": -2.6991822719573975,
+      "extrusion": 0.0
+    },
+    {
+      "case": "walk-after",
+      "distance": 6.260647773742676,
+      "stalledTicks": 0,
+      "horizontalContactTicks": 0,
+      "firstHorizontalContact": [],
+      "endY": -2.6992056369781494,
+      "extrusion": 0.0
+    },
+    {
+      "case": "walk-after-extrusion01",
+      "distance": 6.260647773742676,
+      "stalledTicks": 0,
+      "horizontalContactTicks": 0,
+      "firstHorizontalContact": [],
+      "endY": -2.6964032649993896,
+      "extrusion": 0.009999999776482582
+    },
+    {
+      "case": "landing-before",
+      "distance": 1.017145037651062,
+      "stalledTicks": 43,
+      "horizontalContactTicks": 43,
+      "firstHorizontalContact": [
+        {
+          "tick": 17,
+          "x": -0.18285499513149261,
+          "y": -2.7014081478118896,
+          "vx": 0.0,
+          "vy": 0.0,
+          "horizontalContact": true,
+          "sideNormal": {
+            "x": -1.0,
+            "y": 0.0
+          },
+          "sidePoint": {
+            "x": 0.03135950118303299,
+            "y": -2.9800000190734863
+          }
+        }
+      ],
+      "endY": -2.7014081478118896,
+      "extrusion": 0.0
+    },
+    {
+      "case": "landing-after",
+      "distance": 3.7336585521698,
+      "stalledTicks": 0,
+      "horizontalContactTicks": 0,
+      "firstHorizontalContact": [],
+      "endY": -2.701397657394409,
+      "extrusion": 0.0
+    }
+  ],
+  "csvRows": 420,
+  "runtimeSourceMismatches": [],
+  "forcedCompositeGenerateGeometry": false,
+  "cause": "Horizontal contact and stalled velocity reproduced at an internal tile seam on actual flat cell row -7; disappears after native Composite merge with identical cells and player code.",
+  "scope": "Four new native-terrain tests, separate from the previous 17 generic-floor regressions. Original active editor not driven; full route/render/player build not exercised."
+}

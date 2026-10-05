@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-04T21:31:22.1190628+09:00",
+  "status": "Passed isolated regression; original scene route and player build not run",
+  "unityVersion": "6000.5.2f1",
+  "testResult": "Passed",
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "runtimeSourceCount": 26,
+  "runtimeSourceMismatches": [],
+  "productionRuntimeAndEditorGeneratedProjectCompileExit": 0,
+  "unexpectedTestFailures": 0,
+  "firstAttempt": "Fixture input adapter error, preserved separately; no production behavior defect identified",
+  "cases": [
+    "EmberMovementRegression.InputAndPhysicsTests.AirJumpAwayFromGroundIsImmediate",
+    "EmberMovementRegression.InputAndPhysicsTests.AnchorLaunchDoesNotReplayJumpPressedToLaunch",
+    "EmberMovementRegression.InputAndPhysicsTests.DashChordBlockedImmediatelyDoesNotReplayItsZAsAnAirJump",
+    "EmberMovementRegression.InputAndPhysicsTests.DashKeepsFullBodyColliderWhenStartSpaceIsBlocked",
+    "EmberMovementRegression.InputAndPhysicsTests.DashPreservesRequestedDirectionNearObstacle(1.0f,0.0f)",
+    "EmberMovementRegression.InputAndPhysicsTests.DashPreservesRequestedDirectionNearObstacle(1.0f,1.0f)",
+    "EmberMovementRegression.InputAndPhysicsTests.DashRestoresLastSafeFullBodyPositionWhenEndingInSmallGap",
+    "EmberMovementRegression.InputAndPhysicsTests.DashSignalsResetWhenRecordedPositionsBecomeBlocked",
+    "EmberMovementRegression.InputAndPhysicsTests.HoldingForwardRetainsMoreFireLaunchSpeedThanReleasingDirection",
+    "EmberMovementRegression.InputAndPhysicsTests.IgnitionAndDashChordStartsDashInOneInputFrame",
+    "EmberMovementRegression.InputAndPhysicsTests.JumpNearLandingWaitsForGroundInsteadOfConsumingAirJump",
+    "EmberMovementRegression.InputAndPhysicsTests.JumpPressedNearDashEndSurvivesIntoFreeState",
+    "EmberMovementRegression.InputAndPhysicsTests.ReleasedJumpIsSampledDuringRingAndRemainsReleasedAfterExpiry",
+    "EmberMovementRegression.InputAndPhysicsTests.ReverseInputBrakesDuringFireLaunchControlLock",
+    "EmberMovementRegression.InputAndPhysicsTests.ShotReleasePreservesHeldWalkingDirectionOnFirstFreePhysicsTick",
+    "EmberMovementRegression.InputAndPhysicsTests.WalkingDiagonallyPreservesHorizontalSpeed(UpArrow)",
+    "EmberMovementRegression.InputAndPhysicsTests.WalkingDiagonallyPreservesHorizontalSpeed(DownArrow)"
+  ],
+  "limitations": [
+    "Native Physics2D and KeyboardState tested through isolated EditMode fixtures; original scene2 route/visuals not exercised.",
+    "Production standalone player build and human feel/performance not tested.",
+    "Input System 1.19 EditMode player-input option is reflection-set only within test scope."
+  ]
+}

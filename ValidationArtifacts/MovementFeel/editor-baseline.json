@@ -1,0 +1,20 @@
+{
+  "capturedAt": "2026-10-04T21:21:55.5492930+09:00",
+  "editorVersion": "6000.5.2f1",
+  "logPaths": [
+    {
+      "path": "C:/Users/admin/AppData/Local/Unity/Editor/Editor.log",
+      "lastWriteTime": "2026-10-04T18:11:27.9673161+09:00",
+      "compileErrorCount": 0,
+      "recentCompileMessages": []
+    },
+    {
+      "path": "C:/Users/admin/Desktop/게임 그래픽 게임/project Ember/Logs/Editor.log",
+      "lastWriteTime": "2026-10-04T21:11:37.7007587+09:00",
+      "compileErrorCount": 0,
+      "recentCompileMessages": [
+        "AssetDatabase: script compilation time: 0.731187s"
+      ]
+    }
+  ]
+}

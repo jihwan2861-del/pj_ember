@@ -1,0 +1,3035 @@
+{
+  "url": "http://127.0.0.1:8791/?qa=1",
+  "report": [
+    {
+      "index": 0,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 0,
+          "levelId": "01-footsteps",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 0.03333333333333333,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 0,
+          "levelId": "01-footsteps",
+          "mode": "won",
+          "deaths": 0,
+          "time": 4.400000000000008,
+          "player": {
+            "x": 877.694444444449,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 220,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": true
+          },
+          "torches": [],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 1,
+          "levelId": "02-first-flame",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 4.433333333333343,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "first",
+              "x": 485,
+              "y": 325,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "step",
+          "levelIndex": 1,
+          "levelId": "02-first-flame",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 5.808333333333412,
+          "player": {
+            "x": 331.1979166666666,
+            "y": 402,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": true
+          },
+          "torches": [
+            {
+              "id": "first",
+              "x": 485,
+              "y": 325,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "ignite-anchor first",
+          "levelIndex": 1,
+          "levelId": "02-first-flame",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 6.291666666666769,
+          "player": {
+            "x": 485,
+            "y": 325,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": "first",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "first",
+              "x": 485,
+              "y": 325,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 1,
+          "levelId": "02-first-flame",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 6.308333333333437,
+          "player": {
+            "x": 508.2166726489583,
+            "y": 301.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "first",
+              "x": 485,
+              "y": 325,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 1,
+          "levelId": "02-first-flame",
+          "mode": "won",
+          "deaths": 0,
+          "time": 7.741666666666841,
+          "player": {
+            "x": 877.295679775174,
+            "y": 267,
+            "w": 18,
+            "h": 26,
+            "vx": 220,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "first",
+              "x": 485,
+              "y": 325,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 2,
+          "levelId": "03-light-in-flight",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 7.775000000000176,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "air-low",
+              "x": 390,
+              "y": 290,
+              "lit": false
+            },
+            {
+              "id": "air-high",
+              "x": 610,
+              "y": 190,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "ignite-anchor air-low",
+          "levelIndex": 2,
+          "levelId": "03-light-in-flight",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 9.050000000000127,
+          "player": {
+            "x": 390,
+            "y": 290,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": "air-low",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "air-low",
+              "x": 390,
+              "y": 290,
+              "lit": true
+            },
+            {
+              "id": "air-high",
+              "x": 610,
+              "y": 190,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 2,
+          "levelId": "03-light-in-flight",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 9.066666666666793,
+          "player": {
+            "x": 413.2166726489583,
+            "y": 266.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "air-low",
+              "x": 390,
+              "y": 290,
+              "lit": true
+            },
+            {
+              "id": "air-high",
+              "x": 610,
+              "y": 190,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "ignite-anchor air-high",
+          "levelIndex": 2,
+          "levelId": "03-light-in-flight",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 9.400000000000107,
+          "player": {
+            "x": 610,
+            "y": 190,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": "air-high",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "air-low",
+              "x": 390,
+              "y": 290,
+              "lit": true
+            },
+            {
+              "id": "air-high",
+              "x": 610,
+              "y": 190,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 2,
+          "levelId": "03-light-in-flight",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 9.416666666666773,
+          "player": {
+            "x": 642.8333333333334,
+            "y": 190.06944444444446,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 8.333333333333334,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "air-low",
+              "x": 390,
+              "y": 290,
+              "lit": true
+            },
+            {
+              "id": "air-high",
+              "x": 610,
+              "y": 190,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 2,
+          "levelId": "03-light-in-flight",
+          "mode": "won",
+          "deaths": 0,
+          "time": 9.93333333333341,
+          "player": {
+            "x": 876.1701388888899,
+            "y": 247,
+            "w": 18,
+            "h": 26,
+            "vx": 220,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "air-low",
+              "x": 390,
+              "y": 290,
+              "lit": true
+            },
+            {
+              "id": "air-high",
+              "x": 610,
+              "y": 190,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 3,
+          "levelId": "04-read-the-route",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 9.966666666666741,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "choice-back",
+              "x": 248,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "choice-front",
+              "x": 445,
+              "y": 323,
+              "lit": true
+            },
+            {
+              "id": "choice-exit",
+              "x": 626,
+              "y": 200,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor choice-back",
+          "levelIndex": 3,
+          "levelId": "04-read-the-route",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 10.858333333333357,
+          "player": {
+            "x": 248,
+            "y": 285,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "choice-back",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "choice-back",
+              "x": 248,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "choice-front",
+              "x": 445,
+              "y": 323,
+              "lit": true
+            },
+            {
+              "id": "choice-exit",
+              "x": 626,
+              "y": 200,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 3,
+          "levelId": "04-read-the-route",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 10.875000000000023,
+          "player": {
+            "x": 271.2166726489583,
+            "y": 261.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "choice-back",
+              "x": 248,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "choice-front",
+              "x": 445,
+              "y": 323,
+              "lit": true
+            },
+            {
+              "id": "choice-exit",
+              "x": 626,
+              "y": 200,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor choice-exit",
+          "levelIndex": 3,
+          "levelId": "04-read-the-route",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 11.424999999999992,
+          "player": {
+            "x": 626,
+            "y": 200,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "choice-exit",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "choice-back",
+              "x": 248,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "choice-front",
+              "x": 445,
+              "y": 323,
+              "lit": true
+            },
+            {
+              "id": "choice-exit",
+              "x": 626,
+              "y": 200,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 3,
+          "levelId": "04-read-the-route",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 11.441666666666658,
+          "player": {
+            "x": 658.8333333333334,
+            "y": 200.06944444444446,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 8.333333333333334,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "choice-back",
+              "x": 248,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "choice-front",
+              "x": 445,
+              "y": 323,
+              "lit": true
+            },
+            {
+              "id": "choice-exit",
+              "x": 626,
+              "y": 200,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 3,
+          "levelId": "04-read-the-route",
+          "mode": "won",
+          "deaths": 0,
+          "time": 11.924999999999963,
+          "player": {
+            "x": 877.3055555555566,
+            "y": 237,
+            "w": 18,
+            "h": 26,
+            "vx": 220,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "choice-back",
+              "x": 248,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "choice-front",
+              "x": 445,
+              "y": 323,
+              "lit": true
+            },
+            {
+              "id": "choice-exit",
+              "x": 626,
+              "y": 200,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 4,
+          "levelId": "05-the-sealed-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 11.958333333333295,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "seal-left",
+              "x": 305,
+              "y": 330,
+              "lit": false
+            },
+            {
+              "id": "seal-right",
+              "x": 650,
+              "y": 235,
+              "lit": false
+            }
+          ],
+          "doorOpen": false,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "ignite-anchor seal-left",
+          "levelIndex": 4,
+          "levelId": "05-the-sealed-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 12.999999999999902,
+          "player": {
+            "x": 305,
+            "y": 330,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": "seal-left",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "seal-left",
+              "x": 305,
+              "y": 330,
+              "lit": true
+            },
+            {
+              "id": "seal-right",
+              "x": 650,
+              "y": 235,
+              "lit": false
+            }
+          ],
+          "doorOpen": false,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 4,
+          "levelId": "05-the-sealed-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 13.016666666666568,
+          "player": {
+            "x": 328.2166726489583,
+            "y": 306.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "seal-left",
+              "x": 305,
+              "y": 330,
+              "lit": true
+            },
+            {
+              "id": "seal-right",
+              "x": 650,
+              "y": 235,
+              "lit": false
+            }
+          ],
+          "doorOpen": false,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "ignite-anchor seal-right",
+          "levelIndex": 4,
+          "levelId": "05-the-sealed-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 13.966666666666514,
+          "player": {
+            "x": 650,
+            "y": 235,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": "seal-right",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "seal-left",
+              "x": 305,
+              "y": 330,
+              "lit": true
+            },
+            {
+              "id": "seal-right",
+              "x": 650,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 4,
+          "levelId": "05-the-sealed-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 13.98333333333318,
+          "player": {
+            "x": 682.8333333333334,
+            "y": 235.06944444444446,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 8.333333333333334,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "seal-left",
+              "x": 305,
+              "y": 330,
+              "lit": true
+            },
+            {
+              "id": "seal-right",
+              "x": 650,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 4,
+          "levelId": "05-the-sealed-hall",
+          "mode": "won",
+          "deaths": 0,
+          "time": 14.924999999999793,
+          "player": {
+            "x": 931.3368055555554,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": -220,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.42,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": -1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "seal-left",
+              "x": 305,
+              "y": 330,
+              "lit": true
+            },
+            {
+              "id": "seal-right",
+              "x": 650,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 5,
+          "levelId": "06-turn-in-midair",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 14.958333333333124,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "turn-start",
+              "x": 310,
+              "y": 360,
+              "lit": true
+            },
+            {
+              "id": "turn-end",
+              "x": 530,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor turn-start",
+          "levelIndex": 5,
+          "levelId": "06-turn-in-midair",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 15.816666666666409,
+          "player": {
+            "x": 310,
+            "y": 360,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "turn-start",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "turn-start",
+              "x": 310,
+              "y": 360,
+              "lit": true
+            },
+            {
+              "id": "turn-end",
+              "x": 530,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 5,
+          "levelId": "06-turn-in-midair",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 15.833333333333075,
+          "player": {
+            "x": 310,
+            "y": 327.2361111111111,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": -571.6666666666666,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "turn-start",
+              "x": 310,
+              "y": 360,
+              "lit": true
+            },
+            {
+              "id": "turn-end",
+              "x": 530,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "dash done",
+          "levelIndex": 5,
+          "levelId": "06-turn-in-midair",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 16.183333333333056,
+          "player": {
+            "x": 418.3333333333337,
+            "y": 243.23611111111111,
+            "w": 18,
+            "h": 26,
+            "vx": 292.5,
+            "vy": 0,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": false,
+            "ringTimer": 0.4116666666666666,
+            "dashTimer": -0.0066666666666666315,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "turn-start",
+              "x": 310,
+              "y": 360,
+              "lit": true
+            },
+            {
+              "id": "turn-end",
+              "x": 530,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor turn-end",
+          "levelIndex": 5,
+          "levelId": "06-turn-in-midair",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 16.316666666666382,
+          "player": {
+            "x": 530,
+            "y": 235,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.4116666666666666,
+            "dashTimer": -0.0066666666666666315,
+            "anchorId": "turn-end",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "turn-start",
+              "x": 310,
+              "y": 360,
+              "lit": true
+            },
+            {
+              "id": "turn-end",
+              "x": 530,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 5,
+          "levelId": "06-turn-in-midair",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 16.316666666666382,
+          "player": {
+            "x": 530,
+            "y": 235,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0.4116666666666666,
+            "dashTimer": -0.0066666666666666315,
+            "anchorId": "turn-end",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "turn-start",
+              "x": 310,
+              "y": 360,
+              "lit": true
+            },
+            {
+              "id": "turn-end",
+              "x": 530,
+              "y": 235,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 17.583333333332977,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor relay-one",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.216666666666274,
+          "player": {
+            "x": 300,
+            "y": 350,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "relay-one",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.23333333333294,
+          "player": {
+            "x": 323.2166726489583,
+            "y": 326.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor relay-two",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.49166666666626,
+          "player": {
+            "x": 550,
+            "y": 285,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "relay-two",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.508333333332924,
+          "player": {
+            "x": 573.2166726489584,
+            "y": 261.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor relay-three",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.708333333332913,
+          "player": {
+            "x": 750,
+            "y": 220,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "relay-three",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.72499999999958,
+          "player": {
+            "x": 782.8333333333334,
+            "y": 220.06944444444446,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 8.333333333333334,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 6,
+          "levelId": "07-flame-relay",
+          "mode": "won",
+          "deaths": 0,
+          "time": 18.891666666666236,
+          "player": {
+            "x": 879.5000000000008,
+            "y": 239.6875,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 216.6666666666666,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "relay-one",
+              "x": 300,
+              "y": 350,
+              "lit": true
+            },
+            {
+              "id": "relay-two",
+              "x": 550,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "relay-three",
+              "x": 750,
+              "y": 220,
+              "lit": true
+            },
+            {
+              "id": "relay-distant",
+              "x": 770,
+              "y": 115,
+              "lit": false
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": null,
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "trace": [
+        {
+          "name": "start",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 18.924999999999567,
+          "player": {
+            "x": 72,
+            "y": 467,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "free",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "grace",
+            "timer": 2.066666666666667,
+            "x": 70,
+            "y": 145,
+            "vx": 0,
+            "vy": 0,
+            "aimX": 72,
+            "aimY": 467,
+            "anchorTarget": null,
+            "locked": false,
+            "cycle": 0
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor chase-one",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 19.183333333332886,
+          "player": {
+            "x": 280,
+            "y": 365,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "chase-one",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "grace",
+            "timer": 1.8083333333333345,
+            "x": 70,
+            "y": 145,
+            "vx": 0,
+            "vy": 0,
+            "aimX": 72,
+            "aimY": 467,
+            "anchorTarget": null,
+            "locked": false,
+            "cycle": 0
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "chase warning",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 21.93333333333273,
+          "player": {
+            "x": 280,
+            "y": 365,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": true,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "chase-one",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "warn",
+            "timer": 0.4166666666666695,
+            "x": 875,
+            "y": 245,
+            "vx": 0,
+            "vy": 0,
+            "aimX": 280,
+            "aimY": 365,
+            "anchorTarget": "chase-one",
+            "locked": false,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 21.949999999999395,
+          "player": {
+            "x": 303.2166726489583,
+            "y": 341.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "warn",
+            "timer": 0.4000000000000028,
+            "x": 875,
+            "y": 245,
+            "vx": 0,
+            "vy": 0,
+            "aimX": 303.2166726489583,
+            "aimY": 341.85277179548615,
+            "anchorTarget": null,
+            "locked": false,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor chase-two",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 22.208333333332714,
+          "player": {
+            "x": 530,
+            "y": 285,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "chase-two",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "warn",
+            "timer": 0.14166666666666902,
+            "x": 875,
+            "y": 245,
+            "vx": 0,
+            "vy": 0,
+            "aimX": 441.43944284157766,
+            "aimY": 307.2014254972776,
+            "anchorTarget": null,
+            "locked": true,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 22.22499999999938,
+          "player": {
+            "x": 553.2166726489584,
+            "y": 261.85277179548615,
+            "w": 18,
+            "h": 26,
+            "vx": 410.1219330881975,
+            "vy": -401.7885997548642,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "warn",
+            "timer": 0.12500000000000236,
+            "x": 875,
+            "y": 245,
+            "vx": 0,
+            "vy": 0,
+            "aimX": 441.43944284157766,
+            "aimY": 307.2014254972776,
+            "anchorTarget": null,
+            "locked": true,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "anchor chase-three",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 22.4583333333327,
+          "player": {
+            "x": 760,
+            "y": 220,
+            "w": 18,
+            "h": 26,
+            "vx": 0,
+            "vy": 0,
+            "state": "anchor",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": "chase-three",
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "attack",
+            "timer": 0.7000000000000004,
+            "x": 766.114864448245,
+            "y": 260.6213717667788,
+            "vx": -1088.8513555175514,
+            "vy": 156.21371766778816,
+            "aimX": 441.43944284157766,
+            "aimY": 307.2014254972776,
+            "anchorTarget": null,
+            "locked": true,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "launch",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "playing",
+          "deaths": 0,
+          "time": 22.474999999999365,
+          "player": {
+            "x": 792.8333333333334,
+            "y": 220.06944444444446,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 8.333333333333334,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "attack",
+            "timer": 0.6833333333333338,
+            "x": 747.9673418562859,
+            "y": 263.2249337279086,
+            "vx": -1088.8513555175514,
+            "vy": 156.21371766778816,
+            "aimX": 441.43944284157766,
+            "aimY": 307.2014254972776,
+            "anchorTarget": null,
+            "locked": true,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        },
+        {
+          "name": "end",
+          "levelIndex": 7,
+          "levelId": "08-the-last-hall",
+          "mode": "finished",
+          "deaths": 0,
+          "time": 22.624999999999357,
+          "player": {
+            "x": 879.833333333334,
+            "y": 236.16319444444446,
+            "w": 18,
+            "h": 26,
+            "vx": 580,
+            "vy": 195.8333333333333,
+            "state": "free",
+            "grounded": false,
+            "airJump": 1,
+            "ringReady": true,
+            "ringTimer": 0,
+            "dashTimer": 0,
+            "anchorId": null,
+            "targetId": null,
+            "facing": 1,
+            "jumping": false
+          },
+          "torches": [
+            {
+              "id": "chase-one",
+              "x": 280,
+              "y": 365,
+              "lit": true
+            },
+            {
+              "id": "chase-two",
+              "x": 530,
+              "y": 285,
+              "lit": true
+            },
+            {
+              "id": "chase-three",
+              "x": 760,
+              "y": 220,
+              "lit": true
+            }
+          ],
+          "doorOpen": true,
+          "shots": [],
+          "enemy": {
+            "phase": "attack",
+            "timer": 0.5333333333333343,
+            "x": 584.6396385286534,
+            "y": 286.6569913780768,
+            "vx": -1088.8513555175514,
+            "vy": 156.21371766778816,
+            "aimX": 441.43944284157766,
+            "aimY": 307.2014254972776,
+            "anchorTarget": null,
+            "locked": true,
+            "cycle": 1
+          },
+          "assetsReady": true,
+          "physics": {
+            "move": 220,
+            "jump": 420,
+            "launch": 580,
+            "gravity": 1000,
+            "fall": 1250,
+            "ignite": 125,
+            "absorb": 250,
+            "travel": 950,
+            "dash": 650,
+            "dashTime": 0.16,
+            "ringTime": 0.42
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostics": {
+    "pageErrors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "failedRequests": [],
+    "badResponses": []
+  }
+}

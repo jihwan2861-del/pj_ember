@@ -4887,9 +4887,9 @@ MonoBehaviour:
     rid: -2
   m_SelectionSources:
     rid: 3463479657138225224
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 0.9686275, g: 0.28235295, b: 0.1254902, a: 1}
-  m_Intensity: 1.67
+  m_FalloffIntensity: 0.431
+  m_Color: {r: 1, g: 0.45096534, b: 0.3254717, a: 1}
+  m_Intensity: 0.93
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -4912,8 +4912,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.4
-  m_PointLightOuterRadius: 3.5
+  m_PointLightInnerRadius: 0.03
+  m_PointLightOuterRadius: 1.23
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -9793,6 +9793,11 @@ GameObject:
   - component: {fileID: 6197618002887022890}
   - component: {fileID: 5697889789346603068}
   - component: {fileID: 4432618880527208939}
+  - component: {fileID: 7411946141518960640}
+  - component: {fileID: 8979008007260835840}
+  - component: {fileID: 7574729350863962112}
+  - component: {fileID: 7711630591816131584}
+  - component: {fileID: 2849167053097486211}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -9873,9 +9878,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6614476561280619539, guid: a7dacda3c03ea134aa7701c919b3913c, type: 3}
+  m_Sprite: {fileID: 5365704138244622620, guid: 3e40d48da6841f344b32e6ca3ad40168, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9901,7 +9906,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -9909,7 +9914,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -9937,9 +9942,10 @@ MonoBehaviour:
   airDeceleration: 14
   turnAcceleration: 95
   maxFallSpeed: 22
-  apexGravityMultiplier: 0.5
+  riseGravityMultiplier: 1.4
+  apexGravityMultiplier: 0.85
   fallGravityMultiplier: 1.3
-  apexVelocityThreshold: 2.2
+  apexVelocityThreshold: 0.5
   cornerCorrectionDistance: 0.24
   cornerCorrectionStep: 0.04
   wallSpeedRetentionTime: 0.06
@@ -9950,17 +9956,22 @@ MonoBehaviour:
   absorbTargetLineColor: {r: 1, g: 0.51588315, b: 0.1607843, a: 0.9}
   absorbTargetLineMaterial: {fileID: 0}
   absorbTargetLineSortingOrderOffset: 10
+  absorbTargetLineSegments: 14
+  absorbTargetLineWobbleAmount: 0.035
+  absorbTargetLineWobbleSpeed: 2.8
+  absorbTargetLineTextureScrollSpeed: 0.6
+  absorbTargetLineGlowWidthMultiplier: 3.5
+  showAbsorbTargetGlow: 1
+  absorbTargetGlowColor: {r: 1, g: 0.75, b: 0.3, a: 1}
+  absorbTargetGlowIntensity: 1.1
+  absorbTargetGlowPulseAmount: 0.3
+  absorbTargetGlowPulseSpeed: 2.5
+  absorbTargetGlowRadius: 1.4
   ignitionBurstRadius: 2
   ignitionBurstChargeTime: 0.3
   ignitionBurstVisualTime: 0.18
-  burstDashSpeed: 16
-  burstDashDuration: 0.15
-  burstDashEndSpeedMultiplier: 0.55
-  burstDashCollider: {fileID: 8697180587410311270}
-  burstDashObstacleAssistDistance: 0.45
-  burstDashObstacleAssistAngle: 22
-  burstDashObstacleAssistSteps: 3
   fireTravelSpeed: 19.5
+  fireTravelAccelerationTime: 0.07
   fireTravelRange: 4
   fireTravelObstacleMask:
     serializedVersion: 2
@@ -9968,13 +9979,9 @@ MonoBehaviour:
   fireTravelCollisionScale: 0.75
   fireTravelCornerAssistDistance: 1
   fireTravelCornerAssistStep: 0.25
-  fireTravelBounceSpeed: 15
-  fireTravelGroundBounceMultiplier: 1.2
-  fireTravelWallUpwardBias: 0.25
-  fireTravelBounceAfterimageDuration: 0.16
   fireNetworkStepRange: 1.65
   fireNetworkDirectionDot: 0.45
-  launchSpeed: 12
+  launchSpeed: 10
   launchAfterimageDuration: 0.22
   fireLaunchCornerAssistDistance: 0.24
 --- !u!114 &6458123942145367001
@@ -10038,17 +10045,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0021874905, y: 0.0061742067}
+  m_Offset: {x: 0.011301279, y: 0.0059866905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.75, y: 0.75}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.55700827, y: 0.79304004}
+  m_Size: {x: 0.4791007, y: 0.6546202}
   m_EdgeRadius: 0
 --- !u!95 &5697889789346603068
 Animator:
@@ -10060,7 +10067,7 @@ Animator:
   m_GameObject: {fileID: 4416304958265082381}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 356eafd6f4d2fae4db1e790aa3b3e524, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5eae8499f1f97c44ead9ee19ddde8dfe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10091,6 +10098,87 @@ MonoBehaviour:
   poolSize: 24
   sortingOrderOffset: -1
   minimumSortingOrder: 1
+--- !u!114 &7411946141518960640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416304958265082381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703fdb81b381467388f1484e72d551e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.PlayerAbilityUnlocks
+  fireAbsorbUnlocked: 1
+  ignitionRingUnlocked: 1
+  burstDashUnlocked: 1
+  flameShotUnlocked: 1
+--- !u!114 &8979008007260835840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416304958265082381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fed104c93146d397a3b81338668d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.BurstDashAbility
+  maximumSpeed: 16
+  accelerationTime: 0.05
+  duration: 0.15
+  endSpeedMultiplier: 0.55
+  upwardExitSpeedMultiplier: 0.22
+  dashCollider: {fileID: 8697180587410311270}
+  obstacleAssistDistance: 0.45
+  obstacleAssistAngle: 22
+  obstacleAssistSteps: 3
+--- !u!114 &7574729350863962112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416304958265082381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb2d3a0a54a4f448441e9d82dd81b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.FlameShotAbility
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 16
+  projectileRange: 8
+  projectileRadius: 0.14
+  aimTimeScale: 0.3
+  aimAssistAngle: 25
+--- !u!114 &7711630591816131584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416304958265082381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4116ddce114f5485113e17b40f6f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.PlayerAbilityInputRouter
+--- !u!114 &2849167053097486211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416304958265082381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a28e72172e8a4c1bb4035018497c56cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.PlayerAnimatorDriver
+  runSpeed: 5
+  speedDampTime: 0.08
 --- !u!1 &4638825169102235601
 GameObject:
   m_ObjectHideFlags: 0
@@ -19858,7 +19946,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.92045, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3897777720256971112}
@@ -19884,7 +19972,7 @@ MonoBehaviour:
     rid: 3463479657138225224
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.9686275, g: 0.28235295, b: 0.1254902, a: 1}
-  m_Intensity: 1.67
+  m_Intensity: 1.3
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -19908,7 +19996,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.4
-  m_PointLightOuterRadius: 3.5
+  m_PointLightOuterRadius: 1.3
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.090654">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="50" result="Failed" site="Child" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.090654" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1057" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberMovementQA-20261004/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="50" result="Failed" site="Child" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.085851" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="39136" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1058" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="29" result="Failed" site="Child" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.085310" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="InputAndPhysicsTests" fullname="EmberMovementRegression.InputAndPhysicsTests" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="29" result="Failed" site="Child" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.084702" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1026" name="IdlePlayerRidesCircleThroughReversalsAndWrap" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesCircleThroughReversalsAndWrap" methodname="IdlePlayerRidesCircleThroughReversalsAndWrap" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="824565033" result="Failed" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.063491" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[  tick=17
+  Expected: 0.0f +/- 0.0799999982f
+  But was:  0.0831867456f
+]]></message>
+              <stack-trace><![CDATA[at EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesCircleThroughReversalsAndWrap () [0x0004f] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\MovingPlatformRiderTests.cs:36
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1025" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.012126" total="4" passed="1" failed="3" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1021" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(1.0f,0.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(1.0f,0.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1427108199" result="Failed" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.003102" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0.0f +/- 0.0799999982f
+  But was:  -4.70676184f
+]]></message>
+                <stack-trace><![CDATA[at EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded (System.Single x, System.Single y) [0x00061] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\MovingPlatformRiderTests.cs:20
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1022" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(-1.0f,0.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(-1.0f,0.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="2091063038" result="Failed" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.002068" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0.0f +/- 0.0799999982f
+  But was:  4.70676184f
+]]></message>
+                <stack-trace><![CDATA[at EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded (System.Single x, System.Single y) [0x00061] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\MovingPlatformRiderTests.cs:20
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1023" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,1.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,1.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1805856133" result="Failed" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.002148" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded (System.Single x, System.Single y) [0x000b2] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\MovingPlatformRiderTests.cs:22
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1024" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,-1.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,-1.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="870464743" result="Passed" start-time="2026-10-05 06:54:53Z" end-time="2026-10-05 06:54:53Z" duration="0.003239" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

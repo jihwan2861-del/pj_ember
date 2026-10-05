@@ -13,6 +13,10 @@ namespace EmberPrototype
         [SerializeField, Min(0f)] private float spreadDelay = 0.45f;
         [SerializeField] private bool startsBurning;
 
+        [Header("Absorb Entry Point")]
+        [Tooltip("Optional child transform where the player enters this fire. Uses this object's center when empty.")]
+        [SerializeField] private Transform absorbPoint;
+
         [Header("Appearance")]
         [Tooltip("Optional. Uses a SpriteRenderer on this object when empty.")]
         [SerializeField] private SpriteRenderer visual;
@@ -34,7 +38,9 @@ namespace EmberPrototype
         private Coroutine spreadRoutine;
 
         public bool IsBurning { get; private set; }
-        public Vector2 AnchorPosition => transform.position;
+        public Vector2 AnchorPosition => absorbPoint != null
+            ? (Vector2)absorbPoint.position
+            : (Vector2)transform.position;
         public event Action<FlammableTile> FireStateChanged;
 
         private void Awake()

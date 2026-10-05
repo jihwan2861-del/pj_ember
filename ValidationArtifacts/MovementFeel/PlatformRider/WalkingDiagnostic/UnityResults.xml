@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 06:59:19Z" end-time="2026-10-05 06:59:19Z" duration="0.0845794">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="50" result="Failed" site="Child" start-time="2026-10-05 06:59:19Z" end-time="2026-10-05 06:59:19Z" duration="0.084579" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1057" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberMovementQA-20261004/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="50" result="Failed" site="Child" start-time="2026-10-05 06:59:19Z" end-time="2026-10-05 06:59:19Z" duration="0.079600" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="28936" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1058" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="29" result="Failed" site="Child" start-time="2026-10-05 06:59:19Z" end-time="2026-10-05 06:59:19Z" duration="0.078905" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="InputAndPhysicsTests" fullname="EmberMovementRegression.InputAndPhysicsTests" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="29" result="Failed" site="Child" start-time="2026-10-05 06:59:19Z" end-time="2026-10-05 06:59:19Z" duration="0.077963" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1028" name="WalkingOnPlatformUsesRelativeWalkingSpeed" fullname="EmberMovementRegression.InputAndPhysicsTests.WalkingOnPlatformUsesRelativeWalkingSpeed" methodname="WalkingOnPlatformUsesRelativeWalkingSpeed" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="861982646" result="Failed" start-time="2026-10-05 06:59:19Z" end-time="2026-10-05 06:59:19Z" duration="0.068494" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[  Expected: -3.29999995f +/- 0.0500000007f
+  But was:  -1.15873706f
+]]></message>
+              <stack-trace><![CDATA[at EmberMovementRegression.InputAndPhysicsTests.WalkingOnPlatformUsesRelativeWalkingSpeed () [0x0015c] in C:\Users\admin\AppData\Local\Temp\EmberMovementQA-20261004\Assets\Tests\MovingPlatformRiderTests.cs:75
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[Rider walk tick=0 player=(0.84, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=1 player=(-0.32, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=2 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=3 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=4 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=5 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=6 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=7 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=8 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=9 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=10 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Rider walk tick=11 player=(-1.16, 0.00) platform=(0.00, 0.00) step=(2.00, 0.00) applied=(2.00, 0.00) grounded=True
+Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

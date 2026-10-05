@@ -1,0 +1,229 @@
+{
+  "url": "http://127.0.0.1:8791/?qa=1",
+  "checkedAt": "2026-10-03T02:09:19.313Z",
+  "moved": {
+    "levelIndex": 0,
+    "levelId": "01-footsteps",
+    "mode": "playing",
+    "deaths": 0,
+    "time": 0.5000000000000007,
+    "player": {
+      "x": 166.47569444444454,
+      "y": 467,
+      "w": 18,
+      "h": 26,
+      "vx": 220,
+      "vy": 0,
+      "state": "free",
+      "grounded": true,
+      "airJump": 1,
+      "ringReady": true,
+      "ringTimer": 0,
+      "dashTimer": 0,
+      "anchorId": null,
+      "targetId": null,
+      "facing": 1,
+      "jumping": false
+    },
+    "torches": [],
+    "doorOpen": true,
+    "shots": [],
+    "enemy": null,
+    "assetsReady": true,
+    "physics": {
+      "move": 220,
+      "jump": 420,
+      "launch": 580,
+      "gravity": 1000,
+      "fall": 1250,
+      "ignite": 125,
+      "absorb": 250,
+      "travel": 950,
+      "dash": 650,
+      "dashTime": 0.16,
+      "ringTime": 0.42
+    }
+  },
+  "paused": {
+    "a": {
+      "levelIndex": 0,
+      "levelId": "01-footsteps",
+      "mode": "paused",
+      "deaths": 0,
+      "time": 0.5000000000000007,
+      "player": {
+        "x": 166.47569444444454,
+        "y": 467,
+        "w": 18,
+        "h": 26,
+        "vx": 220,
+        "vy": 0,
+        "state": "free",
+        "grounded": true,
+        "airJump": 1,
+        "ringReady": true,
+        "ringTimer": 0,
+        "dashTimer": 0,
+        "anchorId": null,
+        "targetId": null,
+        "facing": 1,
+        "jumping": false
+      },
+      "torches": [],
+      "doorOpen": true,
+      "shots": [],
+      "enemy": null,
+      "assetsReady": true,
+      "physics": {
+        "move": 220,
+        "jump": 420,
+        "launch": 580,
+        "gravity": 1000,
+        "fall": 1250,
+        "ignite": 125,
+        "absorb": 250,
+        "travel": 950,
+        "dash": 650,
+        "dashTime": 0.16,
+        "ringTime": 0.42
+      }
+    },
+    "b": {
+      "levelIndex": 0,
+      "levelId": "01-footsteps",
+      "mode": "paused",
+      "deaths": 0,
+      "time": 0.5000000000000007,
+      "player": {
+        "x": 166.47569444444454,
+        "y": 467,
+        "w": 18,
+        "h": 26,
+        "vx": 220,
+        "vy": 0,
+        "state": "free",
+        "grounded": true,
+        "airJump": 1,
+        "ringReady": true,
+        "ringTimer": 0,
+        "dashTimer": 0,
+        "anchorId": null,
+        "targetId": null,
+        "facing": 1,
+        "jumping": false
+      },
+      "torches": [],
+      "doorOpen": true,
+      "shots": [],
+      "enemy": null,
+      "assetsReady": true,
+      "physics": {
+        "move": 220,
+        "jump": 420,
+        "launch": 580,
+        "gravity": 1000,
+        "fall": 1250,
+        "ignite": 125,
+        "absorb": 250,
+        "travel": 950,
+        "dash": 650,
+        "dashTime": 0.16,
+        "ringTime": 0.42
+      }
+    }
+  },
+  "contracts": [
+    {
+      "index": 0,
+      "id": "01-footsteps",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 1,
+      "id": "02-first-flame",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 2,
+      "id": "03-light-in-flight",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 3,
+      "id": "04-read-the-route",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 4,
+      "id": "05-the-sealed-hall",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 5,
+      "id": "06-turn-in-midair",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 6,
+      "id": "07-flame-relay",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    },
+    {
+      "index": 7,
+      "id": "08-the-last-hall",
+      "jumpRose": true,
+      "deathMode": "dead",
+      "respawnMode": "playing",
+      "respawnX": 72,
+      "torchesReset": true
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "scroll": 390,
+    "canvas": {
+      "x": 15,
+      "y": 325.171875,
+      "width": 360,
+      "height": 202.5,
+      "top": 325.171875,
+      "right": 375,
+      "bottom": 527.671875,
+      "left": 15
+    }
+  },
+  "diagnostics": {
+    "pageErrors": [],
+    "consoleErrors": [],
+    "failedRequests": [],
+    "badResponses": []
+  }
+}

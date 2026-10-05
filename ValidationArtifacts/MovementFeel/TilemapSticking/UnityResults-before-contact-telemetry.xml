@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.1670445">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.167045" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1025" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberMovementQA-20261004/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.162510" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="7952" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1026" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.162081" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="InputAndPhysicsTests" fullname="EmberMovementRegression.InputAndPhysicsTests" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.161186" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1024" name="TilemapDashStopsAtActualRaisedWallAndRestoresBodyBeforeAfter" fullname="EmberMovementRegression.InputAndPhysicsTests.TilemapDashStopsAtActualRaisedWallAndRestoresBodyBeforeAfter" methodname="TilemapDashStopsAtActualRaisedWallAndRestoresBodyBeforeAfter" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1561868705" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.094984" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1023" name="TilemapLandingThenWalkingOnActualFloorBeforeAfter" fullname="EmberMovementRegression.InputAndPhysicsTests.TilemapLandingThenWalkingOnActualFloorBeforeAfter" methodname="TilemapLandingThenWalkingOnActualFloorBeforeAfter" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="589980003" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.017172" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Landing/walking displacement before / after: 1.017145 / 3.733659
+]]></output>
+          </test-case>
+          <test-case id="1021" name="TilemapNativeSceneImportsOriginalCellsAndCompositeGeometry" fullname="EmberMovementRegression.InputAndPhysicsTests.TilemapNativeSceneImportsOriginalCellsAndCompositeGeometry" methodname="TilemapNativeSceneImportsOriginalCellsAndCompositeGeometry" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1726323898" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.014127" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1022" name="TilemapWalkOnActualLongFlatFloorBeforeAfterAndExtrusionComparison" fullname="EmberMovementRegression.InputAndPhysicsTests.TilemapWalkOnActualLongFlatFloorBeforeAfterAndExtrusionComparison" methodname="TilemapWalkOnActualLongFlatFloorBeforeAfterAndExtrusionComparison" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1871904734" result="Passed" start-time="2026-10-04 12:55:35Z" end-time="2026-10-04 12:55:35Z" duration="0.025537" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Actual flat-floor walk displacement before / after / padding: 1.017145 / 6.260648 / 6.260648
+Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
