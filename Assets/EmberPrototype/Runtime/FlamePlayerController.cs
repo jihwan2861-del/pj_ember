@@ -10,9 +10,9 @@ namespace EmberPrototype
     [RequireComponent(typeof(BurstDashAbility))]
     [RequireComponent(typeof(FlameShotAbility))]
     [RequireComponent(typeof(PlayerAbilityInputRouter))]
-    public sealed class FlamePlayerController : MonoBehaviour
+    public sealed partial class FlamePlayerController : MonoBehaviour
     {
-        private enum FlameState { Free, Bursting, BurstDashing, Travelling, Anchored }
+        private enum FlameState { Free, Bursting, BurstDashing, Travelling, Anchored, RopeAnchored }
 
         [Header("Platforming")]
         [Tooltip("좌우 입력으로 이동할 때 목표로 삼는 수평 속도입니다. (월드 단위/초)")]
@@ -187,6 +187,8 @@ namespace EmberPrototype
         private BurstDashAbility burstDashAbility;
         private FlameShotAbility flameShotAbility;
         private PlayerAbilityUnlocks abilityUnlocks;
+        private PhysicsMaterial2D originalBodyMaterial;
+        private PhysicsMaterial2D movementBodyMaterial;
         private bool groundStateInitialized;
         private bool wasGrounded;
         private Vector2 appliedPlatformVelocity;
@@ -210,7 +212,7 @@ namespace EmberPrototype
             (state == FlameState.Free || state == FlameState.Bursting || state == FlameState.BurstDashing)
             && groundStateInitialized
             && !wasGrounded;
-        internal bool IsInsideFire => state == FlameState.Anchored;
+        internal bool IsInsideFire => state == FlameState.Anchored || state == FlameState.RopeAnchored;
         internal bool IsInIgnitionRing => state == FlameState.Bursting;
         internal bool CanUseFreeAbilities => !controlsLocked && state == FlameState.Free;
         internal bool IsRingShotAiming => flameShotAbility != null && flameShotAbility.IsAiming;
@@ -226,6 +228,18 @@ namespace EmberPrototype
                 enabled = false;
                 return;
             }
+
+            // Movement is controlled by acceleration, not contact friction.
+            // Pushing into a wall must not apply friction against gravity.
+            originalBodyMaterial = bodyCollider.sharedMaterial;
+            PhysicsMaterial2D sourceMaterial = originalBodyMaterial != null
+                ? originalBodyMaterial : body.sharedMaterial;
+            movementBodyMaterial = new PhysicsMaterial2D("Ember Frictionless Movement")
+            {
+                friction = 0f,
+                bounciness = sourceMaterial != null ? sourceMaterial.bounciness : 0f
+            };
+            bodyCollider.sharedMaterial = movementBodyMaterial;
 
             abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
             if (abilityUnlocks == null) abilityUnlocks = gameObject.AddComponent<PlayerAbilityUnlocks>();
@@ -253,6 +267,7 @@ namespace EmberPrototype
 
         private void OnDisable()
         {
+            ClearRopeState(true);
             flameShotAbility?.CancelAim();
             burstDashAbility?.Cancel();
             if (nearbyTrialAltar != null) nearbyTrialAltar.CancelCeremonyFor(this);
@@ -300,7 +315,7 @@ namespace EmberPrototype
                 return;
             }
 
-            if (state != FlameState.Free) return;
+            if (state != FlameState.Free && state != FlameState.RopeAnchored) return;
 
             if (horizontalInput != 0f) facingDirection = horizontalInput > 0f ? 1 : -1;
             UpdateAbsorbTargetPreview(heldDirection);
@@ -309,6 +324,7 @@ namespace EmberPrototype
         private void FixedUpdate()
         {
             if (controlsLocked) { appliedPlatformVelocity = Vector2.zero; return; }
+            if (state == FlameState.RopeAnchored) { StepAttachedRope(); return; }
             if (state != FlameState.Free) appliedPlatformVelocity = Vector2.zero;
 
             // A jump pressed near the end of a dash survives until Free, but expires normally.
@@ -364,6 +380,7 @@ namespace EmberPrototype
 
                 if (grounded)
                 {
+                    ropeMomentum = false;
                     coyoteRemaining = coyoteTime;
                     airJumpsRemaining = maxAirJumps;
                     burstAvailable = true;
@@ -375,7 +392,12 @@ namespace EmberPrototype
                 bool jumpedThisStep = false;
                 launchProtection -= Time.fixedDeltaTime;
                 bool brakingLaunch = horizontalInput * velocity.x < 0f;
-                if (launchProtection <= 0f || brakingLaunch)
+                if (ropeMomentum)
+                {
+                    velocity.x = Mathf.Clamp(velocity.x + horizontalInput * ropeAirAcceleration * Time.fixedDeltaTime,
+                        -ropeAirSpeedLimit, ropeAirSpeedLimit);
+                }
+                else if (launchProtection <= 0f || brakingLaunch)
                 {
                     float targetSpeed = horizontalInput * moveSpeed;
                     float acceleration = SelectHorizontalAcceleration(velocity.x, targetSpeed, grounded);
@@ -426,7 +448,13 @@ namespace EmberPrototype
                 return;
             }
 
-            if (state != FlameState.Travelling || targetFire == null) return;
+            if (state != FlameState.Travelling) return;
+            if (targetFire == null || !targetFire.isActiveAndEnabled || !targetFire.IsBurning
+                || (travellingToRope && (pendingRope == null || !pendingRope.IsAvailable)))
+            {
+                StopFireTravelAtObstacle();
+                return;
+            }
             Vector2 destination = CurrentFireTravelDestination();
             if (hasFireTravelWaypoint && Vector2.SqrMagnitude(destination - body.position) <= 0.03f)
             {
@@ -437,7 +465,7 @@ namespace EmberPrototype
             Vector2 displacement = destination - body.position;
             fireTravelCurrentSpeed = AccelerateToMaximumSpeed(
                 fireTravelCurrentSpeed,
-                fireTravelSpeed,
+                pendingRope != null ? RopeTravelSpeed() : fireTravelSpeed,
                 fireTravelAccelerationTime,
                 Time.fixedDeltaTime);
             float stepDistance = Mathf.Min(displacement.magnitude, fireTravelCurrentSpeed * Time.fixedDeltaTime);
@@ -448,8 +476,9 @@ namespace EmberPrototype
                 return;
             }
 
-            body.MovePosition(Vector2.MoveTowards(body.position, destination, stepDistance));
-            if (!hasFireTravelWaypoint && Vector2.SqrMagnitude(targetFire.AnchorPosition - body.position) <= 0.03f)
+            Vector2 nextPosition = Vector2.MoveTowards(body.position, destination, stepDistance);
+            body.MovePosition(nextPosition);
+            if (!hasFireTravelWaypoint && Vector2.SqrMagnitude(targetFire.AnchorPosition - nextPosition) <= 0.03f)
             {
                 EnterFire();
             }
@@ -698,7 +727,7 @@ namespace EmberPrototype
 
         private void LateUpdate()
         {
-            if ((state != FlameState.Free && state != FlameState.Anchored)
+            if ((state != FlameState.Free && !IsInsideFire)
                 || (absorbTargetPreview != null && !absorbTargetPreview.IsBurning))
                 SetAbsorbTargetPreview(null);
             UpdateAbsorbTargetLine();
@@ -719,6 +748,7 @@ namespace EmberPrototype
 
         internal void RequestLaunchFromFire()
         {
+            if (!controlsLocked && state == FlameState.RopeAnchored) { LaunchFromRope(); return; }
             if (!controlsLocked && state == FlameState.Anchored) LaunchFromFire();
         }
 
@@ -777,7 +807,7 @@ namespace EmberPrototype
 
         private void UpdateAbsorbTargetPreview(Vector2 inputDirection)
         {
-            if (state == FlameState.Anchored && inputDirection == Vector2.zero)
+            if (IsInsideFire && inputDirection == Vector2.zero)
             {
                 SetAbsorbTargetPreview(null);
                 return;
@@ -798,7 +828,7 @@ namespace EmberPrototype
         private void UpdateAbsorbTargetGlow()
         {
             if (!showAbsorbTargetGlow || absorbTargetPreview == null || !absorbTargetPreview.IsBurning
-                || (state != FlameState.Free && state != FlameState.Anchored))
+                || (state != FlameState.Free && !IsInsideFire))
             {
                 if (absorbTargetGlowLight != null) absorbTargetGlowLight.enabled = false;
                 return;
@@ -958,7 +988,7 @@ namespace EmberPrototype
             }
 
             if (absorbTargetLine == null) return;
-            if ((state != FlameState.Free && state != FlameState.Anchored)
+            if ((state != FlameState.Free && !IsInsideFire)
                 || absorbTargetPreview == null || !absorbTargetPreview.IsBurning)
             {
                 SetAbsorbTargetLineEnabled(false);
@@ -1000,6 +1030,13 @@ namespace EmberPrototype
 
         private void OnDestroy()
         {
+            if (bodyCollider != null && bodyCollider.sharedMaterial == movementBodyMaterial)
+                bodyCollider.sharedMaterial = originalBodyMaterial;
+            if (movementBodyMaterial != null)
+            {
+                if (Application.isPlaying) Destroy(movementBodyMaterial);
+                else DestroyImmediate(movementBodyMaterial);
+            }
             if (absorbTargetGlowLight != null) Destroy(absorbTargetGlowLight.gameObject);
             if (runtimeAbsorbTargetLineMaterial != null) Destroy(runtimeAbsorbTargetLineMaterial);
             if (runtimeAbsorbTargetLineTexture != null) Destroy(runtimeAbsorbTargetLineTexture);
@@ -1020,7 +1057,9 @@ namespace EmberPrototype
                 Collider2D hit = fireTargetHits[i];
                 if (hit == null) continue;
                 if (!hit.TryGetComponent(out FlammableTile tile) || !tile.IsBurning) continue;
-                if (state == FlameState.Anchored && tile == targetFire) continue;
+                if (IsInsideFire && tile == targetFire) continue;
+                BurningRope rope = tile.GetComponentInParent<BurningRope>();
+                if (rope != null && (rope.EndFire != tile || !rope.IsAvailable)) continue;
                 Vector2 offset = tile.AnchorPosition - body.position;
                 float distance = offset.magnitude;
                 if (distance <= 0.05f) continue;
@@ -1042,6 +1081,7 @@ namespace EmberPrototype
         private void TryIgnitionBurst()
         {
             if (state != FlameState.Free || !burstAvailable) return;
+            ropeMomentum = false;
             appliedPlatformVelocity = Vector2.zero;
             SetAbsorbTargetPreview(null);
             burstAvailable = false;
@@ -1171,10 +1211,11 @@ namespace EmberPrototype
 
         private void BeginFireTravel(FlammableTile destination)
         {
+            PrepareRopeTravel(destination);
             appliedPlatformVelocity = Vector2.zero;
             SetAbsorbTargetPreview(null);
             flameFeedback.HideLaunchRing();
-            FlammableTile source = state == FlameState.Anchored ? targetFire : null;
+            FlammableTile source = IsInsideFire ? targetFire : null;
             bool hasSafeRoute = TryBuildFireTravelPath(
                 body.position,
                 source,
@@ -1340,6 +1381,7 @@ namespace EmberPrototype
 
         private void StopFireTravelAtObstacle()
         {
+            ClearRopeState(false);
             afterimageEffect.StopTrail();
             state = FlameState.Free;
             targetFire = null;
@@ -1363,6 +1405,7 @@ namespace EmberPrototype
 
         private void EnterFire()
         {
+            if (pendingRope != null) { EnterRope(); return; }
             afterimageEffect.StopTrail();
             state = FlameState.Anchored;
             body.position = targetFire.AnchorPosition;
@@ -1383,6 +1426,7 @@ namespace EmberPrototype
 
         private void LaunchFromFire()
         {
+            ropeMomentum = false;
             appliedPlatformVelocity = Vector2.zero;
             Vector2 direction = ReadHeldDirection();
             if (direction == Vector2.zero) direction = Vector2.up;
@@ -1465,6 +1509,28 @@ namespace EmberPrototype
             return true;
         }
 
+        public bool TrySpringBounce(float speed)
+        {
+            if (!isActiveAndEnabled || controlsLocked || state != FlameState.Free
+                || body == null || speed <= 0f || body.linearVelocity.y > 0.1f) return false;
+            ropeMomentum = false;
+
+            Vector2 velocity = body.linearVelocity - appliedPlatformVelocity;
+            appliedPlatformVelocity = Vector2.zero;
+            velocity.y = speed;
+            body.gravityScale = initialGravity;
+            body.linearVelocity = velocity;
+            jumpRemaining = coyoteRemaining = wallSpeedRetentionRemaining = 0f;
+            normalJump = jumpRiseActive = cornerCorrectionUsed = false;
+            wasGrounded = false;
+            groundStateInitialized = true;
+            upwardVelocityBeforeCollision = speed;
+            airJumpsRemaining = maxAirJumps;
+            burstAvailable = true;
+            flameFeedback?.PlayJump(false);
+            return true;
+        }
+
         public void SetNearbyTrialAltar(TrialAltar altar)
         {
             nearbyTrialAltar = altar;
@@ -1506,6 +1572,8 @@ namespace EmberPrototype
 
         public void ResetAt(Vector2 position)
         {
+            ClearRopeState(true);
+            foreach (BurningRope rope in FindObjectsByType<BurningRope>()) rope.ResetMotion();
             appliedPlatformVelocity = Vector2.zero;
             if (body == null || bodyCollider == null) return;
 

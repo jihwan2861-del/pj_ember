@@ -83,7 +83,8 @@ namespace EmberPrototype
             for (int i = 0; i < pool.Length; i++)
             {
                 remainingTimes[i] = 0f;
-                pool[i].enabled = false;
+                // Scene teardown may destroy the separate pool before disabling its owner.
+                if (pool[i] != null) pool[i].enabled = false;
             }
         }
 

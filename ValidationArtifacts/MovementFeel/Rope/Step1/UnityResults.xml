@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.1848627">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="41" result="Passed" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.184863" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1048" name="EmberMovement.Tests.dll" fullname="C:/Users/82102/AppData/Local/Temp/EmberSpringQA-20261005/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="41" result="Passed" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.167994" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="22728" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1049" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="41" result="Passed" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.165868" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="InputAndPhysicsTests" fullname="EmberMovementRegression.InputAndPhysicsTests" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="41" result="Passed" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.162786" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1036" name="RopeKeepsLengthAcceleratesDownwardAndRespondsToInput" fullname="EmberMovementRegression.InputAndPhysicsTests.RopeKeepsLengthAcceleratesDownwardAndRespondsToInput" methodname="RopeKeepsLengthAcceleratesDownwardAndRespondsToInput" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1988120565" result="Passed" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.131180" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1037" name="RopeOnlyHasOneFireAtItsEndAndRequiresIgnition" fullname="EmberMovementRegression.InputAndPhysicsTests.RopeOnlyHasOneFireAtItsEndAndRequiresIgnition" methodname="RopeOnlyHasOneFireAtItsEndAndRequiresIgnition" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="79191617" result="Passed" start-time="2026-10-06 05:26:53Z" end-time="2026-10-06 05:26:53Z" duration="0.006932" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/82102/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

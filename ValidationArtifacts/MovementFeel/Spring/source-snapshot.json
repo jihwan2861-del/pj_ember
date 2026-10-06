@@ -1,0 +1,147 @@
+﻿{
+    "createdAt":  "2026-10-05T22:21:34.0983258+09:00",
+    "editor":  "C:/Program Files/Unity/Hub/Editor/6000.5.3f1/Editor/Unity.exe",
+    "qaProject":  "C:\\Users\\82102\\AppData\\Local\\Temp\\EmberSpringQA-20261005",
+    "sourceProject":  "C:\\Users\\82102\\OneDrive - 인제대학교\\바탕 화면\\프로젝트 앰버\\pj_ember-main",
+    "fixture":  "EmberMovementRegression.InputAndPhysicsTests",
+    "fixtureSha256":  "DD454EA3F2FF0A31CB2F45B96E1BA03B16FAB71520FBFED095538CE88CD2ABF9",
+    "scene2Sha256":  "7014046CB4A74BF7DDB0BF16D0B2EE120D2C2D26499C7D9673CF95742088E947",
+    "scope":  "Unchanged runtime-source copy; actual Unity KeyboardState events and manually stepped Physics2D in EditMode; no scene visual or standalone player validation.",
+    "files":  [
+                  {
+                      "name":  "AllTorchesDoor.cs",
+                      "sha256":  "F1B92D3396C66E9E188E5A5E1BF314F87DC8110D61F47AAE1CA4FD86D7CDCABC",
+                      "copySha256":  "F1B92D3396C66E9E188E5A5E1BF314F87DC8110D61F47AAE1CA4FD86D7CDCABC"
+                  },
+                  {
+                      "name":  "BurstDashAbility.cs",
+                      "sha256":  "93ABBB55FD2E42CF36782A2B0AAB641B4A3AB1A6B1C45F3630A6D368A7820D39",
+                      "copySha256":  "93ABBB55FD2E42CF36782A2B0AAB641B4A3AB1A6B1C45F3630A6D368A7820D39"
+                  },
+                  {
+                      "name":  "CameraPositionGrid.cs",
+                      "sha256":  "EE65D7C2568DBE30871C609C65EC45A79B15E9C97B8C4E1E3A54EDC0051EEE9A",
+                      "copySha256":  "EE65D7C2568DBE30871C609C65EC45A79B15E9C97B8C4E1E3A54EDC0051EEE9A"
+                  },
+                  {
+                      "name":  "CameraRoom.cs",
+                      "sha256":  "BDFB921CC1EA5D56043765933D4F5AEFE8FF4217A1FA3B54CA3F402B6B2F8A4E",
+                      "copySha256":  "BDFB921CC1EA5D56043765933D4F5AEFE8FF4217A1FA3B54CA3F402B6B2F8A4E"
+                  },
+                  {
+                      "name":  "CameraShiftTrigger.cs",
+                      "sha256":  "00DBBCF700B23AA1DCC8456C6B4448B3EBE2F7B5874F58202893EA90076056A8",
+                      "copySha256":  "00DBBCF700B23AA1DCC8456C6B4448B3EBE2F7B5874F58202893EA90076056A8"
+                  },
+                  {
+                      "name":  "CelesteRoomCamera.cs",
+                      "sha256":  "EA6AC230A033A76B295925B7181508A65876062A47B90DAA339A87164828F5B6",
+                      "copySha256":  "EA6AC230A033A76B295925B7181508A65876062A47B90DAA339A87164828F5B6"
+                  },
+                  {
+                      "name":  "EmberProjectile.cs",
+                      "sha256":  "3402814046BF2BF6878376C769D1A0A63FE7A8E78B4BFD753B986632597C2F93",
+                      "copySha256":  "3402814046BF2BF6878376C769D1A0A63FE7A8E78B4BFD753B986632597C2F93"
+                  },
+                  {
+                      "name":  "FireVisualEffect.cs",
+                      "sha256":  "EBAA9247687C11563D5C0BE057EAFD4847F114905C195B0B65FEF7EF5A63F2DC",
+                      "copySha256":  "EBAA9247687C11563D5C0BE057EAFD4847F114905C195B0B65FEF7EF5A63F2DC"
+                  },
+                  {
+                      "name":  "FlamePlayerController.cs",
+                      "sha256":  "BB4A5B7B14EF96603DCEBD843D49C515242936C2C11F062C53AE4A3AE82F291C",
+                      "copySha256":  "BB4A5B7B14EF96603DCEBD843D49C515242936C2C11F062C53AE4A3AE82F291C"
+                  },
+                  {
+                      "name":  "FlameShotAbility.cs",
+                      "sha256":  "835D4510DFCBB84632B8A3D36A8EA385C549BCBDAF41247A7F58445444B4B92E",
+                      "copySha256":  "835D4510DFCBB84632B8A3D36A8EA385C549BCBDAF41247A7F58445444B4B92E"
+                  },
+                  {
+                      "name":  "FlammableTile.cs",
+                      "sha256":  "CD6E8D5BC0AB150F48628341F38FD1EC9D6C596C1E7C6632326079E17E2FAD56",
+                      "copySha256":  "CD6E8D5BC0AB150F48628341F38FD1EC9D6C596C1E7C6632326079E17E2FAD56"
+                  },
+                  {
+                      "name":  "MovementPath.cs",
+                      "sha256":  "F74F0A8CE175AB2297196529E5004329631C83B5845A4BAA9CCF524EF10A30C5",
+                      "copySha256":  "F74F0A8CE175AB2297196529E5004329631C83B5845A4BAA9CCF524EF10A30C5"
+                  },
+                  {
+                      "name":  "NonFlammableTile.cs",
+                      "sha256":  "641E2E24F19CF187CC68CA56844FAD12E73D4930BC1B3D85F7C863389788D8D9",
+                      "copySha256":  "641E2E24F19CF187CC68CA56844FAD12E73D4930BC1B3D85F7C863389788D8D9"
+                  },
+                  {
+                      "name":  "PathMovingBlock.cs",
+                      "sha256":  "B16ED311563BF463681E02EBB779D1AD6BE501971A5E3F4B9B1369C5BB9FE444",
+                      "copySha256":  "B16ED311563BF463681E02EBB779D1AD6BE501971A5E3F4B9B1369C5BB9FE444"
+                  },
+                  {
+                      "name":  "PlayerAbilityInputRouter.cs",
+                      "sha256":  "83F473F0C718F389C402436E811C8D2AC481FE7F22F7FDDB85494779BE868D27",
+                      "copySha256":  "83F473F0C718F389C402436E811C8D2AC481FE7F22F7FDDB85494779BE868D27"
+                  },
+                  {
+                      "name":  "PlayerAbilityUnlocks.cs",
+                      "sha256":  "568A7FD691EDD374D0D17619084DFF5A76E80D61777FBE7D47E1339D2232A33D",
+                      "copySha256":  "568A7FD691EDD374D0D17619084DFF5A76E80D61777FBE7D47E1339D2232A33D"
+                  },
+                  {
+                      "name":  "PlayerAfterimageEffect.cs",
+                      "sha256":  "B2D094B9438815AB76492F4B6B6E64F68BC83B3F0DC6B1E29B82456F8F870699",
+                      "copySha256":  "B2D094B9438815AB76492F4B6B6E64F68BC83B3F0DC6B1E29B82456F8F870699"
+                  },
+                  {
+                      "name":  "PlayerAnimatorDriver.cs",
+                      "sha256":  "BAED057DA5BDDEEED22D36BCEFA66EEDA44E3B38A16F23901789525B6249394D",
+                      "copySha256":  "BAED057DA5BDDEEED22D36BCEFA66EEDA44E3B38A16F23901789525B6249394D"
+                  },
+                  {
+                      "name":  "PlayerFlameFeedback.cs",
+                      "sha256":  "3815D1B58D8A6563B2A819BC612E10AF380FE4EBF282B475F5EC0E44D4313477",
+                      "copySha256":  "3815D1B58D8A6563B2A819BC612E10AF380FE4EBF282B475F5EC0E44D4313477"
+                  },
+                  {
+                      "name":  "PrototypeHud.cs",
+                      "sha256":  "297E3F51E0F6E5CC5B28F301507ED6798A138A7A943C2CC230663E132491D172",
+                      "copySha256":  "297E3F51E0F6E5CC5B28F301507ED6798A138A7A943C2CC230663E132491D172"
+                  },
+                  {
+                      "name":  "PrototypeRoom.cs",
+                      "sha256":  "DEF107406E4034B9E7C488E5B06DF2A12632A614323B29F49051E81D5051D002",
+                      "copySha256":  "DEF107406E4034B9E7C488E5B06DF2A12632A614323B29F49051E81D5051D002"
+                  },
+                  {
+                      "name":  "PrototypeSprite.cs",
+                      "sha256":  "882A0A1281383D7374794D836C26E056EE7C271B96888BF1B115AF64ED79CC5D",
+                      "copySha256":  "882A0A1281383D7374794D836C26E056EE7C271B96888BF1B115AF64ED79CC5D"
+                  },
+                  {
+                      "name":  "RoomGoal.cs",
+                      "sha256":  "0EAE8B738C43A5933DEBFF9C1E3DA8B8006F74B97BD9284F6E69AC2EA17E369C",
+                      "copySha256":  "0EAE8B738C43A5933DEBFF9C1E3DA8B8006F74B97BD9284F6E69AC2EA17E369C"
+                  },
+                  {
+                      "name":  "RoomHazard.cs",
+                      "sha256":  "BD2C9504429CCF46B164C6CB57938C9B12185D54BA2D025EF4922AE8C3A04304",
+                      "copySha256":  "BD2C9504429CCF46B164C6CB57938C9B12185D54BA2D025EF4922AE8C3A04304"
+                  },
+                  {
+                      "name":  "RoomSpawnPoint.cs",
+                      "sha256":  "4AE20B3BE37CAF7C6909620917755E942A878B671575CFBB4991B7F79BBDD581",
+                      "copySha256":  "4AE20B3BE37CAF7C6909620917755E942A878B671575CFBB4991B7F79BBDD581"
+                  },
+                  {
+                      "name":  "Spring.cs",
+                      "sha256":  "34450B5CA837327C8F86D958B42EDDAD338A8DCED206BD2191C180485F06FC5C",
+                      "copySha256":  "34450B5CA837327C8F86D958B42EDDAD338A8DCED206BD2191C180485F06FC5C"
+                  },
+                  {
+                      "name":  "TrialAltar.cs",
+                      "sha256":  "7F84775E98A3E868D885F46D198EBBBCBC981E22B4760ABCD87F22FE71D78F6A",
+                      "copySha256":  "7F84775E98A3E868D885F46D198EBBBCBC981E22B4760ABCD87F22FE71D78F6A"
+                  }
+              ]
+}

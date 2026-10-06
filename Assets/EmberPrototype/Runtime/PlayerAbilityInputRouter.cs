@@ -42,6 +42,7 @@ namespace EmberPrototype
 
             if (player.IsInsideFire)
             {
+                // The controller selects torch launch or rope kick; X/Z bindings stay identical.
                 if (keyboard.zKey.wasPressedThisFrame)
                     player.RequestLaunchFromFire();
                 else if (keyboard.xKey.wasPressedThisFrame && IsUnlocked(PlayerAbility.FireAbsorb))

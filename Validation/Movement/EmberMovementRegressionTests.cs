@@ -319,6 +319,37 @@ namespace EmberMovementRegression
             }
         }
 
+        [TestCase(1)]
+        [TestCase(-1)]
+        public void HoldingIntoWallDoesNotSlowGravityFall(int direction)
+        {
+            float freeDistance;
+            float freeSpeed;
+            using (var f = new Fixture())
+            {
+                Frame(f);
+                float initialY = f.Body.position.y;
+                Step(f, 30);
+                freeDistance = initialY - f.Body.position.y;
+                freeSpeed = f.Body.linearVelocity.y;
+            }
+            SetKeys();
+            using (var f = new Fixture())
+            {
+                // Match scene 2: dynamic box, default materials, static vertical wall.
+                f.Box(f.Body.position + new Vector2(direction * 0.71f, -4f), new Vector2(1f, 16f));
+                Frame(f, direction > 0 ? Key.RightArrow : Key.LeftArrow);
+                float initialY = f.Body.position.y;
+                Step(f, 30);
+                float wallDistance = initialY - f.Body.position.y;
+                TestContext.WriteLine("Free/wall displacement: " + freeDistance + " / " + wallDistance
+                    + "; Free/wall Y speed: " + freeSpeed + " / " + f.Body.linearVelocity.y);
+                Assert.That(Get<bool>(f.Player, "wasGrounded"), Is.False, "A vertical wall must not count as ground.");
+                Assert.That(wallDistance, Is.GreaterThanOrEqualTo(freeDistance * 0.95f));
+                Assert.That(f.Body.linearVelocity.y, Is.EqualTo(freeSpeed).Within(0.1f));
+                Assert.That(Mathf.Abs(f.Body.position.x), Is.LessThan(0.04f), "The wall must still block horizontal motion.");
+            }
+        }
         private float RunFireLaunch(bool releaseDirection)
         {
             using (var f = new Fixture())
@@ -401,6 +432,7 @@ namespace EmberMovementRegression
         private sealed class Fixture : IDisposable
         {
             private readonly List<GameObject> owned = new List<GameObject>();
+            public void Track(GameObject root) => owned.Add(root);
             public readonly Rigidbody2D Body;
             public readonly BoxCollider2D BodyCollider;
             public readonly CircleCollider2D DashCollider;

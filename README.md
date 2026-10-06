@@ -18,6 +18,8 @@ Unity의 Library·Temp·빌드 결과는 저장소에 포함하지 않습니다.
 - `Tools > Ember > Level Workflow`: 방 구조 생성, 카메라 경계 편집, 타일맵 구성 검사.
 - 직선·곡선·원형 경로와 한 번 이동·왕복·순환 블록.
 - 움직이는 발판 위에서 서 있기·걷기·점프하는 플레이어 운반 처리.
+- 위에서 닿으면 튕기고 공중 점프·링 사용권을 회복하는 스프링 스크립트.
+- 불붙은 로프 끝 X 흡수, 진입 기세를 받는 스윙, Z 박차기와 연속 연결 테스트 씬.
 - `WebDemo/index.html`: 별도 브라우저 게임 데모.
 
 발판 자체가 기울어 회전하는 기능, 발판 점프 관성과 압사 처리는 아직 구현하지 않았습니다.
@@ -27,6 +29,8 @@ Unity의 Library·Temp·빌드 결과는 저장소에 포함하지 않습니다.
 - [20분 플레이 상세기획](Docs/Design/Ember_20Minute_Design_v1.md)
 - [방 제작 워크플로우: Hierarchy·카메라·타일맵·경로](Docs/LevelEditingWorkflow.md)
 - [Mossy 자동 타일 설정](Docs/Mossy_Autotile_Setup.md)
+- [스프링 배치](Docs/Spring_Setup.md)
+- [로프 설정과 연속 연결 테스트](Docs/Rope_Setup.md)
 - [플레이어 이동 분석](Docs/AI/PlayerMovementAnalysis.md)
 - [이동 감각 수정](Docs/AI/MovementFeel_Implementation.md)
 - [바닥 타일 경계 걸림 조사](Docs/AI/Tilemap_GroundSnag_Investigation.md)
@@ -36,7 +40,9 @@ Unity의 Library·Temp·빌드 결과는 저장소에 포함하지 않습니다.
 
 ## 검증 기록
 
-최근 격리 Unity 검증에서 **52개 통과, 실패·건너뜀 0개**를 확인했습니다. 플레이어 운반 10개, 기존 입력·이동·타일맵 21개, 방 편집·카메라·경로 21개입니다.
+로프 추가 검증은 **53개 통과, 실패·건너뜀 0개**다. 기존 이동 35개와 로프 관련 18개이며 실제 Play Mode의 횃불→두 로프→착지→재시작을 포함한다. [로프 검증 결과](ValidationArtifacts/MovementFeel/Rope/VerifiedVisual/UnityResults.xml)와 [설정·검증 안내](Docs/Rope_Setup.md)를 참고한다.
+
+움직이는 발판 검증 당시 격리 Unity에서 **52개 통과, 실패·건너뜀 0개**를 확인했습니다. 플레이어 운반 10개, 기존 입력·이동·타일맵 21개, 방 편집·카메라·경로 21개입니다.
 
 - [최종 테스트 결과](ValidationArtifacts/MovementFeel/PlatformRider/Final/UnityResults.xml)
 - [이동 검증 실행 안내](Validation/Movement/README.md)

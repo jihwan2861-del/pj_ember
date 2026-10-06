@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="35" result="Passed" total="35" passed="35" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.3891967">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="39" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.389197" total="35" passed="35" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1046" name="EmberMovement.Tests.dll" fullname="C:/Users/82102/AppData/Local/Temp/EmberSpringQA-20261005/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="39" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.371091" total="35" passed="35" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="24260" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1047" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="39" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.369518" total="35" passed="35" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="InputAndPhysicsTests" fullname="EmberMovementRegression.InputAndPhysicsTests" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="39" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.367326" total="35" passed="35" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1014" name="AirJumpAwayFromGroundIsImmediate" fullname="EmberMovementRegression.InputAndPhysicsTests.AirJumpAwayFromGroundIsImmediate" methodname="AirJumpAwayFromGroundIsImmediate" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1165648078" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.148400" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1009" name="AnchorLaunchDoesNotReplayJumpPressedToLaunch" fullname="EmberMovementRegression.InputAndPhysicsTests.AnchorLaunchDoesNotReplayJumpPressedToLaunch" methodname="AnchorLaunchDoesNotReplayJumpPressedToLaunch" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="496977304" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.019292" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1034" name="CarryingIntoWallDoesNotTeleportPlayerThroughIt" fullname="EmberMovementRegression.InputAndPhysicsTests.CarryingIntoWallDoesNotTeleportPlayerThroughIt" methodname="CarryingIntoWallDoesNotTeleportPlayerThroughIt" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1156487186" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.008566" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1006" name="DashChordBlockedImmediatelyDoesNotReplayItsZAsAnAirJump" fullname="EmberMovementRegression.InputAndPhysicsTests.DashChordBlockedImmediatelyDoesNotReplayItsZAsAnAirJump" methodname="DashChordBlockedImmediatelyDoesNotReplayItsZAsAnAirJump" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="820889852" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.012742" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1020" name="DashKeepsFullBodyColliderWhenStartSpaceIsBlocked" fullname="EmberMovementRegression.InputAndPhysicsTests.DashKeepsFullBodyColliderWhenStartSpaceIsBlocked" methodname="DashKeepsFullBodyColliderWhenStartSpaceIsBlocked" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="2124211748" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002177" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1017" name="DashPreservesRequestedDirectionNearObstacle" fullname="EmberMovementRegression.InputAndPhysicsTests.DashPreservesRequestedDirectionNearObstacle" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.008947" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1015" name="DashPreservesRequestedDirectionNearObstacle(1.0f,0.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.DashPreservesRequestedDirectionNearObstacle(1.0f,0.0f)" methodname="DashPreservesRequestedDirectionNearObstacle" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="240141545" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003578" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="DashPreservesRequestedDirectionNearObstacle(1.0f,1.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.DashPreservesRequestedDirectionNearObstacle(1.0f,1.0f)" methodname="DashPreservesRequestedDirectionNearObstacle" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1005023993" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002083" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1018" name="DashRestoresLastSafeFullBodyPositionWhenEndingInSmallGap" fullname="EmberMovementRegression.InputAndPhysicsTests.DashRestoresLastSafeFullBodyPositionWhenEndingInSmallGap" methodname="DashRestoresLastSafeFullBodyPositionWhenEndingInSmallGap" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="756358292" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004170" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1019" name="DashSignalsResetWhenRecordedPositionsBecomeBlocked" fullname="EmberMovementRegression.InputAndPhysicsTests.DashSignalsResetWhenRecordedPositionsBecomeBlocked" methodname="DashSignalsResetWhenRecordedPositionsBecomeBlocked" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1284651134" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002394" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1011" name="HoldingForwardRetainsMoreFireLaunchSpeedThanReleasingDirection" fullname="EmberMovementRegression.InputAndPhysicsTests.HoldingForwardRetainsMoreFireLaunchSpeedThanReleasingDirection" methodname="HoldingForwardRetainsMoreFireLaunchSpeedThanReleasingDirection" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="284065879" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.007297" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Forward/released velocity after 0.16s: 9.68 / 8.880001
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1023" name="HoldingIntoWallDoesNotSlowGravityFall" fullname="EmberMovementRegression.InputAndPhysicsTests.HoldingIntoWallDoesNotSlowGravityFall" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.008794" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1021" name="HoldingIntoWallDoesNotSlowGravityFall(1)" fullname="EmberMovementRegression.InputAndPhysicsTests.HoldingIntoWallDoesNotSlowGravityFall(1)" methodname="HoldingIntoWallDoesNotSlowGravityFall" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1758361581" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004767" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Free/wall displacement: 5.127881 / 5.127881; Free/wall Y speed: -16.73978 / -16.73978
+]]></output>
+            </test-case>
+            <test-case id="1022" name="HoldingIntoWallDoesNotSlowGravityFall(-1)" fullname="EmberMovementRegression.InputAndPhysicsTests.HoldingIntoWallDoesNotSlowGravityFall(-1)" methodname="HoldingIntoWallDoesNotSlowGravityFall" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="557006402" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003069" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Free/wall displacement: 5.127881 / 5.127881; Free/wall Y speed: -16.73978 / -16.73978
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1031" name="IdlePlayerRidesCircleThroughReversalsAndWrap" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesCircleThroughReversalsAndWrap" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.027290" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1029" name="IdlePlayerRidesCircleThroughReversalsAndWrap(2.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesCircleThroughReversalsAndWrap(2.0f)" methodname="IdlePlayerRidesCircleThroughReversalsAndWrap" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1665478706" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.014177" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1030" name="IdlePlayerRidesCircleThroughReversalsAndWrap(8.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesCircleThroughReversalsAndWrap(8.0f)" methodname="IdlePlayerRidesCircleThroughReversalsAndWrap" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1080508165" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.012226" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1028" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.019039" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1024" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(1.0f,0.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(1.0f,0.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="667651785" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004588" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1025" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(-1.0f,0.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(-1.0f,0.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="2071505056" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004443" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1026" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,1.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,1.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1907692917" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004115" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1027" name="IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,-1.0f)" fullname="EmberMovementRegression.InputAndPhysicsTests.IdlePlayerRidesLinearPlatformAndRemainsGrounded(0.0f,-1.0f)" methodname="IdlePlayerRidesLinearPlatformAndRemainsGrounded" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="940246110" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004405" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1005" name="IgnitionAndDashChordStartsDashInOneInputFrame" fullname="EmberMovementRegression.InputAndPhysicsTests.IgnitionAndDashChordStartsDashInOneInputFrame" methodname="IgnitionAndDashChordStartsDashInOneInputFrame" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1457563384" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002325" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1032" name="JumpLeavesPlatformAndRespawnDoesNotRetainItsVelocity" fullname="EmberMovementRegression.InputAndPhysicsTests.JumpLeavesPlatformAndRespawnDoesNotRetainItsVelocity" methodname="JumpLeavesPlatformAndRespawnDoesNotRetainItsVelocity" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1395329439" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003997" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1013" name="JumpNearLandingWaitsForGroundInsteadOfConsumingAirJump" fullname="EmberMovementRegression.InputAndPhysicsTests.JumpNearLandingWaitsForGroundInsteadOfConsumingAirJump" methodname="JumpNearLandingWaitsForGroundInsteadOfConsumingAirJump" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="377937984" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003975" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1007" name="JumpPressedNearDashEndSurvivesIntoFreeState" fullname="EmberMovementRegression.InputAndPhysicsTests.JumpPressedNearDashEndSurvivesIntoFreeState" methodname="JumpPressedNearDashEndSurvivesIntoFreeState" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1996462640" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004749" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1035" name="PlatformStoppingDoesNotSlideItsRider" fullname="EmberMovementRegression.InputAndPhysicsTests.PlatformStoppingDoesNotSlideItsRider" methodname="PlatformStoppingDoesNotSlideItsRider" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1278623519" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.007231" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1008" name="ReleasedJumpIsSampledDuringRingAndRemainsReleasedAfterExpiry" fullname="EmberMovementRegression.InputAndPhysicsTests.ReleasedJumpIsSampledDuringRingAndRemainsReleasedAfterExpiry" methodname="ReleasedJumpIsSampledDuringRingAndRemainsReleasedAfterExpiry" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1876436770" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003878" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1012" name="ReverseInputBrakesDuringFireLaunchControlLock" fullname="EmberMovementRegression.InputAndPhysicsTests.ReverseInputBrakesDuringFireLaunchControlLock" methodname="ReverseInputBrakesDuringFireLaunchControlLock" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="529657909" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002893" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1010" name="ShotReleasePreservesHeldWalkingDirectionOnFirstFreePhysicsTick" fullname="EmberMovementRegression.InputAndPhysicsTests.ShotReleasePreservesHeldWalkingDirectionOnFirstFreePhysicsTick" methodname="ShotReleasePreservesHeldWalkingDirectionOnFirstFreePhysicsTick" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1017562473" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.008734" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1044" name="SpringAllowsAirJumpAfterBounce" fullname="EmberMovementRegression.InputAndPhysicsTests.SpringAllowsAirJumpAfterBounce" methodname="SpringAllowsAirJumpAfterBounce" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="621018806" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.005633" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1040" name="SpringBouncesUpPreservesHorizontalSpeedAndRestoresAbilities" fullname="EmberMovementRegression.InputAndPhysicsTests.SpringBouncesUpPreservesHorizontalSpeedAndRestoresAbilities" methodname="SpringBouncesUpPreservesHorizontalSpeedAndRestoresAbilities" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1235445673" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003192" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1045" name="SpringCatchesFastFallAcrossTopWithinOnePhysicsStep" fullname="EmberMovementRegression.InputAndPhysicsTests.SpringCatchesFastFallAcrossTopWithinOnePhysicsStep" methodname="SpringCatchesFastFallAcrossTopWithinOnePhysicsStep" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="587696897" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002917" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1042" name="SpringDoesNotRetriggerWhileRisingAndSupportsTunedSpeed" fullname="EmberMovementRegression.InputAndPhysicsTests.SpringDoesNotRetriggerWhileRisingAndSupportsTunedSpeed" methodname="SpringDoesNotRetriggerWhileRisingAndSupportsTunedSpeed" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1733640650" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002835" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1041" name="SpringIgnoresAscendingSideAndBottomContacts" fullname="EmberMovementRegression.InputAndPhysicsTests.SpringIgnoresAscendingSideAndBottomContacts" methodname="SpringIgnoresAscendingSideAndBottomContacts" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="284393236" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003678" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1043" name="SpringRespectsControlLockAndAbilityStates" fullname="EmberMovementRegression.InputAndPhysicsTests.SpringRespectsControlLockAndAbilityStates" methodname="SpringRespectsControlLockAndAbilityStates" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1716656651" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.004218" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1004" name="WalkingDiagonallyPreservesHorizontalSpeed" fullname="EmberMovementRegression.InputAndPhysicsTests.WalkingDiagonallyPreservesHorizontalSpeed" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.006641" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="WalkingDiagonallyPreservesHorizontalSpeed(UpArrow)" fullname="EmberMovementRegression.InputAndPhysicsTests.WalkingDiagonallyPreservesHorizontalSpeed(UpArrow)" methodname="WalkingDiagonallyPreservesHorizontalSpeed" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="744345505" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.003032" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="WalkingDiagonallyPreservesHorizontalSpeed(DownArrow)" fullname="EmberMovementRegression.InputAndPhysicsTests.WalkingDiagonallyPreservesHorizontalSpeed(DownArrow)" methodname="WalkingDiagonallyPreservesHorizontalSpeed" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1814974110" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002421" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1033" name="WalkingOnPlatformUsesRelativeWalkingSpeed" fullname="EmberMovementRegression.InputAndPhysicsTests.WalkingOnPlatformUsesRelativeWalkingSpeed" methodname="WalkingOnPlatformUsesRelativeWalkingSpeed" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1188637451" result="Passed" start-time="2026-10-05 13:21:51Z" end-time="2026-10-05 13:21:51Z" duration="0.002471" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/82102/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

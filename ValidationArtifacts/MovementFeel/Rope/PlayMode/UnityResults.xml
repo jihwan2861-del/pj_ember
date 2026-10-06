@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-06 05:49:41Z" end-time="2026-10-06 05:49:43Z" duration="1.8968262">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-06 05:49:41Z" end-time="2026-10-06 05:49:43Z" duration="1.896826" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1067" name="EmberMovement.Tests.dll" fullname="C:/Users/82102/AppData/Local/Temp/EmberSpringQA-20261005/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-06 05:49:41Z" end-time="2026-10-06 05:49:43Z" duration="1.794878" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="6060" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1068" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-06 05:49:41Z" end-time="2026-10-06 05:49:43Z" duration="1.792799" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1065" name="RopeScenePlayTests" fullname="EmberMovementRegression.RopeScenePlayTests" classname="EmberMovementRegression.RopeScenePlayTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-06 05:49:41Z" end-time="2026-10-06 05:49:43Z" duration="1.789736" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1066" name="RopeSceneRunsTorchToTwoRopesToLandingWithRealUpdates" fullname="EmberMovementRegression.RopeScenePlayTests.RopeSceneRunsTorchToTwoRopesToLandingWithRealUpdates" methodname="RopeSceneRunsTorchToTwoRopesToLandingWithRealUpdates" classname="EmberMovementRegression.RopeScenePlayTests" runstate="Runnable" seed="571854885" result="Passed" start-time="2026-10-06 05:49:34Z" end-time="2026-10-06 05:49:43Z" duration="9.265255" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Rope validation scene already exists: Assets/EmberPrototype/RopeValidation.unity
+First X: state=Travelling, held=False, current=True, mode=ProcessEventsInDynamicUpdate
+Rope 1 entry: RopeAnchored, position=(-1.00, 1.00), end=(-1.00, 1.00), fixed=0.3799999, constraints=FreezeRotation
+Real Play Mode: torch -> rope 1 -> rope 2 -> landing -> R restart; synthetic keyboard, normal Update/FixedUpdate and native physics.
+Saving results to: C:/Users/82102/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

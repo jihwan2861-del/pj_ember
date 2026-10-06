@@ -36,4 +36,18 @@ The tests check native scene import/composite linkage and geometry, reproduce th
 
 The separate simulation covers the actual terrain and collision setup, not a full visual playthrough, dynamic obstacles, every route, or a player build. The missing-Composite inspector warning condition is recorded through native collider/composite linkage; the headless runner does not render the original Inspector warning UI.
 
+## 로프 회귀와 실제 Play Mode 검증
+
+`RopeTests.cs`는 기존 입력/물리 검사와 함께 진입 속도 전달, 이동 목표 추격, 박차기, 공중 기세, 벽 충돌, 초기화, 줄 표현의 끝 고정과 휘어짐 상한을 검사한다. `RopeScenePlayTests.cs`는 별도 검증 씬을 생성하고 실제 Play Mode에 진입해 정상 Update/FixedUpdate 및 물리를 사용한다. 입력만 합성하며 컨트롤러 메서드를 직접 호출해서 로프 연결을 대신하지 않는다.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File ./Validation/Movement/Run-IsolatedRegression.ps1 -UnityEditor 'C:/Program Files/Unity/Hub/Editor/6000.5.3f1/Editor/Unity.exe' -QaProject "$env:LOCALAPPDATA/Temp/EmberRopeFinalQA-20261006" -TestFilter 'EmberMovementRegression.InputAndPhysicsTests.(?!Tilemap)|EmberMovementRegression.RopeScenePlayTests' -ArtifactSubdirectory 'Rope/VerifiedVisual' -EnableGraphics
+```
+
+`EnableGraphics`는 QA 복사본에 그래픽/품질 설정과 렌더링 설정 에셋을 복사하고 화면 캡처를 허용한다. Play Mode 검사는 숨겨진 QA 창에서 키보드 입력이 게임에 전달되도록 QA 프로세스의 입력 포커스와 프레임 시간을 일시 조정한다. 캡처 중 GPU 부하와 관계없이 프레임 시간이 1/60초가 되도록 설정하고 종료 시 복원한다. 원본 프로젝트 설정은 변경하지 않는다. 캡처는 QA 루트의 `RopeEvidence`에 생성된다. 검증 씬 생성 메뉴는 기존 파일을 덮어쓰지 않는다. 씬 생성기 변경 후 검증하려면 새로운 QA 폴더를 지정한다.
+
+최종 결과는 `ValidationArtifacts/MovementFeel/Rope/VerifiedVisual`에 있다. QA에서 생성한 `RopeValidationVisual.unity`를 같은 내용과 GUID로 원본의 `RopeValidation.unity`에 복사했다. 렌더링 캡처도 해당 결과 폴더의 `Captures`에 보존했다.
+
+타일맵 네 개는 이 실행에서 제외하며 기존 별도 검증을 사용한다. 이 결과는 연속 로프 예제와 관련 회귀의 확인이며 전체 게임 실행 파일 빌드나 모든 방의 플레이 완료를 의미하지 않는다.
+
 The tests never force Composite.GenerateGeometry. Native OpenScene and ProcessTilemapChanges geometry counts are recorded separately to verify automatic Synchronous generation. Composite paths are geometric contours, not collider components or physics shapes; consult the latest `after-geometry.json` for the current 751-cell counts. The archived 753-cell run had five paths, 78 points and 35 physics shapes.
