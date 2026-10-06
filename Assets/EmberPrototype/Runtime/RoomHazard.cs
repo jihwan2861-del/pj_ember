@@ -32,13 +32,6 @@ namespace EmberPrototype
             FlamePlayerController player = other.GetComponentInParent<FlamePlayerController>();
             if (player == null) return;
 
-            PrototypeRoom room = player.GetComponent<PrototypeRoom>();
-            if (room != null)
-            {
-                room.Restart();
-                return;
-            }
-
             player.KillAndRespawn();
         }
 

@@ -244,9 +244,19 @@ namespace EmberPrototype
             return bestRoom;
         }
 
-        private Vector2 CalculateTargetPosition()
+        public void SnapAfterRespawn(Vector2 playerPosition)
         {
-            Vector2 desiredCenter = TargetPosition + globalCameraOffset;
+            cinematicActive = cinematicReturning = false;
+            cinematicFocus = null;
+            shakeRemaining = 0f;
+            viewCamera.orthographicSize = normalOrthographicSize;
+            currentRoom = FindRoomContaining(playerPosition);
+            SetCameraPosition(CalculateTargetPosition(playerPosition));
+        }
+
+        private Vector2 CalculateTargetPosition(Vector2? playerPosition = null)
+        {
+            Vector2 desiredCenter = (playerPosition ?? TargetPosition) + globalCameraOffset;
             if (currentRoom == null) return desiredCenter;
 
             desiredCenter += currentRoom.CameraOffset;

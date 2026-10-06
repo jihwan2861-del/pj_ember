@@ -205,6 +205,8 @@ namespace EmberPrototype
         private readonly RaycastHit2D[] groundHits = new RaycastHit2D[16];
         private Collider2D[] fireTargetHits = new Collider2D[32];
 
+        private PlayerDeathEffect deathEffect;
+        public bool IsDying => deathEffect != null && deathEffect.IsPlaying;
         public bool ControlsLocked => controlsLocked;
         public float NormalMoveSpeed => moveSpeed;
         public bool CanStartTrialCeremony => isActiveAndEnabled && !controlsLocked && state == FlameState.Free;
@@ -262,11 +264,14 @@ namespace EmberPrototype
             if (flameFeedback == null) flameFeedback = gameObject.AddComponent<PlayerFlameFeedback>();
             afterimageEffect = GetComponent<PlayerAfterimageEffect>();
             if (afterimageEffect == null) afterimageEffect = gameObject.AddComponent<PlayerAfterimageEffect>();
+            deathEffect = GetComponent<PlayerDeathEffect>();
+            if (deathEffect == null) deathEffect = gameObject.AddComponent<PlayerDeathEffect>();
             CreateAbsorbTargetLine();
         }
 
         private void OnDisable()
         {
+            deathEffect?.Cancel();
             ClearRopeState(true);
             flameShotAbility?.CancelAim();
             burstDashAbility?.Cancel();
@@ -1572,6 +1577,7 @@ namespace EmberPrototype
 
         public void ResetAt(Vector2 position)
         {
+            deathEffect?.Cancel();
             ClearRopeState(true);
             foreach (BurningRope rope in FindObjectsByType<BurningRope>()) rope.ResetMotion();
             appliedPlatformVelocity = Vector2.zero;
@@ -1612,10 +1618,26 @@ namespace EmberPrototype
 
         public void KillAndRespawn()
         {
+            if (IsDying || !isActiveAndEnabled || body == null || bodyCollider == null) return;
             Vector2 position = respawnPoint != null
                 ? (Vector2)respawnPoint.position
                 : initialSpawnPosition;
-            ResetAt(position);
+            PrototypeRoom room = GetComponent<PrototypeRoom>();
+            ClearRopeState(true);
+            CancelRingShotAim();
+            burstDashAbility.Cancel();
+            if (nearbyTrialAltar != null) nearbyTrialAltar.CancelCeremonyFor(this);
+            SetControlsLocked(true);
+            bodyCollider.enabled = false;
+            ClearBurstEffect();
+            flameFeedback?.ResetFeedback();
+            afterimageEffect?.StopTrail(true);
+            transform.localScale = initialScale;
+            deathEffect.Play(() =>
+            {
+                if (room != null) room.Restart();
+                else ResetAt(position);
+            });
         }
 
         public void SetRespawnPoint(Transform newRespawnPoint)

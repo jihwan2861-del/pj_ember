@@ -27,9 +27,10 @@ namespace EmberPrototype
 
         private void Update()
         {
-            if (transform.position.y < deathHeight ||
-                (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame))
+            if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
                 Restart();
+            else if (transform.position.y < deathHeight)
+                player.KillAndRespawn();
             if (!Completed && goalPoint != null && Vector2.Distance(transform.position, goalPoint.position) <= goalRadius)
                 CompleteRoom();
         }
