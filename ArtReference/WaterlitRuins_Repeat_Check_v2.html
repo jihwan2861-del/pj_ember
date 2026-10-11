@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waterlit Ruins — 반복 확인</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; background: #111d28; color: #e0edf3; font: 16px/1.5 system-ui, sans-serif; }
+    main { max-width: 1120px; margin: auto; }
+    h1 { font-size: 22px; font-weight: 500; }
+    h2 { font-size: 17px; font-weight: 500; margin-top: 20px; }
+    p { color: #b9cbd5; }
+    label { display: inline-flex; align-items: center; gap: 8px; margin-right: 16px; }
+    input[type=range] { width: min(320px, 55vw); }
+    .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; }
+    #stage { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: url('../Assets/image/WaterlitRuins_01_Atmosphere_v2.png') center / cover; image-rendering: pixelated; }
+    #rocks { position: absolute; inset: 0; background-image: url('../Assets/image/WaterlitRuins_02_CavernRepeatX_v2.png'); background-size: 100% 100%; background-repeat: repeat-x; image-rendering: pixelated; }
+    .guide { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px dashed #f7c776; display: none; pointer-events: none; }
+    #overview { display: flex; position: relative; background: #244e63; }
+    #overview img { display: block; width: calc(100% / 3); height: auto; image-rendering: pixelated; }
+    #overview .first { left: calc(100% / 3); }
+    #overview .second { left: calc(200% / 3); }
+    .legend { display: flex; justify-content: space-around; color: #b9cbd5; }
+    @media (max-width: 500px) { body { padding: 12px; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>동굴 레이어 반복 확인</h1>
+  <div class="controls">
+    <label>가로 이동 <input id="shift" type="range" min="0" max="100" value="50" aria-label="한 장 너비 안에서 가로 이동"></label>
+    <label><input id="guides" type="checkbox"> 연결 위치 표시</label>
+  </div>
+  <div id="stage" role="img" aria-label="고정된 01 분위기 배경 위에서 02 동굴 레이어가 가로 반복되는 화면">
+    <div id="rocks"></div>
+    <div id="movingGuide" class="guide"></div>
+  </div>
+  <h2>동일 이미지 3장 — 간격 없이 연결</h2>
+  <div id="overview">
+    <img src="../Assets/image/WaterlitRuins_02_CavernRepeatX_v2.png" alt="첫 번째 동굴 이미지">
+    <img src="../Assets/image/WaterlitRuins_02_CavernRepeatX_v2.png" alt="동일한 두 번째 동굴 이미지">
+    <img src="../Assets/image/WaterlitRuins_02_CavernRepeatX_v2.png" alt="동일한 세 번째 동굴 이미지">
+    <div class="guide first"></div><div class="guide second"></div>
+  </div>
+  <div class="legend"><span>첫 번째</span><span>두 번째</span><span>세 번째</span></div>
+  <p>PNG 픽셀을 수정하지 않고 원본을 반복 표시한다. 01은 화면 고정, 02만 가로 반복한다. 상하 반복 및 Unity 실행 검증은 포함하지 않는다.</p>
+</main>
+<script>
+  const stage = document.getElementById('stage');
+  const rocks = document.getElementById('rocks');
+  const shift = document.getElementById('shift');
+  const guides = document.getElementById('guides');
+  const movingGuide = document.getElementById('movingGuide');
+  function refresh() {
+    const phase = Number(shift.value) / 100;
+    rocks.style.backgroundPosition = (-phase * stage.clientWidth) + 'px 0px';
+    movingGuide.style.left = ((1 - phase) * stage.clientWidth) + 'px';
+    document.querySelectorAll('.guide').forEach(guide => {
+      guide.style.display = guides.checked ? 'block' : 'none';
+    });
+  }
+  shift.addEventListener('input', refresh);
+  guides.addEventListener('change', refresh);
+  window.addEventListener('resize', refresh);
+  refresh();
+</script>
+</body>
+</html>

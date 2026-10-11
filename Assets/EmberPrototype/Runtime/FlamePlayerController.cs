@@ -14,6 +14,44 @@ namespace EmberPrototype
     {
         private enum FlameState { Free, Bursting, BurstDashing, Travelling, Anchored, RopeAnchored }
 
+        [System.Serializable]
+        private sealed class ActionSound
+        {
+            public AudioClip clip = null;
+            [Range(0f, 1f)] public float volume = 0.8f;
+        }
+
+        [Header("Player Action Sounds")]
+        [Tooltip("Optional dedicated SFX source. If empty, a 2D source is created on a child when a configured sound first plays.")]
+        [SerializeField] private AudioSource actionAudioSource;
+        [Tooltip("C: successful ignition ring activation, not altar interaction.")]
+        [SerializeField] private ActionSound cIgnitionSound = new ActionSound();
+        [Tooltip("C+Z: successful burst dash start.")]
+        [SerializeField] private ActionSound cZDashSound = new ActionSound();
+        [Tooltip("X: successful fire absorption travel start, including fire-to-fire travel.")]
+        [SerializeField] private ActionSound xAbsorbSound = new ActionSound();
+        [Tooltip("X+Z: successful launch out of a fire or burning rope.")]
+        [SerializeField] private ActionSound xZLaunchSound = new ActionSound();
+        [Tooltip("Z alone: ground jump or air jump. Does not play for dash/launch Z.")]
+        [SerializeField] private ActionSound zJumpSound = new ActionSound();
+
+        private void PlayActionSound(ActionSound sound)
+        {
+            if (!isActiveAndEnabled || sound == null || sound.clip == null || sound.volume <= 0f) return;
+            if (actionAudioSource == null)
+            {
+                // Keep music and other authored sources untouched.
+                GameObject soundObject = new GameObject("Player Action Audio");
+                soundObject.transform.SetParent(transform, false);
+                actionAudioSource = soundObject.AddComponent<AudioSource>();
+                actionAudioSource.playOnAwake = false;
+                actionAudioSource.loop = false;
+                actionAudioSource.spatialBlend = 0f;
+            }
+            if (actionAudioSource.isActiveAndEnabled)
+                actionAudioSource.PlayOneShot(sound.clip, Mathf.Clamp01(sound.volume));
+        }
+
         [Header("Platforming")]
         [Tooltip("좌우 입력으로 이동할 때 목표로 삼는 수평 속도입니다. (월드 단위/초)")]
         [SerializeField, Min(0f)] private float moveSpeed = 7f;
@@ -208,6 +246,11 @@ namespace EmberPrototype
         private PlayerDeathEffect deathEffect;
         public bool IsDying => deathEffect != null && deathEffect.IsPlaying;
         public bool ControlsLocked => controlsLocked;
+        public bool CanConfirmCollectible => isActiveAndEnabled && !IsDying && !controlsLocked
+            && state == FlameState.Free && wasGrounded && body.linearVelocity.y <= 0.1f
+            && TryFindGround(groundProbeDistance, out RaycastHit2D hit)
+            && hit.collider.GetComponentInParent<RoomHazard>() == null
+            && hit.collider.GetComponentInParent<WaterContact>() == null;
         public float NormalMoveSpeed => moveSpeed;
         public bool CanStartTrialCeremony => isActiveAndEnabled && !controlsLocked && state == FlameState.Free;
         internal bool IsAirborneForAnimation =>
@@ -221,6 +264,8 @@ namespace EmberPrototype
 
         private void Awake()
         {
+            if (FindFirstObjectByType<GameSessionControls>() == null)
+                gameObject.AddComponent<GameSessionControls>();
             body = GetComponent<Rigidbody2D>();
             bodyCollider = GetComponent<Collider2D>();
 
@@ -287,6 +332,11 @@ namespace EmberPrototype
 
         private void Update()
         {
+            if (GameSessionControls.BlockGameplayInput)
+            {
+                horizontalInput = jumpRemaining = 0f;
+                return;
+            }
             if (controlsLocked) return;
 
             Keyboard keyboard = Keyboard.current;
@@ -329,6 +379,16 @@ namespace EmberPrototype
         private void FixedUpdate()
         {
             if (controlsLocked) { appliedPlatformVelocity = Vector2.zero; return; }
+            if (state == FlameState.Anchored && (targetFire == null || !targetFire.isActiveAndEnabled || !targetFire.IsBurning))
+            {
+                foreach (Vector2 direction in new[] { Vector2.up, Vector2.right, Vector2.left, Vector2.down })
+                    if (TryFindSafeFireLaunchPosition(direction, out Vector2 position)) { body.position = position; break; }
+                StopFireTravelAtObstacle();
+                bodyCollider.enabled = true;
+                SetAbsorbTargetPreview(null);
+                flameFeedback.HideLaunchRing();
+                return;
+            }
             if (state == FlameState.RopeAnchored) { StepAttachedRope(); return; }
             if (state != FlameState.Free) appliedPlatformVelocity = Vector2.zero;
 
@@ -373,6 +433,8 @@ namespace EmberPrototype
                 bool grounded = velocity.y <= 0.1f && TryFindGround(groundProbeDistance, out groundHit);
                 PathMovingBlock platform = grounded && groundHit.rigidbody != null
                     ? groundHit.rigidbody.GetComponent<PathMovingBlock>() : null;
+                WeightPlatform weightPlatform = grounded && groundHit.rigidbody != null
+                    ? groundHit.rigidbody.GetComponent<WeightPlatform>() : null;
                 if (!groundStateInitialized)
                 {
                     groundStateInitialized = true;
@@ -418,6 +480,7 @@ namespace EmberPrototype
                     cornerCorrectionUsed = false;
                     jumpedThisStep = true;
                     flameFeedback.PlayJump(false);
+                    PlayActionSound(zJumpSound);
                 }
                 else if (jumpRemaining > 0f && airJumpsRemaining > 0 && !ShouldWaitForLanding(velocity))
                 {
@@ -429,6 +492,7 @@ namespace EmberPrototype
                     cornerCorrectionUsed = false;
                     jumpedThisStep = true;
                     flameFeedback.PlayJump(true);
+                    PlayActionSound(zJumpSound);
                 }
                 jumpRemaining -= Time.fixedDeltaTime;
                 if (normalJump && (jumpReleased || !jumpHeld) && velocity.y > 0f)
@@ -448,6 +512,8 @@ namespace EmberPrototype
                 horizontalVelocityBeforeCollision = velocity.x;
                 if (grounded && !jumpedThisStep && platform != null && platform.isActiveAndEnabled)
                     appliedPlatformVelocity = platform.StepVelocity;
+                else if (grounded && !jumpedThisStep && weightPlatform != null && weightPlatform.isActiveAndEnabled)
+                    appliedPlatformVelocity = weightPlatform.StepVelocity;
                 body.linearVelocity = velocity + appliedPlatformVelocity;
                 wasGrounded = grounded && !jumpedThisStep;
                 return;
@@ -1100,6 +1166,7 @@ namespace EmberPrototype
             normalJump = false;
             jumpRiseActive = false;
             flameFeedback.ShowTimedLaunchRing(ignitionBurstChargeTime);
+            PlayActionSound(cIgnitionSound);
         }
 
         private void StartBurstDash(Vector2 desiredDirection)
@@ -1115,6 +1182,7 @@ namespace EmberPrototype
             body.linearVelocity = Vector2.zero;
             flameFeedback.HideLaunchRing();
             flameFeedback.PlayLaunch(burstDashAbility.Direction);
+            PlayActionSound(cZDashSound);
             Camera.main?.GetComponent< CelesteRoomCamera >()?.ShakeDash();
             afterimageEffect.BeginTrail();
         }
@@ -1244,6 +1312,7 @@ namespace EmberPrototype
             fireTravelWaypoint = waypoint;
             hasFireTravelWaypoint = useWaypoint;
             state = FlameState.Travelling;
+            PlayActionSound(xAbsorbSound);
             body.gravityScale = 0f;
             body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
             body.linearVelocity = Vector2.zero;
@@ -1457,6 +1526,7 @@ namespace EmberPrototype
             launchProtection = fireLaunchControlLockTime;
             flameFeedback.PlayLaunch(direction);
             Camera.main?.GetComponent<CelesteRoomCamera>()?.ShakeFireLaunch();
+            PlayActionSound(xZLaunchSound);
             afterimageEffect.PlayTimedTrail(launchAfterimageDuration);
             wasGrounded = false;
         }
@@ -1577,6 +1647,7 @@ namespace EmberPrototype
 
         public void ResetAt(Vector2 position)
         {
+            GetComponent<StrawberryCollection>()?.ReturnPending();
             deathEffect?.Cancel();
             ClearRopeState(true);
             foreach (BurningRope rope in FindObjectsByType<BurningRope>()) rope.ResetMotion();
@@ -1635,8 +1706,12 @@ namespace EmberPrototype
             transform.localScale = initialScale;
             deathEffect.Play(() =>
             {
-                if (room != null) room.Restart();
-                else ResetAt(position);
+                if (room != null) room.RestartForRespawn(true);
+                else
+                {
+                    MapReset.ResetScene(gameObject.scene, true);
+                    ResetAt(position);
+                }
             });
         }
 

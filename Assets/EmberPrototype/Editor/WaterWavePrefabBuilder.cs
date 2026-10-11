@@ -55,6 +55,14 @@ namespace EmberPrototype.Editor
                 renderer.sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>("Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat");
                 SerializedObject data = new SerializedObject(wave); data.FindProperty("visual").objectReferenceValue = renderer;
                 data.ApplyModifiedPropertiesWithoutUndo();
+                // Initialize only this newly created prefab. Later Edit Collider changes
+                // belong to the author and WaterWave must not regenerate them.
+                Vector2[] points = WaterWave.Outline;
+                for (int i = 0; i < points.Length; i++)
+                    points[i] = new Vector2(points[i].x * 1.2f, points[i].y * 2.65f);
+                PolygonCollider2D collider = root.GetComponent<PolygonCollider2D>();
+                collider.isTrigger = true;
+                collider.SetPath(0, points);
                 wave.RefreshShape();
                 Selection.activeObject = PrefabUtility.SaveAsPrefabAsset(root, PrefabPath); AssetDatabase.SaveAssets();
             }

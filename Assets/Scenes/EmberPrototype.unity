@@ -169,12 +169,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 0
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &31259251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -473,12 +482,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 0
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &114268237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -817,12 +835,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 0
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &372001765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -993,12 +1020,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 0
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &488471594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1505,12 +1541,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 0
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1363161907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1681,12 +1726,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 1
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1447490067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1901,12 +1955,21 @@ MonoBehaviour:
   spreadRadius: 1.35
   spreadDelay: 0.45
   startsBurning: 0
+  absorbPoint: {fileID: 0}
+  visual: {fileID: 0}
   unlitSprite: {fileID: 0}
   burningSprite: {fileID: 0}
+  applyColorTint: 0
   unlitColor: {r: 0.42, g: 0.23, b: 0.08, a: 1}
   burningColor: {r: 1, g: 0.28, b: 0.03, a: 1}
   fireEffect: {fileID: 0}
   createFallbackEffect: 1
+  onIgnited:
+    m_PersistentCalls:
+      m_Calls: []
+  onFireReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1613164871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2314,6 +2377,10 @@ GameObject:
   - component: {fileID: 1869084033}
   - component: {fileID: 1869084032}
   - component: {fileID: 1869084031}
+  - component: {fileID: 1869084040}
+  - component: {fileID: 1869084039}
+  - component: {fileID: 1869084038}
+  - component: {fileID: 1869084037}
   m_Layer: 0
   m_Name: Flame Player
   m_TagString: Untagged
@@ -2333,20 +2400,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0280f189afb386944b76379b0d383f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.FlamePlayerController
+  ropeTravelSpeedFactor: 1.15
+  ropeTravelSpeedLimit: 36
+  ropeKickBoost: 4
+  ropeAirAcceleration: 8
+  ropeAirSpeedLimit: 30
+  actionAudioSource: {fileID: 0}
+  cIgnitionSound:
+    clip: {fileID: 0}
+    volume: 0.8
+  cZDashSound:
+    clip: {fileID: 0}
+    volume: 0.8
+  xAbsorbSound:
+    clip: {fileID: 0}
+    volume: 0.8
+  xZLaunchSound:
+    clip: {fileID: 0}
+    volume: 0.8
+  zJumpSound:
+    clip: {fileID: 0}
+    volume: 0.8
   moveSpeed: 7
   jumpSpeed: 12
+  maxAirJumps: 1
   groundProbeDistance: 0.12
-  emberSpeed: 13
-  fireTravelSpeed: 20
-  fireTravelRange: 9
-  fireNetworkStepRange: 1.65
-  fireNetworkDirectionDot: 0.45
-  launchSpeed: 15
   coyoteTime: 0.12
   jumpBuffer: 0.12
   groundAcceleration: 65
+  groundDeceleration: 85
   airAcceleration: 22
+  airDeceleration: 14
+  overspeedDeceleration: 8
+  turnAcceleration: 95
   maxFallSpeed: 22
+  landingJumpBufferTime: 0.07
+  fireLaunchControlLockTime: 0.25
+  burstDashExitControlLockTime: 0.08
+  riseGravityMultiplier: 1.4
+  apexGravityMultiplier: 0.5
+  fallGravityMultiplier: 1.3
+  apexVelocityThreshold: 2.2
+  cornerCorrectionDistance: 0.24
+  cornerCorrectionStep: 0.04
+  wallSpeedRetentionTime: 0.06
+  respawnPoint: {fileID: 0}
+  fireTargetDirectionDot: 0.35
+  showAbsorbTargetLine: 1
+  absorbTargetLineWidth: 0.045
+  absorbTargetLineColor: {r: 1, g: 0.68, b: 0.16, a: 0.9}
+  absorbTargetLineMaterial: {fileID: 0}
+  absorbTargetLineSortingOrderOffset: 10
+  absorbTargetLineSegments: 14
+  absorbTargetLineWobbleAmount: 0.035
+  absorbTargetLineWobbleSpeed: 2.8
+  absorbTargetLineTextureScrollSpeed: 0.6
+  absorbTargetLineGlowWidthMultiplier: 3.5
+  showAbsorbTargetGlow: 1
+  absorbTargetGlowColor: {r: 1, g: 0.75, b: 0.3, a: 1}
+  absorbTargetGlowIntensity: 1.1
+  absorbTargetGlowPulseAmount: 0.3
+  absorbTargetGlowPulseSpeed: 2.5
+  absorbTargetGlowRadius: 1.4
+  ignitionBurstRadius: 1.5
+  ignitionBurstChargeTime: 0.5
+  ignitionBurstVisualTime: 0.18
+  fireTravelSpeed: 20
+  fireTravelAccelerationTime: 0.16
+  fireTravelRange: 9
+  fireTravelObstacleMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  fireTravelCollisionScale: 0.75
+  fireTravelCornerAssistDistance: 1
+  fireTravelCornerAssistStep: 0.25
+  fireNetworkStepRange: 1.65
+  fireNetworkDirectionDot: 0.45
+  launchSpeed: 15
+  launchAfterimageDuration: 0.22
+  fireLaunchCornerAssistDistance: 0.24
 --- !u!58 &1869084032
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2499,6 +2631,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869084037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869084030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4116ddce114f5485113e17b40f6f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.PlayerAbilityInputRouter
+--- !u!114 &1869084038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869084030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb2d3a0a54a4f448441e9d82dd81b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.FlameShotAbility
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 16
+  projectileRange: 8
+  projectileRadius: 0.14
+  aimTimeScale: 0.3
+  aimAssistAngle: 25
+--- !u!114 &1869084039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869084030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fed104c93146d397a3b81338668d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.BurstDashAbility
+  maximumSpeed: 16
+  accelerationTime: 0.05
+  duration: 0.15
+  endSpeedMultiplier: 0.55
+  upwardExitSpeedMultiplier: 0.22
+  dashCollider: {fileID: 0}
+  obstacleAssistDistance: 0.45
+  obstacleAssistAngle: 22
+  obstacleAssistSteps: 3
+--- !u!114 &1869084040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869084030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703fdb81b381467388f1484e72d551e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EmberPrototype.PlayerAbilityUnlocks
+  fireAbsorbUnlocked: 1
+  ignitionRingUnlocked: 1
+  burstDashUnlocked: 1
+  flameShotUnlocked: 1
 --- !u!1 &1965441443
 GameObject:
   m_ObjectHideFlags: 0

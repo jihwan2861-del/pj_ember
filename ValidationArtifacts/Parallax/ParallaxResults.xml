@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="11" result="Passed" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.0494623">
+  <test-suite type="TestSuite" id="1000" name="EmberParallaxQA-7d65bfff7261446ca0ac9bb5ed92141f" fullname="EmberParallaxQA-7d65bfff7261446ca0ac9bb5ed92141f" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.049462" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1013" name="Parallax.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberParallaxQA-7d65bfff7261446ca0ac9bb5ed92141f/Library/ScriptAssemblies/Parallax.Tests.dll" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.044248" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="44244" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1014" name="ParallaxValidation" fullname="ParallaxValidation" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.044047" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="ParallaxTests" fullname="ParallaxValidation.ParallaxTests" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.043364" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1012" name="CleanupPreservesUnrelatedChildren" fullname="ParallaxValidation.ParallaxTests.CleanupPreservesUnrelatedChildren" methodname="CleanupPreservesUnrelatedChildren" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1728398462" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.017576" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1007" name="CopiesPreserveRenderingButNeverCloneGameplayComponents" fullname="ParallaxValidation.ParallaxTests.CopiesPreserveRenderingButNeverCloneGameplayComponents" methodname="CopiesPreserveRenderingButNeverCloneGameplayComponents" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1803109279" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.003173" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1010" name="InvalidRotationDoesNotSpawnMisalignedTiles" fullname="ParallaxValidation.ParallaxTests.InvalidRotationDoesNotSpawnMisalignedTiles" methodname="InvalidRotationDoesNotSpawnMisalignedTiles" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="396806494" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.002214" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[ParallaxLayer: Repeat X supports unrotated sprites with Draw Mode set to Simple.
+]]></output>
+          </test-case>
+          <test-case id="1009" name="MissingSpriteWarnsOnceAndKeepsNormalFollow" fullname="ParallaxValidation.ParallaxTests.MissingSpriteWarnsOnceAndKeepsNormalFollow" methodname="MissingSpriteWarnsOnceAndKeepsNormalFollow" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1915413170" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.000993" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[ParallaxLayer: Repeat X needs a SpriteRenderer with a sprite on the same object.
+]]></output>
+          </test-case>
+          <test-case id="1006" name="ParentScaleNegativeScaleFlipAndCustomPivotKeepSpacing" fullname="ParallaxValidation.ParallaxTests.ParentScaleNegativeScaleFlipAndCustomPivotKeepSpacing" methodname="ParentScaleNegativeScaleFlipAndCustomPivotKeepSpacing" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1397664486" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.004314" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1002" name="RepeatOffPreservesFollowAndDepth" fullname="ParallaxValidation.ParallaxTests.RepeatOffPreservesFollowAndDepth" methodname="RepeatOffPreservesFollowAndDepth" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1825375336" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.000611" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1003" name="RepetitionCoversPositiveNegativeAndTeleportPositionsWithoutDrift" fullname="ParallaxValidation.ParallaxTests.RepetitionCoversPositiveNegativeAndTeleportPositionsWithoutDrift" methodname="RepetitionCoversPositiveNegativeAndTeleportPositionsWithoutDrift" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1338370683" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.000636" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1011" name="TinySpritesDoNotSpawnAnUnboundedNumberOfCopies" fullname="ParallaxValidation.ParallaxTests.TinySpritesDoNotSpawnAnUnboundedNumberOfCopies" methodname="TinySpritesDoNotSpawnAnUnboundedNumberOfCopies" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1071980698" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.000593" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[ParallaxLayer: The sprite is too small to cover this camera. Increase its scale or lower the zoom-out.
+]]></output>
+          </test-case>
+          <test-case id="1004" name="TransparentBordersRemainInRepeatSpacing" fullname="ParallaxValidation.ParallaxTests.TransparentBordersRemainInRepeatSpacing" methodname="TransparentBordersRemainInRepeatSpacing" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1536810275" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.001356" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1008" name="TurningRepeatOffAndReEnablingDoesNotAccumulateCopies" fullname="ParallaxValidation.ParallaxTests.TurningRepeatOffAndReEnablingDoesNotAccumulateCopies" methodname="TurningRepeatOffAndReEnablingDoesNotAccumulateCopies" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="1804718013" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.000609" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1005" name="ZoomOutAddsCopiesAndReusesThemOnLaterFrames" fullname="ParallaxValidation.ParallaxTests.ZoomOutAddsCopiesAndReusesThemOnLaterFrames" methodname="ZoomOutAddsCopiesAndReusesThemOnLaterFrames" classname="ParallaxValidation.ParallaxTests" runstate="Runnable" seed="115841498" result="Passed" start-time="2026-10-07 10:58:31Z" end-time="2026-10-07 10:58:31Z" duration="0.002383" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:\Users\admin\Desktop\게임 그래픽 게임\project Ember\ValidationArtifacts\Parallax\ParallaxResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

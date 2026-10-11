@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 16:40:27Z" end-time="2026-10-07 16:40:30Z" duration="3.1751325">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="89" result="Passed" start-time="2026-10-07 16:40:27Z" end-time="2026-10-07 16:40:30Z" duration="3.175133" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1106" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberWaterSpiritQA-20261006/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="89" result="Passed" start-time="2026-10-07 16:40:27Z" end-time="2026-10-07 16:40:30Z" duration="3.169774" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="60636" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1108" name="WaveValidation" fullname="WaveValidation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 16:40:27Z" end-time="2026-10-07 16:40:30Z" duration="3.168990" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1005" name="WaterWaveTests" fullname="WaveValidation.WaterWaveTests" classname="WaveValidation.WaterWaveTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 16:40:27Z" end-time="2026-10-07 16:40:30Z" duration="3.168134" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1008" name="DeadlyWaveUsesExistingRoomRespawn" fullname="WaveValidation.WaterWaveTests.DeadlyWaveUsesExistingRoomRespawn" methodname="DeadlyWaveUsesExistingRoomRespawn" classname="WaveValidation.WaterWaveTests" runstate="Runnable" seed="1377038831" result="Passed" start-time="2026-10-07 16:40:27Z" end-time="2026-10-07 16:40:29Z" duration="1.733720" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1007" name="NativePhysicsMovesLeftAndMirrorsShape" fullname="WaveValidation.WaterWaveTests.NativePhysicsMovesLeftAndMirrorsShape" methodname="NativePhysicsMovesLeftAndMirrorsShape" classname="WaveValidation.WaterWaveTests" runstate="Runnable" seed="1221598455" result="Passed" start-time="2026-10-07 16:40:29Z" end-time="2026-10-07 16:40:30Z" duration="0.710738" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1006" name="NativePhysicsMovesRightAndStopsAtDistance" fullname="WaveValidation.WaterWaveTests.NativePhysicsMovesRightAndStopsAtDistance" methodname="NativePhysicsMovesRightAndStopsAtDistance" classname="WaveValidation.WaterWaveTests" runstate="Runnable" seed="466427055" result="Passed" start-time="2026-10-07 16:40:30Z" end-time="2026-10-07 16:40:30Z" duration="0.714726" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

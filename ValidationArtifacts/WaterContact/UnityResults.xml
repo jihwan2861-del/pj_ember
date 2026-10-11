@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="20" result="Passed" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 07:07:31Z" end-time="2026-10-07 07:07:55Z" duration="24.0091461">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="77" result="Passed" start-time="2026-10-07 07:07:31Z" end-time="2026-10-07 07:07:55Z" duration="24.009146" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1091" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberWaterSpiritQA-20261006/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="77" result="Passed" start-time="2026-10-07 07:07:31Z" end-time="2026-10-07 07:07:55Z" duration="24.003605" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="32492" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1095" name="WaterContactValidation" fullname="WaterContactValidation" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-07 07:07:31Z" end-time="2026-10-07 07:07:35Z" duration="4.122045" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1016" name="WaterContactTests" fullname="WaterContactValidation.WaterContactTests" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-07 07:07:31Z" end-time="2026-10-07 07:07:35Z" duration="4.121274" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1024" name="ExtinguishedTargetsReleasePlayerAndNotifyDoor" fullname="WaterContactValidation.WaterContactTests.ExtinguishedTargetsReleasePlayerAndNotifyDoor" methodname="ExtinguishedTargetsReleasePlayerAndNotifyDoor" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="1694508538" result="Passed" start-time="2026-10-07 07:07:31Z" end-time="2026-10-07 07:07:32Z" duration="0.445316" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1017" name="ExtinguishPreservesInitialFireStopsEffectsAndPendingSpread" fullname="WaterContactValidation.WaterContactTests.ExtinguishPreservesInitialFireStopsEffectsAndPendingSpread" methodname="ExtinguishPreservesInitialFireStopsEffectsAndPendingSpread" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="741896845" result="Passed" start-time="2026-10-07 07:07:32Z" end-time="2026-10-07 07:07:33Z" duration="0.922226" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1022" name="FastNativeWaveExtinguishesAcrossOnePhysicsStep" fullname="WaterContactValidation.WaterContactTests.FastNativeWaveExtinguishesAcrossOnePhysicsStep" methodname="FastNativeWaveExtinguishesAcrossOnePhysicsStep" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="1842069029" result="Passed" start-time="2026-10-07 07:07:33Z" end-time="2026-10-07 07:07:33Z" duration="0.407597" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1018" name="OverlappingWaterAndDuplicateCollidersRemainWetUntilLastExit" fullname="WaterContactValidation.WaterContactTests.OverlappingWaterAndDuplicateCollidersRemainWetUntilLastExit" methodname="OverlappingWaterAndDuplicateCollidersRemainWetUntilLastExit" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="1871780889" result="Passed" start-time="2026-10-07 07:07:33Z" end-time="2026-10-07 07:07:33Z" duration="0.381375" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1023" name="ResetRestoresInitialFireAndReappliesPermanentWater" fullname="WaterContactValidation.WaterContactTests.ResetRestoresInitialFireAndReappliesPermanentWater" methodname="ResetRestoresInitialFireAndReappliesPermanentWater" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="1125138480" result="Passed" start-time="2026-10-07 07:07:33Z" end-time="2026-10-07 07:07:34Z" duration="0.342609" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1019" name="WaterExitAndLargeOverlapQueryDoNotLoseContacts" fullname="WaterContactValidation.WaterContactTests.WaterExitAndLargeOverlapQueryDoNotLoseContacts" methodname="WaterExitAndLargeOverlapQueryDoNotLoseContacts" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="1983313394" result="Passed" start-time="2026-10-07 07:07:34Z" end-time="2026-10-07 07:07:34Z" duration="0.453272" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1021" name="WaveStopsInsideFireAndReusesWithoutStaleWetState" fullname="WaterContactValidation.WaterContactTests.WaveStopsInsideFireAndReusesWithoutStaleWetState" methodname="WaveStopsInsideFireAndReusesWithoutStaleWetState" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="138066299" result="Passed" start-time="2026-10-07 07:07:34Z" end-time="2026-10-07 07:07:35Z" duration="0.339102" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1020" name="WetTargetsRejectProjectileAndSpreadIgnition" fullname="WaterContactValidation.WaterContactTests.WetTargetsRejectProjectileAndSpreadIgnition" methodname="WetTargetsRejectProjectileAndSpreadIgnition" classname="WaterContactValidation.WaterContactTests" runstate="Runnable" seed="1183081693" result="Passed" start-time="2026-10-07 07:07:35Z" end-time="2026-10-07 07:07:35Z" duration="0.819667" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1094" name="WaterSpiritAIValidation" fullname="WaterSpiritAIValidation" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-07 07:07:35Z" end-time="2026-10-07 07:07:48Z" duration="12.543706" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1009" name="WaterSpiritAITests" fullname="WaterSpiritAIValidation.WaterSpiritAITests" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-07 07:07:35Z" end-time="2026-10-07 07:07:48Z" duration="12.543472" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1015" name="CameraMovementKeepsWholeSpiritInsideViewportAndResetStopsRush" fullname="WaterSpiritAIValidation.WaterSpiritAITests.CameraMovementKeepsWholeSpiritInsideViewportAndResetStopsRush" methodname="CameraMovementKeepsWholeSpiritInsideViewportAndResetStopsRush" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" seed="44148071" result="Passed" start-time="2026-10-07 07:07:35Z" end-time="2026-10-07 07:07:37Z" duration="1.584718" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1013" name="EveryWaveReleaseRequestsSmallShakeAndNoShakeBeforeRelease" fullname="WaterSpiritAIValidation.WaterSpiritAITests.EveryWaveReleaseRequestsSmallShakeAndNoShakeBeforeRelease" methodname="EveryWaveReleaseRequestsSmallShakeAndNoShakeBeforeRelease" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" seed="95037599" result="Passed" start-time="2026-10-07 07:07:37Z" end-time="2026-10-07 07:07:42Z" duration="4.963814" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1012" name="RushStillExecutesWhenPlayerIsOutsideAndCameraCorrectsWarning" fullname="WaterSpiritAIValidation.WaterSpiritAITests.RushStillExecutesWhenPlayerIsOutsideAndCameraCorrectsWarning" methodname="RushStillExecutesWhenPlayerIsOutsideAndCameraCorrectsWarning" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" seed="59931271" result="Passed" start-time="2026-10-07 07:07:42Z" end-time="2026-10-07 07:07:43Z" duration="1.456402" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1011" name="RushWarnsLocksDirectionAndImmediatelyResumes" fullname="WaterSpiritAIValidation.WaterSpiritAITests.RushWarnsLocksDirectionAndImmediatelyResumes" methodname="RushWarnsLocksDirectionAndImmediatelyResumes" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" seed="113934734" result="Passed" start-time="2026-10-07 07:07:43Z" end-time="2026-10-07 07:07:45Z" duration="1.918699" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1014" name="SmallVerticalCameraCorrectionMustNotCancelHorizontalRush" fullname="WaterSpiritAIValidation.WaterSpiritAITests.SmallVerticalCameraCorrectionMustNotCancelHorizontalRush" methodname="SmallVerticalCameraCorrectionMustNotCancelHorizontalRush" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" seed="1194970297" result="Passed" start-time="2026-10-07 07:07:45Z" end-time="2026-10-07 07:07:47Z" duration="1.512316" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1010" name="WaveFiresWithoutWarningAndKeepsFollowing" fullname="WaterSpiritAIValidation.WaterSpiritAITests.WaveFiresWithoutWarningAndKeepsFollowing" methodname="WaveFiresWithoutWarningAndKeepsFollowing" classname="WaterSpiritAIValidation.WaterSpiritAITests" runstate="Runnable" seed="1665221926" result="Passed" start-time="2026-10-07 07:07:47Z" end-time="2026-10-07 07:07:48Z" duration="1.106370" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1093" name="WaterSpiritValidation" fullname="WaterSpiritValidation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 07:07:48Z" end-time="2026-10-07 07:07:52Z" duration="4.428677" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1005" name="WaterSpiritTests" fullname="WaterSpiritValidation.WaterSpiritTests" classname="WaterSpiritValidation.WaterSpiritTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 07:07:48Z" end-time="2026-10-07 07:07:52Z" duration="4.428521" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1008" name="DeferredRespawnCancelsAttackUntilResumed" fullname="WaterSpiritValidation.WaterSpiritTests.DeferredRespawnCancelsAttackUntilResumed" methodname="DeferredRespawnCancelsAttackUntilResumed" classname="WaterSpiritValidation.WaterSpiritTests" runstate="Runnable" seed="301333381" result="Passed" start-time="2026-10-07 07:07:48Z" end-time="2026-10-07 07:07:49Z" duration="1.212942" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1007" name="LeftAttackAndMoveUseTheAuthoredFrames" fullname="WaterSpiritValidation.WaterSpiritTests.LeftAttackAndMoveUseTheAuthoredFrames" methodname="LeftAttackAndMoveUseTheAuthoredFrames" classname="WaterSpiritValidation.WaterSpiritTests" runstate="Runnable" seed="1642072546" result="Passed" start-time="2026-10-07 07:07:49Z" end-time="2026-10-07 07:07:50Z" duration="0.958478" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1006" name="RightAttackReleasesOneWaveOnSwingAndReturnsToIdle" fullname="WaterSpiritValidation.WaterSpiritTests.RightAttackReleasesOneWaveOnSwingAndReturnsToIdle" methodname="RightAttackReleasesOneWaveOnSwingAndReturnsToIdle" classname="WaterSpiritValidation.WaterSpiritTests" runstate="Runnable" seed="347780477" result="Passed" start-time="2026-10-07 07:07:50Z" end-time="2026-10-07 07:07:52Z" duration="2.256452" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1092" name="WaveValidation" fullname="WaveValidation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 07:07:52Z" end-time="2026-10-07 07:07:55Z" duration="2.907991" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="WaterWaveTests" fullname="WaveValidation.WaterWaveTests" classname="WaveValidation.WaterWaveTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 07:07:52Z" end-time="2026-10-07 07:07:55Z" duration="2.907833" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1004" name="DeadlyWaveUsesExistingRoomRespawn" fullname="WaveValidation.WaterWaveTests.DeadlyWaveUsesExistingRoomRespawn" methodname="DeadlyWaveUsesExistingRoomRespawn" classname="WaveValidation.WaterWaveTests" runstate="Runnable" seed="335471215" result="Passed" start-time="2026-10-07 07:07:52Z" end-time="2026-10-07 07:07:54Z" duration="1.527392" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1003" name="NativePhysicsMovesLeftAndMirrorsShape" fullname="WaveValidation.WaterWaveTests.NativePhysicsMovesLeftAndMirrorsShape" methodname="NativePhysicsMovesLeftAndMirrorsShape" classname="WaveValidation.WaterWaveTests" runstate="Runnable" seed="831425274" result="Passed" start-time="2026-10-07 07:07:54Z" end-time="2026-10-07 07:07:55Z" duration="0.689814" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1002" name="NativePhysicsMovesRightAndStopsAtDistance" fullname="WaveValidation.WaterWaveTests.NativePhysicsMovesRightAndStopsAtDistance" methodname="NativePhysicsMovesRightAndStopsAtDistance" classname="WaveValidation.WaterWaveTests" runstate="Runnable" seed="1195617558" result="Passed" start-time="2026-10-07 07:07:55Z" end-time="2026-10-07 07:07:55Z" duration="0.689971" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

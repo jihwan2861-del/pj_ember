@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="14" result="Passed" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-08 00:08:03Z" end-time="2026-10-08 00:08:23Z" duration="20.4476378">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-08 00:08:03Z" end-time="2026-10-08 00:08:23Z" duration="20.447638" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1114" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberWaterSpiritQA-20261006/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-08 00:08:03Z" end-time="2026-10-08 00:08:23Z" duration="20.442199" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="52116" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1122" name="GameSessionValidation" fullname="GameSessionValidation" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-08 00:08:03Z" end-time="2026-10-08 00:08:12Z" duration="8.930201" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1040" name="GameSessionTests" fullname="GameSessionValidation.GameSessionTests" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-08 00:08:03Z" end-time="2026-10-08 00:08:12Z" duration="8.929421" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1045" name="DeathSequenceDoesNotRespawnDuringPause" fullname="GameSessionValidation.GameSessionTests.DeathSequenceDoesNotRespawnDuringPause" methodname="DeathSequenceDoesNotRespawnDuringPause" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="295493191" result="Passed" start-time="2026-10-08 00:08:03Z" end-time="2026-10-08 00:08:06Z" duration="2.799121" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1041" name="EscapeFreezesPhysicsAndResumes" fullname="GameSessionValidation.GameSessionTests.EscapeFreezesPhysicsAndResumes" methodname="EscapeFreezesPhysicsAndResumes" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="641439340" result="Passed" start-time="2026-10-08 00:08:06Z" end-time="2026-10-08 00:08:07Z" duration="0.919203" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1044" name="PauseCancelsAimWithoutBreakingTimeScaleAndDisableRestoresTime" fullname="GameSessionValidation.GameSessionTests.PauseCancelsAimWithoutBreakingTimeScaleAndDisableRestoresTime" methodname="PauseCancelsAimWithoutBreakingTimeScaleAndDisableRestoresTime" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="563147164" result="Passed" start-time="2026-10-08 00:08:07Z" end-time="2026-10-08 00:08:07Z" duration="0.611015" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1047" name="RestartDuringDeathCancelsDeathAndCompletesWipe" fullname="GameSessionValidation.GameSessionTests.RestartDuringDeathCancelsDeathAndCompletesWipe" methodname="RestartDuringDeathCancelsDeathAndCompletesWipe" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="1539552749" result="Passed" start-time="2026-10-08 00:08:07Z" end-time="2026-10-08 00:08:08Z" duration="0.969863" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1046" name="RestartWipeCoversBeforeReloadAndSurvivesUntilReveal" fullname="GameSessionValidation.GameSessionTests.RestartWipeCoversBeforeReloadAndSurvivesUntilReveal" methodname="RestartWipeCoversBeforeReloadAndSurvivesUntilReveal" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="428838678" result="Passed" start-time="2026-10-08 00:08:08Z" end-time="2026-10-08 00:08:10Z" duration="1.315223" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1042" name="RReloadsSceneFromInitialState" fullname="GameSessionValidation.GameSessionTests.RReloadsSceneFromInitialState" methodname="RReloadsSceneFromInitialState" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="2024963953" result="Passed" start-time="2026-10-08 00:08:10Z" end-time="2026-10-08 00:08:11Z" duration="1.154702" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1043" name="RWorksWhilePausedAndReloadDoesNotStayFrozen" fullname="GameSessionValidation.GameSessionTests.RWorksWhilePausedAndReloadDoesNotStayFrozen" methodname="RWorksWhilePausedAndReloadDoesNotStayFrozen" classname="GameSessionValidation.GameSessionTests" runstate="Runnable" seed="1315018193" result="Passed" start-time="2026-10-08 00:08:11Z" end-time="2026-10-08 00:08:12Z" duration="1.150431" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1121" name="StrawberryValidation" fullname="StrawberryValidation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-08 00:08:12Z" end-time="2026-10-08 00:08:17Z" duration="5.398965" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1035" name="StrawberryTests" fullname="StrawberryValidation.StrawberryTests" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-08 00:08:12Z" end-time="2026-10-08 00:08:17Z" duration="5.398772" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1037" name="DeathReturnsUnconfirmedBerryToItsSpawn" fullname="StrawberryValidation.StrawberryTests.DeathReturnsUnconfirmedBerryToItsSpawn" methodname="DeathReturnsUnconfirmedBerryToItsSpawn" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="665747991" result="Passed" start-time="2026-10-08 00:08:12Z" end-time="2026-10-08 00:08:13Z" duration="0.762043" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1038" name="MultipleBerriesCountIndependentlyAndResetPendingTogether" fullname="StrawberryValidation.StrawberryTests.MultipleBerriesCountIndependentlyAndResetPendingTogether" methodname="MultipleBerriesCountIndependentlyAndResetPendingTogether" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="2041808588" result="Passed" start-time="2026-10-08 00:08:13Z" end-time="2026-10-08 00:08:15Z" duration="1.939709" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1039" name="NonPlayerCannotPickupAndDisablingFollowerReturnsIt" fullname="StrawberryValidation.StrawberryTests.NonPlayerCannotPickupAndDisablingFollowerReturnsIt" methodname="NonPlayerCannotPickupAndDisablingFollowerReturnsIt" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="38850396" result="Passed" start-time="2026-10-08 00:08:15Z" end-time="2026-10-08 00:08:15Z" duration="0.658344" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1036" name="TriggerFollowsInAirThenCollectsOnceOnLanding" fullname="StrawberryValidation.StrawberryTests.TriggerFollowsInAirThenCollectsOnceOnLanding" methodname="TriggerFollowsInAirThenCollectsOnceOnLanding" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="626219782" result="Passed" start-time="2026-10-08 00:08:15Z" end-time="2026-10-08 00:08:17Z" duration="2.037877" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1115" name="WeightPlatformValidation" fullname="WeightPlatformValidation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-08 00:08:17Z" end-time="2026-10-08 00:08:23Z" duration="6.111848" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="WeightPlatformTests" fullname="WeightPlatformValidation.WeightPlatformTests" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-08 00:08:17Z" end-time="2026-10-08 00:08:23Z" duration="6.111702" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1004" name="ActualPlayerRidesDescendingPlatformWithoutDroppingThrough" fullname="WeightPlatformValidation.WeightPlatformTests.ActualPlayerRidesDescendingPlatformWithoutDroppingThrough" methodname="ActualPlayerRidesDescendingPlatformWithoutDroppingThrough" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" seed="1187413838" result="Passed" start-time="2026-10-08 00:08:17Z" end-time="2026-10-08 00:08:19Z" duration="1.278765" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1002" name="LoadDescendsToLimitAndReturnsAfterLastObjectLeaves" fullname="WeightPlatformValidation.WeightPlatformTests.LoadDescendsToLimitAndReturnsAfterLastObjectLeaves" methodname="LoadDescendsToLimitAndReturnsAfterLastObjectLeaves" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" seed="1723279270" result="Passed" start-time="2026-10-08 00:08:19Z" end-time="2026-10-08 00:08:22Z" duration="3.966413" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1003" name="SideUndersideAndTriggerDoNotPressPlatform" fullname="WeightPlatformValidation.WeightPlatformTests.SideUndersideAndTriggerDoNotPressPlatform" methodname="SideUndersideAndTriggerDoNotPressPlatform" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" seed="1997683407" result="Passed" start-time="2026-10-08 00:08:22Z" end-time="2026-10-08 00:08:23Z" duration="0.865868" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

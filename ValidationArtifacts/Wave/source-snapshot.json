@@ -1,0 +1,14 @@
+[
+  {
+    "sha256": "8C47D4D49CFB58B0CC147BB3A9C8624BFC6D203EE27403B783D9B1C4855F8178",
+    "path": "Assets/EmberPrototype/Runtime/WaterWave.cs"
+  },
+  {
+    "sha256": "409035EA0C9B0F2F68C450E5CD5F7806AABE56D9AAA2B4A2493478D33D21BBB6",
+    "path": "Assets/EmberPrototype/Editor/WaterWavePrefabBuilder.cs"
+  },
+  {
+    "sha256": "A9986340848BD0148B835EB8599DA4332C39E21D096A78F92DF6971FF2551029",
+    "path": "Assets/EmberPrototype/Prefabs/WaterWave.prefab"
+  }
+]

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.0359972">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="89" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.035997" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1106" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberWaterSpiritQA-20261006/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="89" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.030295" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13180" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1109" name="WaveAuthoringValidation" fullname="WaveAuthoringValidation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.029418" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1009" name="WaterWaveAuthoringTests" fullname="WaveAuthoringValidation.WaterWaveAuthoringTests" classname="WaveAuthoringValidation.WaterWaveAuthoringTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.028696" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1012" name="BottomAlignmentAndVisualOffsetDoNotChangeCollider" fullname="WaveAuthoringValidation.WaterWaveAuthoringTests.BottomAlignmentAndVisualOffsetDoNotChangeCollider" methodname="BottomAlignmentAndVisualOffsetDoNotChangeCollider" classname="WaveAuthoringValidation.WaterWaveAuthoringTests" runstate="Runnable" seed="79299341" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.016606" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1011" name="DirectionRoundTripsMirrorSavedShapeWithoutCumulativeFlips" fullname="WaveAuthoringValidation.WaterWaveAuthoringTests.DirectionRoundTripsMirrorSavedShapeWithoutCumulativeFlips" methodname="DirectionRoundTripsMirrorSavedShapeWithoutCumulativeFlips" classname="WaveAuthoringValidation.WaterWaveAuthoringTests" runstate="Runnable" seed="236109016" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.001325" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1010" name="InspectorRefreshPreservesHandEditedPathsAndOffset" fullname="WaveAuthoringValidation.WaterWaveAuthoringTests.InspectorRefreshPreservesHandEditedPathsAndOffset" methodname="InspectorRefreshPreservesHandEditedPathsAndOffset" classname="WaveAuthoringValidation.WaterWaveAuthoringTests" runstate="Runnable" seed="957671525" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.000499" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1013" name="SingleVisualIsAutomaticallyConnectedAndHiddenOnStop" fullname="WaveAuthoringValidation.WaterWaveAuthoringTests.SingleVisualIsAutomaticallyConnectedAndHiddenOnStop" methodname="SingleVisualIsAutomaticallyConnectedAndHiddenOnStop" classname="WaveAuthoringValidation.WaterWaveAuthoringTests" runstate="Runnable" seed="2085829127" result="Passed" start-time="2026-10-07 16:38:49Z" end-time="2026-10-07 16:38:49Z" duration="0.000797" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

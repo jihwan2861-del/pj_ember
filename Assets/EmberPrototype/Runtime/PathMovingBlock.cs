@@ -128,6 +128,12 @@ namespace EmberPrototype
             if (body != null) body.linearVelocity = Vector2.zero;
         }
 
+        public void ResetForRespawn()
+        {
+            ResetBlock();
+            if (activateOnStart && isActiveAndEnabled) Activate();
+        }
+
         public void ResetBlock()
         {
             StepVelocity = Vector2.zero;

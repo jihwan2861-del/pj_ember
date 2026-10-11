@@ -23,6 +23,7 @@ namespace EmberPrototype
 
         private void Update()
         {
+            if (GameSessionControls.BlockGameplayInput) return;
             if (player == null) player = GetComponent<FlamePlayerController>();
             if (abilityUnlocks == null) abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
             if (player == null) return;

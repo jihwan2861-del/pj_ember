@@ -38,6 +38,10 @@ namespace EmberPrototype
         private DeathScreenWipe screenWipe;
         private bool resettingUnderCover;
         public bool IsPlaying { get; private set; }
+        internal float WipeOutDuration => wipeOutDuration;
+        internal float WipeInDuration => wipeInDuration;
+        internal float BlackHoldDuration => blackHoldDuration;
+        internal int WipeSteps => wipeSteps;
 
         private void Awake()
         {
@@ -99,7 +103,7 @@ namespace EmberPrototype
         private IEnumerator RespawnAfterEffect(Action respawn)
         {
             // Aiming slow motion must never extend the retry delay.
-            yield return new WaitForSecondsRealtime(respawnDelay);
+            yield return WaitForUnpausedRealtime(respawnDelay);
             EnsureScreenWipe();
             screenWipe.gameObject.SetActive(true);
             yield return AnimateWipe(0f, 1f, wipeOutDuration);
@@ -114,7 +118,7 @@ namespace EmberPrototype
                 GetComponent<Rigidbody2D>().position);
             // Allow physics interpolation and the camera to settle behind full coverage.
             yield return null;
-            if (blackHoldDuration > 0f) yield return new WaitForSecondsRealtime(blackHoldDuration);
+            if (blackHoldDuration > 0f) yield return WaitForUnpausedRealtime(blackHoldDuration);
             Camera.main?.GetComponent<CelesteRoomCamera>()?.SnapAfterRespawn(
                 GetComponent<Rigidbody2D>().position);
             yield return AnimateWipe(1f, 0f, wipeInDuration);
@@ -122,6 +126,7 @@ namespace EmberPrototype
             sequence = null;
             IsPlaying = false;
             player.SetControlsLocked(false);
+            MapReset.ResumeWaves(gameObject.scene);
         }
 
         private void EnsureScreenWipe()
@@ -149,12 +154,22 @@ namespace EmberPrototype
             float elapsed = 0f;
             while (elapsed < duration)
             {
-                elapsed += Time.unscaledDeltaTime;
+                if (!GameSessionControls.IsPaused) elapsed += Time.unscaledDeltaTime;
                 float t = Mathf.Clamp01(elapsed / duration);
                 screenWipe.SetCoverage(Mathf.Lerp(from, to, t * t * (3f - 2f * t)), wipeSteps);
                 yield return null;
             }
             screenWipe.SetCoverage(to, wipeSteps);
+        }
+
+        private static IEnumerator WaitForUnpausedRealtime(float duration)
+        {
+            float elapsed = 0f;
+            while (elapsed < duration)
+            {
+                if (!GameSessionControls.IsPaused) elapsed += Time.unscaledDeltaTime;
+                yield return null;
+            }
         }
 
         public void Cancel()
@@ -164,6 +179,7 @@ namespace EmberPrototype
             sequence = null;
             if (screenWipe != null) screenWipe.gameObject.SetActive(false);
             if (IsPlaying) RestorePresentation();
+            if (IsPlaying) MapReset.ResumeWaves(gameObject.scene);
             IsPlaying = false;
         }
 

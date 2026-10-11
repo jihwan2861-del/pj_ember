@@ -124,6 +124,7 @@ namespace EmberPrototype
             if (!IsSafeFireLaunchPosition(body.position, exitPosition)) return;
             // No artificial offset is needed: the rope end is a trigger, not solid geometry.
             ReleaseRope(Vector2.ClampMagnitude(velocity + additional, ropeAirSpeedLimit), true);
+            PlayActionSound(xZLaunchSound);
             if (direction != Vector2.zero)
             {
                 flameFeedback.PlayLaunch(direction);

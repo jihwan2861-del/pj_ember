@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="9" result="Passed" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:44Z" duration="0.8066333">
+  <test-suite type="TestSuite" id="1494" name="MainMenuQA" fullname="MainMenuQA" runstate="Runnable" testcasecount="390" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:44Z" duration="0.806633" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1012" name="MainMenu.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberMainMenuQA-5196966b630c449c8d530d9b7b42a1f3/Library/ScriptAssemblies/MainMenu.Tests.dll" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:44Z" duration="0.797757" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="39548" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1013" name="MainMenuValidation" fullname="MainMenuValidation" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:44Z" duration="0.797245" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="MainMenuTests" fullname="MainMenuValidation.MainMenuTests" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:44Z" duration="0.796670" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1011" name="BackgroundCoverDoesNotStretchOrLeaveBars" fullname="MainMenuValidation.MainMenuTests.BackgroundCoverDoesNotStretchOrLeaveBars" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.188046" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1008" name="BackgroundCoverDoesNotStretchOrLeaveBars(1920.0f,1080.0f,1.0f,1.0f)" fullname="MainMenuValidation.MainMenuTests.BackgroundCoverDoesNotStretchOrLeaveBars(1920.0f,1080.0f,1.0f,1.0f)" methodname="BackgroundCoverDoesNotStretchOrLeaveBars" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="1050117745" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.152412" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="BackgroundCoverDoesNotStretchOrLeaveBars(1280.0f,960.0f,0.75f,1.0f)" fullname="MainMenuValidation.MainMenuTests.BackgroundCoverDoesNotStretchOrLeaveBars(1280.0f,960.0f,0.75f,1.0f)" methodname="BackgroundCoverDoesNotStretchOrLeaveBars" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="85764996" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.018221" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="BackgroundCoverDoesNotStretchOrLeaveBars(2560.0f,1080.0f,1.0f,0.75f)" fullname="MainMenuValidation.MainMenuTests.BackgroundCoverDoesNotStretchOrLeaveBars(2560.0f,1080.0f,1.0f,0.75f)" methodname="BackgroundCoverDoesNotStretchOrLeaveBars" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="150078226" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.013160" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1002" name="KeyboardNavigationSubmitCancelAndWrap" fullname="MainMenuValidation.MainMenuTests.KeyboardNavigationSubmitCancelAndWrap" methodname="KeyboardNavigationSubmitCancelAndWrap" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="605502819" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.041499" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1006" name="MissingTargetKeepsMenuUsable" fullname="MainMenuValidation.MainMenuTests.MissingTargetKeepsMenuUsable" methodname="MissingTargetKeepsMenuUsable" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="1871160066" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.019144" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Ember main menu cannot load the configured scene: ThisSceneDoesNotExist
+]]></output>
+          </test-case>
+          <test-case id="1003" name="MouseCanOpenSettingsAndReturn" fullname="MainMenuValidation.MainMenuTests.MouseCanOpenSettingsAndReturn" methodname="MouseCanOpenSettingsAndReturn" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="488686656" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.031856" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1007" name="ReenablingDoesNotDuplicateButtonListeners" fullname="MainMenuValidation.MainMenuTests.ReenablingDoesNotDuplicateButtonListeners" methodname="ReenablingDoesNotDuplicateButtonListeners" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="1463834582" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.016090" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1005" name="StartFadesAndLoadsTargetEvenWithPausedTime" fullname="MainMenuValidation.MainMenuTests.StartFadesAndLoadsTargetEvenWithPausedTime" methodname="StartFadesAndLoadsTargetEvenWithPausedTime" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="391266797" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:43Z" duration="0.471670" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1004" name="VolumeAndDisplaySettingsPersist" fullname="MainMenuValidation.MainMenuTests.VolumeAndDisplaySettingsPersist" methodname="VolumeAndDisplaySettingsPersist" classname="MainMenuValidation.MainMenuTests" runstate="Runnable" seed="605091492" result="Passed" start-time="2026-10-07 16:39:43Z" end-time="2026-10-07 16:39:44Z" duration="0.021415" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:\Users\admin\Desktop\게임 그래픽 게임\project Ember\ValidationArtifacts\MainMenu\MainMenuResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

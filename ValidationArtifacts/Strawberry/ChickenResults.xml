@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 11:53:13Z" end-time="2026-10-07 11:53:25Z" duration="12.0113748">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-07 11:53:13Z" end-time="2026-10-07 11:53:25Z" duration="12.011375" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1100" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberWaterSpiritQA-20261006/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-07 11:53:13Z" end-time="2026-10-07 11:53:25Z" duration="12.005999" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="41908" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1106" name="StrawberryValidation" fullname="StrawberryValidation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-07 11:53:13Z" end-time="2026-10-07 11:53:19Z" duration="5.847608" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1029" name="StrawberryTests" fullname="StrawberryValidation.StrawberryTests" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-07 11:53:13Z" end-time="2026-10-07 11:53:19Z" duration="5.846889" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1031" name="DeathReturnsUnconfirmedBerryToItsSpawn" fullname="StrawberryValidation.StrawberryTests.DeathReturnsUnconfirmedBerryToItsSpawn" methodname="DeathReturnsUnconfirmedBerryToItsSpawn" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="1363549367" result="Passed" start-time="2026-10-07 11:53:13Z" end-time="2026-10-07 11:53:14Z" duration="1.132717" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1032" name="MultipleBerriesCountIndependentlyAndResetPendingTogether" fullname="StrawberryValidation.StrawberryTests.MultipleBerriesCountIndependentlyAndResetPendingTogether" methodname="MultipleBerriesCountIndependentlyAndResetPendingTogether" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="733223408" result="Passed" start-time="2026-10-07 11:53:14Z" end-time="2026-10-07 11:53:16Z" duration="1.958986" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1033" name="NonPlayerCannotPickupAndDisablingFollowerReturnsIt" fullname="StrawberryValidation.StrawberryTests.NonPlayerCannotPickupAndDisablingFollowerReturnsIt" methodname="NonPlayerCannotPickupAndDisablingFollowerReturnsIt" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="1431701317" result="Passed" start-time="2026-10-07 11:53:16Z" end-time="2026-10-07 11:53:17Z" duration="0.674766" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1030" name="TriggerFollowsInAirThenCollectsOnceOnLanding" fullname="StrawberryValidation.StrawberryTests.TriggerFollowsInAirThenCollectsOnceOnLanding" methodname="TriggerFollowsInAirThenCollectsOnceOnLanding" classname="StrawberryValidation.StrawberryTests" runstate="Runnable" seed="1535484202" result="Passed" start-time="2026-10-07 11:53:17Z" end-time="2026-10-07 11:53:19Z" duration="2.070815" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1101" name="WeightPlatformValidation" fullname="WeightPlatformValidation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 11:53:19Z" end-time="2026-10-07 11:53:25Z" duration="6.157469" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="WeightPlatformTests" fullname="WeightPlatformValidation.WeightPlatformTests" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-07 11:53:19Z" end-time="2026-10-07 11:53:25Z" duration="6.157295" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1004" name="ActualPlayerRidesDescendingPlatformWithoutDroppingThrough" fullname="WeightPlatformValidation.WeightPlatformTests.ActualPlayerRidesDescendingPlatformWithoutDroppingThrough" methodname="ActualPlayerRidesDescendingPlatformWithoutDroppingThrough" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" seed="120100920" result="Passed" start-time="2026-10-07 11:53:19Z" end-time="2026-10-07 11:53:20Z" duration="1.288551" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1002" name="LoadDescendsToLimitAndReturnsAfterLastObjectLeaves" fullname="WeightPlatformValidation.WeightPlatformTests.LoadDescendsToLimitAndReturnsAfterLastObjectLeaves" methodname="LoadDescendsToLimitAndReturnsAfterLastObjectLeaves" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" seed="472430739" result="Passed" start-time="2026-10-07 11:53:20Z" end-time="2026-10-07 11:53:24Z" duration="3.984317" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1003" name="SideUndersideAndTriggerDoNotPressPlatform" fullname="WeightPlatformValidation.WeightPlatformTests.SideUndersideAndTriggerDoNotPressPlatform" methodname="SideUndersideAndTriggerDoNotPressPlatform" classname="WeightPlatformValidation.WeightPlatformTests" runstate="Runnable" seed="1609116699" result="Passed" start-time="2026-10-07 11:53:24Z" end-time="2026-10-07 11:53:25Z" duration="0.883636" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

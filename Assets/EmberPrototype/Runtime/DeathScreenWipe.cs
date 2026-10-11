@@ -8,6 +8,7 @@ namespace EmberPrototype
     {
         private float coverage;
         private int steps = 6;
+        public float Coverage => coverage;
 
         public void SetCoverage(float value, int stepCount)
         {

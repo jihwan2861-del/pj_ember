@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -36,6 +37,8 @@ namespace EmberPrototype
         [SerializeField] private UnityEvent onFireReset = new UnityEvent();
 
         private Coroutine spreadRoutine;
+        private readonly HashSet<WaterContact> waterContacts = new HashSet<WaterContact>();
+        public bool IsWet => waterContacts.Count > 0;
 
         public bool IsBurning { get; private set; }
         public Vector2 AnchorPosition => absorbPoint != null
@@ -60,6 +63,7 @@ namespace EmberPrototype
 
         private void OnDisable()
         {
+            waterContacts.Clear();
             if (spreadRoutine != null)
             {
                 StopCoroutine(spreadRoutine);
@@ -69,7 +73,8 @@ namespace EmberPrototype
 
         public bool TryIgnite()
         {
-            if (IsBurning)
+            WaterContact.RefreshTarget(this);
+            if (!isActiveAndEnabled || IsWet || IsBurning)
             {
                 return false;
             }
@@ -83,6 +88,26 @@ namespace EmberPrototype
             return true;
         }
 
+        public bool Extinguish()
+        {
+            if (!IsBurning) return false;
+            if (spreadRoutine != null) StopCoroutine(spreadRoutine);
+            spreadRoutine = null;
+            IsBurning = false;
+            ApplyAppearance(false);
+            if (fireEffect != null) fireEffect.SetActive(false);
+            FireStateChanged?.Invoke(this);
+            return true;
+        }
+
+        internal void SetWaterContact(WaterContact source, bool touching)
+        {
+            if (touching) { waterContacts.Add(source); Extinguish(); }
+            else waterContacts.Remove(source);
+        }
+
+        private void OnEnable() => WaterContact.RefreshTarget(this);
+
         public void ConfigureStartBurning(bool value)
         {
             startsBurning = value;
@@ -90,6 +115,7 @@ namespace EmberPrototype
 
         public void ResetFire()
         {
+            waterContacts.Clear();
             StopAllCoroutines();
             spreadRoutine = null;
             IsBurning = false;

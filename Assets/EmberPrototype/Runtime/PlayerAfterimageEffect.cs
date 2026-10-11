@@ -66,6 +66,8 @@ namespace EmberPrototype
             SpawnImmediately();
         }
 
+        public void SetColor(Color color) => afterimageColor = color;
+
         public void PlayTimedTrail(float duration)
         {
             if (duration <= 0f) return;

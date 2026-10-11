@@ -27,9 +27,8 @@ namespace EmberPrototype
 
         private void Update()
         {
-            if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
-                Restart();
-            else if (transform.position.y < deathHeight)
+            if (GameSessionControls.BlockGameplayInput) return;
+            if (transform.position.y < deathHeight)
                 player.KillAndRespawn();
             if (!Completed && goalPoint != null && Vector2.Distance(transform.position, goalPoint.position) <= goalRadius)
                 CompleteRoom();
@@ -54,12 +53,14 @@ namespace EmberPrototype
 
         public void Restart()
         {
+            RestartForRespawn(false);
+        }
+
+        public void RestartForRespawn(bool deferWaves)
+        {
             if (player == null) return;
             Completed = false;
-            foreach (var tile in FindObjectsByType<FlammableTile>())
-                tile.ResetFire();
-            foreach (var ember in FindObjectsByType<EmberProjectile>())
-                Destroy(ember.gameObject);
+            MapReset.ResetScene(gameObject.scene, deferWaves);
             player.ResetAt(spawnPoint != null ? (Vector2)spawnPoint.position : initialPosition);
         }
 

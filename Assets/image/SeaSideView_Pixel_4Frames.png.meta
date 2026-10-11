@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 67962bae8906f7c499d68d10555a6cda
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1307629016998224902
+    second: SeaSideView_Pixel_4Frames_0
+  - first:
+      213: 6481035698246541569
+    second: SeaSideView_Pixel_4Frames_1
+  - first:
+      213: 1977541712476380840
+    second: SeaSideView_Pixel_4Frames_2
+  - first:
+      213: 4281459661364485259
+    second: SeaSideView_Pixel_4Frames_3
+  - first:
+      213: 8266838110833869119
+    second: SeaSideView_Pixel_4Frames_4
+  - first:
+      213: 6799806465855020111
+    second: SeaSideView_Pixel_4Frames_5
+  - first:
+      213: 4930932205028673842
+    second: SeaSideView_Pixel_4Frames_6
+  - first:
+      213: 6510782369180569850
+    second: SeaSideView_Pixel_4Frames_7
+  - first:
+      213: 2922518874793070359
+    second: SeaSideView_Pixel_4Frames_8
+  - first:
+      213: 893501045471340170
+    second: SeaSideView_Pixel_4Frames_9
+  - first:
+      213: 452934150970419400
+    second: SeaSideView_Pixel_4Frames_10
+  - first:
+      213: 4952103285536614708
+    second: SeaSideView_Pixel_4Frames_11
+  - first:
+      213: -6717094023180537159
+    second: SeaSideView_Pixel_4Frames_12
+  - first:
+      213: -8237587196662132624
+    second: SeaSideView_Pixel_4Frames_13
+  - first:
+      213: 2919307035817813636
+    second: SeaSideView_Pixel_4Frames_14
+  - first:
+      213: 2605467621455527492
+    second: SeaSideView_Pixel_4Frames_15
+  - first:
+      213: -4439142663013111865
+    second: SeaSideView_Pixel_4Frames_16
+  - first:
+      213: -4339902445112792080
+    second: SeaSideView_Pixel_4Frames_17
+  - first:
+      213: 8701246419114041541
+    second: SeaSideView_Pixel_4Frames_18
+  - first:
+      213: -8015704249125515528
+    second: SeaSideView_Pixel_4Frames_19
+  - first:
+      213: 2066360072880631998
+    second: SeaSideView_Pixel_4Frames_20
+  - first:
+      213: 7319918109167252002
+    second: SeaSideView_Pixel_4Frames_21
+  - first:
+      213: -252113490635805423
+    second: SeaSideView_Pixel_4Frames_22
+  - first:
+      213: -3106613172284207396
+    second: SeaSideView_Pixel_4Frames_23
+  - first:
+      213: -3157742119541673386
+    second: SeaSideView_Pixel_4Frames_24
+  - first:
+      213: -6242293166638801085
+    second: SeaSideView_Pixel_4Frames_25
+  - first:
+      213: 6604848778556943644
+    second: SeaSideView_Pixel_4Frames_26
+  - first:
+      213: 2508710628833268284
+    second: SeaSideView_Pixel_4Frames_27
+  - first:
+      213: 6964572962851695049
+    second: SeaSideView_Pixel_4Frames_28
+  - first:
+      213: -761337910424457657
+    second: SeaSideView_Pixel_4Frames_29
+  - first:
+      213: -1285065379676740644
+    second: SeaSideView_Pixel_4Frames_30
+  - first:
+      213: -5158278801071456284
+    second: SeaSideView_Pixel_4Frames_31
+  - first:
+      213: -5833449493045255730
+    second: SeaSideView_Pixel_4Frames_32
+  - first:
+      213: 7165355384135017006
+    second: SeaSideView_Pixel_4Frames_33
+  - first:
+      213: 3706126176159274055
+    second: SeaSideView_Pixel_4Frames_34
+  - first:
+      213: 2631291457450269645
+    second: SeaSideView_Pixel_4Frames_35
+  - first:
+      213: 2143521910818164465
+    second: SeaSideView_Pixel_4Frames_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 293
+        width: 2167
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6042c20b9a1a52210800000000000000
+      internalID: 1307629016998224902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_1
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 664
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1016c9a21a341f950800000000000000
+      internalID: 6481035698246541569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 647
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae1ca4c5b3a17b10800000000000000
+      internalID: 1977541712476380840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 619
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c5bcbb0ecca6b30800000000000000
+      internalID: 4281459661364485259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_4
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 319
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f310ae35675b9b270800000000000000
+      internalID: 8266838110833869119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_5
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 345
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c51ba24f3cd5e50800000000000000
+      internalID: 6799806465855020111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_6
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 339
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239844c17b03e6440800000000000000
+      internalID: 4930932205028673842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_7
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 323
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af052e4b112fa5a50800000000000000
+      internalID: 6510782369180569850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_8
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 345
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f4a65be6fde8820800000000000000
+      internalID: 2922518874793070359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_9
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 337
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8662c5877a566c00800000000000000
+      internalID: 893501045471340170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_10
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 337
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c82c37e535294600800000000000000
+      internalID: 452934150970419400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 329
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439647963b769b440800000000000000
+      internalID: 4952103285536614708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_12
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 323
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2bc69139618c2a0800000000000000
+      internalID: -6717094023180537159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_13
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 307
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070d5a8d6163ead80800000000000000
+      internalID: -8237587196662132624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_14
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 321
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486283c2846738820800000000000000
+      internalID: 2919307035817813636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_15
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 321
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e73a25ffa782420800000000000000
+      internalID: 2605467621455527492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_16
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 325
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c762df744ff462c0800000000000000
+      internalID: -4439142663013111865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_17
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 327
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbe33f48b195c3c0800000000000000
+      internalID: -4339902445112792080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_18
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 309
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0ae6a548901c870800000000000000
+      internalID: 8701246419114041541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_19
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 317
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fec846547f72c090800000000000000
+      internalID: -8015704249125515528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_20
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 311
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0b91ac98f2dac10800000000000000
+      internalID: 2066360072880631998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_21
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 305
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222fcd9dcb2959560800000000000000
+      internalID: 7319918109167252002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_22
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 307
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11da193bd10508cf0800000000000000
+      internalID: -252113490635805423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_23
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 312
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde437387c713e4d0800000000000000
+      internalID: -3106613172284207396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_24
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 293
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652fd60d5427d24d0800000000000000
+      internalID: -3157742119541673386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_25
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 311
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f55a2207bee59a0800000000000000
+      internalID: -6242293166638801085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_26
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 287
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d2f0958f229ab50800000000000000
+      internalID: 6604848778556943644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_27
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 305
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c329ad3760bb0d220800000000000000
+      internalID: 2508710628833268284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 293
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9a017b53227a060800000000000000
+      internalID: 6964572962851695049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_29
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 293
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eac17443f2f65f0800000000000000
+      internalID: -761337910424457657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_30
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 305
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3273388d78a2ee0800000000000000
+      internalID: -1285065379676740644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2167
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef35b992cc1a68b0800000000000000
+      internalID: -5158278801071456284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 291
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1eadfc79c6b0fa0800000000000000
+      internalID: -5833449493045255730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_33
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 289
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22ecc812c4707360800000000000000
+      internalID: 7165355384135017006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_34
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 292
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74410ce0f1ece6330800000000000000
+      internalID: 3706126176159274055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_35
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 274
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbd7dda3a9348420800000000000000
+      internalID: 2631291457450269645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaSideView_Pixel_4Frames_36
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe459e22d15fbd10800000000000000
+      internalID: 2143521910818164465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SeaSideView_Pixel_4Frames_0: 1307629016998224902
+      SeaSideView_Pixel_4Frames_1: 6481035698246541569
+      SeaSideView_Pixel_4Frames_10: 452934150970419400
+      SeaSideView_Pixel_4Frames_11: 4952103285536614708
+      SeaSideView_Pixel_4Frames_12: -6717094023180537159
+      SeaSideView_Pixel_4Frames_13: -8237587196662132624
+      SeaSideView_Pixel_4Frames_14: 2919307035817813636
+      SeaSideView_Pixel_4Frames_15: 2605467621455527492
+      SeaSideView_Pixel_4Frames_16: -4439142663013111865
+      SeaSideView_Pixel_4Frames_17: -4339902445112792080
+      SeaSideView_Pixel_4Frames_18: 8701246419114041541
+      SeaSideView_Pixel_4Frames_19: -8015704249125515528
+      SeaSideView_Pixel_4Frames_2: 1977541712476380840
+      SeaSideView_Pixel_4Frames_20: 2066360072880631998
+      SeaSideView_Pixel_4Frames_21: 7319918109167252002
+      SeaSideView_Pixel_4Frames_22: -252113490635805423
+      SeaSideView_Pixel_4Frames_23: -3106613172284207396
+      SeaSideView_Pixel_4Frames_24: -3157742119541673386
+      SeaSideView_Pixel_4Frames_25: -6242293166638801085
+      SeaSideView_Pixel_4Frames_26: 6604848778556943644
+      SeaSideView_Pixel_4Frames_27: 2508710628833268284
+      SeaSideView_Pixel_4Frames_28: 6964572962851695049
+      SeaSideView_Pixel_4Frames_29: -761337910424457657
+      SeaSideView_Pixel_4Frames_3: 4281459661364485259
+      SeaSideView_Pixel_4Frames_30: -1285065379676740644
+      SeaSideView_Pixel_4Frames_31: -5158278801071456284
+      SeaSideView_Pixel_4Frames_32: -5833449493045255730
+      SeaSideView_Pixel_4Frames_33: 7165355384135017006
+      SeaSideView_Pixel_4Frames_34: 3706126176159274055
+      SeaSideView_Pixel_4Frames_35: 2631291457450269645
+      SeaSideView_Pixel_4Frames_36: 2143521910818164465
+      SeaSideView_Pixel_4Frames_4: 8266838110833869119
+      SeaSideView_Pixel_4Frames_5: 6799806465855020111
+      SeaSideView_Pixel_4Frames_6: 4930932205028673842
+      SeaSideView_Pixel_4Frames_7: 6510782369180569850
+      SeaSideView_Pixel_4Frames_8: 2922518874793070359
+      SeaSideView_Pixel_4Frames_9: 893501045471340170
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
