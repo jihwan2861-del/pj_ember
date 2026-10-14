@@ -18,6 +18,8 @@ namespace EmberPrototype
                 if (flower.gameObject.scene == scene) flower.ResetForRespawn();
             foreach (var pollution in Object.FindObjectsByType<PollutionObstacle>(FindObjectsSortMode.None))
                 if (pollution.gameObject.scene == scene) pollution.ResetForRespawn();
+            foreach (var pollutionTiles in Object.FindObjectsByType<PurifiableSpikeTilemap>(FindObjectsSortMode.None))
+                if (pollutionTiles.gameObject.scene == scene) pollutionTiles.ResetForRespawn();
             foreach (var berry in Object.FindObjectsByType<StrawberryPickup>(FindObjectsSortMode.None))
                 if (berry.gameObject.scene == scene) berry.ResetForRespawn();
             foreach (var spirit in Object.FindObjectsByType<WaterSpirit>(FindObjectsSortMode.None))

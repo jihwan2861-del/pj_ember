@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 219838a66ba4c5c4997e6557201f23b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6921183304503368389
+    second: FireFlowerParts_0
+  - first:
+      213: -1419846183862676220
+    second: FireFlowerParts_1
+  - first:
+      213: 4615053564561293774
+    second: FireFlowerParts_2
+  - first:
+      213: -2865742116539824324
+    second: FireFlowerParts_3
+  - first:
+      213: 4867841423233452243
+    second: FireFlowerParts_4
+  - first:
+      213: -2980397610029115088
+    second: FireFlowerParts_5
+  - first:
+      213: 7345162394003089944
+    second: FireFlowerParts_6
+  - first:
+      213: 6275435301858852506
+    second: FireFlowerParts_7
+  - first:
+      213: 5481501524266919787
+    second: FireFlowerParts_8
+  - first:
+      213: -334908714260998767
+    second: FireFlowerParts_9
+  - first:
+      213: 7643701492789412101
+    second: FireFlowerParts_10
+  - first:
+      213: -6084498652707745684
+    second: FireFlowerParts_11
+  - first:
+      213: 4025767650944642054
+    second: FireFlowerParts_12
+  - first:
+      213: 3660646721913895471
+    second: FireFlowerParts_13
+  - first:
+      213: 4917455918286635198
+    second: FireFlowerParts_14
+  - first:
+      213: 4218056857113498665
+    second: FireFlowerParts_15
+  - first:
+      213: -9004354410743397408
+    second: FireFlowerParts_16
+  - first:
+      213: -1193294063423041634
+    second: FireFlowerParts_17
+  - first:
+      213: -243271952638656049
+    second: FireFlowerParts_18
+  - first:
+      213: 7758244566745401224
+    second: FireFlowerParts_19
+  - first:
+      213: -3563521998942743389
+    second: FireFlowerParts_20
+  - first:
+      213: -7620471965921304592
+    second: FireFlowerParts_21
+  - first:
+      213: -8778162907426987357
+    second: FireFlowerParts_22
+  - first:
+      213: -5947892886735185865
+    second: FireFlowerParts_23
+  - first:
+      213: -4268978118340416364
+    second: FireFlowerParts_24
+  - first:
+      213: 2017502061554483970
+    second: FireFlowerParts_25
+  - first:
+      213: -5064956486231856386
+    second: FireFlowerParts_26
+  - first:
+      213: -7350225641394886666
+    second: FireFlowerParts_27
+  - first:
+      213: -3092953067811748341
+    second: FireFlowerParts_28
+  - first:
+      213: 5899031472294826611
+    second: FireFlowerParts_29
+  - first:
+      213: -6256433886254867887
+    second: FireFlowerParts_30
+  - first:
+      213: 293267341198074915
+    second: FireFlowerParts_31
+  - first:
+      213: -5942632107095826085
+    second: FireFlowerParts_32
+  - first:
+      213: 75343577927159309
+    second: FireFlowerParts_33
+  - first:
+      213: 6532556434871332740
+    second: FireFlowerParts_34
+  - first:
+      213: -6907630437429738380
+    second: FireFlowerParts_35
+  - first:
+      213: -5809466823859333605
+    second: FireFlowerParts_36
+  - first:
+      213: 4504374048620059643
+    second: FireFlowerParts_37
+  - first:
+      213: -7830975162547936605
+    second: FireFlowerParts_38
+  - first:
+      213: -6266587505945660171
+    second: FireFlowerParts_39
+  - first:
+      213: 4584942317154566393
+    second: FireFlowerParts_40
+  - first:
+      213: -1798166735539471694
+    second: FireFlowerParts_41
+  - first:
+      213: -1883082478709348025
+    second: FireFlowerParts_42
+  - first:
+      213: 5901053080677611247
+    second: FireFlowerParts_43
+  - first:
+      213: 6873090345860143727
+    second: FireFlowerParts_44
+  - first:
+      213: 4298614489476820736
+    second: FireFlowerParts_45
+  - first:
+      213: 5592225118918574837
+    second: FireFlowerParts_46
+  - first:
+      213: 4472192032064322775
+    second: FireFlowerParts_47
+  - first:
+      213: -7106787505024660279
+    second: FireFlowerParts_48
+  - first:
+      213: 3930498401816732762
+    second: FireFlowerParts_49
+  - first:
+      213: -4447482560515461161
+    second: FireFlowerParts_50
+  - first:
+      213: 8475806291615589284
+    second: FireFlowerParts_51
+  - first:
+      213: 2001836605423746943
+    second: FireFlowerParts_52
+  - first:
+      213: 1571185684844364101
+    second: FireFlowerParts_53
+  - first:
+      213: 8168244734473511216
+    second: FireFlowerParts_54
+  - first:
+      213: 3699442598050851386
+    second: FireFlowerParts_55
+  - first:
+      213: 274315135671243074
+    second: FireFlowerParts_56
+  - first:
+      213: -6292477309626628493
+    second: FireFlowerParts_57
+  - first:
+      213: 7657682138859178487
+    second: FireFlowerParts_58
+  - first:
+      213: -1015446273746751379
+    second: FireFlowerParts_59
+  - first:
+      213: -8445952815829218705
+    second: FireFlowerParts_60
+  - first:
+      213: 8496693035664338288
+    second: FireFlowerParts_61
+  - first:
+      213: 5537600066054505265
+    second: FireFlowerParts_62
+  - first:
+      213: 5709541349254897128
+    second: FireFlowerParts_63
+  - first:
+      213: 3524747829278299627
+    second: FireFlowerParts_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 627
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Part0_Body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0572edde5a308f440a1609b0f0d46e10
+      internalID: -484417966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Part1_Wilted
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 627
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a421d5fca9ff64cbcee45839a0030b
+      internalID: -2011011907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Part2_Opening
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eae0517e29cd7c4d98e081e507e57de
+      internalID: 1487080466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Part3_Bloom
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059f2a267d894b94e9ecffcdd11ab754
+      internalID: 584537052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 43e492009c8ee68469cdf426d1b0b6da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Part0_Body: -484417966
+      Part1_Wilted: -2011011907
+      Part2_Opening: 1487080466
+      Part3_Bloom: 584537052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

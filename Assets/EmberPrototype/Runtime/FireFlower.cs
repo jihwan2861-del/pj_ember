@@ -9,7 +9,15 @@ namespace EmberPrototype
         private static readonly List<FireFlower> activeFlowers = new List<FireFlower>();
         private static Sprite fallbackWilted, fallbackBlooming;
         [SerializeField, Min(0.1f)] private float reactionRadius = 3f;
-        [SerializeField, Min(0.05f)] private float warningTime = 1f;
+        [SerializeField] private bool activateOnPlayerContact = true;
+        [Tooltip("Preset local firing direction. C only wakes the flower; player position never aims it.")]
+        [SerializeField, HideInInspector] private Vector2 firingDirection = Vector2.right;
+        [Tooltip("Rotate Head around Z to author the firing direction; its local +X is forward.")]
+        [SerializeField] private Transform head;
+        [SerializeField, Min(0f)] private float warningTime = 0f;
+        [SerializeField] private Sprite[] bloomFrames;
+        [SerializeField] private FireFlowerProjectile projectilePrefab;
+        private float animationTime;
         [SerializeField, Min(0.1f)] private float projectileSpeed = 10f;
         [SerializeField, Min(0.1f)] private float projectileRange = 14f;
         [SerializeField, Min(0.01f)] private float projectileRadius = 0.14f;
@@ -27,6 +35,20 @@ namespace EmberPrototype
         private bool pending;
         private bool activated;
         public Vector2 LockedTarget { get; private set; }
+        public Vector2 FiringDirection
+        {
+            get
+            {
+                if (head != null)
+                {
+                    Vector2 forward = head.right;
+                    return forward.sqrMagnitude > 0.0001f ? forward.normalized : Vector2.right;
+                }
+                Vector2 local = firingDirection.sqrMagnitude > 0.0001f ? firingDirection.normalized : Vector2.right;
+                Vector2 world = transform.TransformDirection(local);
+                return world.sqrMagnitude > 0.0001f ? world.normalized : Vector2.right;
+            }
+        }
         public bool IsPreparingShot => pending;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -60,31 +82,58 @@ namespace EmberPrototype
         }
         public bool TryActivate(Vector2 playerPosition)
         {
-            if (!isActiveAndEnabled || pending || cooldownRemaining > 0f || (oneShot && activated)
-                || (playerPosition - (Vector2)transform.position).sqrMagnitude > reactionRadius * reactionRadius)
+            if ((playerPosition - (Vector2)transform.position).sqrMagnitude > reactionRadius * reactionRadius)
+                return false;
+            return TryActivateCore();
+        }
+        private void OnTriggerEnter2D(Collider2D other) => TryActivateFromContact(other);
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            // Also handles respawn while overlapping; staying does not continuously refire.
+            if (!activated) TryActivateFromContact(other);
+        }
+        public bool TryActivateFromContact(Collider2D other)
+        {
+            if (!activateOnPlayerContact || other == null) return false;
+            var player = other.GetComponentInParent<FlamePlayerController>();
+            if (player == null || !player.isActiveAndEnabled || player.IsDying) return false;
+            return TryActivateCore();
+        }
+        private bool TryActivateCore()
+        {
+            if (!isActiveAndEnabled || pending || cooldownRemaining > 0f || (oneShot && activated))
                 return false;
             shotOrigin = muzzle != null ? (Vector2)muzzle.position : (Vector2)transform.position;
-            Vector2 delta = playerPosition - shotOrigin;
-            if (delta.sqrMagnitude < 0.0001f) return false;
-            LockedTarget = playerPosition;
-            shotDirection = delta.normalized;
+            shotDirection = FiringDirection;
+            LockedTarget = shotOrigin + shotDirection * projectileRange;
             activated = pending = true;
             remaining = warningTime;
             visual.sprite = bloomingSprite;
-            ShowWarning(Vector2.Distance(shotOrigin, LockedTarget));
+            animationTime = 0f;
+            if (warningTime <= 0f) Fire();
+            else ShowWarning(Vector2.Distance(shotOrigin, LockedTarget));
             return true;
         }
         private void Update()
         {
             cooldownRemaining = Mathf.Max(0f, cooldownRemaining - Time.deltaTime);
+            if (activated && bloomFrames != null && bloomFrames.Length > 0)
+            {
+                animationTime += Time.deltaTime;
+                visual.sprite = bloomFrames[Mathf.Min((int)(animationTime * 12f), bloomFrames.Length - 1)];
+            }
             if (!pending) return;
             remaining -= Time.deltaTime;
             if (remaining > 0f) return;
+            Fire();
+        }
+        private void Fire()
+        {
             pending = false;
             cooldownRemaining = cooldown;
             HideWarning();
             FireFlowerProjectile.Spawn(shotOrigin, shotDirection, projectileSpeed, projectileRange,
-                projectileRadius, transform);
+                projectileRadius, transform, projectilePrefab);
         }
         public void ResetForRespawn()
         {
@@ -143,6 +192,13 @@ namespace EmberPrototype
         {
             Gizmos.color = new Color(1f, 0.55f, 0.1f, 0.7f);
             Gizmos.DrawWireSphere(transform.position, reactionRadius);
+            Vector3 origin = muzzle != null ? muzzle.position : transform.position;
+            Vector3 direction = FiringDirection;
+            Vector3 tip = origin + direction * 1.2f;
+            Vector3 side = new Vector3(-direction.y, direction.x, 0f);
+            Gizmos.DrawLine(origin, tip);
+            Gizmos.DrawLine(tip, tip - direction * .25f + side * .15f);
+            Gizmos.DrawLine(tip, tip - direction * .25f - side * .15f);
         }
     }
 }
