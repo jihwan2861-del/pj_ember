@@ -144,7 +144,7 @@ namespace EmberMovementRegression
                 Frame(f);
                 Step(f, 35);
                 Assert.That(Get<bool>(f.Player, "wasGrounded"), Is.True);
-                Frame(f, Key.C, Key.Z, Key.RightArrow);
+                Frame(f, Key.X, Key.RightArrow);
                 Assert.That(f.State, Is.EqualTo("BurstDashing"));
                 int ticks = 0;
                 while (f.State == "BurstDashing" && ticks++ < 25) Step(f, 1);

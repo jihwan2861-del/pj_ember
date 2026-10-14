@@ -9,7 +9,7 @@ namespace EmberPrototype
         {
             GUI.Box(new Rect(16f, 16f, 500f, 105f),
                 "EMBER - Rope validation\n" +
-                "Arrows: move / swing    X: enter burning end\n" +
+                "Arrows: move / aim    X: enter / transfer to burning fire\n" +
                 "Z in torch: aimed launch    Z in rope: kick along swing\n" +
                 "Torch -> Rope 1 -> Rope 2 -> Landing    R: restart");
         }

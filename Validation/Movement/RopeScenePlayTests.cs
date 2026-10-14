@@ -51,7 +51,7 @@ namespace EmberMovementRegression
             Keys(Key.RightArrow, Key.X);
             yield return null;
             yield return null;
-            TestContext.WriteLine("First X: state=" + State(player) + ", held=" + keyboard.xKey.isPressed + ", current=" + (Keyboard.current == keyboard) + ", mode=" + InputSystem.settings.updateMode);
+            TestContext.WriteLine("First E: state=" + State(player) + ", held=" + keyboard.eKey.isPressed + ", current=" + (Keyboard.current == keyboard) + ", mode=" + InputSystem.settings.updateMode);
             float deadline = Time.realtimeSinceStartup + 5f;
             while (State(player) == "Travelling" && Time.realtimeSinceStartup < deadline) yield return null;
             Assert.That(State(player), Is.EqualTo("Anchored"));

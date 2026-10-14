@@ -6,14 +6,14 @@ namespace EmberPrototype
     [DisallowMultipleComponent]
     public sealed class BurstDashAbility : MonoBehaviour
     {
-        [Header("Burst Dash (C, then Z)")]
+        [Header("Burst Dash (X / Z in ignition ring)")]
         [Tooltip("Maximum speed reached by the dash.")]
         [SerializeField, Min(0f)] private float maximumSpeed = 16f;
         [Tooltip("Time in seconds to accelerate from rest to maximum speed. Set to 0 for an instant start.")]
         [SerializeField, Min(0f)] private float accelerationTime = 0.05f;
         [SerializeField, Min(0.01f)] private float duration = 0.15f;
         [SerializeField, Range(0f, 1f)] private float endSpeedMultiplier = 0.55f;
-        [Tooltip("Caps upward speed retained after C+Z.")]
+        [Tooltip("Caps upward speed retained after X dash or Z ring dash.")]
         [SerializeField, Range(0f, 1f)] private float upwardExitSpeedMultiplier = 0.22f;
         [Tooltip("Optional smaller collider used only during the dash.")]
         [SerializeField] private Collider2D dashCollider;

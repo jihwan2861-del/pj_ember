@@ -9,11 +9,13 @@ namespace EmberPrototype
     {
         private FlamePlayerController player;
         private PlayerAbilityUnlocks abilityUnlocks;
+        private FlameShotAbility flameShot;
 
         private void Awake()
         {
             player = GetComponent<FlamePlayerController>();
             abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
+            flameShot = GetComponent<FlameShotAbility>();
         }
 
         private void OnDisable()
@@ -26,6 +28,7 @@ namespace EmberPrototype
             if (GameSessionControls.BlockGameplayInput) return;
             if (player == null) player = GetComponent<FlamePlayerController>();
             if (abilityUnlocks == null) abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
+            if (flameShot == null) flameShot = GetComponent<FlameShotAbility>();
             if (player == null) return;
 
             Keyboard keyboard = Keyboard.current;
@@ -43,10 +46,10 @@ namespace EmberPrototype
 
             if (player.IsInsideFire)
             {
-                // The controller selects torch launch or rope kick; X/Z bindings stay identical.
+                // Z always lifts the player: jump outside, launch/kick inside.
                 if (keyboard.zKey.wasPressedThisFrame)
                     player.RequestLaunchFromFire();
-                else if (keyboard.xKey.wasPressedThisFrame && IsUnlocked(PlayerAbility.FireAbsorb))
+                else if (EmberPlayerInput.ActionPressed && IsUnlocked(PlayerAbility.FireAbsorb))
                     player.RequestFireAbsorb();
                 return;
             }
@@ -56,21 +59,21 @@ namespace EmberPrototype
                 if (keyboard.zKey.wasPressedThisFrame && IsUnlocked(PlayerAbility.BurstDash))
                 {
                     player.CancelRingShotAim();
-                    player.RequestBurstDash(ReadHeldDirection());
+                    player.RequestBurstDash(EmberPlayerInput.MovementDirection());
                     return;
                 }
 
                 if (player.IsRingShotAiming)
                 {
                     player.UpdateRingShotAim(ReadHeldDirection());
-                    if (keyboard.xKey.wasReleasedThisFrame)
+                    if (EmberPlayerInput.ActionReleased)
                         player.ReleaseRingShotAim();
                     return;
                 }
 
                 if (keyboard.zKey.wasPressedThisFrame) return;
 
-                if (keyboard.xKey.wasPressedThisFrame && IsUnlocked(PlayerAbility.FlameShot))
+                if (EmberPlayerInput.ActionPressed && IsUnlocked(PlayerAbility.FlameShot))
                 {
                     player.BeginRingShotAim();
                     player.UpdateRingShotAim(ReadHeldDirection());
@@ -80,17 +83,24 @@ namespace EmberPrototype
 
             if (!player.CanUseFreeAbilities) return;
 
-            if (keyboard.xKey.wasPressedThisFrame && IsUnlocked(PlayerAbility.FireAbsorb))
-                player.RequestFireAbsorb();
-
-            if (!keyboard.cKey.wasPressedThisFrame) return;
-            if (player.TryInteractWithNearbyTrialAltar()) return;
-            if (IsUnlocked(PlayerAbility.IgnitionRing))
+            if (EmberPlayerInput.IgnitionBurstPressed && player.TryInteractWithNearbyTrialAltar())
+            {
+                return;
+            }
+            if (EmberPlayerInput.IgnitionBurstPressed && IsUnlocked(PlayerAbility.IgnitionRing))
             {
                 player.RequestIgnitionRing();
-                // Resolve the chord after entering the ring, so C+Z works in one frame too.
                 if (keyboard.zKey.wasPressedThisFrame && IsUnlocked(PlayerAbility.BurstDash))
-                    player.RequestBurstDash(ReadHeldDirection());
+                    player.RequestBurstDash(EmberPlayerInput.MovementDirection());
+                return;
+            }
+            if (EmberPlayerInput.ActionPressed)
+            {
+                // X follows an aimed lit fire when one is available; otherwise it is the dash button.
+                bool travelled = IsUnlocked(PlayerAbility.FireAbsorb) && player.RequestFireAbsorb();
+                if (!travelled && IsUnlocked(PlayerAbility.BurstDash))
+                    player.RequestBurstDash(EmberPlayerInput.MovementDirection());
+                return;
             }
         }
 
@@ -99,17 +109,6 @@ namespace EmberPrototype
             return abilityUnlocks != null && abilityUnlocks.IsUnlocked(ability);
         }
 
-        private static Vector2 ReadHeldDirection()
-        {
-            Keyboard keyboard = Keyboard.current;
-            if (keyboard == null) return Vector2.zero;
-
-            Vector2 direction = Vector2.zero;
-            if (keyboard.leftArrowKey.isPressed) direction.x -= 1f;
-            if (keyboard.rightArrowKey.isPressed) direction.x += 1f;
-            if (keyboard.upArrowKey.isPressed) direction.y += 1f;
-            if (keyboard.downArrowKey.isPressed) direction.y -= 1f;
-            return direction == Vector2.zero ? Vector2.zero : direction.normalized;
-        }
+        private Vector2 ReadHeldDirection() => EmberPlayerInput.AimDirection(player != null ? player.FacingDirection : Vector2.right);
     }
 }

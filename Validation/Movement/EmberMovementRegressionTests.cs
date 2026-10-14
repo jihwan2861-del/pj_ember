@@ -86,11 +86,11 @@ namespace EmberMovementRegression
         }
 
         [Test]
-        public void IgnitionAndDashChordStartsDashInOneInputFrame()
+        public void XStartsDashInOneInputFrame()
         {
             using (var f = new Fixture())
             {
-                Frame(f, Key.RightArrow, Key.C, Key.Z);
+                Frame(f, Key.RightArrow, Key.X);
                 Assert.That(f.State, Is.EqualTo("BurstDashing"));
                 Assert.That(Get<int>(f.Player, "airJumpsRemaining"), Is.EqualTo(1));
                 Step(f, 1);
@@ -99,12 +99,12 @@ namespace EmberMovementRegression
         }
 
         [Test]
-        public void DashChordBlockedImmediatelyDoesNotReplayItsZAsAnAirJump()
+        public void DashBlockedImmediatelyDoesNotReplayInputAsAnAirJump()
         {
             using (var f = new Fixture())
             {
                 f.Box(f.Body.position + Vector2.right * 0.35f, new Vector2(0.1f, 1.2f));
-                Frame(f, Key.RightArrow, Key.C, Key.Z);
+                Frame(f, Key.RightArrow, Key.X);
                 Assert.That(f.State, Is.EqualTo("BurstDashing"));
                 int guard = 20;
                 while (f.State == "BurstDashing" && guard-- > 0) Step(f, 1);
@@ -117,12 +117,12 @@ namespace EmberMovementRegression
         }
 
         [Test]
-        public void JumpPressedNearDashEndSurvivesIntoFreeState()
+        public void ZPressedNearDashEndSurvivesIntoFreeState()
         {
             using (var f = new Fixture())
             {
-                Frame(f, Key.RightArrow, Key.C, Key.Z);
-                Frame(f, Key.RightArrow); // Release the Z which started the dash.
+                Frame(f, Key.RightArrow, Key.X);
+                Frame(f, Key.RightArrow); // Release X before the dash ends.
                 while (Get<float>(f.Dash, "remainingDuration") > 0.041f) Step(f, 1);
                 Frame(f, Key.RightArrow, Key.Z);
                 int guard = 20;
@@ -135,22 +135,16 @@ namespace EmberMovementRegression
         }
 
         [Test]
-        public void ReleasedJumpIsSampledDuringRingAndRemainsReleasedAfterExpiry()
+        public void CTriggersIgnitionBurstWithoutSpawningEmberShots()
         {
             using (var f = new Fixture())
             {
-                SetKeys(Key.Z);
-                Call(f.Player, "Update");
-                Assert.That(Get<bool>(f.Player, "jumpHeld"), Is.True);
-                Frame(f, Key.C, Key.Z);
-                // Disable dash for this scenario so Z does not turn the ring into a dash.
-                Call(f.Unlocks, "SetUnlocked", EnumValue("EmberPrototype.PlayerAbility", "BurstDash"), false);
+                Frame(f, Key.RightArrow, Key.C);
                 Assert.That(f.State, Is.EqualTo("Bursting"));
-                Frame(f, Key.C);
-                Assert.That(Get<bool>(f.Player, "jumpHeld"), Is.False);
-                Step(f, 18);
-                Assert.That(f.State, Is.EqualTo("Free"));
-                Assert.That(Get<bool>(f.Player, "jumpHeld"), Is.False);
+                Frame(f, Key.RightArrow, Key.C);
+                UnityEngine.Object[] shots = Object.FindObjectsByType(RuntimeType("EmberPrototype.EmberProjectile"), FindObjectsSortMode.None);
+                Assert.That(shots, Is.Empty);
+                Assert.That(f.State, Is.EqualTo("Bursting"));
             }
         }
 
@@ -171,11 +165,12 @@ namespace EmberMovementRegression
         }
 
         [Test]
-        public void ShotReleasePreservesHeldWalkingDirectionOnFirstFreePhysicsTick()
+        public void RingShotReleasePreservesHeldArrowMovementOnFirstFreePhysicsTick()
         {
             using (var f = new Fixture())
             {
                 Frame(f, Key.RightArrow, Key.C);
+                Assert.That(f.State, Is.EqualTo("Bursting"));
                 Frame(f, Key.RightArrow, Key.X);
                 Assert.That((bool)Property(f.Player, "IsRingShotAiming"), Is.True);
                 Frame(f, Key.RightArrow);
@@ -379,7 +374,7 @@ namespace EmberMovementRegression
             InputSystem.QueueStateEvent(keyboard, new KeyboardState(keys));
             InputSystem.Update();
             var next = new HashSet<Key>(keys);
-            foreach (Key key in new[] { Key.Z, Key.X, Key.C, Key.RightArrow, Key.LeftArrow, Key.UpArrow, Key.DownArrow })
+            foreach (Key key in new[] { Key.Z, Key.X, Key.E, Key.C, Key.RightArrow, Key.LeftArrow, Key.UpArrow, Key.DownArrow })
             {
                 Assert.That(keyboard[key].isPressed, Is.EqualTo(next.Contains(key)), "Synthetic held state for " + key);
                 Assert.That(keyboard[key].wasPressedThisFrame, Is.EqualTo(next.Contains(key) && !previousKeys.Contains(key)), "Synthetic press edge for " + key);

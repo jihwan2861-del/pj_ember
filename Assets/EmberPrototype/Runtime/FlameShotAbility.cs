@@ -12,7 +12,6 @@ namespace EmberPrototype
         [SerializeField, Min(0.1f)] private float projectileSpeed = 16f;
         [SerializeField, Min(0.1f)] private float projectileRange = 8f;
         [SerializeField, Min(0.05f)] private float projectileRadius = 0.14f;
-
         [Header("Aim")]
         [Tooltip("Time scale while X is held to aim. Lower values give more time to choose a direction.")]
         [SerializeField, Range(0.05f, 1f)] private float aimTimeScale = 0.3f;

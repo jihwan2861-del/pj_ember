@@ -26,13 +26,13 @@ namespace EmberPrototype
         [SerializeField] private AudioSource actionAudioSource;
         [Tooltip("C: successful ignition ring activation, not altar interaction.")]
         [SerializeField] private ActionSound cIgnitionSound = new ActionSound();
-        [Tooltip("C+Z: successful burst dash start.")]
+        [Tooltip("X: successful burst dash when no fire target is selected, or Z dash in the ignition ring.")]
         [SerializeField] private ActionSound cZDashSound = new ActionSound();
         [Tooltip("X: successful fire absorption travel start, including fire-to-fire travel.")]
         [SerializeField] private ActionSound xAbsorbSound = new ActionSound();
-        [Tooltip("X+Z: successful launch out of a fire or burning rope.")]
+        [Tooltip("Z: successful launch out of a fire or burning rope.")]
         [SerializeField] private ActionSound xZLaunchSound = new ActionSound();
-        [Tooltip("Z alone: ground jump or air jump. Does not play for dash/launch Z.")]
+        [Tooltip("Z: ground jump or air jump. Does not play for dash/launch.")]
         [SerializeField] private ActionSound zJumpSound = new ActionSound();
 
         private void PlayActionSound(ActionSound sound)
@@ -108,7 +108,7 @@ namespace EmberPrototype
         [Tooltip("리스폰 위치로 사용할 Transform입니다. 비워두면 씬 시작 시 플레이어 위치를 사용합니다.")]
         [SerializeField] private Transform respawnPoint;
 
-        [Header("Fire Absorb (X)")]
+        [Header("Fire Travel (X)")]
         [Tooltip("불꽃 흡수 대상을 고를 때 입력 방향과 대상 방향이 얼마나 일치해야 하는지 정합니다. 1에 가까울수록 방향이 정확히 맞아야 합니다.")]
         [SerializeField, Range(-1f, 1f)] private float fireTargetDirectionDot = 0.35f;
 
@@ -151,7 +151,7 @@ namespace EmberPrototype
         [Header("Ignition Burst (C)")]
         [Tooltip("C를 눌렀을 때 원형 폭발로 불을 붙이는 범위입니다. (월드 단위)")]
         [SerializeField, Min(0.1f)] private float ignitionBurstRadius = 1.5f;
-        [Tooltip("C 폭발 직후 불의 고리 상태가 유지되는 시간입니다. 이 시간 안에 Z 대시나 X 조준을 시작할 수 있습니다. (초)")]
+        [Tooltip("Time after the C burst when Z dash or X aim/fire can still be started. (seconds)")]
         [InspectorName("Ignition Burst Pause Time")]
         [SerializeField, Min(0f)] private float ignitionBurstChargeTime = 0.5f;
         [Tooltip("원형 폭발 시각 효과가 커지며 사라지는 시간입니다. (초)")]
@@ -211,6 +211,7 @@ namespace EmberPrototype
         private int airJumpsRemaining;
         private bool burstAvailable = true;
         private int facingDirection = 1;
+        public Vector2 FacingDirection => Vector2.right * facingDirection;
         private Vector3 initialScale;
         private float initialGravity;
         private CollisionDetectionMode2D initialCollisionDetectionMode;
@@ -349,8 +350,9 @@ namespace EmberPrototype
             }
             Vector2 heldDirection = ReadHeldDirection();
             // Walking is one-dimensional; aiming diagonally must not slow it down.
-            horizontalInput = (keyboard.rightArrowKey.isPressed ? 1f : 0f)
-                - (keyboard.leftArrowKey.isPressed ? 1f : 0f);
+            float movementX = EmberPlayerInput.MovementDirection().x;
+            // Mathf.Sign(0) is +1 in Unity; idle and opposed keys must stay neutral.
+            horizontalInput = movementX == 0f ? 0f : Mathf.Sign(movementX);
             jumpHeld = keyboard.zKey.isPressed;
             if (keyboard.zKey.wasPressedThisFrame)
             {
@@ -786,15 +788,7 @@ namespace EmberPrototype
             return closestHit.collider != null;
         }
 
-        private Vector2 ReadHeldDirection()
-        {
-            Vector2 direction = Vector2.zero;
-            if (Keyboard.current.leftArrowKey.isPressed) direction.x -= 1f;
-            if (Keyboard.current.rightArrowKey.isPressed) direction.x += 1f;
-            if (Keyboard.current.upArrowKey.isPressed) direction.y += 1f;
-            if (Keyboard.current.downArrowKey.isPressed) direction.y -= 1f;
-            return direction == Vector2.zero ? Vector2.zero : direction.normalized;
-        }
+        private Vector2 ReadHeldDirection() => EmberPlayerInput.AimDirection(FacingDirection);
 
         private void LateUpdate()
         {
@@ -810,11 +804,11 @@ namespace EmberPrototype
             return nearbyTrialAltar != null && nearbyTrialAltar.TryBeginCeremony(this);
         }
 
-        internal void RequestFireAbsorb()
+        internal bool RequestFireAbsorb()
         {
             if (controlsLocked || abilityUnlocks == null
-                || !abilityUnlocks.IsUnlocked(PlayerAbility.FireAbsorb)) return;
-            TryAbsorb();
+                || !abilityUnlocks.IsUnlocked(PlayerAbility.FireAbsorb)) return false;
+            return TryAbsorb();
         }
 
         internal void RequestLaunchFromFire()
@@ -832,8 +826,20 @@ namespace EmberPrototype
 
         internal void RequestBurstDash(Vector2 desiredDirection)
         {
-            if (controlsLocked || state != FlameState.Bursting || abilityUnlocks == null
+            if (controlsLocked || (state != FlameState.Free && state != FlameState.Bursting) || abilityUnlocks == null
                 || !abilityUnlocks.IsUnlocked(PlayerAbility.BurstDash)) return;
+            if (state == FlameState.Free)
+            {
+                if (!burstAvailable) return;
+                burstChargeRemaining = ignitionBurstChargeTime;
+                burstAvailable = false;
+                ropeMomentum = false;
+                appliedPlatformVelocity = Vector2.zero;
+                SetAbsorbTargetPreview(null);
+                normalJump = jumpRiseActive = false;
+                coyoteRemaining = 0f;
+            }
+            if (desiredDirection == Vector2.zero) desiredDirection = Vector2.right * facingDirection;
             StartBurstDash(desiredDirection);
         }
 
@@ -870,10 +876,14 @@ namespace EmberPrototype
             flameFeedback.PlayLaunch(direction);
         }
 
-        private void TryAbsorb()
+        private bool TryAbsorb()
         {
             if (absorbTargetPreview != null && absorbTargetPreview.IsBurning)
+            {
                 BeginFireTravel(absorbTargetPreview);
+                return true;
+            }
+            return false;
         }
 
         private void UpdateAbsorbTargetPreview(Vector2 inputDirection)

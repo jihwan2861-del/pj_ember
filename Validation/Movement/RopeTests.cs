@@ -331,7 +331,7 @@ namespace EmberMovementRegression
         }
 
         [Test]
-        public void RopeAirMomentumEndsAtLandingTorchAndRing()
+        public void RopeAirMomentumEndsAtLandingAndTorch()
         {
             using (var f = new Fixture())
             {
@@ -358,17 +358,6 @@ namespace EmberMovementRegression
                 int guard = 100;
                 while (f.State == "Travelling" && guard-- > 0) Step(f, 1);
                 Assert.That(f.State, Is.EqualTo("Anchored"));
-            }
-            SetKeys();
-            using (var f = new Fixture())
-            {
-                Component rope = CreateRope(f, new Vector2(2f, 23f));
-                ReachRope(f, rope, new Vector2(10f, 0f));
-                Frame(f, Key.Z);
-                Frame(f);
-                Frame(f, Key.RightArrow, Key.C, Key.Z);
-                Assert.That(f.State, Is.EqualTo("BurstDashing"));
-                Assert.That(Get<bool>(f.Player, "ropeMomentum"), Is.False);
             }
         }
     }

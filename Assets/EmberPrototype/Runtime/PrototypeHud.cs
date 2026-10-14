@@ -25,12 +25,10 @@ namespace EmberPrototype
             GUI.Label(new Rect(20, 16, 500, 34), "EMBER — Minimum Fire Prototype", titleStyle);
             GUI.Box(new Rect(20, 54, 610, 175),
                 "R : Restart room (resets fire)\n" +
-                "Arrow Keys : Move / Aim     Z : Jump / Double Jump\n" +
-                "X : Absorb into a burning tile in the aimed direction\n" +
-                "C : Ignite nearby flammable objects (or interact at an altar)\n" +
-                "Inside fire, Arrow Keys : Aim at another burning fire\n" +
+                "Arrow keys : Move / Aim     Z : Jump / Launch     X : Dash / Fire Travel\n" +
+                "C : Ignite nearby fuel with a burst\n" +
+                "In ignition ring, Z : Dash     Hold X : Aim ember shot\n" +
                 "Inside fire, X : Move to the highlighted fire\n" +
-                "Inside fire, Arrow Keys + Z : Launch\n" +
                 "Brown = flammable   Orange = burning   Gray = non-flammable", bodyStyle);
         }
     }
