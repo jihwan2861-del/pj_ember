@@ -1230,6 +1230,7 @@ namespace EmberPrototype
 
         private void TriggerIgnitionBurst()
         {
+            FireFlower.ReactToBurst(this);
             Collider2D[] hits = Physics2D.OverlapCircleAll(body.position, ignitionBurstRadius);
             foreach (Collider2D hit in hits)
             {

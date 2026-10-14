@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.3142337">
+  <test-suite type="TestSuite" id="1000" name="prohect Ember" fullname="prohect Ember" runstate="Runnable" testcasecount="78" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.314234" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1091" name="EmberMovement.Tests.dll" fullname="C:/Users/admin/AppData/Local/Temp/EmberFireFlowerQA-20261014/Library/ScriptAssemblies/EmberMovement.Tests.dll" runstate="Runnable" testcasecount="78" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.274137" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="42816" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1092" name="EmberMovementRegression" fullname="EmberMovementRegression" runstate="Runnable" testcasecount="78" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.273620" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1087" name="FireFlowerScenePlayTests" fullname="EmberMovementRegression.FireFlowerScenePlayTests" classname="EmberMovementRegression.FireFlowerScenePlayTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.248324" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1088" name="FireFlowerCThenDodgePurifiesBarrierInRealPlayMode" fullname="EmberMovementRegression.FireFlowerScenePlayTests.FireFlowerCThenDodgePurifiesBarrierInRealPlayMode" methodname="FireFlowerCThenDodgePurifiesBarrierInRealPlayMode" classname="EmberMovementRegression.FireFlowerScenePlayTests" runstate="Runnable" seed="1601087209" result="Passed" start-time="2026-10-14 09:27:12Z" end-time="2026-10-14 09:27:16Z" duration="3.688996" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Flower=(-4.00, 0.30, 0.00) Locked target=(-1.00, 0.31) Dodged player=(-1.00, 2.31)
+Shot path hit: Flower-fire pollution barrier at 5.465059
+After wait: time=2.305953 flower preparing=False player=(-1.00, 2.31) pollution collider=False
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1001" name="InputAndPhysicsTests" fullname="EmberMovementRegression.InputAndPhysicsTests" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="76" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.022666" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1028" name="FireFlowerCActivationLocksPositionAndIgnoresMovementAndRepeat" fullname="EmberMovementRegression.InputAndPhysicsTests.FireFlowerCActivationLocksPositionAndIgnoresMovementAndRepeat" methodname="FireFlowerCActivationLocksPositionAndIgnoresMovementAndRepeat" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="1564140260" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.012040" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1033" name="FireFlowerMapResetCancelsWarningAndRestoresPurifiedBarrier" fullname="EmberMovementRegression.InputAndPhysicsTests.FireFlowerMapResetCancelsWarningAndRestoresPurifiedBarrier" methodname="FireFlowerMapResetCancelsWarningAndRestoresPurifiedBarrier" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="672615289" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.002806" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1032" name="FireFlowerPollutionIsNotPurifiedByDirectCBurst" fullname="EmberMovementRegression.InputAndPhysicsTests.FireFlowerPollutionIsNotPurifiedByDirectCBurst" methodname="FireFlowerPollutionIsNotPurifiedByDirectCBurst" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="2125297793" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.001347" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1031" name="FireFlowerProjectilePurifiesPollutionAndStopsAtWalls" fullname="EmberMovementRegression.InputAndPhysicsTests.FireFlowerProjectilePurifiesPollutionAndStopsAtWalls" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.003446" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1029" name="FireFlowerProjectilePurifiesPollutionAndStopsAtWalls(False)" fullname="EmberMovementRegression.InputAndPhysicsTests.FireFlowerProjectilePurifiesPollutionAndStopsAtWalls(False)" methodname="FireFlowerProjectilePurifiesPollutionAndStopsAtWalls" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="317016487" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.001730" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1030" name="FireFlowerProjectilePurifiesPollutionAndStopsAtWalls(True)" fullname="EmberMovementRegression.InputAndPhysicsTests.FireFlowerProjectilePurifiesPollutionAndStopsAtWalls(True)" methodname="FireFlowerProjectilePurifiesPollutionAndStopsAtWalls" classname="EmberMovementRegression.InputAndPhysicsTests" runstate="Runnable" seed="2141181251" result="Passed" start-time="2026-10-14 09:27:16Z" end-time="2026-10-14 09:27:16Z" duration="0.001031" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/admin/AppData/LocalLow/DefaultCompany/prohect Ember\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

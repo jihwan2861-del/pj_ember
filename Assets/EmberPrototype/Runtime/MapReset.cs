@@ -8,6 +8,16 @@ namespace EmberPrototype
     {
         public static void ResetScene(Scene scene, bool deferWaves = false)
         {
+            foreach (var shot in Object.FindObjectsByType<FireFlowerProjectile>(FindObjectsSortMode.None))
+            {
+                if (shot.gameObject.scene != scene) continue;
+                shot.gameObject.SetActive(false);
+                Object.Destroy(shot.gameObject);
+            }
+            foreach (var flower in Object.FindObjectsByType<FireFlower>(FindObjectsSortMode.None))
+                if (flower.gameObject.scene == scene) flower.ResetForRespawn();
+            foreach (var pollution in Object.FindObjectsByType<PollutionObstacle>(FindObjectsSortMode.None))
+                if (pollution.gameObject.scene == scene) pollution.ResetForRespawn();
             foreach (var berry in Object.FindObjectsByType<StrawberryPickup>(FindObjectsSortMode.None))
                 if (berry.gameObject.scene == scene) berry.ResetForRespawn();
             foreach (var spirit in Object.FindObjectsByType<WaterSpirit>(FindObjectsSortMode.None))

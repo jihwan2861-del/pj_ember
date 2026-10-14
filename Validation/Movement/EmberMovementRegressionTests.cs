@@ -142,7 +142,7 @@ namespace EmberMovementRegression
                 Frame(f, Key.RightArrow, Key.C);
                 Assert.That(f.State, Is.EqualTo("Bursting"));
                 Frame(f, Key.RightArrow, Key.C);
-                UnityEngine.Object[] shots = Object.FindObjectsByType(RuntimeType("EmberPrototype.EmberProjectile"), FindObjectsSortMode.None);
+                UnityEngine.Object[] shots = UnityEngine.Object.FindObjectsByType(RuntimeType("EmberPrototype.EmberProjectile"), FindObjectsSortMode.None);
                 Assert.That(shots, Is.Empty);
                 Assert.That(f.State, Is.EqualTo("Bursting"));
             }

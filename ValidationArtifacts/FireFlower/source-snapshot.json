@@ -1,0 +1,28 @@
+{
+  "sceneSha256": "FBABF3DDE1D24BEC779EECD5BFA3FC70D8C9268684633B3AC45D4629217B86EE",
+  "mode": "EditMode native physics plus EnterPlayMode scene integration",
+  "sources": [
+    {
+      "sha256": "6B630245B6C74B758F84B9B9CDD334FC3A06C4E61B6CFA0AC0903335AAFAA7A3",
+      "file": "FireFlower.cs"
+    },
+    {
+      "sha256": "DB54FDBE1A0C7B4EEAA044A71088014D186E6B795EDF294C146D78E5C60C1EE1",
+      "file": "FireFlowerProjectile.cs"
+    },
+    {
+      "sha256": "04CE6781B4232BDD7D2EEF1A8093217D121C4D42C508DC12DAADF67D31A26CA9",
+      "file": "PollutionObstacle.cs"
+    },
+    {
+      "sha256": "2D29425ABEC958B5DA672490F2CB097144436F876C2A9EA7F7102C3FADC53611",
+      "file": "MapReset.cs"
+    },
+    {
+      "sha256": "CD73FC3CB34605F703E99BBD2C5E569C31C9A1FF11A782708C7AE089536FAE19",
+      "file": "FlamePlayerController.cs"
+    }
+  ],
+  "unity": "6000.5.2f1",
+  "testsPassed": 6
+}
