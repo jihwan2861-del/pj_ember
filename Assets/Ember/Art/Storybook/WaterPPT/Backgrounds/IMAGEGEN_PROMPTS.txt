@@ -1,0 +1,59 @@
+2026-10-19 / built-in image_gen / PPT original reference layer reconstruction
+
+Source references are the losslessly extracted originals in ArtReference/OpeningWater/PPT/.
+The slides contain flattened illustrations. These outputs are reconstructed cutouts,
+not recovered original authoring layers. Generated PNGs are copied without bitmap edits.
+
+PPT_Mountains.png
+Reference: Slide6_1.png
+Use case: background-extraction. Extract and faithfully restore ONLY the distant
+lavender-grey mountain range as a separate 2D Unity background layer. Keep the
+children's watercolor storybook look, jagged muted purple outlines, pale warm peach
+rock faces and handmade paper pigment texture. Broad uneven peaks spanning the width,
+middle low valley and peaks on both sides. Transparent alpha above and below mountains.
+No sky fill, clouds, forest, dead trees, grass, shore, foreground rocks, water, character
+or text. Restore occluded bits only as needed. No photoreal landscape.
+
+PPT_Forest.png
+Reference: Slide6_1.png
+Use case: background-extraction. Extract and faithfully restore ONLY the distant
+layered grey-lavender conifer forest beneath the mountains as a separate transparent
+2D layer. Exact watercolor paper texture and dark lavender sketchy outlines. Thin
+scattered tall spruce trees, misty pale grey depth rows, grey-blue pines in front.
+Wide low strip, transparent sky, soft pale lavender base haze. No mountains, background
+fill, rocks, platforms, deciduous trees, grass, water, character or text. No bright green.
+
+PPT_WaterPaint.png
+Reference: Slide6_1.png
+Use case: background-extraction. Recover a seamless opaque WATER SURFACE TEXTURE
+matching the brilliant cyan, cerulean, turquoise and short white horizontal brush marks.
+This is standalone watercolor before game reflections. Landscape 2:1, pigment on paper,
+tiny irregular horizontal white streaks, deeper teal strokes, horizontally tileable.
+No reflected objects, mountains, trees, rocks, shore, horizon, character, text or UI.
+
+PPT_Descent.png
+Reference: Slide4_1.png
+Use case: background-extraction. Extract and faithfully restore the broad black charcoal
+descending slope in the lower left as an independent transparent terrain sprite. High at
+far left, gently descending towards bottom right, irregular grey shore rocks and thin
+yellow-gold tufts along top. Deep mottled granular charcoal exactly like original.
+Wide landscape 2:1, transparent sky and beyond small rocks at lower right. No mountains,
+trees, corruption, sun, flames, water, reflections, letters or UI. No photorealism/pixelart.
+
+PPT_CorruptedSun.png
+Reference: Slide4_1.png upper-right sun
+Use case: background-extraction. Extract the exact asymmetric handpainted sun. Orange
+gold left half, dark purple-black mass overtaking right, curling grey-black tentacles,
+two small glowing violet orbs, purple mist, uneven short orange/dark purple rays.
+Transparent square with all tentacles inside. No background, sky, mountains, frame,
+text. No cracked lava planet, fiery sphere or thorn bramble replacement.
+
+PPT_PastSky_NoSun.png
+Edit target: first generated PPT_PastSky.png (retained outside Unity as a source variant).
+Supporting style reference: Slide7_1.png.
+Use case: precise-object-edit. Remove ONLY the small yellow sun and rays, replacing it
+with surrounding blue watercolor sky/clouds. The game uses a separate sun sprite.
+Preserve loose bright cyan sky, white watercolor cloud pigment and landscape 2:1.
+No mountains, trees, rocks, flowers, water distortion, text or sun. Full opaque sky.
+
+Scenery and platform prompts are recorded separately beside each PNG.

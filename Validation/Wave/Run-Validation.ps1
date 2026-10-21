@@ -4,6 +4,12 @@ $taskQa=Join-Path $env:LOCALAPPDATA 'Temp/EmberWaterSpiritQA-20261006'
 foreach ($taskFolder in @('Assets/Tests','Assets/Editor')) { New-Item -ItemType Directory -Path (Join-Path $taskQa $taskFolder) -Force | Out-Null }
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'WaterWaveTests.cs') -Destination (Join-Path $taskQa 'Assets/Tests/WaterWaveTests.cs') -Force
 Copy-Item -LiteralPath (Join-Path $taskProject 'Assets') -Destination $taskQa -Recurse -Force
+# Historical scene/prefab builders compile only inside the isolated QA project.
+$taskSupport = Join-Path $taskQa 'Assets/Editor/ValidationSupport'
+New-Item -ItemType Directory -Path $taskSupport -Force | Out-Null
+Get-ChildItem -LiteralPath (Join-Path $taskProject 'Validation/EditorSupport') -File | Where-Object { $_.Extension -eq '.cs' -or $_.Name.EndsWith('.cs.meta') } | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $taskSupport $_.Name) -Force
+}
 $taskArtifacts=Join-Path $taskProject 'ValidationArtifacts/Wave'
 New-Item -ItemType Directory -Path $taskArtifacts -Force | Out-Null
 $taskResults=Join-Path $taskArtifacts 'UnityResults.xml'

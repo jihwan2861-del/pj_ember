@@ -1,0 +1,834 @@
+fileFormatVersion: 2
+guid: da37d71dac832854f919f3aabd6db471
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8994948063178487137
+    second: 05_SunFlower_0
+  - first:
+      213: 8091863040398746769
+    second: 05_SunFlower_1
+  - first:
+      213: -5090931477182552728
+    second: 05_SunFlower_2
+  - first:
+      213: 5518222133346240320
+    second: 05_SunFlower_3
+  - first:
+      213: -8916110388497938119
+    second: 05_SunFlower_4
+  - first:
+      213: -3412896982953932334
+    second: 05_SunFlower_5
+  - first:
+      213: -3452654729950314781
+    second: 05_SunFlower_6
+  - first:
+      213: -1859101590038049111
+    second: 05_SunFlower_7
+  - first:
+      213: 2250653454976010375
+    second: 05_SunFlower_8
+  - first:
+      213: -6990532508635414237
+    second: 05_SunFlower_9
+  - first:
+      213: 2774855400972055720
+    second: 05_SunFlower_10
+  - first:
+      213: -4942407552771911163
+    second: 05_SunFlower_11
+  - first:
+      213: 454426421170395003
+    second: 05_SunFlower_12
+  - first:
+      213: 2691307179617219444
+    second: 05_SunFlower_13
+  - first:
+      213: 8348124373182881044
+    second: 05_SunFlower_14
+  - first:
+      213: -2025501993911325650
+    second: 05_SunFlower_15
+  - first:
+      213: 4956497837879734714
+    second: 05_SunFlower_16
+  - first:
+      213: 5135468397722054780
+    second: 05_SunFlower_17
+  - first:
+      213: -6370477353910922588
+    second: 05_SunFlower_18
+  - first:
+      213: -8965016448092387494
+    second: 05_SunFlower_19
+  - first:
+      213: 895919646452513606
+    second: 05_SunFlower_20
+  - first:
+      213: -4465775835582703636
+    second: 05_SunFlower_21
+  - first:
+      213: 7306940955400020549
+    second: 05_SunFlower_22
+  - first:
+      213: -8195325371646512466
+    second: 05_SunFlower_23
+  - first:
+      213: -5257013219164817749
+    second: 05_SunFlower_24
+  - first:
+      213: -7849230193281621876
+    second: 05_SunFlower_25
+  - first:
+      213: -3713901095855183590
+    second: 05_SunFlower_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 05_SunFlower_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 17
+        width: 1282
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16577de2b9974dc70800000000000000
+      internalID: 8994948063178487137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_1
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1143
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194641e00921c4070800000000000000
+      internalID: 8091863040398746769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_2
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1145
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865edae5bc06959b0800000000000000
+      internalID: -5090931477182552728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 957
+        width: 128
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0470dc12bc9a49c40800000000000000
+      internalID: 5518222133346240320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1005
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939096b57dc934480800000000000000
+      internalID: -8916110388497938119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_5
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1005
+        width: 114
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9470cb644f2a0d0800000000000000
+      internalID: -3412896982953932334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_6
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 830
+        width: 70
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee3d39e0d4b510d0800000000000000
+      internalID: -3452654729950314781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 975
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae0b6c24f42336e0800000000000000
+      internalID: -1859101590038049111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_8
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 933
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788c950946deb3f10800000000000000
+      internalID: 2250653454976010375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 885
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32147f788b3acfe90800000000000000
+      internalID: -6990532508635414237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_10
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 876
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4730e0944428620800000000000000
+      internalID: 2774855400972055720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 564
+        width: 130
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50292d9448a096bb0800000000000000
+      internalID: -4942407552771911163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_12
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 643
+        width: 116
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77d9622c627e4600800000000000000
+      internalID: 454426421170395003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_13
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 820
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473fa86ee91795520800000000000000
+      internalID: 2691307179617219444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_14
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 780
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d985c13ee7ad370800000000000000
+      internalID: 8348124373182881044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_15
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 590
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ce1190ba8f3e3e0800000000000000
+      internalID: -2025501993911325650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 588
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab130dcd58409c440800000000000000
+      internalID: 4956497837879734714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_17
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 521
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70b7718c49d44740800000000000000
+      internalID: 5135468397722054780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_18
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 412
+        width: 144
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2187e49948797a0800000000000000
+      internalID: -6370477353910922588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 507
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a574be50a0dd59380800000000000000
+      internalID: -8965016448092387494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_20
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 463
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b7812fb22fe6c00800000000000000
+      internalID: 895919646452513606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_21
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 491
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7d199c9806602c0800000000000000
+      internalID: -4465775835582703636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_22
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 453
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5422f59c518776560800000000000000
+      internalID: 7306940955400020549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_23
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 447
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea27344cefa544e80800000000000000
+      internalID: -8195325371646512466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_24
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 433
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6f52c74565b07b0800000000000000
+      internalID: -5257013219164817749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_25
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 354
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80ad29e9bee11390800000000000000
+      internalID: -7849230193281621876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_SunFlower_26
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 251
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a192e9261a2957cc0800000000000000
+      internalID: -3713901095855183590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      05_SunFlower_0: 8994948063178487137
+      05_SunFlower_1: 8091863040398746769
+      05_SunFlower_10: 2774855400972055720
+      05_SunFlower_11: -4942407552771911163
+      05_SunFlower_12: 454426421170395003
+      05_SunFlower_13: 2691307179617219444
+      05_SunFlower_14: 8348124373182881044
+      05_SunFlower_15: -2025501993911325650
+      05_SunFlower_16: 4956497837879734714
+      05_SunFlower_17: 5135468397722054780
+      05_SunFlower_18: -6370477353910922588
+      05_SunFlower_19: -8965016448092387494
+      05_SunFlower_2: -5090931477182552728
+      05_SunFlower_20: 895919646452513606
+      05_SunFlower_21: -4465775835582703636
+      05_SunFlower_22: 7306940955400020549
+      05_SunFlower_23: -8195325371646512466
+      05_SunFlower_24: -5257013219164817749
+      05_SunFlower_25: -7849230193281621876
+      05_SunFlower_26: -3713901095855183590
+      05_SunFlower_3: 5518222133346240320
+      05_SunFlower_4: -8916110388497938119
+      05_SunFlower_5: -3412896982953932334
+      05_SunFlower_6: -3452654729950314781
+      05_SunFlower_7: -1859101590038049111
+      05_SunFlower_8: 2250653454976010375
+      05_SunFlower_9: -6990532508635414237
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

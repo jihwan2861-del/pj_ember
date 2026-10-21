@@ -26,12 +26,11 @@ foreach ($source in Get-ChildItem -LiteralPath $sourceRoot -File | Where-Object 
         $snapshot += [ordered]@{ name = $source.Name; sha256 = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash; copySha256 = (Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash }
     }
 }
-$ropeBuilder = Join-Path $projectRoot 'Assets/EmberPrototype/Editor/RopeValidationSceneBuilder.cs'
-if (Test-Path -LiteralPath $ropeBuilder) {
-    $editorTarget = Join-Path $qaResolved 'Assets/Editor'
-    New-Item -ItemType Directory -Path $editorTarget -Force | Out-Null
-    Copy-Item -LiteralPath $ropeBuilder -Destination (Join-Path $editorTarget 'RopeValidationSceneBuilder.cs') -Force
-    Copy-Item -LiteralPath ($ropeBuilder + '.meta') -Destination (Join-Path $editorTarget 'RopeValidationSceneBuilder.cs.meta') -Force
+$editorSupport = Join-Path $projectRoot 'Validation/EditorSupport'
+$editorTarget = Join-Path $qaResolved 'Assets/Editor/ValidationSupport'
+New-Item -ItemType Directory -Path $editorTarget -Force | Out-Null
+foreach ($source in Get-ChildItem -LiteralPath $editorSupport -File | Where-Object { $_.Extension -eq '.cs' -or $_.Name.EndsWith('.cs.meta') }) {
+    Copy-Item -LiteralPath $source.FullName -Destination (Join-Path $editorTarget $source.Name) -Force
 }
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'EmberMovementRegressionTests.cs') -Destination (Join-Path $qaResolved 'Assets/Tests/EmberMovementRegressionTests.cs') -Force
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'EmberMovement.Tests.asmdef') -Destination (Join-Path $qaResolved 'Assets/Tests/EmberMovement.Tests.asmdef') -Force

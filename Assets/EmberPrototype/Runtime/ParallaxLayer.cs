@@ -23,6 +23,8 @@ namespace EmberPrototype
         [Tooltip("Repeat the SpriteRenderer on this object horizontally. Copies contain only a renderer, not scripts or colliders.")]
         [SerializeField] private bool repeatX;
 
+        public bool RepeatsHorizontally => repeatX;
+
         private const int MaxCopiesPerSide = 32;
         private Vector3 layerOrigin;
         private Vector3 cameraOrigin;

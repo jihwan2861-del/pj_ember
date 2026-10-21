@@ -31,11 +31,18 @@ namespace EmberPrototype
         private void OnTriggerEnter2D(Collider2D other)
         {
             FlamePlayerController player = other.GetComponentInParent<FlamePlayerController>();
-            if (player == null) return;
+            ActivateFor(player);
+        }
+
+        public bool ActivateFor(FlamePlayerController player)
+        {
+            if (!isActiveAndEnabled || player == null || !player.isActiveAndEnabled
+                || player.IsDying || player.gameObject.scene != gameObject.scene) return false;
 
             player.SetRespawnPoint(transform);
             PrototypeRoom room = player.GetComponent<PrototypeRoom>();
             if (room != null) room.SetSpawnPoint(transform);
+            return true;
         }
 
         private void ConfigureCollider(bool createIfMissing)

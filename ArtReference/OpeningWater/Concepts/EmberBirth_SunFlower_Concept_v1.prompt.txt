@@ -1,0 +1,20 @@
+Tool: built-in image_gen
+Purpose: preview concept, three-panel storyboard for sun-flower interaction and Ember birth.
+References: ArtReference/OpeningWater/PPT/Slide8_1.png (primary style and character), Slide7_1.png (environment).
+Final prompt:
+Use case: illustration-story.
+Create ONE wide concept storyboard image with THREE equal landscape panels in a horizontal strip, separated only by narrow warm paper gutters. This is a visual example for a Korean hand-drawn storybook platformer, not an implemented game screenshot.
+Reference image 1 (Slide8_1.png) is the PRIMARY style and character identity reference. Reference image 2 (Slide7_1.png) supplies the same lakeshore setting and world. Match their loose doodled ink outlines, uneven childlike colored-pencil marks, watercolor and dry-brush patches, visible cream paper grain, simple friendly flame character, gray fractured stone terraces, scratchy mustard-yellow dry grass, lavender mountains, blue-gray pines, and black-purple curling pollution. Avoid polished digital fantasy rendering.
+
+All three panels show the SAME small safe rocky ledge at the lake's right bank, same eye-level side-view camera and continuous arrangement of flower, rocks and mountains. A small corrupted orange-and-purple sun stays at the upper right of each scene. The water at the lower edge is desaturated dark slate blue after the previous withering scene, with broken hand-painted reflections of bare trees. Keep ample pale paper sky above, as in the slides. Do not introduce a new scene or architecture.
+
+Panel 1: short handwritten Korean heading '만남'. A tiny FACELESS yellow-orange flame spirit, with a rounded bottom and a flame tail pointing upward, approaches and gently touches a dormant sun-flower bud. Absolutely no eyes, face, arms or legs on this flame yet. The flower is a friendly small plant growing from the rock, simple stem and leaves, folded orange-gold petals, sunflower-like round center. Quiet curiosity.
+
+Panel 2: short handwritten Korean heading '반응'. In exactly the same place, the sun-flower opens its orange and gold sun-shaped petals and warm luminous center. Small golden embers and loose pencil-drawn arcs gently connect the flower's glow and the little flame. The little flame brightens and gathers itself, preparing to gain a body. This is a warm mutual response, NOT a projectile, laser, attack, explosion or absorption of the flower.
+
+Panel 3: short handwritten Korean heading '탄생'. Ember has now become the SAME character as reference image 1: large yellow flame-shaped head, irregular orange-red contour, two simple dark red oval eyes and tiny mouth, small orange body, short arms and legs, curious gentle expression. It stands on the SAME ledge beside the still-living open flower, a few drifting golden embers and a small warm glow on the grass. The flower remains intact. Above them, in natural handwritten Korean, show exactly the two-line narration:
+'그 혼란 속에서,
+작은 불꽃 앰버가 태어났습니다.'
+Use a modest, legible handwritten size with clear spacing. The three headings can sit near the upper-left of their panels and the narration above the last action.
+
+The three actions must be easy to compare at a glance. Keep the action large enough to read, same object identities and camera composition in each panel, restrained magical effects. Preserve rough sketchbook imperfections. No UI, logos, watermark, modern smooth vector art, 3D, photorealism, anime styling or pixel art. Opaque cream paper background. A single wide three-panel illustration, not separate files.

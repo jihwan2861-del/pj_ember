@@ -1,6 +1,6 @@
 # 치킨 수집 아이템
 
-`Assets/EmberPrototype/Prefabs/ChickenPickup.prefab`을 씬에 배치한다. 생성 메뉴는 `Ember Prototype > Create Chicken Pickup Prefab`이다.
+`Assets/EmberPrototype/Prefabs/ChickenPickup.prefab`을 씬에 배치한다. 생성 메뉴는 정리했으며 기존 프리팹을 직접 배치한다.
 
 플레이어가 닿으면 치킨가 따라오며, 여러 개는 줄지어 따라온다. 공중에서는 확정되지 않고, 일반 이동 상태로 안전한 바닥에 0.3초 동안 서 있으면 수집이 확정된다. 점프·불 속 이동·사망·조작 잠금 중에는 확정되지 않는다. 발판은 안전한 바닥으로 인정하되 RoomHazard 또는 WaterContact가 붙은 바닥은 제외한다.
 

@@ -1,0 +1,1380 @@
+fileFormatVersion: 2
+guid: 8b6759fa00048a74c92b11961d7879d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6148448451890652055
+    second: Sun_Doodle_0
+  - first:
+      213: 4265680292988745160
+    second: Sun_Doodle_1
+  - first:
+      213: -6070794445298093754
+    second: Sun_Doodle_2
+  - first:
+      213: -8798937225176471483
+    second: Sun_Doodle_3
+  - first:
+      213: 8183722431507828606
+    second: Sun_Doodle_4
+  - first:
+      213: -7553831127192106633
+    second: Sun_Doodle_5
+  - first:
+      213: -2981215424901998202
+    second: Sun_Doodle_6
+  - first:
+      213: 9068958532840118295
+    second: Sun_Doodle_7
+  - first:
+      213: 7049679890575854744
+    second: Sun_Doodle_8
+  - first:
+      213: 6966000430376939989
+    second: Sun_Doodle_9
+  - first:
+      213: 3863203257295466811
+    second: Sun_Doodle_10
+  - first:
+      213: -7215686340671435803
+    second: Sun_Doodle_11
+  - first:
+      213: 1621290731177775865
+    second: Sun_Doodle_12
+  - first:
+      213: -530735020527762164
+    second: Sun_Doodle_13
+  - first:
+      213: -8027210444093691983
+    second: Sun_Doodle_14
+  - first:
+      213: 8532653156574427451
+    second: Sun_Doodle_15
+  - first:
+      213: -6003164885344168909
+    second: Sun_Doodle_16
+  - first:
+      213: 4410968798252883710
+    second: Sun_Doodle_17
+  - first:
+      213: 2168738759116242443
+    second: Sun_Doodle_18
+  - first:
+      213: -3736606871139637556
+    second: Sun_Doodle_19
+  - first:
+      213: -3721050655163672849
+    second: Sun_Doodle_20
+  - first:
+      213: 6330508018690845176
+    second: Sun_Doodle_21
+  - first:
+      213: 4795153311314206922
+    second: Sun_Doodle_22
+  - first:
+      213: 8760523255501733016
+    second: Sun_Doodle_23
+  - first:
+      213: 2471450414757729542
+    second: Sun_Doodle_24
+  - first:
+      213: 1812135441566960887
+    second: Sun_Doodle_25
+  - first:
+      213: -5765426535350385483
+    second: Sun_Doodle_26
+  - first:
+      213: 3987242345816231287
+    second: Sun_Doodle_27
+  - first:
+      213: 1786586261435598214
+    second: Sun_Doodle_28
+  - first:
+      213: 5585834076777776408
+    second: Sun_Doodle_29
+  - first:
+      213: 3089584893648319878
+    second: Sun_Doodle_30
+  - first:
+      213: -3491511186858142737
+    second: Sun_Doodle_31
+  - first:
+      213: -5709186900684369229
+    second: Sun_Doodle_32
+  - first:
+      213: 8972094318965859828
+    second: Sun_Doodle_33
+  - first:
+      213: -4890798916756035772
+    second: Sun_Doodle_34
+  - first:
+      213: -4182857414893926092
+    second: Sun_Doodle_35
+  - first:
+      213: -7176256531365497346
+    second: Sun_Doodle_36
+  - first:
+      213: -1574997818810563089
+    second: Sun_Doodle_37
+  - first:
+      213: -1591351608846435943
+    second: Sun_Doodle_38
+  - first:
+      213: -4596656109443321055
+    second: Sun_Doodle_39
+  - first:
+      213: 1856788057713114923
+    second: Sun_Doodle_40
+  - first:
+      213: -5095287030848287392
+    second: Sun_Doodle_41
+  - first:
+      213: -1340143507943896444
+    second: Sun_Doodle_42
+  - first:
+      213: 7552729103702532082
+    second: Sun_Doodle_43
+  - first:
+      213: -6200995474332304888
+    second: Sun_Doodle_44
+  - first:
+      213: -868713908654751792
+    second: Sun_Doodle_45
+  - first:
+      213: 1180049032721305278
+    second: Sun_Doodle_46
+  - first:
+      213: -5353550321567745565
+    second: Sun_Doodle_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 760
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sun_Doodle_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 853
+        width: 349
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cd14975b25caaa0800000000000000
+      internalID: -6148448451890652055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1068
+        width: 147
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c57afc30adb23b30800000000000000
+      internalID: 4265680292988745160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_2
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1130
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641b79fcd9430cba0800000000000000
+      internalID: -6070794445298093754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_3
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 994
+        width: 112
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54825646635e3e580800000000000000
+      internalID: -8798937225176471483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 843
+        width: 473
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f8b66313c629170800000000000000
+      internalID: 8183722431507828606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1068
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7790d6a9c966b2790800000000000000
+      internalID: -7553831127192106633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1004
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6891dcfbd5890a6d0800000000000000
+      internalID: -2981215424901998202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1044
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718dea87cb96bdd70800000000000000
+      internalID: 9068958532840118295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1031
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c0df9728e75d160800000000000000
+      internalID: 7049679890575854744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_9
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1018
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1f5d5eb743ca060800000000000000
+      internalID: 6966000430376939989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_10
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1036
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b317a36f4eadc9530800000000000000
+      internalID: 3863203257295466811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_11
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 929
+        height: 983
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb04a5e08bbcdb90800000000000000
+      internalID: -7215686340671435803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 885
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f21c7d745bff7610800000000000000
+      internalID: 1621290731177775865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 881
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05459f8f4372a8f0800000000000000
+      internalID: -530735020527762164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_14
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 899
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b76d7e81ae999090800000000000000
+      internalID: -8027210444093691983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 885
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39fb3586d21a6670800000000000000
+      internalID: 8532653156574427451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_16
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 877
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33456f8c75970bca0800000000000000
+      internalID: -6003164885344168909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_17
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 849
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efed13f60c8e63d30800000000000000
+      internalID: 4410968798252883710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 523
+        width: 199
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ebeb33968e81e10800000000000000
+      internalID: 2168738759116242443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_19
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 692
+        width: 216
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6207c19d7e42cc0800000000000000
+      internalID: -3736606871139637556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 598
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe61cb3e42c2c5cc0800000000000000
+      internalID: -3721050655163672849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_21
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 610
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f964d5a08b7ad750800000000000000
+      internalID: 6330508018690845176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 634
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0eb64e78ecb8240800000000000000
+      internalID: 4795153311314206922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_23
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 628
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cbab25c71a39970800000000000000
+      internalID: 8760523255501733016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 633
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60550a3de0b5c4220800000000000000
+      internalID: 2471450414757729542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_25
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 586
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc8e7f359ff52910800000000000000
+      internalID: 1812135441566960887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_26
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 630
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b444d5dc171dffa0800000000000000
+      internalID: -5765426535350385483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_27
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 598
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d85c7c9c7855730800000000000000
+      internalID: 3987242345816231287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_28
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 608
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68546713dba3bc810800000000000000
+      internalID: 1786586261435598214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_29
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 487
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8158c907f7ed48d40800000000000000
+      internalID: 5585834076777776408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_30
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 546
+        width: 108
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6853259671960ea20800000000000000
+      internalID: 3089584893648319878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_31
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 557
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3940a0319ab8fc0800000000000000
+      internalID: -3491511186858142737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_32
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 399
+        width: 194
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2156c23c4e4c0b0800000000000000
+      internalID: -5709186900684369229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 517
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5a2453f38438c70800000000000000
+      internalID: 8972094318965859828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_34
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 517
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44724ea3c44602cb0800000000000000
+      internalID: -4890798916756035772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_35
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 262
+        width: 215
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4398327c75183f5c0800000000000000
+      internalID: -4182857414893926092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_36
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 352
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5f1e6c4b0d86c90800000000000000
+      internalID: -7176256531365497346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_37
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 269
+        width: 96
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe508c714db742ae0800000000000000
+      internalID: -1574997818810563089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_38
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 173
+        width: 162
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99936f1a4226ae9e0800000000000000
+      internalID: -1591351608846435943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_39
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 192
+        width: 146
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12370026f956530c0800000000000000
+      internalID: -4596656109443321055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_40
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 318
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f7d2b96e2a4c910800000000000000
+      internalID: 1856788057713114923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_41
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 166
+        width: 138
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d02a10177e949b0800000000000000
+      internalID: -5095287030848287392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_42
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 252
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a45f4749ad66de0800000000000000
+      internalID: -1340143507943896444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_43
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 63
+        width: 73
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff91fe8a1fa0d860800000000000000
+      internalID: 7552729103702532082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_44
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 144
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a3e9a6873a1f9a0800000000000000
+      internalID: -6200995474332304888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_45
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 43
+        width: 174
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df313f7d45b1f3f0800000000000000
+      internalID: -868713908654751792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_46
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 38
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe85e4d750606010800000000000000
+      internalID: 1180049032721305278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_Doodle_47
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 31
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9b6cbc85e54b5b0800000000000000
+      internalID: -5353550321567745565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sun_Doodle_0: -6148448451890652055
+      Sun_Doodle_1: 4265680292988745160
+      Sun_Doodle_10: 3863203257295466811
+      Sun_Doodle_11: -7215686340671435803
+      Sun_Doodle_12: 1621290731177775865
+      Sun_Doodle_13: -530735020527762164
+      Sun_Doodle_14: -8027210444093691983
+      Sun_Doodle_15: 8532653156574427451
+      Sun_Doodle_16: -6003164885344168909
+      Sun_Doodle_17: 4410968798252883710
+      Sun_Doodle_18: 2168738759116242443
+      Sun_Doodle_19: -3736606871139637556
+      Sun_Doodle_2: -6070794445298093754
+      Sun_Doodle_20: -3721050655163672849
+      Sun_Doodle_21: 6330508018690845176
+      Sun_Doodle_22: 4795153311314206922
+      Sun_Doodle_23: 8760523255501733016
+      Sun_Doodle_24: 2471450414757729542
+      Sun_Doodle_25: 1812135441566960887
+      Sun_Doodle_26: -5765426535350385483
+      Sun_Doodle_27: 3987242345816231287
+      Sun_Doodle_28: 1786586261435598214
+      Sun_Doodle_29: 5585834076777776408
+      Sun_Doodle_3: -8798937225176471483
+      Sun_Doodle_30: 3089584893648319878
+      Sun_Doodle_31: -3491511186858142737
+      Sun_Doodle_32: -5709186900684369229
+      Sun_Doodle_33: 8972094318965859828
+      Sun_Doodle_34: -4890798916756035772
+      Sun_Doodle_35: -4182857414893926092
+      Sun_Doodle_36: -7176256531365497346
+      Sun_Doodle_37: -1574997818810563089
+      Sun_Doodle_38: -1591351608846435943
+      Sun_Doodle_39: -4596656109443321055
+      Sun_Doodle_4: 8183722431507828606
+      Sun_Doodle_40: 1856788057713114923
+      Sun_Doodle_41: -5095287030848287392
+      Sun_Doodle_42: -1340143507943896444
+      Sun_Doodle_43: 7552729103702532082
+      Sun_Doodle_44: -6200995474332304888
+      Sun_Doodle_45: -868713908654751792
+      Sun_Doodle_46: 1180049032721305278
+      Sun_Doodle_47: -5353550321567745565
+      Sun_Doodle_5: -7553831127192106633
+      Sun_Doodle_6: -2981215424901998202
+      Sun_Doodle_7: 9068958532840118295
+      Sun_Doodle_8: 7049679890575854744
+      Sun_Doodle_9: 6966000430376939989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

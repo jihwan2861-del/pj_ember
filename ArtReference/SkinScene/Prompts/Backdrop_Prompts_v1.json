@@ -1,0 +1,28 @@
+{
+  "mode": "built-in image_gen",
+  "created": "2026-10-19",
+  "styleReferences": [
+    "C:/Users/kyk04/AppData/Local/Temp/codex-clipboard-0c321d86-8fdb-40fe-8c1d-b2ff63873dd6.png",
+    "C:/Users/kyk04/AppData/Local/Temp/codex-clipboard-3d390e79-adf0-4780-b448-2cb9810ecc6e.png"
+  ],
+  "assets": [
+    {
+      "file": "Mountains_Doodle.png",
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: illustration-story.\nAsset type: isolated transparent mountain background layer for a 2D Unity hand-drawn platformer called Ember.\nInput images: both referenced images are STYLE REFERENCES ONLY. Match especially the mountain drawing in the title image: loose bold black/indigo felt-marker contours, simple lavender blue and periwinkle brush-marker shadow planes, pale peach and butter-yellow sunlit planes, white snowy paper interiors. Friendly handmade doodle, not scratchy black crayon, not realistic watercolor, not pixel art, not precise vector.\nPrimary request: draw ONE wide mountain-range cutout, no sky layer. Multiple overlapping alpine peaks, one tall asymmetrical main peak just right of center, several lower peaks on either side, a small row of pale distant lavender peaks below. A wide panoramic range approximately 3:1 aspect ratio. Keep the mountain mass and painted interiors opaque, with true transparent negative space above the ridge and around the mountain range. Snow on mountain faces is opaque warm white, not holes. The silhouette should be irregular like freehand drawing.\nComposition: range stretches across almost the full width, with 3% transparent padding left/right and 5% top; lower mountains form an irregular but filled base to the bottom. Design to sit behind gray stone platforms, so not too dark or busy.\nConstraints: transparent background, NO paper rectangle/background, no sky, no clouds, no sun, no forest, no ground/grass/platforms, no character, no labels, no words, no text, no UI, no border. This is one reusable layer only."
+    },
+    {
+      "file": "Cloud_Doodle.png",
+      "width": 1983,
+      "height": 793,
+      "prompt": "Use case: illustration-story.\nAsset type: ONE separate cloud sprite for a 2D Unity hand-drawn platformer.\nInput images: style reference only; match clouds in both attached Ember images, particularly the bold loose marker contours and soft periwinkle-blue undersides from the title image.\nPrimary request: ONE broad low fluffy cloud with three irregular lobes and a horizontal tapering base. Friendly doodle drawn with a black and dark-indigo felt tip pen with small natural gaps in its outline, clean simple pale icy-blue marker shadow brush strokes underneath, opaque warm-white cloud interior. Similar to a child's storybook doodle with confident handmade lines.\nComposition: isolated cloud, centered, cloud occupies 85% canvas width and 55% canvas height, transparent padding all sides. Wide approximately 2.5:1 cloud silhouette. No dense paper grain, no scratchy black shading.\nConstraints: genuine transparent background; white cloud fill is opaque. No sky rectangle, no mountain, no sun, no text, no face, no character, no frame, no UI, no multiple clouds. Must be usable as one independent game object."
+    },
+    {
+      "file": "Sun_Doodle.png",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: illustration-story.\nAsset type: ONE healthy sun decoration sprite for a 2D Unity hand-drawn platformer.\nInput images: style reference only. Match exactly the healthy sun in the attached Ember title image: a simple imperfect orange-yellow marker circle, yellow marker scribble fill with some warmer orange strokes, and short separated thick orange-yellow rays with rounded marker ends.\nPrimary request: one friendly healthy sun. Large circular yellow center, one orange hand-drawn outline loop that varies naturally in thickness, 9 to 11 short orange-yellow rays spaced around it, no face. Compact sun ornament.\nStyle: simple felt-tip marker and watercolor-marker drawing from a children's doodle picture book. Minimal flat warm palette, visible broad handmade marker strokes, confidently loose and a little asymmetrical. No thin scratchy crayon shading, no dense tiny hatch marks. No gradients, no glow halo, no realism, no 3D.\nComposition: centered in square canvas with generous 10% transparent padding around every ray. Opaque yellow interior and true transparent space outside.\nConstraints: genuine transparent background. No clouds, no sky rectangle, no mountain, no ground, no words, no letters, no face, no UI, no border. Must be an independent object sprite."
+    }
+  ]
+}

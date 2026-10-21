@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: ecb57b8bd42c7e2478ff8d9c5e9ffc1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1381086354001593164
+    second: Pollution_Thorns_Doodle_v1_0
+  - first:
+      213: 4237987084362831796
+    second: Pollution_Thorns_Doodle_v1_1
+  - first:
+      213: 8646809883806013634
+    second: Pollution_Thorns_Doodle_v1_2
+  - first:
+      213: 2123121323819709732
+    second: Pollution_Thorns_Doodle_v1_3
+  - first:
+      213: -5083836799528052086
+    second: Pollution_Thorns_Doodle_v1_4
+  - first:
+      213: 2491071533433867625
+    second: Pollution_Thorns_Doodle_v1_5
+  - first:
+      213: -917587865819295800
+    second: Pollution_Thorns_Doodle_v1_6
+  - first:
+      213: 5880997795692610690
+    second: Pollution_Thorns_Doodle_v1_7
+  - first:
+      213: 821400577786029621
+    second: Pollution_Thorns_Doodle_v1_8
+  - first:
+      213: -7482832148665646739
+    second: Pollution_Thorns_Doodle_v1_9
+  - first:
+      213: -2563664969475276447
+    second: Pollution_Thorns_Doodle_v1_10
+  - first:
+      213: -7312038858938313545
+    second: Pollution_Thorns_Doodle_v1_11
+  - first:
+      213: 8865267301249156265
+    second: Pollution_Thorns_Doodle_v1_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 724
+        height: 2093
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc7891474565dce0800000000000000
+      internalID: -1381086354001593164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 2082
+        width: 106
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7d326acca50da30800000000000000
+      internalID: 4237987084362831796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_2
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2080
+        width: 26
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8189cc6c3aff770800000000000000
+      internalID: 8646809883806013634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 95
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425b4516897d67d10800000000000000
+      internalID: 2123121323819709732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 49
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a521cbd559279b0800000000000000
+      internalID: -5083836799528052086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_5
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 47
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dc9648c50129220800000000000000
+      internalID: 2491071533433867625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 53
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfc1a792b21443f0800000000000000
+      internalID: -917587865819295800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 55
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2840d1916508d9150800000000000000
+      internalID: 5880997795692610690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_8
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 47
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536ac393973366b00800000000000000
+      internalID: 821400577786029621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 49
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6149e87ec3a72890800000000000000
+      internalID: -7482832148665646739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 55
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161405b0b480c6cd0800000000000000
+      internalID: -2563664969475276447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4112d066b668a90800000000000000
+      internalID: -7312038858938313545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollution_Thorns_Doodle_v1_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 37
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a487d9e3a1c70b70800000000000000
+      internalID: 8865267301249156265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pollution_Thorns_Doodle_v1_0: -1381086354001593164
+      Pollution_Thorns_Doodle_v1_1: 4237987084362831796
+      Pollution_Thorns_Doodle_v1_10: -2563664969475276447
+      Pollution_Thorns_Doodle_v1_11: -7312038858938313545
+      Pollution_Thorns_Doodle_v1_12: 8865267301249156265
+      Pollution_Thorns_Doodle_v1_2: 8646809883806013634
+      Pollution_Thorns_Doodle_v1_3: 2123121323819709732
+      Pollution_Thorns_Doodle_v1_4: -5083836799528052086
+      Pollution_Thorns_Doodle_v1_5: 2491071533433867625
+      Pollution_Thorns_Doodle_v1_6: -917587865819295800
+      Pollution_Thorns_Doodle_v1_7: 5880997795692610690
+      Pollution_Thorns_Doodle_v1_8: 821400577786029621
+      Pollution_Thorns_Doodle_v1_9: -7482832148665646739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

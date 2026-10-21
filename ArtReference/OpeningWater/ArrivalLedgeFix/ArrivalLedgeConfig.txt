@@ -1,0 +1,1 @@
+ArrivalPlatform world=Center: (76.80, -2.33, 0.00), Extents: (2.20, 0.83, 0.00); top=-1.5; old FarShore polygon unchanged; art transform unchanged; trigger=Center: (76.80, -0.80, 0.00), Extents: (2.07, 0.75, 0.00); grounded=true; landingSurface=ArrivalPlatform; event=River.BeginTreeWithering; old X auto disabled; timings unchanged; dirtyBefore=True; sceneSaved=False

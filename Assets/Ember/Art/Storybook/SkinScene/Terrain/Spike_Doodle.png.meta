@@ -1,0 +1,1097 @@
+fileFormatVersion: 2
+guid: 43028e485c9494d4b9a521d362a1d83b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6759566703351024282
+    second: Spike_Doodle_0
+  - first:
+      213: -4075908683632069501
+    second: Spike_Doodle_1
+  - first:
+      213: 4254209572704932738
+    second: Spike_Doodle_2
+  - first:
+      213: -3660062213166902645
+    second: Spike_Doodle_3
+  - first:
+      213: 930741371140158189
+    second: Spike_Doodle_4
+  - first:
+      213: 1204970983822680693
+    second: Spike_Doodle_5
+  - first:
+      213: -6378975629644400695
+    second: Spike_Doodle_6
+  - first:
+      213: -2158655851541293263
+    second: Spike_Doodle_7
+  - first:
+      213: 8696447422878147084
+    second: Spike_Doodle_8
+  - first:
+      213: 7158737006044315415
+    second: Spike_Doodle_9
+  - first:
+      213: -3254738116806896245
+    second: Spike_Doodle_10
+  - first:
+      213: 4226390367739647881
+    second: Spike_Doodle_11
+  - first:
+      213: -1891071164839260031
+    second: Spike_Doodle_12
+  - first:
+      213: 9154635805921368813
+    second: Spike_Doodle_13
+  - first:
+      213: 2815547670599168570
+    second: Spike_Doodle_14
+  - first:
+      213: 5585080714872771322
+    second: Spike_Doodle_15
+  - first:
+      213: -6699607453220064299
+    second: Spike_Doodle_16
+  - first:
+      213: 4102816801489751178
+    second: Spike_Doodle_17
+  - first:
+      213: -5573900647627828707
+    second: Spike_Doodle_18
+  - first:
+      213: -2254187445654734591
+    second: Spike_Doodle_19
+  - first:
+      213: 9206093324412094252
+    second: Spike_Doodle_20
+  - first:
+      213: 165502638507210807
+    second: Spike_Doodle_21
+  - first:
+      213: -7642628004533239683
+    second: Spike_Doodle_22
+  - first:
+      213: -8858083807623344225
+    second: Spike_Doodle_23
+  - first:
+      213: -8885594981196009652
+    second: Spike_Doodle_24
+  - first:
+      213: 198226646758600544
+    second: Spike_Doodle_25
+  - first:
+      213: 1669008348191035397
+    second: Spike_Doodle_26
+  - first:
+      213: 2245105873885006609
+    second: Spike_Doodle_27
+  - first:
+      213: -7725158255812558788
+    second: Spike_Doodle_28
+  - first:
+      213: -3438264407132423479
+    second: Spike_Doodle_29
+  - first:
+      213: -6132979613636471919
+    second: Spike_Doodle_30
+  - first:
+      213: -5323108770622264820
+    second: Spike_Doodle_31
+  - first:
+      213: 6535193327589679600
+    second: Spike_Doodle_32
+  - first:
+      213: -5335545539255085681
+    second: Spike_Doodle_33
+  - first:
+      213: -8299228731385838912
+    second: Spike_Doodle_34
+  - first:
+      213: -3214732659222387373
+    second: Spike_Doodle_35
+  - first:
+      213: 9181962795246678027
+    second: Spike_Doodle_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1254
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spike_Doodle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 1219
+        height: 1217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6653433a5e13132a0800000000000000
+      internalID: -6759566703351024282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 43
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3843e27b5a67f67c0800000000000000
+      internalID: -4075908683632069501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 41
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283d42d011df90b30800000000000000
+      internalID: 4254209572704932738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 45
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b825b581fc8d43dc0800000000000000
+      internalID: -3660062213166902645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_4
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 48
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2b1948858aaec00800000000000000
+      internalID: 930741371140158189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 47
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572676fb9bae8b010800000000000000
+      internalID: 1204970983822680693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 45
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7fb2c46735977a0800000000000000
+      internalID: -6378975629644400695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_7
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 37
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1371098a0f9ea02e0800000000000000
+      internalID: -2158655851541293263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 31
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c026388fadcffa870800000000000000
+      internalID: 8696447422878147084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_9
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 31
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ff6bdd061f85360800000000000000
+      internalID: 7158737006044315415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 31
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b851dc65de8d4d2d0800000000000000
+      internalID: -3254738116806896245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_11
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 19
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9871147a5a727aa30800000000000000
+      internalID: 4226390367739647881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_12
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 17
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18095ce7bc091c5e0800000000000000
+      internalID: -1891071164839260031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 17
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dead30c13cccb0f70800000000000000
+      internalID: 9154635805921368813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_14
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 35
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32fd3260b5d21720800000000000000
+      internalID: 2815547670599168570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 30
+        width: 53
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af250e3b151328d40800000000000000
+      internalID: 5585080714872771322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_16
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 49
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3324074863603a0800000000000000
+      internalID: -6699607453220064299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_17
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c0d4fa42220f830800000000000000
+      internalID: 4102816801489751178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_18
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 47
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12d2dc84e685a2b0800000000000000
+      internalID: -5573900647627828707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_19
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 47
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109ba9c167487b0e0800000000000000
+      internalID: -2254187445654734591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_20
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c278da24a1d92cf70800000000000000
+      internalID: 9206093324412094252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_21
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 47
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738bc99d5cbfb4200800000000000000
+      internalID: 165502638507210807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_22
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 47
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70085f725eefe590800000000000000
+      internalID: -7642628004533239683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_23
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 51
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f88f785b3c11580800000000000000
+      internalID: -8858083807623344225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_24
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 31
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f61d7417600b480800000000000000
+      internalID: -8885594981196009652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_25
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 29
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f2011c51e30c200800000000000000
+      internalID: 198226646758600544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_26
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 47
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5009619ff32892710800000000000000
+      internalID: 1669008348191035397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_27
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 44
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b0f00b5e7382f10800000000000000
+      internalID: 2245105873885006609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_28
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30cd98fe79bac490800000000000000
+      internalID: -7725158255812558788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_29
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cab0090db4d840d0800000000000000
+      internalID: -3438264407132423479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_30
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 55
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1935c7a098743eaa0800000000000000
+      internalID: -6132979613636471919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_31
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a2b42b6c48026b0800000000000000
+      internalID: -5323108770622264820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_32
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 47
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f16c7dd4bba1ba50800000000000000
+      internalID: 6535193327589679600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_33
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 31
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85d7c9d99554f5b0800000000000000
+      internalID: -5335545539255085681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_34
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 31
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c20804a07733dc80800000000000000
+      internalID: -8299228731385838912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_35
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 47
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355e337cda9f263d0800000000000000
+      internalID: -3214732659222387373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_Doodle_36
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 50
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00f78f9382ec6f70800000000000000
+      internalID: 9181962795246678027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape:
+    - - {x: -514.14, y: -507.87}
+      - {x: 514.14, y: -507.87}
+      - {x: 0, y: 476.52}
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spike_Doodle_0: -6759566703351024282
+      Spike_Doodle_1: -4075908683632069501
+      Spike_Doodle_10: -3254738116806896245
+      Spike_Doodle_11: 4226390367739647881
+      Spike_Doodle_12: -1891071164839260031
+      Spike_Doodle_13: 9154635805921368813
+      Spike_Doodle_14: 2815547670599168570
+      Spike_Doodle_15: 5585080714872771322
+      Spike_Doodle_16: -6699607453220064299
+      Spike_Doodle_17: 4102816801489751178
+      Spike_Doodle_18: -5573900647627828707
+      Spike_Doodle_19: -2254187445654734591
+      Spike_Doodle_2: 4254209572704932738
+      Spike_Doodle_20: 9206093324412094252
+      Spike_Doodle_21: 165502638507210807
+      Spike_Doodle_22: -7642628004533239683
+      Spike_Doodle_23: -8858083807623344225
+      Spike_Doodle_24: -8885594981196009652
+      Spike_Doodle_25: 198226646758600544
+      Spike_Doodle_26: 1669008348191035397
+      Spike_Doodle_27: 2245105873885006609
+      Spike_Doodle_28: -7725158255812558788
+      Spike_Doodle_29: -3438264407132423479
+      Spike_Doodle_3: -3660062213166902645
+      Spike_Doodle_30: -6132979613636471919
+      Spike_Doodle_31: -5323108770622264820
+      Spike_Doodle_32: 6535193327589679600
+      Spike_Doodle_33: -5335545539255085681
+      Spike_Doodle_34: -8299228731385838912
+      Spike_Doodle_35: -3214732659222387373
+      Spike_Doodle_36: 9181962795246678027
+      Spike_Doodle_4: 930741371140158189
+      Spike_Doodle_5: 1204970983822680693
+      Spike_Doodle_6: -6378975629644400695
+      Spike_Doodle_7: -2158655851541293263
+      Spike_Doodle_8: 8696447422878147084
+      Spike_Doodle_9: 7158737006044315415
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

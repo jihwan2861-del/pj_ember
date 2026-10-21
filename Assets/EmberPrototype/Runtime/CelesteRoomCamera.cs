@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace EmberPrototype
@@ -38,6 +39,8 @@ namespace EmberPrototype
         private Camera viewCamera;
         private CameraRoom[] rooms;
         private CameraRoom currentRoom;
+        private CameraRoom checkpointRoom;
+        private Transform checkpointTarget;
         private float cameraDepth;
         private float shakeRemaining;
         private float shakeDuration;
@@ -51,8 +54,29 @@ namespace EmberPrototype
         private float cinematicBlendSeconds;
         private float cinematicFocusScreenX = 0.5f;
         private float cinematicFocusScreenY = 0.5f;
+        private readonly HashSet<MonoBehaviour> motionSuspensions = new HashSet<MonoBehaviour>();
 
         public CameraRoom CurrentRoom => currentRoom;
+        public bool IsCinematicActive => cinematicActive || cinematicReturning;
+        public bool IsMotionSuspended
+        {
+            get
+            {
+                motionSuspensions.RemoveWhere(owner => owner == null || !owner.isActiveAndEnabled);
+                return motionSuspensions.Count > 0;
+            }
+        }
+
+        // Owners release only their own reservation; an opening fade and a story
+        // section can overlap without enabling two camera drivers for one frame.
+        public void SetMotionSuspended(MonoBehaviour owner, bool suspended)
+        {
+            if (owner == null) return;
+            if (suspended) motionSuspensions.Add(owner);
+            else motionSuspensions.Remove(owner);
+        }
+
+        public bool HasRoomAtPosition(Vector2 position) => FindRoomContaining(position) != null;
 
         private void Awake()
         {
@@ -71,7 +95,7 @@ namespace EmberPrototype
             ResolveTarget();
             RefreshRooms();
             currentRoom = startingRoom != null ? startingRoom : FindRoomContaining(TargetPosition);
-            if (snapToTargetOnStart && target != null)
+            if (snapToTargetOnStart && target != null && !IsMotionSuspended)
             {
                 SetCameraPosition(CalculateTargetPosition());
             }
@@ -79,6 +103,7 @@ namespace EmberPrototype
 
         private void LateUpdate()
         {
+            if (IsMotionSuspended || SceneFadeTransition.IsPlaying) return;
             ResolveTarget();
             if (cinematicActive)
             {
@@ -99,6 +124,7 @@ namespace EmberPrototype
             if (target == null) return;
 
             UpdateCurrentRoom();
+            UpdateRoomCheckpoint();
             if (cinematicReturning)
             {
                 viewCamera.orthographicSize = Mathf.Lerp(
@@ -147,7 +173,7 @@ namespace EmberPrototype
             cinematicFocus = null;
             cinematicBlendSeconds = Mathf.Max(0f, blendSeconds);
             cinematicReturning = blendSeconds > 0f;
-            if (cinematicReturning) return;
+            if (cinematicReturning || IsMotionSuspended) return;
 
             viewCamera.orthographicSize = normalOrthographicSize;
             ResolveTarget();
@@ -198,6 +224,19 @@ namespace EmberPrototype
             if (snapImmediately && target != null) SetCameraPosition(CalculateTargetPosition());
         }
 
+        public void SetNormalOrthographicSize(float size)
+        {
+            SetNormalOrthographicSize(size, true);
+        }
+
+        public void SetNormalOrthographicSize(float size, bool applyImmediately)
+        {
+            normalOrthographicSize = Mathf.Max(0.01f, size);
+            if (viewCamera == null) viewCamera = GetComponent<Camera>();
+            if (applyImmediately && viewCamera != null && !IsCinematicActive)
+                viewCamera.orthographicSize = normalOrthographicSize;
+        }
+
         public void ShiftByScreenFraction(Vector2 direction, float screenFraction)
         {
             // Retained only so legacy CameraShiftTrigger components can deserialize safely.
@@ -225,6 +264,30 @@ namespace EmberPrototype
             currentRoom = FindRoomContaining(playerPosition);
         }
 
+        private void UpdateRoomCheckpoint()
+        {
+            // Camera-only previews and cinematic reframing must never move a checkpoint.
+            // Leave the room pending while input or camera motion is reserved, then save
+            // on the first normal frame if the player is still inside that room.
+            if (!Application.isPlaying || target == null || IsCinematicActive
+                || IsMotionSuspended || GameSessionControls.BlockGameplayInput || Time.timeScale <= 0f)
+                return;
+
+            FlamePlayerController player = target.GetComponentInParent<FlamePlayerController>();
+            if (player == null || !player.isActiveAndEnabled || player.IsDying || player.ControlsLocked
+                || player.gameObject.scene != gameObject.scene) return;
+            if (checkpointTarget == player.transform && checkpointRoom == currentRoom) return;
+            if (currentRoom != null)
+            {
+                if (!currentRoom.Contains(player.transform.position)) return;
+                RoomSpawnPoint spawn = currentRoom.SpawnPoint;
+                if (spawn != null && !spawn.ActivateFor(player)) return;
+            }
+
+            checkpointTarget = player.transform;
+            checkpointRoom = currentRoom;
+        }
+
         private CameraRoom FindRoomContaining(Vector2 position)
         {
             if (rooms == null) RefreshRooms();
@@ -246,6 +309,7 @@ namespace EmberPrototype
 
         public void SnapAfterRespawn(Vector2 playerPosition)
         {
+            if (IsMotionSuspended) return;
             cinematicActive = cinematicReturning = false;
             cinematicFocus = null;
             shakeRemaining = 0f;
@@ -267,6 +331,7 @@ namespace EmberPrototype
 
         private void SetCameraPosition(Vector2 position)
         {
+            if (IsMotionSuspended) return;
             transform.position = new Vector3(position.x, position.y, cameraDepth);
         }
 

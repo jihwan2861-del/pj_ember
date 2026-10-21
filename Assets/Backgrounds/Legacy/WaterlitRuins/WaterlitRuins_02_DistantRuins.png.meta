@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 510bb2b0115a68d4fb093171f5c23dc3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4713018801378859643
+    second: WaterlitRuins_02_DistantRuins_0
+  - first:
+      213: -6926763301049515576
+    second: WaterlitRuins_02_DistantRuins_1
+  - first:
+      213: -2527757101910255789
+    second: WaterlitRuins_02_DistantRuins_2
+  - first:
+      213: 206770286154147520
+    second: WaterlitRuins_02_DistantRuins_3
+  - first:
+      213: 4311291483637032406
+    second: WaterlitRuins_02_DistantRuins_4
+  - first:
+      213: -8249615096310059777
+    second: WaterlitRuins_02_DistantRuins_5
+  - first:
+      213: 461498716084294764
+    second: WaterlitRuins_02_DistantRuins_6
+  - first:
+      213: 6176960925725628415
+    second: WaterlitRuins_02_DistantRuins_7
+  - first:
+      213: 4541184512435307201
+    second: WaterlitRuins_02_DistantRuins_8
+  - first:
+      213: 8610869527146832216
+    second: WaterlitRuins_02_DistantRuins_9
+  - first:
+      213: 4763648690121635838
+    second: WaterlitRuins_02_DistantRuins_10
+  - first:
+      213: -5919350250676115788
+    second: WaterlitRuins_02_DistantRuins_11
+  - first:
+      213: -3695157270096826791
+    second: WaterlitRuins_02_DistantRuins_12
+  - first:
+      213: 8055440909090171975
+    second: WaterlitRuins_02_DistantRuins_13
+  - first:
+      213: 6990790832339726162
+    second: WaterlitRuins_02_DistantRuins_14
+  - first:
+      213: -6736942221533696303
+    second: WaterlitRuins_02_DistantRuins_15
+  - first:
+      213: 2250689942426652161
+    second: WaterlitRuins_02_DistantRuins_16
+  - first:
+      213: -8114999957761657319
+    second: WaterlitRuins_02_DistantRuins_17
+  - first:
+      213: -3995223430129394639
+    second: WaterlitRuins_02_DistantRuins_18
+  - first:
+      213: 6714415553447669680
+    second: WaterlitRuins_02_DistantRuins_19
+  - first:
+      213: 3982543179387372533
+    second: WaterlitRuins_02_DistantRuins_20
+  - first:
+      213: -5007909901134233291
+    second: WaterlitRuins_02_DistantRuins_21
+  - first:
+      213: 8320424967483640817
+    second: WaterlitRuins_02_DistantRuins_22
+  - first:
+      213: -7635523585705149419
+    second: WaterlitRuins_02_DistantRuins_23
+  - first:
+      213: -1998903650585536288
+    second: WaterlitRuins_02_DistantRuins_24
+  - first:
+      213: -1211971303587107902
+    second: WaterlitRuins_02_DistantRuins_25
+  - first:
+      213: -3440960479834790323
+    second: WaterlitRuins_02_DistantRuins_26
+  - first:
+      213: 4102058459297426408
+    second: WaterlitRuins_02_DistantRuins_27
+  - first:
+      213: 4589551249645601586
+    second: WaterlitRuins_02_DistantRuins_28
+  - first:
+      213: 8925480272375372963
+    second: WaterlitRuins_02_DistantRuins_29
+  - first:
+      213: 7130340305105976524
+    second: WaterlitRuins_02_DistantRuins_30
+  - first:
+      213: 3143495488229143957
+    second: WaterlitRuins_02_DistantRuins_31
+  - first:
+      213: 4086062595473975934
+    second: WaterlitRuins_02_DistantRuins_32
+  - first:
+      213: 4617669718019249229
+    second: WaterlitRuins_02_DistantRuins_33
+  - first:
+      213: -1448776333060748223
+    second: WaterlitRuins_02_DistantRuins_34
+  - first:
+      213: -4917198574578341965
+    second: WaterlitRuins_02_DistantRuins_35
+  - first:
+      213: -7658741170301271390
+    second: WaterlitRuins_02_DistantRuins_36
+  - first:
+      213: -4535732461982732886
+    second: WaterlitRuins_02_DistantRuins_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterlitRuins_02_DistantRuins_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1672
+        height: 941
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585631cee5ef79eb0800000000000000
+      internalID: -4713018801378859643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 49d566a5f1dc337419503a4494e20e64
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1672.0,"y":941.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      WaterlitRuins_02_DistantRuins_0: -4713018801378859643
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

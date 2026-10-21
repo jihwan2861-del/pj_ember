@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: c15add263a1c17d4c8a424333cf27348
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8444082250071449432
+    second: Ember_Idle_Sheet_0
+  - first:
+      213: -7869695051132572955
+    second: Ember_Idle_Sheet_1
+  - first:
+      213: -1254248009408633561
+    second: Ember_Idle_Sheet_2
+  - first:
+      213: 7110988609080963700
+    second: Ember_Idle_Sheet_3
+  - first:
+      213: 3238043936917605883
+    second: Ember_Idle_Sheet_4
+  - first:
+      213: -8938786453504890408
+    second: Ember_Idle_Sheet_5
+  - first:
+      213: 2206140668646974010
+    second: Ember_Idle_Sheet_6
+  - first:
+      213: 5173688000033223848
+    second: Ember_Idle_Sheet_7
+  - first:
+      213: 3610846415762475311
+    second: Ember_Idle_Sheet_8
+  - first:
+      213: -3528336029303039133
+    second: Ember_Idle_Sheet_9
+  - first:
+      213: -6145671197275630712
+    second: Ember_Idle_Sheet_10
+  - first:
+      213: -4503188311496276606
+    second: Ember_Idle_Sheet_11
+  - first:
+      213: -3321137739608974365
+    second: Ember_Idle_Sheet_12
+  - first:
+      213: -8655919819841716602
+    second: Ember_Idle_Sheet_13
+  - first:
+      213: -2916537067521714850
+    second: Ember_Idle_Sheet_14
+  - first:
+      213: -7322418469363356894
+    second: Ember_Idle_Sheet_15
+  - first:
+      213: -5746480875103999833
+    second: Ember_Idle_Sheet_16
+  - first:
+      213: -4374926127625016855
+    second: Ember_Idle_Sheet_17
+  - first:
+      213: 3768746431708888912
+    second: Ember_Idle_Sheet_18
+  - first:
+      213: 7055013173446061137
+    second: Ember_Idle_Sheet_19
+  - first:
+      213: -4515484335504023743
+    second: Ember_Idle_Sheet_20
+  - first:
+      213: -3624547308207041943
+    second: Ember_Idle_Sheet_21
+  - first:
+      213: -5358443332217726380
+    second: Ember_Idle_Sheet_22
+  - first:
+      213: 7995585727453459403
+    second: Ember_Idle_Sheet_23
+  - first:
+      213: -2541989870164714380
+    second: Ember_Idle_Sheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ember_Idle_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9328a34b18c09c04b8d2d2948337b31b
+      internalID: 646439211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ember_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 627
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d34ff1a5841e54c83fc65ac11660d8
+      internalID: -777186651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ember_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328e344ce8469c84886ec161cfc44359
+      internalID: 1818905957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ember_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b61756a835b50342bc8acf51026cd0d
+      internalID: -954708466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 141e2b79857e2dd408e4ad0004cc2643
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ember_Idle_00: 646439211
+      Ember_Idle_01: -777186651
+      Ember_Idle_02: 1818905957
+      Ember_Idle_03: -954708466
+      Ember_Idle_Sheet_0: 8444082250071449432
+      Ember_Idle_Sheet_1: -7869695051132572955
+      Ember_Idle_Sheet_10: -6145671197275630712
+      Ember_Idle_Sheet_11: -4503188311496276606
+      Ember_Idle_Sheet_12: -3321137739608974365
+      Ember_Idle_Sheet_13: -8655919819841716602
+      Ember_Idle_Sheet_14: -2916537067521714850
+      Ember_Idle_Sheet_15: -7322418469363356894
+      Ember_Idle_Sheet_16: -5746480875103999833
+      Ember_Idle_Sheet_17: -4374926127625016855
+      Ember_Idle_Sheet_18: 3768746431708888912
+      Ember_Idle_Sheet_19: 7055013173446061137
+      Ember_Idle_Sheet_2: -1254248009408633561
+      Ember_Idle_Sheet_20: -4515484335504023743
+      Ember_Idle_Sheet_21: -3624547308207041943
+      Ember_Idle_Sheet_22: -5358443332217726380
+      Ember_Idle_Sheet_23: 7995585727453459403
+      Ember_Idle_Sheet_24: -2541989870164714380
+      Ember_Idle_Sheet_3: 7110988609080963700
+      Ember_Idle_Sheet_4: 3238043936917605883
+      Ember_Idle_Sheet_5: -8938786453504890408
+      Ember_Idle_Sheet_6: 2206140668646974010
+      Ember_Idle_Sheet_7: 5173688000033223848
+      Ember_Idle_Sheet_8: 3610846415762475311
+      Ember_Idle_Sheet_9: -3528336029303039133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

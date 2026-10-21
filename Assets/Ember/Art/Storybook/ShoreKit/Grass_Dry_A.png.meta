@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: a59d1fff057add24e9d0c7a31d12be98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4084302899918968295
+    second: Grass_Dry_A_0
+  - first:
+      213: -6838092422288075319
+    second: Grass_Dry_A_1
+  - first:
+      213: 8908277156221219026
+    second: Grass_Dry_A_2
+  - first:
+      213: 7855324483411764920
+    second: Grass_Dry_A_3
+  - first:
+      213: -9068599336079522170
+    second: Grass_Dry_A_4
+  - first:
+      213: -5989307209903128613
+    second: Grass_Dry_A_5
+  - first:
+      213: 6843718991791955447
+    second: Grass_Dry_A_6
+  - first:
+      213: -2180981838736333028
+    second: Grass_Dry_A_7
+  - first:
+      213: -1211894649241636607
+    second: Grass_Dry_A_8
+  - first:
+      213: -8376727027355674101
+    second: Grass_Dry_A_9
+  - first:
+      213: 5612009594556435773
+    second: Grass_Dry_A_10
+  - first:
+      213: 5790770696127049462
+    second: Grass_Dry_A_11
+  - first:
+      213: -8072693786231300577
+    second: Grass_Dry_A_12
+  - first:
+      213: -7013877402461446422
+    second: Grass_Dry_A_13
+  - first:
+      213: -6383176767259361473
+    second: Grass_Dry_A_14
+  - first:
+      213: 3137300104724125988
+    second: Grass_Dry_A_15
+  - first:
+      213: 2403177197647217240
+    second: Grass_Dry_A_16
+  - first:
+      213: 667608096141284721
+    second: Grass_Dry_A_17
+  - first:
+      213: -8748558467483637550
+    second: Grass_Dry_A_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.12739572}
+  spritePixelsToUnits: 887
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass_Dry_A_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 1664
+        height: 817
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a6b3fe624a157c0800000000000000
+      internalID: -4084302899918968295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 432
+        width: 30
+        height: 419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c59a34fb273a11a0800000000000000
+      internalID: -6838092422288075319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_2
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 547
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0fa4120ee80ab70800000000000000
+      internalID: 8908277156221219026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_3
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 501
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6ef259ff7b30d60800000000000000
+      internalID: 7855324483411764920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_4
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 475
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68603aa83fcd52280800000000000000
+      internalID: -9068599336079522170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_5
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 441
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfb90743d4b1eca0800000000000000
+      internalID: -5989307209903128613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_6
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 434
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd9a58d926c9fe50800000000000000
+      internalID: 6843718991791955447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_7
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 420
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17ea80b2989bb1e0800000000000000
+      internalID: -2180981838736333028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_8
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 408
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10171c6cc3c7e2fe0800000000000000
+      internalID: -1211894649241636607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_9
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 418
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a1d028623efbb80800000000000000
+      internalID: -8376727027355674101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_10
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 311
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3dce971efcd1ed40800000000000000
+      internalID: 5612009594556435773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_11
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 305
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fee46e6443fc5050800000000000000
+      internalID: 5790770696127049462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_12
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e1e2bb5c708ff80800000000000000
+      internalID: -8072693786231300577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_13
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 289
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee5520e9a3b9ae90800000000000000
+      internalID: -7013877402461446422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_14
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 259
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fbaf8bc866a67a0800000000000000
+      internalID: -6383176767259361473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_15
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 241
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42990e7b2dde98b20800000000000000
+      internalID: 3137300104724125988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_16
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 243
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852c41ebdecc95120800000000000000
+      internalID: 2403177197647217240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_17
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 211
+        width: 58
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1751dabb602d34900800000000000000
+      internalID: 667608096141284721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Dry_A_18
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 51
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8e6e8fc60e69680800000000000000
+      internalID: -8748558467483637550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Grass_Dry_A_0: -4084302899918968295
+      Grass_Dry_A_1: -6838092422288075319
+      Grass_Dry_A_10: 5612009594556435773
+      Grass_Dry_A_11: 5790770696127049462
+      Grass_Dry_A_12: -8072693786231300577
+      Grass_Dry_A_13: -7013877402461446422
+      Grass_Dry_A_14: -6383176767259361473
+      Grass_Dry_A_15: 3137300104724125988
+      Grass_Dry_A_16: 2403177197647217240
+      Grass_Dry_A_17: 667608096141284721
+      Grass_Dry_A_18: -8748558467483637550
+      Grass_Dry_A_2: 8908277156221219026
+      Grass_Dry_A_3: 7855324483411764920
+      Grass_Dry_A_4: -9068599336079522170
+      Grass_Dry_A_5: -5989307209903128613
+      Grass_Dry_A_6: 6843718991791955447
+      Grass_Dry_A_7: -2180981838736333028
+      Grass_Dry_A_8: -1211894649241636607
+      Grass_Dry_A_9: -8376727027355674101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

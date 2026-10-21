@@ -1,0 +1,1978 @@
+fileFormatVersion: 2
+guid: 5d59f879aa791da4e9ddc22446b92771
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6711232402785797664
+    second: PPT_CorruptedSun_0
+  - first:
+      213: -2916591172024100269
+    second: PPT_CorruptedSun_1
+  - first:
+      213: -6798928001211985668
+    second: PPT_CorruptedSun_2
+  - first:
+      213: -5162522258068850363
+    second: PPT_CorruptedSun_3
+  - first:
+      213: -5591360520278525779
+    second: PPT_CorruptedSun_4
+  - first:
+      213: -6899207507990256778
+    second: PPT_CorruptedSun_5
+  - first:
+      213: 7854270782306287821
+    second: PPT_CorruptedSun_6
+  - first:
+      213: 6202554832550073019
+    second: PPT_CorruptedSun_7
+  - first:
+      213: 503171491518588262
+    second: PPT_CorruptedSun_8
+  - first:
+      213: -2221058372148764928
+    second: PPT_CorruptedSun_9
+  - first:
+      213: 3934747627673756539
+    second: PPT_CorruptedSun_10
+  - first:
+      213: 1768067030377853942
+    second: PPT_CorruptedSun_11
+  - first:
+      213: -2771503180069878344
+    second: PPT_CorruptedSun_12
+  - first:
+      213: -7403785288958883078
+    second: PPT_CorruptedSun_13
+  - first:
+      213: -9180028756103168846
+    second: PPT_CorruptedSun_14
+  - first:
+      213: 3392556791624173568
+    second: PPT_CorruptedSun_15
+  - first:
+      213: 8131944101937655713
+    second: PPT_CorruptedSun_16
+  - first:
+      213: -6028221963418353986
+    second: PPT_CorruptedSun_17
+  - first:
+      213: -8386920255960193200
+    second: PPT_CorruptedSun_18
+  - first:
+      213: 1099688993974836583
+    second: PPT_CorruptedSun_19
+  - first:
+      213: -6341621022250537416
+    second: PPT_CorruptedSun_20
+  - first:
+      213: 7278311690459630364
+    second: PPT_CorruptedSun_21
+  - first:
+      213: 6991642637890142466
+    second: PPT_CorruptedSun_22
+  - first:
+      213: -1735259062808152264
+    second: PPT_CorruptedSun_23
+  - first:
+      213: 3571637281595331787
+    second: PPT_CorruptedSun_24
+  - first:
+      213: -6613171360525859809
+    second: PPT_CorruptedSun_25
+  - first:
+      213: -110496208288217403
+    second: PPT_CorruptedSun_26
+  - first:
+      213: 4519964469037329628
+    second: PPT_CorruptedSun_27
+  - first:
+      213: 4593517762590852936
+    second: PPT_CorruptedSun_28
+  - first:
+      213: 3010829303576298754
+    second: PPT_CorruptedSun_29
+  - first:
+      213: 714616006516773676
+    second: PPT_CorruptedSun_30
+  - first:
+      213: -9037316364869008276
+    second: PPT_CorruptedSun_31
+  - first:
+      213: -8472223441285039671
+    second: PPT_CorruptedSun_32
+  - first:
+      213: 4881526458084625214
+    second: PPT_CorruptedSun_33
+  - first:
+      213: -8038545408322438294
+    second: PPT_CorruptedSun_34
+  - first:
+      213: -5555074326890929643
+    second: PPT_CorruptedSun_35
+  - first:
+      213: -3827204277880870045
+    second: PPT_CorruptedSun_36
+  - first:
+      213: 3504076365029537936
+    second: PPT_CorruptedSun_37
+  - first:
+      213: 5081076824548323331
+    second: PPT_CorruptedSun_38
+  - first:
+      213: -4315695970234661225
+    second: PPT_CorruptedSun_39
+  - first:
+      213: 5791735652634158029
+    second: PPT_CorruptedSun_40
+  - first:
+      213: 5407122883707377635
+    second: PPT_CorruptedSun_41
+  - first:
+      213: 2517945725187407693
+    second: PPT_CorruptedSun_42
+  - first:
+      213: 1275592544502105343
+    second: PPT_CorruptedSun_43
+  - first:
+      213: 1750154272106118611
+    second: PPT_CorruptedSun_44
+  - first:
+      213: 2026731418087061106
+    second: PPT_CorruptedSun_45
+  - first:
+      213: 1704937737685681064
+    second: PPT_CorruptedSun_46
+  - first:
+      213: 4998156457883740430
+    second: PPT_CorruptedSun_47
+  - first:
+      213: -4749848245981953784
+    second: PPT_CorruptedSun_48
+  - first:
+      213: 790099199985838887
+    second: PPT_CorruptedSun_49
+  - first:
+      213: 1050926551817233792
+    second: PPT_CorruptedSun_50
+  - first:
+      213: 4158631823966220445
+    second: PPT_CorruptedSun_51
+  - first:
+      213: 3056366298022429083
+    second: PPT_CorruptedSun_52
+  - first:
+      213: -280727860150421850
+    second: PPT_CorruptedSun_53
+  - first:
+      213: 2159997476012743803
+    second: PPT_CorruptedSun_54
+  - first:
+      213: 6495444058624176229
+    second: PPT_CorruptedSun_55
+  - first:
+      213: -5294609538266867165
+    second: PPT_CorruptedSun_56
+  - first:
+      213: -8694974257248282825
+    second: PPT_CorruptedSun_57
+  - first:
+      213: -8627288618146795999
+    second: PPT_CorruptedSun_58
+  - first:
+      213: -836683285064166202
+    second: PPT_CorruptedSun_59
+  - first:
+      213: 4724342043730721796
+    second: PPT_CorruptedSun_60
+  - first:
+      213: 4221632227159866250
+    second: PPT_CorruptedSun_61
+  - first:
+      213: -6572354630437341724
+    second: PPT_CorruptedSun_62
+  - first:
+      213: -539658774066776579
+    second: PPT_CorruptedSun_63
+  - first:
+      213: 7221305238193960413
+    second: PPT_CorruptedSun_64
+  - first:
+      213: -1661540808441125344
+    second: PPT_CorruptedSun_65
+  - first:
+      213: 3871452943426586314
+    second: PPT_CorruptedSun_66
+  - first:
+      213: 177555945406177947
+    second: PPT_CorruptedSun_67
+  - first:
+      213: 8079029125167083946
+    second: PPT_CorruptedSun_68
+  - first:
+      213: 7753695956703500291
+    second: PPT_CorruptedSun_69
+  - first:
+      213: 4958615100536771586
+    second: PPT_CorruptedSun_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1254
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026832d0056132d50800000000000000
+      internalID: 6711232402785797664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1211
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a967428cf2687d0800000000000000
+      internalID: -2916591172024100269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_2
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1221
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf09d42510b55a1a0800000000000000
+      internalID: -6798928001211985668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_3
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1211
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54932c6cb590b58b0800000000000000
+      internalID: -5162522258068850363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_4
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1218
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8b7a92b3f7762b0800000000000000
+      internalID: -5591360520278525779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_5
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1228
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673688633571140a0800000000000000
+      internalID: -6899207507990256778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1214
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0881da9a9fffc60800000000000000
+      internalID: 7854270782306287821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1211
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb29706f1c6e31650800000000000000
+      internalID: 6202554832550073019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_8
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1201
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665a11d3ecf9bf600800000000000000
+      internalID: 503171491518588262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_9
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1203
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f5aae9d273d21e0800000000000000
+      internalID: -2221058372148764928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_10
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1213
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b732e44ce180b9630800000000000000
+      internalID: 3934747627673756539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_11
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1202
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f370c4b89f698810800000000000000
+      internalID: 1768067030377853942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1191
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5c112ba84a989d0800000000000000
+      internalID: -2771503180069878344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1189
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afac752b188704990800000000000000
+      internalID: -7403785288958883078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_14
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1205
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc7994fb7cf99080800000000000000
+      internalID: -9180028756103168846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_15
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1189
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008091d6d68c41f20800000000000000
+      internalID: 3392556791624173568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1191
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afa35963187ad070800000000000000
+      internalID: 8131944101937655713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_17
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1191
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebebd3b2014775ca0800000000000000
+      internalID: -6028221963418353986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_18
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1191
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057e6f7867cab9b80800000000000000
+      internalID: -8386920255960193200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1193
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dd6494051e24f00800000000000000
+      internalID: 1099688993974836583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1138
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e6b9497490ef7a0800000000000000
+      internalID: -6341621022250537416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 945
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b4b6a9be1c10560800000000000000
+      internalID: 7278311690459630364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 899
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201cae39fed470160800000000000000
+      internalID: 6991642637890142466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 911
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837fa00831f1be7e0800000000000000
+      internalID: -1735259062808152264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_24
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 911
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4180c2f21019130800000000000000
+      internalID: 3571637281595331787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_25
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 895
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14c1198fab4934a0800000000000000
+      internalID: -6613171360525859809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 875
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c604f3b840777ef0800000000000000
+      internalID: -110496208288217403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_27
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 875
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc6b5e9cb32abe30800000000000000
+      internalID: 4519964469037329628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 870
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847ccac41147fbf30800000000000000
+      internalID: 4593517762590852936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_29
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 867
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205800fac4d98c920800000000000000
+      internalID: 3010829303576298754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 855
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c239d33c873dae900800000000000000
+      internalID: 714616006516773676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_31
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 857
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64882dd5a0059280800000000000000
+      internalID: -9037316364869008276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 857
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9b77cfaad9c6a80800000000000000
+      internalID: -8472223441285039671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 801
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b0ecf337aaeb340800000000000000
+      internalID: 4881526458084625214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 815
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bf71a8a89517090800000000000000
+      internalID: -8038545408322438294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 754
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51226cce45968e2b0800000000000000
+      internalID: -5555074326890929643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 642
+        width: 136
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b2e069cf903eac0800000000000000
+      internalID: -3827204277880870045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 721
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0987d6b73eaf0a030800000000000000
+      internalID: 3504076365029537936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_38
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 630
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3003ca3837c938640800000000000000
+      internalID: 5081076824548323331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 620
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796049f61619b14c0800000000000000
+      internalID: -4315695970234661225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_40
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 508
+        width: 193
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc36930e3e0606050800000000000000
+      internalID: 5791735652634158029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 439
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e793445d95f90b40800000000000000
+      internalID: 5407122883707377635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_42
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 388
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f3281eb4a81f220800000000000000
+      internalID: 2517945725187407693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 387
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff44f2d29a0d3b110800000000000000
+      internalID: 1275592544502105343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_44
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 355
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd740ba90cc94810800000000000000
+      internalID: 1750154272106118611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_45
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 355
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276f3369c75602c10800000000000000
+      internalID: 2026731418087061106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_46
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 357
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3c9ead6d729a710800000000000000
+      internalID: 1704937737685681064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_47
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 339
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e092cfb21d40d5540800000000000000
+      internalID: 4998156457883740430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_48
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 296
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801cb31af26251eb0800000000000000
+      internalID: -4749848245981953784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 302
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72be978490ff6fa00800000000000000
+      internalID: 790099199985838887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_50
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 306
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085a71e7124a59e00800000000000000
+      internalID: 1050926551817233792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_51
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 280
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90342b4c9d66b930800000000000000
+      internalID: 4158631823966220445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_52
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 192
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b914a1964f46a6a20800000000000000
+      internalID: 3056366298022429083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_53
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 117
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6bd21af77aa1cf0800000000000000
+      internalID: -280727860150421850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_54
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cda71a24ad9fd10800000000000000
+      internalID: 2159997476012743803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_55
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 69
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56037bcf4f3742a50800000000000000
+      internalID: 6495444058624176229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_56
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 73
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a553f4da4c586b0800000000000000
+      internalID: -5294609538266867165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_57
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 57
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737dc812bfe355780800000000000000
+      internalID: -8694974257248282825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_58
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 59
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ee69c06b6b54880800000000000000
+      internalID: -8627288618146795999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_59
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 69
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c45e343cf08364f0800000000000000
+      internalID: -836683285064166202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_60
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 55
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c3302ee0c309140800000000000000
+      internalID: 4724342043730721796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_61
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 50
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b7438b420469a30800000000000000
+      internalID: 4221632227159866250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_62
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 47
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e573e2194e4ac4a0800000000000000
+      internalID: -6572354630437341724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_63
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 33
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5b3d7443fb288f0800000000000000
+      internalID: -539658774066776579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_64
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 58
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5f731aada373460800000000000000
+      internalID: 7221305238193960413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_65
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 57
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0262d0d107501f8e0800000000000000
+      internalID: -1661540808441125344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_66
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 39
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac60591b0f92ab530800000000000000
+      internalID: 3871452943426586314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_67
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92a1bd013ec67200800000000000000
+      internalID: 177555945406177947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_68
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa17e9f4f2a7e1070800000000000000
+      internalID: 8079029125167083946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_69
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 21
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308d1bb4469aa9b60800000000000000
+      internalID: 7753695956703500291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_CorruptedSun_70
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 11
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204d16d792a80d440800000000000000
+      internalID: 4958615100536771586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PPT_CorruptedSun_0: 6711232402785797664
+      PPT_CorruptedSun_1: -2916591172024100269
+      PPT_CorruptedSun_10: 3934747627673756539
+      PPT_CorruptedSun_11: 1768067030377853942
+      PPT_CorruptedSun_12: -2771503180069878344
+      PPT_CorruptedSun_13: -7403785288958883078
+      PPT_CorruptedSun_14: -9180028756103168846
+      PPT_CorruptedSun_15: 3392556791624173568
+      PPT_CorruptedSun_16: 8131944101937655713
+      PPT_CorruptedSun_17: -6028221963418353986
+      PPT_CorruptedSun_18: -8386920255960193200
+      PPT_CorruptedSun_19: 1099688993974836583
+      PPT_CorruptedSun_2: -6798928001211985668
+      PPT_CorruptedSun_20: -6341621022250537416
+      PPT_CorruptedSun_21: 7278311690459630364
+      PPT_CorruptedSun_22: 6991642637890142466
+      PPT_CorruptedSun_23: -1735259062808152264
+      PPT_CorruptedSun_24: 3571637281595331787
+      PPT_CorruptedSun_25: -6613171360525859809
+      PPT_CorruptedSun_26: -110496208288217403
+      PPT_CorruptedSun_27: 4519964469037329628
+      PPT_CorruptedSun_28: 4593517762590852936
+      PPT_CorruptedSun_29: 3010829303576298754
+      PPT_CorruptedSun_3: -5162522258068850363
+      PPT_CorruptedSun_30: 714616006516773676
+      PPT_CorruptedSun_31: -9037316364869008276
+      PPT_CorruptedSun_32: -8472223441285039671
+      PPT_CorruptedSun_33: 4881526458084625214
+      PPT_CorruptedSun_34: -8038545408322438294
+      PPT_CorruptedSun_35: -5555074326890929643
+      PPT_CorruptedSun_36: -3827204277880870045
+      PPT_CorruptedSun_37: 3504076365029537936
+      PPT_CorruptedSun_38: 5081076824548323331
+      PPT_CorruptedSun_39: -4315695970234661225
+      PPT_CorruptedSun_4: -5591360520278525779
+      PPT_CorruptedSun_40: 5791735652634158029
+      PPT_CorruptedSun_41: 5407122883707377635
+      PPT_CorruptedSun_42: 2517945725187407693
+      PPT_CorruptedSun_43: 1275592544502105343
+      PPT_CorruptedSun_44: 1750154272106118611
+      PPT_CorruptedSun_45: 2026731418087061106
+      PPT_CorruptedSun_46: 1704937737685681064
+      PPT_CorruptedSun_47: 4998156457883740430
+      PPT_CorruptedSun_48: -4749848245981953784
+      PPT_CorruptedSun_49: 790099199985838887
+      PPT_CorruptedSun_5: -6899207507990256778
+      PPT_CorruptedSun_50: 1050926551817233792
+      PPT_CorruptedSun_51: 4158631823966220445
+      PPT_CorruptedSun_52: 3056366298022429083
+      PPT_CorruptedSun_53: -280727860150421850
+      PPT_CorruptedSun_54: 2159997476012743803
+      PPT_CorruptedSun_55: 6495444058624176229
+      PPT_CorruptedSun_56: -5294609538266867165
+      PPT_CorruptedSun_57: -8694974257248282825
+      PPT_CorruptedSun_58: -8627288618146795999
+      PPT_CorruptedSun_59: -836683285064166202
+      PPT_CorruptedSun_6: 7854270782306287821
+      PPT_CorruptedSun_60: 4724342043730721796
+      PPT_CorruptedSun_61: 4221632227159866250
+      PPT_CorruptedSun_62: -6572354630437341724
+      PPT_CorruptedSun_63: -539658774066776579
+      PPT_CorruptedSun_64: 7221305238193960413
+      PPT_CorruptedSun_65: -1661540808441125344
+      PPT_CorruptedSun_66: 3871452943426586314
+      PPT_CorruptedSun_67: 177555945406177947
+      PPT_CorruptedSun_68: 8079029125167083946
+      PPT_CorruptedSun_69: 7753695956703500291
+      PPT_CorruptedSun_7: 6202554832550073019
+      PPT_CorruptedSun_70: 4958615100536771586
+      PPT_CorruptedSun_8: 503171491518588262
+      PPT_CorruptedSun_9: -2221058372148764928
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

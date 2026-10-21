@@ -62,8 +62,8 @@ namespace EmberPrototype.EditorTools
 
         private void OnSceneGUI()
         {
-            if (targets.Length != 1) return;
-            MovementPath path = (MovementPath)target;
+            MovementPath path = target as MovementPath;
+            if (path == null) return;
             if (!Application.isPlaying)
             {
                 if (path.Shape == MovementPath.PathShape.Circle) DrawCircleHandles(path);

@@ -1,0 +1,886 @@
+fileFormatVersion: 2
+guid: 8117def724a1d984aab90de88714ceed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1533173034512131868
+    second: PPT_Stone_Mid_0
+  - first:
+      213: -6777791518249248381
+    second: PPT_Stone_Mid_1
+  - first:
+      213: 6077636609852406894
+    second: PPT_Stone_Mid_2
+  - first:
+      213: -8494021906159278941
+    second: PPT_Stone_Mid_3
+  - first:
+      213: -8053280852205548723
+    second: PPT_Stone_Mid_4
+  - first:
+      213: 8679778339236286927
+    second: PPT_Stone_Mid_5
+  - first:
+      213: 9177374585538181471
+    second: PPT_Stone_Mid_6
+  - first:
+      213: -4118053600534539304
+    second: PPT_Stone_Mid_7
+  - first:
+      213: -5853712112144584989
+    second: PPT_Stone_Mid_8
+  - first:
+      213: 1687767346950039461
+    second: PPT_Stone_Mid_9
+  - first:
+      213: -786907997415529645
+    second: PPT_Stone_Mid_10
+  - first:
+      213: 1391944817711808989
+    second: PPT_Stone_Mid_11
+  - first:
+      213: -8053868966106726164
+    second: PPT_Stone_Mid_12
+  - first:
+      213: -6537347300345829703
+    second: PPT_Stone_Mid_13
+  - first:
+      213: 8062699389346221306
+    second: PPT_Stone_Mid_14
+  - first:
+      213: 5402545705067900270
+    second: PPT_Stone_Mid_15
+  - first:
+      213: 9098141155882783444
+    second: PPT_Stone_Mid_16
+  - first:
+      213: 4547186355800053579
+    second: PPT_Stone_Mid_17
+  - first:
+      213: 8496346320324496885
+    second: PPT_Stone_Mid_18
+  - first:
+      213: -6670253160777767049
+    second: PPT_Stone_Mid_19
+  - first:
+      213: 6029043417740789782
+    second: PPT_Stone_Mid_20
+  - first:
+      213: -3199730011227417704
+    second: PPT_Stone_Mid_21
+  - first:
+      213: -7384134309865427011
+    second: PPT_Stone_Mid_22
+  - first:
+      213: 7156683724917657412
+    second: PPT_Stone_Mid_23
+  - first:
+      213: 5274564804722722265
+    second: PPT_Stone_Mid_24
+  - first:
+      213: -7868358335502670311
+    second: PPT_Stone_Mid_25
+  - first:
+      213: -7429564563965654313
+    second: PPT_Stone_Mid_26
+  - first:
+      213: -16703940363217534
+    second: PPT_Stone_Mid_27
+  - first:
+      213: -4323004306762368551
+    second: PPT_Stone_Mid_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 925
+        width: 130
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17ad4570cce64510800000000000000
+      internalID: 1533173034512131868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1249
+        height: 1231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3891911468270f1a0800000000000000
+      internalID: -6777791518249248381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_2
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1082
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c7924cb4a185450800000000000000
+      internalID: 6077636609852406894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_3
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1146
+        width: 148
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a46df0641c2f1a80800000000000000
+      internalID: -8494021906159278941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_4
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 902
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b45d7abbffc3090800000000000000
+      internalID: -8053280852205548723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_5
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 905
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc11f4f7964c47870800000000000000
+      internalID: 8679778339236286927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 596
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5973bdcf859c5f70800000000000000
+      internalID: 9177374585538181471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_7
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 603
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3de16911cb9d6c0800000000000000
+      internalID: -4118053600534539304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 578
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee683a29df63cea0800000000000000
+      internalID: -5853712112144584989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 497
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7e57ab5772c6710800000000000000
+      internalID: 1687767346950039461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 471
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353222778575415f0800000000000000
+      internalID: -786907997415529645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 415
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd188a6df6e215310800000000000000
+      internalID: 1391944817711808989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 241
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce08aa7b8d8ea3090800000000000000
+      internalID: -8053868966106726164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 167
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b62785444da645a0800000000000000
+      internalID: -6537347300345829703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_14
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 136
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc8db8606674ef60800000000000000
+      internalID: 8062699389346221306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_15
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 109
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d6261e1b2b9fa40800000000000000
+      internalID: 5402545705067900270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_16
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 103
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d251c06d27134e70800000000000000
+      internalID: 9098141155882783444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_17
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 111
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4717f806e9da1f30800000000000000
+      internalID: 4547186355800053579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 114
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd83a776f519e570800000000000000
+      internalID: 8496346320324496885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_19
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 118
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7772aed37108e63a0800000000000000
+      internalID: -6670253160777767049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_20
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 95
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618c8d19b077ba350800000000000000
+      internalID: 6029043417740789782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_21
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 111
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89312a7f1864893d0800000000000000
+      internalID: -3199730011227417704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_22
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 99
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf62bec7f8468990800000000000000
+      internalID: -7384134309865427011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_23
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f49891ee5a15360800000000000000
+      internalID: 7156683724917657412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_24
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 95
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5864a7eb4033940800000000000000
+      internalID: 5274564804722722265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_25
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 85
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91621ee38c9fdc290800000000000000
+      internalID: -7868358335502670311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_26
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da4ff08462e4e890800000000000000
+      internalID: -7429564563965654313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_27
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 66
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2851d40dad7a4cff0800000000000000
+      internalID: -16703940363217534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PPT_Stone_Mid_28
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 47
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9f1fcbc7a9104c0800000000000000
+      internalID: -4323004306762368551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PPT_Stone_Mid_0: 1533173034512131868
+      PPT_Stone_Mid_1: -6777791518249248381
+      PPT_Stone_Mid_10: -786907997415529645
+      PPT_Stone_Mid_11: 1391944817711808989
+      PPT_Stone_Mid_12: -8053868966106726164
+      PPT_Stone_Mid_13: -6537347300345829703
+      PPT_Stone_Mid_14: 8062699389346221306
+      PPT_Stone_Mid_15: 5402545705067900270
+      PPT_Stone_Mid_16: 9098141155882783444
+      PPT_Stone_Mid_17: 4547186355800053579
+      PPT_Stone_Mid_18: 8496346320324496885
+      PPT_Stone_Mid_19: -6670253160777767049
+      PPT_Stone_Mid_2: 6077636609852406894
+      PPT_Stone_Mid_20: 6029043417740789782
+      PPT_Stone_Mid_21: -3199730011227417704
+      PPT_Stone_Mid_22: -7384134309865427011
+      PPT_Stone_Mid_23: 7156683724917657412
+      PPT_Stone_Mid_24: 5274564804722722265
+      PPT_Stone_Mid_25: -7868358335502670311
+      PPT_Stone_Mid_26: -7429564563965654313
+      PPT_Stone_Mid_27: -16703940363217534
+      PPT_Stone_Mid_28: -4323004306762368551
+      PPT_Stone_Mid_3: -8494021906159278941
+      PPT_Stone_Mid_4: -8053280852205548723
+      PPT_Stone_Mid_5: 8679778339236286927
+      PPT_Stone_Mid_6: 9177374585538181471
+      PPT_Stone_Mid_7: -4118053600534539304
+      PPT_Stone_Mid_8: -5853712112144584989
+      PPT_Stone_Mid_9: 1687767346950039461
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,6 +12,12 @@ Copy-Item -LiteralPath (Join-Path $taskProject 'Validation/WaterSpirit/WaterSpir
 Copy-Item -LiteralPath (Join-Path $taskProject 'Validation/Wave/WaterWaveTests.cs') -Destination $taskTests
 Copy-Item -LiteralPath (Join-Path $taskProject 'Validation/Movement/EmberMovement.Tests.asmdef') -Destination $taskTests
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'WaterSpiritTestBehavior.cs') -Destination (Join-Path $taskQa 'Assets/EmberPrototype/Runtime')
+# Historical scene/prefab builders compile only inside the isolated QA project.
+$taskSupport = Join-Path $taskQa 'Assets/Editor/ValidationSupport'
+New-Item -ItemType Directory -Path $taskSupport -Force | Out-Null
+Get-ChildItem -LiteralPath (Join-Path $taskProject 'Validation/EditorSupport') -File | Where-Object { $_.Extension -eq '.cs' -or $_.Name.EndsWith('.cs.meta') } | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $taskSupport $_.Name) -Force
+}
 $taskArtifacts = Join-Path $taskProject 'ValidationArtifacts/WaterAmbientParticles'
 New-Item -ItemType Directory -Path $taskArtifacts -Force | Out-Null
 $env:EMBER_SPIRIT_AI_ARTIFACTS = $taskArtifacts

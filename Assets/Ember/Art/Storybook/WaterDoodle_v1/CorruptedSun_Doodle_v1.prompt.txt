@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: transparent 2D game sprite
+Primary request: corrupted sun redrawn in the loose hand-drawn doodle marker style of Sun_Doodle.png.
+Input images: Sun_Doodle.png is the style reference; PPT_CorruptedSun.png is silhouette/composition reference only.
+Subject: Warm yellow/orange marker sun with uneven dark charcoal and muted purple corruption overtaking its right half, with a few curling tendrils.
+Composition: Keep the disk toward lower-left and tendrils flowing upper-right. Full silhouette inside canvas with margins; transparent outside.
+Style: Broad marker scribbles, paper-white gaps, thick imperfect black pen outline, sparse hatch marks, children's storybook doodle.
+Avoid: realistic watercolor texture, realistic lighting, neon glow, eyes, face, text, background.
+Generated with built-in image_gen on 2026-10-20.

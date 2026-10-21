@@ -1,0 +1,17 @@
+Use case: precise-object-edit / stylized-concept.
+EDIT the provided hand-drawn game concept into a NEW FIRST TUTORIAL ROOM about setting a flammable object on fire WITH X and entering it. Preserve the full16:9 canvas, charming rough black pen and watercolor / colored pencil texture on ivory paper, desaturated lavender mountains and blue-grey forest, golden grass and grey blocky stone ledges, small upper-right orange sun corrupted by purple swirls, same camera scale 36×20.25 tiles. This is a proposed game-screen tutorial layout, not a Unity screenshot. No visible grid.
+
+REPLACE top-left title with exactly: "01  X로 태우고 들어가기".
+Keep small upper-right scale note "36 × 20.25칸".
+REMOVE the giant sun-flower completely, REMOVE all C keys, REMOVE all purple thorn barriers, REMOVE the water, REMOVE the horizontal fixed-fire trajectory. These are not part of this first lesson.
+Rebuild the safe foreground as follows: left broad stone ledge x0..13 logical tiles with top at y15, right broad stone ledge x21..36 with top at y14. Between the ledges have a lower SAFE stone catch floor around y19 across the bottom of the gap, not lethal water or spikes. There is ample solid landing area on the right, no obstacle.
+
+Main target: at (16,10.5) logical tiles put ONE DRY WOOD KINDLING BUNDLE in a simple triangular hanging basket made of wooden sticks, tied by tan rope to a small overhead rocky ledge at y4. It should look like hand-drawn bundled dry twigs bound with rope, matching the hanging combustible braziers in storybook platform games. Wood visibly recognizable, not a metal lantern or a flower. Orange-yellow flames are JUST catching around the bundle as X ignites it; some outer twigs are still dry brown.
+Put only ONE tiny Ember character about1.5tile heights, moving toward the bundle from the lower-left near (12,12.5), with a short orange ember trail from the safe left ledge (start point around10,14). Ember is a tiny yellow-faced humanoid fire spirit with orange-red flame hair, two dark oval eyes, little arms/legs, hand-drawn outline. Do not leave a second character on the starting ledge.
+Draw a thin GOLD dashed guidance arrow going FROM the lower-left starting ledge INTO THE CENTER OF THE WOOD BUNDLE. This communicates X simultaneously lighting and entering the combustible. This is NOT shooting a projectile at it. No separate bullet/fireball. The main Ember is in transit.
+Above this first arrow place a clear ivory keyboard keycap "X" and handwritten text EXACTLY: "가연물을 태우고 그 안으로".
+Near the wooden bundle put small handwritten label: "마른 나뭇가지".
+Add a separate very light curved guidance arrow FROM INSIDE THE BUNDLE up and to the right, then down onto the broad right ledge. Beside that outgoing arc show small ivory keycap "Z" and the short caption EXACTLY: "Z로 빠져나오기".
+Keep the left-to-bundle distance visually4~6 logicaltiles, within an8tile X range. The exit direction should start up-right, following a parabola onto a safe platform, not go straight down into a gap.
+One small bottom note EXACTLY: "처음에는 안전한 곳에서 연습".
+Show just this ONE wood target and ONE character. No C, no flower, no purple pollution, no coin/HUD, no extra ability. Keep annotations legible and sparse. This first lesson is X => IGNITE DRY COMBUSTIBLE + ENTER IT, then existing Z => EXIT.

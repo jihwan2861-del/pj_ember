@@ -1,0 +1,10 @@
+Built-in image_gen transparent edit / separation and restoration, 2026-10-19.
+Source reference: C:/Users/kyk04/Desktop/지스타 게임/ArtReference/OpeningWater/PPT/Slide7_1.png
+This asset is AI-assisted separation/reconstruction from a flattened PPT image, not an original editable PPT layer.
+
+Initial extraction prompt:
+Use case: background-extraction. Asset type: transparent Unity 2D storybook scenery sprite. Edit target: supplied original PPT slide 7. Extract and carefully reconstruct ONLY the large bent DEAD TREE at the UPPER RIGHT bank. Preserve this tree's specific shape: thick dark ink contour, curved knotted brown/tan/black trunk, many twisting bare angular branches reaching left and right, full branching crown. Reconstruct all cropped tips and the base naturally as if the original illustration were completely visible. Keep the same rough hand-painted watercolor/gouache marks and warm brown woody highlights, not thin realistic twigs or pixel art. Entire upright tree from base to branch tips centered with safe transparent margin, wide crown with organic asymmetry. True transparent alpha background. REMOVE ALL purple vines/specks/corruption, rocks, grass, player/fire, water/reflections, mountains, sky/paper background, text. Only ONE complete isolated dead tree. Faithful separation/restoration, not a different tree design.
+
+Final alpha cleanup prompt:
+Use case: background-extraction. Edit target: supplied isolated dead tree PNG. Keep the tree itself PIXEL-FOR-PIXEL as unchanged as practical: same exact silhouette, twisted trunk, all branches, black ink outline, warm brown textured bark. REMOVE ONLY the unwanted soft brown/black atmospheric haze, glow, tinted fog and any background contamination between branches and around the silhouette. Every open gap between branches and around tree must be truly transparent alpha (0), with only normal edge antialiasing. No cast shadow, no drop shadow, no colored halo. Keep ONE complete tree with safe margin. Transparent background. Do not alter tree design, branch arrangement, texture or colors. The required output is a clean transparent game sprite, not a glowing tree vignette.
+

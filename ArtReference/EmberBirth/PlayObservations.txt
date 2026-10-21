@@ -1,0 +1,17 @@
+phase=Resonating fire=True locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(101.60, 1.06, -10.00) size=3.563664 frame=74
+phase=ReceivingLight fire=True locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(101.55, 1.05, -10.00) size=3.543753 frame=332
+phase=Revealing fire=False locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(101.55, 1.05, -10.00) size=3.543751 frame=692
+phase=Completed fire=False locked=False first=EnterFlammable player=(102.11, 0.34, 0.00) camera=(105.48, 1.99, -10.00) size=5.060688 frame=1195
+phase=Resonating fire=True locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(102.05, 0.96, -10.00) size=3.064586 frame=77
+phase=ReceivingLight fire=True locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(102.00, 0.95, -10.00) size=3.037502 frame=347
+phase=Revealing fire=False locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(102.00, 0.95, -10.00) size=3.037502 frame=6436
+phase=Completed fire=False locked=False first=EnterFlammable player=(102.11, 0.34, 0.00) camera=(105.51, 2.00, -10.00) size=5.0625 frame=6869
+X_ENTER position=(104.51, 2.00, 0.00) phase=ExitFlammable frame=6895
+FIRST_COMPLETED position=(110.23, 0.81, 0.00) count=1 frame=7173
+RESTART phase=Resonating fire=True lock=True first=Idle effects=True camera=True
+DISABLE phase=Skipped fire=False lock=False first=Idle effects=False camera=False
+RESTART phase=Resonating fire=True lock=True first=Idle effects=True camera=True
+SKIP phase=Skipped fire=False lock=False first=EnterFlammable effects=False camera=False
+STORY_INCOMING fire=True lock=True fade=True first=Idle
+phase=Resonating fire=True locked=True first=Idle player=(102.11, 0.35, 0.00) camera=(102.06, 0.97, -10.00) size=3.069643 frame=3017
+phase=Completed fire=False locked=False first=EnterFlammable player=(102.11, 0.34, 0.00) camera=(105.51, 2.00, -10.00) size=5.0625 frame=4287

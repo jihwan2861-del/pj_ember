@@ -1,0 +1,13 @@
+READY player=(71.12, -0.66, 0.00) grounded=True frame=23
+ABOVE_TARGET position=(74.80, -1.77, 0.00) grounded=False sun=0 tree=0
+STOP position=(74.88, -1.93, 0.00) dying=True grounded=False sun=0 elapsed=0.866258
+READY player=(71.12, -0.66, 0.00) grounded=True frame=23
+LANDED position=(74.61, -1.26, 0.00) sun=0.003872251 tree=0 elapsed=0.8218222
+WATER tree=1 sun=1 position=(23.69, -79.58, 0.00) elapsed=6.99365
+AIRBORNE_INSIDE position=(77.92, -0.30, 0.00) grounded=False triggered=False sun=0 tree=0
+AIR_LANDED position=(78.52, -1.25, 0.00) grounded=True triggered=True sun=0.004473852 tree=0
+READY player=(71.12, -0.66, 0.00) grounded=True frame=34717
+LANDED position=(74.60, -1.26, 0.00) sun=0.004446801 tree=0 elapsed=0.8084717
+WATER tree=1 sun=1 position=(74.77, -1.16, 0.00) grounded=True elapsed=6.992096
+AIRBORNE_INSIDE position=(76.80, -0.37, 0.00) grounded=False triggered=False sun=0 tree=0
+AIR_LANDED position=(76.80, -1.18, 0.00) grounded=True triggered=True sun=0.00524595 tree=0

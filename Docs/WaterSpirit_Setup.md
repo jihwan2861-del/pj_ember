@@ -2,7 +2,7 @@
 
 Move 애니메이션 추적·돌진 AI 연결과 외부 모드 전환은 `Docs/WaterSpirit_AI_Setup.md`를 따른다. 아래의 자동·수동 공격 설명은 AI를 사용하지 않는 경우에 해당한다.
 
-`Assets/EmberPrototype/Prefabs/WaterSpirit.prefab`을 씬에 드래그한다. 생성 메뉴는 `Ember Prototype > Create Water Spirit Prefab`이며, 이미 만든 프리팹과 애니메이션을 덮어쓰지 않는다.
+`Assets/EmberPrototype/Prefabs/WaterSpirit.prefab`을 씬에 드래그한다. 이전 생성 메뉴는 정리했다. 기존 프리팹과 애니메이션을 직접 편집한다.
 
 - Idle: 원본 시트 0~4, 반복.
 - Move: 5~8, 반복.

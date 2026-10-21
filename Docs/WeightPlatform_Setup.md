@@ -1,6 +1,6 @@
 # 무게로 내려가는 플랫폼
 
-`Assets/EmberPrototype/Prefabs/WeightPlatform.prefab`을 씬에 드래그한다. 생성 메뉴는 `Ember Prototype > Create Weight Platform Prefab`이다.
+`Assets/EmberPrototype/Prefabs/WeightPlatform.prefab`을 씬에 드래그한다. 기존 프리팹을 직접 배치하며 이전 생성 메뉴는 정리했다.
 
 플레이어나 Collider2D가 있는 물체가 플랫폼 위에 있으면 천천히 내려가고, 아무것도 없으면 원래 높이로 돌아온다. 여러 물체가 있으면 마지막 물체가 떠날 때 복귀한다. 물체 수와 질량에 관계없이 설정한 속도를 사용한다.
 

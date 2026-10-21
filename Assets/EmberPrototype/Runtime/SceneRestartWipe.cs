@@ -70,7 +70,7 @@ namespace EmberPrototype
             while (elapsed < hold) { elapsed += Time.unscaledDeltaTime; yield return null; }
             yield return Animate(1f, 0f, open, steps);
             running = false;
-            Time.timeScale = 1f;
+            Time.timeScale = GameSessionControls.PlaybackSpeed;
             Destroy(gameObject);
         }
         private IEnumerator Animate(float from, float to, float duration, int steps)
@@ -89,7 +89,7 @@ namespace EmberPrototype
         private void OnDisable()
         {
             if (instance != this) return;
-            if (running) Time.timeScale = 1f;
+            if (running) Time.timeScale = GameSessionControls.PlaybackSpeed;
             running = false;
             instance = null;
         }

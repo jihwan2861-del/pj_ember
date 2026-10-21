@@ -1,0 +1,8 @@
+CONTACT ready=False frame=2373 dying=False position=(117.20, 0.84, 0.00) solidTrigger=False childTrigger=True
+CONTACT_STAGE body=(131.25, 1.15) transform=(131.25, 1.15, 0.00) extent=0.2395515
+CONTACT ready=True frame=2375 dying=True position=(131.24, 1.15, 0.00) solidTrigger=False childTrigger=True
+RESPAWN ready=True frame=2418 dying=False obstaclePurified=False head=SunFlower_Head_Doodle_v1
+FIRED ready=True frame=2458 shotCount=1 projectile=(121.56, 2.90, 0.00) head=SunFlower_Head_Doodle_v1
+PURIFIED ready=True frame=3003 purified=True colliders=TilemapCollider2D:False,BoxCollider2D:False renderers=Pollution:False,DoodleArt:False
+RESET purified=False solid=True tileRenderer=False art=True hazard=True head=SunFlower_Head_Doodle_v1
+DETAIL ready=True frame=3008 camera=(119.20, 2.00, -10.00)

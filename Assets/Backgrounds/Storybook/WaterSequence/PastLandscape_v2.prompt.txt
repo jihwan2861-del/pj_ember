@@ -1,0 +1,3 @@
+Precise edit of supplied game background texture. Preserve every pixel/shape/composition of mountains, trees, flowers, ground, paper and clouds as much as possible. Change ONLY the small golden healthy sun: move it straight downward, keeping its x coordinate, size and style unchanged. Current center approximately x1320 y150 in this 1672x941 image. Desired center x1320 y300 (about 32% down from top). Cleanly restore the ivory paper where the sun was. It stays above the mountains, not touching them. Same exact canvas size and upright image. No new elements, no text. This lowers the sun's reflected image so its full disk fits within the game's water viewport.
+
+Generated with built-in image_gen, 2026-10-18. Edit target: PastLandscape_v1.png. Active water reflection texture.

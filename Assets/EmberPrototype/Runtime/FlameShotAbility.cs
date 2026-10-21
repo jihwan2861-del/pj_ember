@@ -41,6 +41,7 @@ namespace EmberPrototype
         public bool BeginAim()
         {
             if (isAiming) return false;
+            FlowerRideTutorial.EndSessionSlowMotion();
 
             isAiming = true;
             aimDirection = Vector2.zero;

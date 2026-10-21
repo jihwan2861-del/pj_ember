@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Stone_Doodle_Fill",
+    "transparent": false,
+    "prompt": "Use both images ONLY as style references, not a layout to copy. Generate ONE square seamless full-bleed game terrain stone texture. Match their LIGHT warm grey chunky irregular rounded stones, broad watercolor/marker fill strokes, a few pale ochre touches, lively thick hand-drawn near-black outlines. Large readable vertical and horizontal irregular stone blocks, NOT a uniform brick grid and not cobblestone noise. EXACT style is playful bold felt-tip/ink doodle on paper; NOT dark scratchy crayon or photorealistic rock. Stone faces predominantly light-medium grey with gentle few slate accents, dark fine crevices. Tile seamlessly all four sides. Opaque fills the WHOLE square: no outer border, no grass, no sky, no symbols, no alpha padding. It will be applied continuously across 2U rather than once per tile, making broad stones."
+  },
+  {
+    "name": "Grass_Doodle_Edge",
+    "transparent": true,
+    "prompt": "Use images ONLY as style refs. One separate horizontal golden-ochre grass fringe sprite for the walkable edge of a hand-drawn platform. Match bold black irregular felt-tip/ink outlines and warm yellow flat watercolor strokes from references, loose tuft spikes and little blobs, slight asymmetry. A narrow 4:1 strip, low blades with 3 occasional taller tufts. Baseline exactly horizontal at y=15% from bottom; ink and blades extend ABOVE, no rock or soil at all. Transparent everywhere except the grass, no backdrop/gradient/shadow/glow. No UI/text. Keep it simple and hand doodled; no detailed scratchy crayon. Full asset fits with safe margin."
+  },
+  {
+    "name": "Spike_Doodle",
+    "transparent": true,
+    "prompt": "Use first image ONLY as style ref. Create ONE upward-pointing gameplay spike sprite, an outlined slightly hand-wobbly triangular spike with offwhite/ivory interior and thick irregular black felt-tip border, gentle light-grey marker touch at one side. Broad flat horizontal base at y=10% of square, sharp clearly readable tip centered x50% at y90%; footprint spans x10%..90%. It must look dangerous and hand drawn exactly like the reference spikes, no crystals or metallic render. Isolated on genuine transparent alpha, no glow/shadow/ground, no text or extra spikes."
+  }
+]

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -12,7 +13,7 @@ namespace EmberPrototype
     [RequireComponent(typeof(PlayerAbilityInputRouter))]
     public sealed partial class FlamePlayerController : MonoBehaviour
     {
-        private enum FlameState { Free, Bursting, BurstDashing, Travelling, Anchored, RopeAnchored }
+        private enum FlameState { Free, Bursting, BurstDashing, Travelling, Anchored, RopeAnchored, FlowerRiding }
 
         [System.Serializable]
         private sealed class ActionSound
@@ -243,10 +244,244 @@ namespace EmberPrototype
         private readonly RaycastHit2D[] wallClearanceCastHits = new RaycastHit2D[8];
         private readonly RaycastHit2D[] groundHits = new RaycastHit2D[16];
         private Collider2D[] fireTargetHits = new Collider2D[32];
+        private readonly HashSet<FlammableTile> fireTargetCandidates = new HashSet<FlammableTile>();
 
         private PlayerDeathEffect deathEffect;
         public bool IsDying => deathEffect != null && deathEffect.IsPlaying;
         public bool ControlsLocked => controlsLocked;
+        public bool IsTravellingToFire => state == FlameState.Travelling;
+        public FlammableTile CurrentFire => IsInsideFire ? targetFire : null;
+        public int FireLaunchCount { get; private set; }
+        public int IgnitionDashCount { get; private set; }
+        public Vector2 LastIgnitionDashPosition { get; private set; }
+        public Vector2 LastIgnitionDashDirection { get; private set; }
+        private FireFlowerProjectile currentFlowerRide;
+        private Vector2 lastSafeFlowerPosition;
+        public bool IsRidingFlower => state == FlameState.FlowerRiding && currentFlowerRide != null;
+        public int FlowerRideCount { get; private set; }
+        public int FlowerRideExitCount { get; private set; }
+        public FireFlowerProjectile CurrentFlowerRide => IsRidingFlower ? currentFlowerRide : null;
+
+        internal bool RequestFlowerRide()
+        {
+            if (body == null) return false;
+            FireFlowerProjectile target = FireFlowerProjectile.FindBoardable(this, body.position,
+                ReadHeldDirection(), fireTravelRange, fireTargetDirectionDot);
+            return TryBoardFlower(target);
+        }
+
+        public bool TryBoardFlower(FireFlowerProjectile projectile)
+        {
+            if (!isActiveAndEnabled || controlsLocked || IsDying || IsCircularOpening
+                || GameSessionControls.BlockGameplayInput || body == null || bodyCollider == null
+                || abilityUnlocks == null || !abilityUnlocks.IsUnlocked(PlayerAbility.FireAbsorb)
+                || projectile == null || !projectile.CanBoard || projectile.gameObject.scene != gameObject.scene
+                || (state != FlameState.Free && state != FlameState.Bursting
+                    && state != FlameState.Anchored && state != FlameState.RopeAnchored)) return false;
+            Vector2 destination = projectile.transform.position;
+            if (Vector2.Distance(body.position, destination) > fireTravelRange
+                || !HasClearFlowerBoardPath(body.position, destination)
+                || !IsFlowerBodySpaceClear(destination) || !projectile.TryAttachRider(this)) return false;
+
+            CancelRingShotAim();
+            ClearRopeState(false);
+            burstDashAbility.Cancel();
+            SetAbsorbTargetPreview(null);
+            flameFeedback.HideLaunchRing();
+            lastSafeFlowerPosition = body.position;
+            currentFlowerRide = projectile;
+            state = FlameState.FlowerRiding;
+            targetFire = travelSourceFire = null;
+            hasFireTravelWaypoint = false;
+            fireTravelCurrentSpeed = 0f;
+            horizontalInput = jumpRemaining = coyoteRemaining = burstChargeRemaining = 0f;
+            normalJump = jumpRiseActive = cornerCorrectionUsed = false;
+            appliedPlatformVelocity = Vector2.zero;
+            wallSpeedRetentionRemaining = 0f;
+            body.gravityScale = 0f;
+            body.linearVelocity = Vector2.zero;
+            body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+            bodyCollider.enabled = false;
+            transform.localScale = initialScale * 0.45f;
+            body.position = destination;
+            lastSafeFlowerPosition = destination;
+            airJumpsRemaining = maxAirJumps;
+            burstAvailable = true;
+            wasGrounded = false;
+            unchecked { FlowerRideCount++; }
+            afterimageEffect.BeginTrail();
+            PlayActionSound(xAbsorbSound);
+            return true;
+        }
+
+        public bool TryExitFlowerRide()
+        {
+            if (!IsRidingFlower || controlsLocked || IsDying || GameSessionControls.BlockGameplayInput) return false;
+            EndFlowerRide(currentFlowerRide, currentFlowerRide.Velocity, true);
+            return true;
+        }
+
+        internal void FollowFlowerRide(FireFlowerProjectile projectile, Vector2 position)
+        {
+            if (!IsRidingFlower || currentFlowerRide != projectile || body == null) return;
+            body.position = position;
+            body.linearVelocity = Vector2.zero;
+            if (IsFlowerBodySpaceClear(position)) lastSafeFlowerPosition = position;
+        }
+
+        internal void EndFlowerRide(FireFlowerProjectile projectile, Vector2 velocity, bool countExit)
+        {
+            if (currentFlowerRide != projectile || state != FlameState.FlowerRiding) return;
+            Vector2 exitPosition = body.position;
+            bool safe = TryFindFlowerExitPosition(velocity.normalized, out exitPosition);
+            currentFlowerRide = null;
+            projectile.ReleaseRider(this);
+            state = FlameState.Free;
+            targetFire = travelSourceFire = null;
+            hasFireTravelWaypoint = false;
+            fireTravelCurrentSpeed = 0f;
+            horizontalInput = jumpRemaining = coyoteRemaining = 0f;
+            normalJump = jumpRiseActive = cornerCorrectionUsed = false;
+            wallSpeedRetentionRemaining = 0f;
+            appliedPlatformVelocity = Vector2.zero;
+            transform.localScale = initialScale;
+            bodyCollider.enabled = true;
+            body.collisionDetectionMode = initialCollisionDetectionMode;
+            if (controlsLocked) gravityBeforeControlLock = initialGravity;
+            else body.gravityScale = initialGravity;
+            body.position = exitPosition;
+            body.linearVelocity = controlsLocked ? Vector2.zero : velocity;
+            ropeMomentum = true;
+            wasGrounded = false;
+            launchProtection = fireLaunchControlLockTime;
+            upwardVelocityBeforeCollision = Mathf.Max(0f, velocity.y);
+            horizontalVelocityBeforeCollision = velocity.x;
+            if (countExit) unchecked { FlowerRideExitCount++; }
+            flameFeedback?.HideLaunchRing();
+            afterimageEffect?.PlayTimedTrail(launchAfterimageDuration);
+            if (!safe && isActiveAndEnabled && !IsDying) KillAndRespawn();
+        }
+
+        internal void OnFlowerProjectileLost(FireFlowerProjectile projectile)
+        {
+            EndFlowerRide(projectile, Vector2.zero, false);
+        }
+
+        private void CancelFlowerRide()
+        {
+            if (state != FlameState.FlowerRiding) { currentFlowerRide = null; return; }
+            FireFlowerProjectile projectile = currentFlowerRide;
+            currentFlowerRide = null;
+            if (projectile != null) projectile.ReleaseRider(this);
+            state = FlameState.Free;
+            if (body != null)
+            {
+                body.linearVelocity = Vector2.zero;
+                body.collisionDetectionMode = initialCollisionDetectionMode;
+                if (controlsLocked) gravityBeforeControlLock = initialGravity;
+                else body.gravityScale = initialGravity;
+            }
+            if (bodyCollider != null) bodyCollider.enabled = true;
+            transform.localScale = initialScale;
+            afterimageEffect?.StopTrail();
+        }
+
+        private bool HasClearFlowerBoardPath(Vector2 start, Vector2 end)
+        {
+            Vector2 displacement = end - start;
+            if (displacement.sqrMagnitude <= 0.000001f) return true;
+            foreach (RaycastHit2D hit in Physics2D.BoxCastAll(start + fireTravelProbeOffset,
+                fireTravelProbeSize, 0f, displacement.normalized, displacement.magnitude))
+            {
+                Collider2D shape = hit.collider;
+                if (shape == null || shape.transform.IsChildOf(transform) || hit.distance <= 0.001f) continue;
+                if (!shape.isTrigger || IsFlowerExitHazard(shape)) return false;
+            }
+            return true;
+        }
+
+        private bool IsFlowerBodySpaceClear(Vector2 position)
+        {
+            foreach (Collider2D shape in Physics2D.OverlapBoxAll(position + fireTravelProbeOffset,
+                fireTravelProbeSize * 0.98f, 0f))
+            {
+                if (shape == null || shape.transform.IsChildOf(transform)) continue;
+                if (!shape.isTrigger || IsFlowerExitHazard(shape)) return false;
+            }
+            return true;
+        }
+
+        private static bool IsFlowerExitHazard(Collider2D shape)
+        {
+            return shape.GetComponentInParent<WaterContact>() != null
+                || shape.GetComponentInParent<RoomHazard>() != null;
+        }
+
+        private bool TryFindFlowerExitPosition(Vector2 direction, out Vector2 position)
+        {
+            Vector2 start = body.position;
+            Vector2 side = new Vector2(-direction.y, direction.x);
+            foreach (Vector2 offset in new[] { Vector2.zero, -direction * 0.4f,
+                Vector2.up * 0.4f, side * 0.4f, -side * 0.4f, Vector2.up * 0.8f })
+            {
+                Vector2 candidate = start + offset;
+                if (!IsFlowerBodySpaceClear(candidate) || !HasClearFlowerBoardPath(start, candidate)) continue;
+                position = candidate;
+                return true;
+            }
+            position = lastSafeFlowerPosition;
+            return IsFlowerBodySpaceClear(position);
+        }
+        public bool TryDetachFireTravel()
+        {
+            if (controlsLocked || IsDying || state != FlameState.Travelling || targetFire == null) return false;
+            Vector2 delta = CurrentFireTravelDestination() - body.position;
+            Vector2 velocity = delta.sqrMagnitude > .0001f ? delta.normalized * fireTravelCurrentSpeed : body.linearVelocity;
+            ClearRopeState(false);
+            state = FlameState.Free;
+            targetFire = travelSourceFire = null;
+            hasFireTravelWaypoint = false;
+            fireTravelCurrentSpeed = 0f;
+            jumpRemaining = coyoteRemaining = 0f;
+            normalJump = jumpRiseActive = false;
+            appliedPlatformVelocity = Vector2.zero;
+            bodyCollider.enabled = true;
+            body.gravityScale = initialGravity;
+            body.collisionDetectionMode = initialCollisionDetectionMode;
+            transform.localScale = initialScale;
+            body.linearVelocity = velocity;
+            ropeMomentum = true;
+            wasGrounded = false;
+            launchProtection = fireLaunchControlLockTime;
+            SetAbsorbTargetPreview(null);
+            flameFeedback.HideLaunchRing();
+            afterimageEffect.PlayTimedTrail(launchAfterimageDuration);
+            return true;
+        }
+        public bool IsCircularOpening { get; private set; }
+        private bool circularOpeningHadFrozenX;
+
+        public void SetCircularOpeningMode(bool enabled)
+        {
+            if (IsCircularOpening == enabled) return;
+            if (body != null)
+            {
+                var constraints = controlsLocked ? constraintsBeforeControlLock : body.constraints;
+                if (enabled)
+                {
+                    circularOpeningHadFrozenX = (constraints & RigidbodyConstraints2D.FreezePositionX) != 0;
+                    constraints |= RigidbodyConstraints2D.FreezePositionX;
+                }
+                else if (!circularOpeningHadFrozenX)
+                    constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                if (controlsLocked) constraintsBeforeControlLock = constraints;
+                else body.constraints = constraints;
+            }
+            IsCircularOpening = enabled;
+            horizontalInput = jumpRemaining = 0f;
+            jumpHeld = false;
+            jumpReleased = true;
+        }
         public bool CanConfirmCollectible => isActiveAndEnabled && !IsDying && !controlsLocked
             && state == FlameState.Free && wasGrounded && body.linearVelocity.y <= 0.1f
             && TryFindGround(groundProbeDistance, out RaycastHit2D hit)
@@ -258,7 +493,7 @@ namespace EmberPrototype
             (state == FlameState.Free || state == FlameState.Bursting || state == FlameState.BurstDashing)
             && groundStateInitialized
             && !wasGrounded;
-        internal bool IsInsideFire => state == FlameState.Anchored || state == FlameState.RopeAnchored;
+        public bool IsInsideFire => state == FlameState.Anchored || state == FlameState.RopeAnchored;
         internal bool IsInIgnitionRing => state == FlameState.Bursting;
         internal bool CanUseFreeAbilities => !controlsLocked && state == FlameState.Free;
         internal bool IsRingShotAiming => flameShotAbility != null && flameShotAbility.IsAiming;
@@ -317,6 +552,7 @@ namespace EmberPrototype
 
         private void OnDisable()
         {
+            CancelFlowerRide();
             deathEffect?.Cancel();
             ClearRopeState(true);
             flameShotAbility?.CancelAim();
@@ -352,9 +588,9 @@ namespace EmberPrototype
             // Walking is one-dimensional; aiming diagonally must not slow it down.
             float movementX = EmberPlayerInput.MovementDirection().x;
             // Mathf.Sign(0) is +1 in Unity; idle and opposed keys must stay neutral.
-            horizontalInput = movementX == 0f ? 0f : Mathf.Sign(movementX);
-            jumpHeld = keyboard.zKey.isPressed;
-            if (keyboard.zKey.wasPressedThisFrame)
+            horizontalInput = IsCircularOpening || movementX == 0f ? 0f : Mathf.Sign(movementX);
+            jumpHeld = !IsCircularOpening && keyboard.zKey.isPressed;
+            if (!IsCircularOpening && keyboard.zKey.wasPressedThisFrame)
             {
                 jumpReleased = false;
                 if (state == FlameState.Free || state == FlameState.BurstDashing)
@@ -381,6 +617,12 @@ namespace EmberPrototype
         private void FixedUpdate()
         {
             if (controlsLocked) { appliedPlatformVelocity = Vector2.zero; return; }
+            if (state == FlameState.FlowerRiding)
+            {
+                if (currentFlowerRide == null || !currentFlowerRide.isActiveAndEnabled)
+                    CancelFlowerRide();
+                return;
+            }
             if (state == FlameState.Anchored && (targetFire == null || !targetFire.isActiveAndEnabled || !targetFire.IsBurning))
             {
                 foreach (Vector2 direction in new[] { Vector2.up, Vector2.right, Vector2.left, Vector2.down })
@@ -793,7 +1035,7 @@ namespace EmberPrototype
         private void LateUpdate()
         {
             if ((state != FlameState.Free && !IsInsideFire)
-                || (absorbTargetPreview != null && !absorbTargetPreview.IsBurning))
+                || (absorbTargetPreview != null && !IsAvailableAbsorbTarget(absorbTargetPreview)))
                 SetAbsorbTargetPreview(null);
             UpdateAbsorbTargetLine();
             UpdateAbsorbTargetGlow();
@@ -808,6 +1050,9 @@ namespace EmberPrototype
         {
             if (controlsLocked || abilityUnlocks == null
                 || !abilityUnlocks.IsUnlocked(PlayerAbility.FireAbsorb)) return false;
+            // C clears the preview and pauses normal target updates until the ring expires.
+            // Resolve the current arrow direction again so X can enter a fire immediately.
+            if (state == FlameState.Bursting) UpdateAbsorbTargetPreview(ReadHeldDirection());
             return TryAbsorb();
         }
 
@@ -878,12 +1123,7 @@ namespace EmberPrototype
 
         private bool TryAbsorb()
         {
-            if (absorbTargetPreview != null && absorbTargetPreview.IsBurning)
-            {
-                BeginFireTravel(absorbTargetPreview);
-                return true;
-            }
-            return false;
+            return absorbTargetPreview != null && BeginFireTravel(absorbTargetPreview);
         }
 
         private void UpdateAbsorbTargetPreview(Vector2 inputDirection)
@@ -908,7 +1148,7 @@ namespace EmberPrototype
 
         private void UpdateAbsorbTargetGlow()
         {
-            if (!showAbsorbTargetGlow || absorbTargetPreview == null || !absorbTargetPreview.IsBurning
+            if (!showAbsorbTargetGlow || !IsAvailableAbsorbTarget(absorbTargetPreview)
                 || (state != FlameState.Free && !IsInsideFire))
             {
                 if (absorbTargetGlowLight != null) absorbTargetGlowLight.enabled = false;
@@ -1070,7 +1310,7 @@ namespace EmberPrototype
 
             if (absorbTargetLine == null) return;
             if ((state != FlameState.Free && !IsInsideFire)
-                || absorbTargetPreview == null || !absorbTargetPreview.IsBurning)
+                || !IsAvailableAbsorbTarget(absorbTargetPreview))
             {
                 SetAbsorbTargetLineEnabled(false);
                 return;
@@ -1125,25 +1365,20 @@ namespace EmberPrototype
 
         private FlammableTile FindBurningFire(Vector2 direction)
         {
-            int hitCount = Physics2D.OverlapCircleNonAlloc(body.position, fireTravelRange, fireTargetHits);
-            if (hitCount == fireTargetHits.Length)
-            {
+            int hitCount;
+            while ((hitCount = Physics2D.OverlapCircleNonAlloc(body.position, fireTravelRange, fireTargetHits)) == fireTargetHits.Length)
                 System.Array.Resize(ref fireTargetHits, fireTargetHits.Length * 2);
-                hitCount = Physics2D.OverlapCircleNonAlloc(body.position, fireTravelRange, fireTargetHits);
-            }
+            fireTargetCandidates.Clear();
             FlammableTile selected = null;
             float bestScore = float.NegativeInfinity;
             for (int i = 0; i < hitCount; i++)
             {
                 Collider2D hit = fireTargetHits[i];
                 if (hit == null) continue;
-                if (!hit.TryGetComponent(out FlammableTile tile) || !tile.IsBurning) continue;
-                if (IsInsideFire && tile == targetFire) continue;
-                BurningRope rope = tile.GetComponentInParent<BurningRope>();
-                if (rope != null && (rope.EndFire != tile || !rope.IsAvailable)) continue;
+                FlammableTile tile = hit.GetComponentInParent<FlammableTile>();
+                if (!IsAvailableAbsorbTarget(tile) || !fireTargetCandidates.Add(tile)) continue;
                 Vector2 offset = tile.AnchorPosition - body.position;
                 float distance = offset.magnitude;
-                if (distance <= 0.05f) continue;
                 float directionMatch = Vector2.Dot(offset / distance, direction);
                 if (directionMatch < fireTargetDirectionDot) continue;
                 float score = directionMatch * 2f - distance / fireTravelRange;
@@ -1152,11 +1387,23 @@ namespace EmberPrototype
                     score += 0.4f;
                 if (score > bestScore)
                 {
+                    if (!TryBuildFireTravelPath(body.position, IsInsideFire ? targetFire : null,
+                        tile, out _, out _)) continue;
                     bestScore = score;
                     selected = tile;
                 }
             }
             return selected;
+        }
+
+        private bool IsAvailableAbsorbTarget(FlammableTile tile)
+        {
+            if (tile == null || !tile.isActiveAndEnabled || tile.IsWet
+                || (!tile.IsBurning && !tile.CanIgnite) || (IsInsideFire && tile == targetFire)) return false;
+            float distanceSquared = (tile.AnchorPosition - body.position).sqrMagnitude;
+            if (distanceSquared <= 0.0025f || distanceSquared > fireTravelRange * fireTravelRange) return false;
+            BurningRope rope = tile.GetComponentInParent<BurningRope>();
+            return rope == null || (rope.EndFire == tile && rope.IsAvailable);
         }
 
         private void TryIgnitionBurst()
@@ -1184,6 +1431,13 @@ namespace EmberPrototype
             if (burstChargeRemaining <= 0f) return;
 
             if (!burstDashAbility.TryBegin(desiredDirection, fireTravelObstacleMask.value)) return;
+            // Count the successful C-ring route separately from the free-state X dash.
+            if (state == FlameState.Bursting)
+            {
+                unchecked { IgnitionDashCount++; }
+                LastIgnitionDashPosition = body.position;
+                LastIgnitionDashDirection = burstDashAbility.Direction;
+            }
             burstChargeRemaining = 0f;
             jumpRemaining = 0f;
             state = FlameState.BurstDashing;
@@ -1253,7 +1507,9 @@ namespace EmberPrototype
             line.positionCount = 48;
             line.numCornerVertices = 3;
             line.widthMultiplier = 0.12f;
-            line.sortingOrder = 20;
+            SpriteRenderer playerVisual = GetComponentInChildren<SpriteRenderer>();
+            line.sortingLayerID = playerVisual != null ? playerVisual.sortingLayerID : 0;
+            line.sortingOrder = playerVisual != null ? playerVisual.sortingOrder + 10 : 20;
             StartCoroutine(AnimateBurstCircle(line, body.position));
         }
 
@@ -1293,25 +1549,28 @@ namespace EmberPrototype
             activeBurstEffect = null;
         }
 
-        private void BeginFireTravel(FlammableTile destination)
+        private bool BeginFireTravel(FlammableTile destination)
         {
-            PrepareRopeTravel(destination);
-            appliedPlatformVelocity = Vector2.zero;
-            SetAbsorbTargetPreview(null);
-            flameFeedback.HideLaunchRing();
+            WaterContact.RefreshTarget(destination);
+            if (!IsAvailableAbsorbTarget(destination)) return false;
+            Vector2 offset = destination.AnchorPosition - body.position;
+            if (Vector2.Dot(offset.normalized, ReadHeldDirection()) < fireTargetDirectionDot) return false;
             FlammableTile source = IsInsideFire ? targetFire : null;
-            bool hasSafeRoute = TryBuildFireTravelPath(
+            if (!TryBuildFireTravelPath(
                 body.position,
                 source,
                 destination,
                 out Vector2 waypoint,
-                out bool useWaypoint);
-            if (!hasSafeRoute)
-            {
-                // A blocked target remains selectable, but travel stops safely at the obstacle.
-                waypoint = default;
-                useWaypoint = false;
-            }
+                out bool useWaypoint)) return false;
+
+            // Only the confirmed X action ignites a target, after the route is known to be clear.
+            if (!destination.IsBurning && !destination.TryIgnite()) return false;
+            if (destination == null || !destination.isActiveAndEnabled || !destination.IsBurning || destination.IsWet)
+                return false;
+            PrepareRopeTravel(destination);
+            appliedPlatformVelocity = Vector2.zero;
+            SetAbsorbTargetPreview(null);
+            flameFeedback.HideLaunchRing();
 
             jumpRemaining = coyoteRemaining = burstChargeRemaining = 0f;
             normalJump = false;
@@ -1329,6 +1588,7 @@ namespace EmberPrototype
             body.linearVelocity = Vector2.zero;
             bodyCollider.enabled = true;
             afterimageEffect.BeginTrail();
+            return true;
         }
 
         private bool IsFireTravelBlocked(Collision2D collision)
@@ -1457,7 +1717,7 @@ namespace EmberPrototype
                 if (hitCollider == null || hitCollider == bodyCollider || hitCollider.isTrigger) continue;
 
                 FlammableTile hitFire = hitCollider.GetComponentInParent<FlammableTile>();
-                if (hitFire == source || hitFire == destination) continue;
+                if (hitFire != null && (hitFire == source || hitFire == destination)) continue;
                 return false;
             }
 
@@ -1517,6 +1777,7 @@ namespace EmberPrototype
             if (direction == Vector2.zero) direction = Vector2.up;
             if (!TryFindSafeFireLaunchPosition(direction, out Vector2 launchPosition)) return;
 
+            unchecked { FireLaunchCount++; }
             SetAbsorbTargetPreview(null);
             flameFeedback.HideLaunchRing();
             state = FlameState.Free;
@@ -1658,6 +1919,7 @@ namespace EmberPrototype
 
         public void ResetAt(Vector2 position)
         {
+            CancelFlowerRide();
             GetComponent<StrawberryCollection>()?.ReturnPending();
             deathEffect?.Cancel();
             ClearRopeState(true);
@@ -1701,6 +1963,7 @@ namespace EmberPrototype
         public void KillAndRespawn()
         {
             if (IsDying || !isActiveAndEnabled || body == null || bodyCollider == null) return;
+            CancelFlowerRide();
             Vector2 position = respawnPoint != null
                 ? (Vector2)respawnPoint.position
                 : initialSpawnPosition;

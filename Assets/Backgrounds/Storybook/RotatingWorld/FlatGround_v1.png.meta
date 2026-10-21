@@ -1,0 +1,1354 @@
+fileFormatVersion: 2
+guid: 3e0c10e81cdbb3c43b5f20f62815c4bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7698785733947059352
+    second: FlatGround_v1_0
+  - first:
+      213: 8448544214099444138
+    second: FlatGround_v1_1
+  - first:
+      213: -3499469121797346166
+    second: FlatGround_v1_2
+  - first:
+      213: 3525093488501165865
+    second: FlatGround_v1_3
+  - first:
+      213: -7527143236262397308
+    second: FlatGround_v1_4
+  - first:
+      213: 6726380372321225200
+    second: FlatGround_v1_5
+  - first:
+      213: -6389476994316964034
+    second: FlatGround_v1_6
+  - first:
+      213: -1588339450908642473
+    second: FlatGround_v1_7
+  - first:
+      213: -2332435387913438068
+    second: FlatGround_v1_8
+  - first:
+      213: 681282885762963850
+    second: FlatGround_v1_9
+  - first:
+      213: 5777013050949685106
+    second: FlatGround_v1_10
+  - first:
+      213: 1235981834897108802
+    second: FlatGround_v1_11
+  - first:
+      213: -6263947944482431076
+    second: FlatGround_v1_12
+  - first:
+      213: -9076034310776079348
+    second: FlatGround_v1_13
+  - first:
+      213: 2273675048375177797
+    second: FlatGround_v1_14
+  - first:
+      213: -6025548168550649812
+    second: FlatGround_v1_15
+  - first:
+      213: 2109423811889872148
+    second: FlatGround_v1_16
+  - first:
+      213: -639827605928831958
+    second: FlatGround_v1_17
+  - first:
+      213: -5763478293417153745
+    second: FlatGround_v1_18
+  - first:
+      213: 774728519459018581
+    second: FlatGround_v1_19
+  - first:
+      213: 5878475678827367918
+    second: FlatGround_v1_20
+  - first:
+      213: 5317623091816622585
+    second: FlatGround_v1_21
+  - first:
+      213: 8073369241005705294
+    second: FlatGround_v1_22
+  - first:
+      213: 7630497425709215605
+    second: FlatGround_v1_23
+  - first:
+      213: 6644116378639564014
+    second: FlatGround_v1_24
+  - first:
+      213: 4106978588528414392
+    second: FlatGround_v1_25
+  - first:
+      213: 974410601595250898
+    second: FlatGround_v1_26
+  - first:
+      213: 6684295715364351878
+    second: FlatGround_v1_27
+  - first:
+      213: 7163858835257782271
+    second: FlatGround_v1_28
+  - first:
+      213: -8583704478916342080
+    second: FlatGround_v1_29
+  - first:
+      213: -6992627259555787603
+    second: FlatGround_v1_30
+  - first:
+      213: -2785566561399943458
+    second: FlatGround_v1_31
+  - first:
+      213: 9041816449618054612
+    second: FlatGround_v1_32
+  - first:
+      213: -3015117284240500364
+    second: FlatGround_v1_33
+  - first:
+      213: 1632120933572459238
+    second: FlatGround_v1_34
+  - first:
+      213: 961847058411703590
+    second: FlatGround_v1_35
+  - first:
+      213: 3631388780584203509
+    second: FlatGround_v1_36
+  - first:
+      213: 1372301569150310954
+    second: FlatGround_v1_37
+  - first:
+      213: 3566579254993021149
+    second: FlatGround_v1_38
+  - first:
+      213: 1353429844461948861
+    second: FlatGround_v1_39
+  - first:
+      213: -4100216995568639510
+    second: FlatGround_v1_40
+  - first:
+      213: 3159985355373139753
+    second: FlatGround_v1_41
+  - first:
+      213: -4074742904015529971
+    second: FlatGround_v1_42
+  - first:
+      213: 4430029452356894394
+    second: FlatGround_v1_43
+  - first:
+      213: 9067419435947680135
+    second: FlatGround_v1_44
+  - first:
+      213: 1336392775767430792
+    second: FlatGround_v1_45
+  - first:
+      213: -7065177707082222429
+    second: FlatGround_v1_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlatGround_v1_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 630
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c62c9c5d497da60800000000000000
+      internalID: 7698785733947059352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 661
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1449e43324f3570800000000000000
+      internalID: 8448544214099444138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 659
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c22dcef536f6fc0800000000000000
+      internalID: -3499469121797346166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 659
+        width: 76
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f872ed9d5abe030800000000000000
+      internalID: 3525093488501165865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 659
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a781d6b173a8790800000000000000
+      internalID: -7527143236262397308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 676
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9cd5c8f47e85d50800000000000000
+      internalID: 6726380372321225200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_6
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 630
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fe43dc6840457a0800000000000000
+      internalID: -6389476994316964034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_7
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 659
+        width: 57
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753f9dd4fa515f9e0800000000000000
+      internalID: -1588339450908642473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 634
+        width: 86
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c7ed95f5681afd0800000000000000
+      internalID: -2332435387913438068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_9
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 674
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89547dcc27647900800000000000000
+      internalID: 681282885762963850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_10
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 629
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fc6ac03c21c2050800000000000000
+      internalID: 5777013050949685106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 661
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fa0e92ee6172110800000000000000
+      internalID: 1235981834897108802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_12
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 635
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f1695488cf119a0800000000000000
+      internalID: -6263947944482431076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_13
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 659
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c3fe891e27b0280800000000000000
+      internalID: -9076034310776079348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_14
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 628
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5425219f867bd8f10800000000000000
+      internalID: 2273675048375177797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_15
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 642
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20788c8dd3f06ca0800000000000000
+      internalID: -6025548168550649812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_16
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 634
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d327cd7cd264d10800000000000000
+      internalID: 2109423811889872148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_17
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 598
+        width: 108
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a249f1fae20ee17f0800000000000000
+      internalID: -639827605928831958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_18
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 612
+        width: 116
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b223247030400b0800000000000000
+      internalID: -5763478293417153745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_19
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 663
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55718b7db7360ca00800000000000000
+      internalID: 774728519459018581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_20
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 649
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed47410c7a849150800000000000000
+      internalID: 5878475678827367918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_21
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 659
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9e42d270efbc940800000000000000
+      internalID: 5317623091816622585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_22
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 642
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48c5b6dc8e5a0070800000000000000
+      internalID: 8073369241005705294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_23
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 596
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f2ee60bf8f4e960800000000000000
+      internalID: 7630497425709215605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_24
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 632
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec7a23f4a4a43c50800000000000000
+      internalID: 6644116378639564014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_25
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 649
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be0f5d344beef830800000000000000
+      internalID: 4106978588528414392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_26
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 659
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8a57d874dc58d00800000000000000
+      internalID: 974410601595250898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_27
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 659
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f25f7c98363cc50800000000000000
+      internalID: 6684295715364351878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_28
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 600
+        width: 47
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff6598a7a32b6360800000000000000
+      internalID: 7163858835257782271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_29
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 634
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce034d314e80e880800000000000000
+      internalID: -8583704478916342080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_30
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 602
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacc6735e8235fe90800000000000000
+      internalID: -6992627259555787603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_31
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 671
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edecc8198fda759d0800000000000000
+      internalID: -2785566561399943458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_32
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 659
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd84c3c72cfa7d70800000000000000
+      internalID: 9041816449618054612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_33
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 626
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47954b40ec62826d0800000000000000
+      internalID: -3015117284240500364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_34
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 659
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eab01c775576a610800000000000000
+      internalID: 1632120933572459238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_35
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 659
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d42e4bdca295d00800000000000000
+      internalID: 961847058411703590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_36
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 641
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f47f042bd8456230800000000000000
+      internalID: 3631388780584203509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_37
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 673
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a5ae1a1056b0310800000000000000
+      internalID: 1372301569150310954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_38
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 675
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8e2259fe80f7130800000000000000
+      internalID: 3566579254993021149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_39
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 636
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf0193d54958c210800000000000000
+      internalID: 1353429844461948861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_40
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 650
+        width: 60
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1ac1dcd5a1917c0800000000000000
+      internalID: -4100216995568639510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_41
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 638
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927d37a30f58adb20800000000000000
+      internalID: 3159985355373139753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_42
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 638
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d085c1feaea9377c0800000000000000
+      internalID: -4074742904015529971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_43
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 634
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe304cc050aa7d30800000000000000
+      internalID: 4430029452356894394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_44
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 602
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781622d8fe1f5dd70800000000000000
+      internalID: 9067419435947680135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2157
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88614082622db8210800000000000000
+      internalID: 1336392775767430792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlatGround_v1_46
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 21
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4fa5eee4273fd90800000000000000
+      internalID: -7065177707082222429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlatGround_v1_0: 7698785733947059352
+      FlatGround_v1_1: 8448544214099444138
+      FlatGround_v1_10: 5777013050949685106
+      FlatGround_v1_11: 1235981834897108802
+      FlatGround_v1_12: -6263947944482431076
+      FlatGround_v1_13: -9076034310776079348
+      FlatGround_v1_14: 2273675048375177797
+      FlatGround_v1_15: -6025548168550649812
+      FlatGround_v1_16: 2109423811889872148
+      FlatGround_v1_17: -639827605928831958
+      FlatGround_v1_18: -5763478293417153745
+      FlatGround_v1_19: 774728519459018581
+      FlatGround_v1_2: -3499469121797346166
+      FlatGround_v1_20: 5878475678827367918
+      FlatGround_v1_21: 5317623091816622585
+      FlatGround_v1_22: 8073369241005705294
+      FlatGround_v1_23: 7630497425709215605
+      FlatGround_v1_24: 6644116378639564014
+      FlatGround_v1_25: 4106978588528414392
+      FlatGround_v1_26: 974410601595250898
+      FlatGround_v1_27: 6684295715364351878
+      FlatGround_v1_28: 7163858835257782271
+      FlatGround_v1_29: -8583704478916342080
+      FlatGround_v1_3: 3525093488501165865
+      FlatGround_v1_30: -6992627259555787603
+      FlatGround_v1_31: -2785566561399943458
+      FlatGround_v1_32: 9041816449618054612
+      FlatGround_v1_33: -3015117284240500364
+      FlatGround_v1_34: 1632120933572459238
+      FlatGround_v1_35: 961847058411703590
+      FlatGround_v1_36: 3631388780584203509
+      FlatGround_v1_37: 1372301569150310954
+      FlatGround_v1_38: 3566579254993021149
+      FlatGround_v1_39: 1353429844461948861
+      FlatGround_v1_4: -7527143236262397308
+      FlatGround_v1_40: -4100216995568639510
+      FlatGround_v1_41: 3159985355373139753
+      FlatGround_v1_42: -4074742904015529971
+      FlatGround_v1_43: 4430029452356894394
+      FlatGround_v1_44: 9067419435947680135
+      FlatGround_v1_45: 1336392775767430792
+      FlatGround_v1_46: -7065177707082222429
+      FlatGround_v1_5: 6726380372321225200
+      FlatGround_v1_6: -6389476994316964034
+      FlatGround_v1_7: -1588339450908642473
+      FlatGround_v1_8: -2332435387913438068
+      FlatGround_v1_9: 681282885762963850
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

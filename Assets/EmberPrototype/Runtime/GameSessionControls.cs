@@ -13,24 +13,46 @@ namespace EmberPrototype
         private float previousTimeScale = 1f;
         private int inputConsumedFrame = -1;
         public static bool IsPaused => instance != null && instance.paused;
-        public static bool BlockGameplayInput => SceneRestartWipe.IsPlaying || (instance != null
+        public static float PlaybackSpeed { get; private set; } = 1f;
+        public static bool BlockGameplayInput => StorybookNarration.BlocksGameplayInput
+            || SceneFadeTransition.IsPlaying || SceneRestartWipe.IsPlaying || (instance != null
             && (instance.paused || instance.inputConsumedFrame == Time.frameCount));
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        private static void ResetStatics() => instance = null;
+        private static void ResetStatics()
+        {
+            instance = null;
+            PlaybackSpeed = 1f;
+        }
         private void OnEnable()
         {
             if (instance == null) instance = this;
         }
         private void Update()
         {
-            if (instance != this || SceneRestartWipe.IsPlaying || Keyboard.current == null) return;
+            if (instance != this || SceneRestartWipe.IsPlaying || SceneFadeTransition.IsPlaying || Keyboard.current == null) return;
+            bool faster = Keyboard.current.rightBracketKey.wasPressedThisFrame;
+            bool slower = Keyboard.current.leftBracketKey.wasPressedThisFrame;
+            if (faster != slower) SetPlaybackSpeed(PlaybackSpeed * (faster ? 2f : 0.5f));
             if (Keyboard.current.rKey.wasPressedThisFrame) RestartScene();
             else if (Keyboard.current.escapeKey.wasPressedThisFrame) SetPaused(!paused);
         }
+        public void SetPlaybackSpeed(float speed)
+        {
+            if (instance != this || SceneRestartWipe.IsPlaying || SceneFadeTransition.IsPlaying) return;
+            FlowerRideTutorial.EndSessionSlowMotion();
+            // End temporary aiming slow motion before changing its saved base speed.
+            foreach (var player in FindObjectsByType<FlamePlayerController>())
+                player.CancelRingShotAim();
+            PlaybackSpeed = Mathf.Clamp(speed, 1f / 32f, 32f);
+            previousTimeScale = PlaybackSpeed;
+            Time.timeScale = paused ? 0f : PlaybackSpeed;
+            Debug.Log("재생 속도: " + PlaybackSpeed.ToString("0.#####") + "배", this);
+        }
         public void SetPaused(bool value)
         {
-            if (instance != this || SceneRestartWipe.IsPlaying || paused == value) return;
+            if (instance != this || SceneRestartWipe.IsPlaying || SceneFadeTransition.IsPlaying || paused == value) return;
+            FlowerRideTutorial.EndSessionSlowMotion();
             inputConsumedFrame = Time.frameCount;
             if (value)
             {
@@ -49,7 +71,8 @@ namespace EmberPrototype
         }
         public void RestartScene()
         {
-            if (instance != this || SceneRestartWipe.IsPlaying) return;
+            if (instance != this || SceneRestartWipe.IsPlaying || SceneFadeTransition.IsPlaying) return;
+            FlowerRideTutorial.EndSessionSlowMotion();
             Scene scene = gameObject.scene;
             inputConsumedFrame = Time.frameCount;
             SetPaused(false);

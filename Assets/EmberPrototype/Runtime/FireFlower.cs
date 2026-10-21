@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace EmberPrototype
 {
@@ -9,7 +10,6 @@ namespace EmberPrototype
         private static readonly List<FireFlower> activeFlowers = new List<FireFlower>();
         private static Sprite fallbackWilted, fallbackBlooming;
         [SerializeField, Min(0.1f)] private float reactionRadius = 3f;
-        [SerializeField] private bool activateOnPlayerContact = true;
         [Tooltip("Preset local firing direction. C only wakes the flower; player position never aims it.")]
         [SerializeField, HideInInspector] private Vector2 firingDirection = Vector2.right;
         [Tooltip("Rotate Head around Z to author the firing direction; its local +X is forward.")]
@@ -27,6 +27,10 @@ namespace EmberPrototype
         [SerializeField] private SpriteRenderer visual;
         [SerializeField] private Sprite wiltedSprite;
         [SerializeField] private Sprite bloomingSprite;
+        [SerializeField] private Color wiltedTint = Color.white;
+        [SerializeField] private Color bloomingTint = Color.white;
+        [SerializeField] private bool fireProjectileOnActivation = true;
+        [SerializeField] private UnityEvent onActivated = new UnityEvent();
         private readonly List<GameObject> dots = new List<GameObject>();
         private Vector2 shotOrigin;
         private Vector2 shotDirection;
@@ -50,6 +54,8 @@ namespace EmberPrototype
             }
         }
         public bool IsPreparingShot => pending;
+        public FireFlowerProjectile LastProjectile { get; private set; }
+        public int ShotCount { get; private set; }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetRegistry() => activeFlowers.Clear();
@@ -63,6 +69,7 @@ namespace EmberPrototype
             if (wiltedSprite == null) wiltedSprite = fallbackWilted;
             if (bloomingSprite == null) bloomingSprite = fallbackBlooming;
             visual.sprite = wiltedSprite;
+            visual.color = wiltedTint;
         }
         private void OnEnable() { if (!activeFlowers.Contains(this)) activeFlowers.Add(this); }
         private void OnDisable()
@@ -86,17 +93,11 @@ namespace EmberPrototype
                 return false;
             return TryActivateCore();
         }
-        private void OnTriggerEnter2D(Collider2D other) => TryActivateFromContact(other);
-        private void OnTriggerStay2D(Collider2D other)
+        // Player contact never activates a flower. A hit uses the same cooldown,
+        // one-shot and onActivated path as the C burst, without a proximity check.
+        public bool TryActivateFromFlowerProjectile(FireFlowerProjectile projectile)
         {
-            // Also handles respawn while overlapping; staying does not continuously refire.
-            if (!activated) TryActivateFromContact(other);
-        }
-        public bool TryActivateFromContact(Collider2D other)
-        {
-            if (!activateOnPlayerContact || other == null) return false;
-            var player = other.GetComponentInParent<FlamePlayerController>();
-            if (player == null || !player.isActiveAndEnabled || player.IsDying) return false;
+            if (projectile == null || !projectile.CanActivateFlower(this)) return false;
             return TryActivateCore();
         }
         private bool TryActivateCore()
@@ -109,7 +110,14 @@ namespace EmberPrototype
             activated = pending = true;
             remaining = warningTime;
             visual.sprite = bloomingSprite;
+            visual.color = bloomingTint;
             animationTime = 0f;
+            onActivated.Invoke();
+            if (!fireProjectileOnActivation)
+            {
+                pending = false;
+                return true;
+            }
             if (warningTime <= 0f) Fire();
             else ShowWarning(Vector2.Distance(shotOrigin, LockedTarget));
             return true;
@@ -132,16 +140,22 @@ namespace EmberPrototype
             pending = false;
             cooldownRemaining = cooldown;
             HideWarning();
-            FireFlowerProjectile.Spawn(shotOrigin, shotDirection, projectileSpeed, projectileRange,
+            LastProjectile = FireFlowerProjectile.Spawn(shotOrigin, shotDirection, projectileSpeed, projectileRange,
                 projectileRadius, transform, projectilePrefab);
+            unchecked { ShotCount++; }
         }
         public void ResetForRespawn()
         {
             pending = activated = false;
             cooldownRemaining = remaining = 0f;
             LockedTarget = Vector2.zero;
+            LastProjectile = null;
             HideWarning();
-            if (visual != null) visual.sprite = wiltedSprite;
+            if (visual != null)
+            {
+                visual.sprite = wiltedSprite;
+                visual.color = wiltedTint;
+            }
         }
         private void ShowWarning(float distance)
         {

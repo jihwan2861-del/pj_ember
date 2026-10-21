@@ -1,0 +1,10 @@
+Built-in image_gen transparent edit / separation and restoration, 2026-10-19.
+Source reference: C:/Users/kyk04/Desktop/지스타 게임/ArtReference/OpeningWater/PPT/Slide7_1.png
+This asset is AI-assisted separation/reconstruction from a flattened PPT image, not an original editable PPT layer.
+
+Initial extraction prompt:
+Use case: background-extraction. Asset type: transparent Unity 2D storybook scenery sprite. Edit target: supplied original PPT slide 7. Extract and reconstruct ONE standalone dense cluster of the BLACK AND PURPLE CORRUPTION VINES around the right bank tree. Preserve the exact original vocabulary: thick black irregular ink outlines, curling coiled spiky tendrils and loop shapes, saturated violet and purple watercolor interiors, several subtle pale skull-like marks nestled in the dark mass, and a few small floating purple ink specks close to the cluster. A clustered silhouette rising from a low broad base with curving stems reaching upward, not a straight fence and not a solid purple blob. Keep source rough watercolor/gouache grain and hand-drawn line weight. True transparent alpha background. REMOVE tree/trunk/branches, all rocks/grass, player, water/reflection, mountains, sky/paper, text, any rectangular backdrop. Only isolated corruption cluster. Faithful separation/restoration of source art, no new monster or new style.
+
+Final alpha cleanup prompt:
+Use case: background-extraction. Edit target: supplied isolated purple corruption PNG. Preserve the exact coiled thorny black-purple vines, skull-like marks, dense roots, and the individual floating purple ink dots. REMOVE ONLY the large soft purple/black atmospheric haze and glow surrounding the cluster and filling the open gaps. Outside all solid vines, root masses, skulls, and individual dots, the canvas must be truly transparent alpha, with normal edge antialiasing only. NO glow, mist, background tint, rectangular backdrop, shadow, or vignette. Keep the composition and textured hand-drawn watercolor art as unchanged as practical. One complete isolated corruption cluster. Transparent background for use over a white paper scene.
+

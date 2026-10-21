@@ -41,5 +41,10 @@ crashlytics-build.properties
 Assets/StreamingAssets/aa.meta
 Assets/StreamingAssets/aa/
 
+# Third-party Unity Asset Store source packages (download through the store)
+/Assets/Epic Toon FX/
+/Assets/VFXPACK_FIRE_WALLCOEUR/
+/자료/*.unitypackage
+
 # Locally compiled validation assemblies
 /ValidationArtifacts/**/compiled/

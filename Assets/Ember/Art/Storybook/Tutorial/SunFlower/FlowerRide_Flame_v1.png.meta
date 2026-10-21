@@ -1,0 +1,1276 @@
+fileFormatVersion: 2
+guid: 1adef45d3a94d1844a2f0734b49b733c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4987546856783569745
+    second: FlowerRide_Flame_v1_0
+  - first:
+      213: -6344370225521765959
+    second: FlowerRide_Flame_v1_1
+  - first:
+      213: 6332608596243461094
+    second: FlowerRide_Flame_v1_2
+  - first:
+      213: 3780124024653987312
+    second: FlowerRide_Flame_v1_3
+  - first:
+      213: -7958938144946520740
+    second: FlowerRide_Flame_v1_4
+  - first:
+      213: -297976188930899269
+    second: FlowerRide_Flame_v1_5
+  - first:
+      213: 8251925381986789240
+    second: FlowerRide_Flame_v1_6
+  - first:
+      213: 8296072280987312607
+    second: FlowerRide_Flame_v1_7
+  - first:
+      213: 8759261375803871469
+    second: FlowerRide_Flame_v1_8
+  - first:
+      213: 7606315170922126107
+    second: FlowerRide_Flame_v1_9
+  - first:
+      213: -3357129317709862059
+    second: FlowerRide_Flame_v1_10
+  - first:
+      213: -4198613179310593067
+    second: FlowerRide_Flame_v1_11
+  - first:
+      213: -7489548589256263712
+    second: FlowerRide_Flame_v1_12
+  - first:
+      213: 1436677170796913030
+    second: FlowerRide_Flame_v1_13
+  - first:
+      213: -142500875975568587
+    second: FlowerRide_Flame_v1_14
+  - first:
+      213: 5387288372727359836
+    second: FlowerRide_Flame_v1_15
+  - first:
+      213: 7692626880689496835
+    second: FlowerRide_Flame_v1_16
+  - first:
+      213: 6074850513675673993
+    second: FlowerRide_Flame_v1_17
+  - first:
+      213: -8663984048992949534
+    second: FlowerRide_Flame_v1_18
+  - first:
+      213: -2764892051600379809
+    second: FlowerRide_Flame_v1_19
+  - first:
+      213: 4893825038339137539
+    second: FlowerRide_Flame_v1_20
+  - first:
+      213: 8366507993359109093
+    second: FlowerRide_Flame_v1_21
+  - first:
+      213: 3094874241050779810
+    second: FlowerRide_Flame_v1_22
+  - first:
+      213: -8293008423955936491
+    second: FlowerRide_Flame_v1_23
+  - first:
+      213: -8982452360007885467
+    second: FlowerRide_Flame_v1_24
+  - first:
+      213: -580234538248494198
+    second: FlowerRide_Flame_v1_25
+  - first:
+      213: 1027707369667382585
+    second: FlowerRide_Flame_v1_26
+  - first:
+      213: -3314549856641890
+    second: FlowerRide_Flame_v1_27
+  - first:
+      213: 50134278449310920
+    second: FlowerRide_Flame_v1_28
+  - first:
+      213: 3439974434251662624
+    second: FlowerRide_Flame_v1_29
+  - first:
+      213: -2778310477065655875
+    second: FlowerRide_Flame_v1_30
+  - first:
+      213: -7154191697425111549
+    second: FlowerRide_Flame_v1_31
+  - first:
+      213: -2894463951581933468
+    second: FlowerRide_Flame_v1_32
+  - first:
+      213: -1134619947491526651
+    second: FlowerRide_Flame_v1_33
+  - first:
+      213: 3147073023484760349
+    second: FlowerRide_Flame_v1_34
+  - first:
+      213: -7378044078706813445
+    second: FlowerRide_Flame_v1_35
+  - first:
+      213: 995128941406012221
+    second: FlowerRide_Flame_v1_36
+  - first:
+      213: 3793419134596186178
+    second: FlowerRide_Flame_v1_37
+  - first:
+      213: 4973698098010614790
+    second: FlowerRide_Flame_v1_38
+  - first:
+      213: -2141586685545751801
+    second: FlowerRide_Flame_v1_39
+  - first:
+      213: 5435535917829056555
+    second: FlowerRide_Flame_v1_40
+  - first:
+      213: -1319683427749378744
+    second: FlowerRide_Flame_v1_41
+  - first:
+      213: -6041348327089026178
+    second: FlowerRide_Flame_v1_42
+  - first:
+      213: 8394381026213060313
+    second: FlowerRide_Flame_v1_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.81, y: 0.5}
+  spritePixelsToUnits: 1300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_0
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 767
+        width: 215
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153633be073573540800000000000000
+      internalID: 4987546856783569745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_1
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 775
+        width: 84
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1d530d4e444f7a0800000000000000
+      internalID: -6344370225521765959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_2
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 829
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e33da877f1f1e750800000000000000
+      internalID: 6332608596243461094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_3
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 767
+        width: 35
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdbb60c5c2b57430800000000000000
+      internalID: 3780124024653987312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_4
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 838
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5df729eceb2c8190800000000000000
+      internalID: -7958938144946520740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_5
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 767
+        width: 237
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2cf332c306ddbf0800000000000000
+      internalID: -297976188930899269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_6
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 840
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8772a521a6ab48270800000000000000
+      internalID: 8251925381986789240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_7
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 829
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1a63bf8c1912370800000000000000
+      internalID: 8296072280987312607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_8
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 791
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d69f00d52f8970800000000000000
+      internalID: 8759261375803871469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_9
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 846
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b5a74195f0f8960800000000000000
+      internalID: 7606315170922126107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_10
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 856
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55baad02ca41961d0800000000000000
+      internalID: -3357129317709862059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_11
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 821
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db2be10f878bb5c0800000000000000
+      internalID: -4198613179310593067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_12
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 827
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e73a594d37cf0890800000000000000
+      internalID: -7489548589256263712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_13
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 838
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6816346664a10f310800000000000000
+      internalID: 1436677170796913030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 773
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5335b43553cb50ef0800000000000000
+      internalID: -142500875975568587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_15
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 813
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59a10f5b3e73ca40800000000000000
+      internalID: 5387288372727359836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_16
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 821
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3036e150463b1ca60800000000000000
+      internalID: 7692626880689496835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_17
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 779
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981ec333b543e4450800000000000000
+      internalID: 6074850513675673993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_18
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 813
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eaef14496853c780800000000000000
+      internalID: -8663984048992949534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_19
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 775
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50fe0ef35121a9d0800000000000000
+      internalID: -2764892051600379809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_20
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 759
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300ed1b91fb5ae340800000000000000
+      internalID: 4893825038339137539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1765
+        height: 772
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebc2aa31becb1470800000000000000
+      internalID: 8366507993359109093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_22
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 757
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0a65299b333fa20800000000000000
+      internalID: 3094874241050779810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_23
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 739
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bc8c2d6c059ec80800000000000000
+      internalID: -8293008423955936491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_24
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 714
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d5cdd6b2be75380800000000000000
+      internalID: -8982452360007885467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_25
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 711
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83294df2c792f7f0800000000000000
+      internalID: -580234538248494198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_26
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 698
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d431e5866234e00800000000000000
+      internalID: 1027707369667382585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 468
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c54393f6934fff0800000000000000
+      internalID: -3314549856641890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_28
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 456
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccaa025cdc12b000800000000000000
+      internalID: 50134278449310920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_29
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 449
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025eefda58e3dbf20800000000000000
+      internalID: 3439974434251662624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_30
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db961ca57557179d0800000000000000
+      internalID: -2778310477065655875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_31
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 441
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3066de34e8437bc90800000000000000
+      internalID: -7154191697425111549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_32
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 410
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46019ce1f5cc4d7d0800000000000000
+      internalID: -2894463951581933468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 403
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508f1b25b250140f0800000000000000
+      internalID: -1134619947491526651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_34
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 393
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11160fad36acab20800000000000000
+      internalID: 3147073023484760349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_35
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 128
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5918f300ceb9990800000000000000
+      internalID: -7378044078706813445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_36
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 114
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d334732ff786fcd00800000000000000
+      internalID: 995128941406012221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_37
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 71
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24086c1ca9ee4a430800000000000000
+      internalID: 3793419134596186178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_38
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 63
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c65ff7110260540800000000000000
+      internalID: 4973698098010614790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_39
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 65
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bd650914e8742e0800000000000000
+      internalID: -2141586685545751801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_40
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 62
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28e31a5e17ee6b40800000000000000
+      internalID: 5435535917829056555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_41
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 49
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84547091aea8fade0800000000000000
+      internalID: -1319683427749378744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_42
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 53
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b457774b1d82ca0800000000000000
+      internalID: -6041348327089026178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRide_Flame_v1_43
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 18
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de55b86115de7470800000000000000
+      internalID: 8394381026213060313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlowerRide_Flame_v1_0: 4987546856783569745
+      FlowerRide_Flame_v1_1: -6344370225521765959
+      FlowerRide_Flame_v1_10: -3357129317709862059
+      FlowerRide_Flame_v1_11: -4198613179310593067
+      FlowerRide_Flame_v1_12: -7489548589256263712
+      FlowerRide_Flame_v1_13: 1436677170796913030
+      FlowerRide_Flame_v1_14: -142500875975568587
+      FlowerRide_Flame_v1_15: 5387288372727359836
+      FlowerRide_Flame_v1_16: 7692626880689496835
+      FlowerRide_Flame_v1_17: 6074850513675673993
+      FlowerRide_Flame_v1_18: -8663984048992949534
+      FlowerRide_Flame_v1_19: -2764892051600379809
+      FlowerRide_Flame_v1_2: 6332608596243461094
+      FlowerRide_Flame_v1_20: 4893825038339137539
+      FlowerRide_Flame_v1_21: 8366507993359109093
+      FlowerRide_Flame_v1_22: 3094874241050779810
+      FlowerRide_Flame_v1_23: -8293008423955936491
+      FlowerRide_Flame_v1_24: -8982452360007885467
+      FlowerRide_Flame_v1_25: -580234538248494198
+      FlowerRide_Flame_v1_26: 1027707369667382585
+      FlowerRide_Flame_v1_27: -3314549856641890
+      FlowerRide_Flame_v1_28: 50134278449310920
+      FlowerRide_Flame_v1_29: 3439974434251662624
+      FlowerRide_Flame_v1_3: 3780124024653987312
+      FlowerRide_Flame_v1_30: -2778310477065655875
+      FlowerRide_Flame_v1_31: -7154191697425111549
+      FlowerRide_Flame_v1_32: -2894463951581933468
+      FlowerRide_Flame_v1_33: -1134619947491526651
+      FlowerRide_Flame_v1_34: 3147073023484760349
+      FlowerRide_Flame_v1_35: -7378044078706813445
+      FlowerRide_Flame_v1_36: 995128941406012221
+      FlowerRide_Flame_v1_37: 3793419134596186178
+      FlowerRide_Flame_v1_38: 4973698098010614790
+      FlowerRide_Flame_v1_39: -2141586685545751801
+      FlowerRide_Flame_v1_4: -7958938144946520740
+      FlowerRide_Flame_v1_40: 5435535917829056555
+      FlowerRide_Flame_v1_41: -1319683427749378744
+      FlowerRide_Flame_v1_42: -6041348327089026178
+      FlowerRide_Flame_v1_43: 8394381026213060313
+      FlowerRide_Flame_v1_5: -297976188930899269
+      FlowerRide_Flame_v1_6: 8251925381986789240
+      FlowerRide_Flame_v1_7: 8296072280987312607
+      FlowerRide_Flame_v1_8: 8759261375803871469
+      FlowerRide_Flame_v1_9: 7606315170922126107
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

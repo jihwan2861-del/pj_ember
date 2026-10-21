@@ -10,8 +10,17 @@ namespace EmberPrototype
         [SerializeField] private Vector2 centerOffset;
         [SerializeField] private Vector2 cameraOffset;
         [SerializeField] private Color previewColor = new Color(0.15f, 0.75f, 1f, 0.8f);
+        [Tooltip("Optional checkpoint saved when the player enters this room. Unlinked rooms keep their existing checkpoint behavior.")]
+        [SerializeField] private RoomSpawnPoint spawnPoint;
+        [Tooltip("Optional shared tilemaps used for level editing. Room camera bounds remain independent of the tilemap hierarchy.")]
+        [SerializeField] private LevelTilemaps sharedTilemaps;
 
         public Vector2 CameraOffset => cameraOffset;
+        public RoomSpawnPoint SpawnPoint => spawnPoint;
+        public LevelTilemaps SharedTilemaps => sharedTilemaps;
+
+        public void SetSpawnPoint(RoomSpawnPoint point) => spawnPoint = point;
+        public void SetSharedTilemaps(LevelTilemaps tilemaps) => sharedTilemaps = tilemaps;
 
         public Bounds WorldBounds
         {

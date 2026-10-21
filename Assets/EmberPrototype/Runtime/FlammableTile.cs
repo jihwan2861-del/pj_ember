@@ -41,6 +41,7 @@ namespace EmberPrototype
         public bool IsWet => waterContacts.Count > 0;
 
         public bool IsBurning { get; private set; }
+        public bool CanIgnite => isActiveAndEnabled && !IsWet && !IsBurning;
         public Vector2 AnchorPosition => absorbPoint != null
             ? (Vector2)absorbPoint.position
             : (Vector2)transform.position;
@@ -74,7 +75,7 @@ namespace EmberPrototype
         public bool TryIgnite()
         {
             WaterContact.RefreshTarget(this);
-            if (!isActiveAndEnabled || IsWet || IsBurning)
+            if (!CanIgnite)
             {
                 return false;
             }

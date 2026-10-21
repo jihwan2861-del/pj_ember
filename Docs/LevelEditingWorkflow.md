@@ -1,5 +1,53 @@
 # 앰버 방 제작 가이드
 
+## 2026-10-21 최신 — 공용 Grid와 방 진입 체크포인트
+
+**Tools > Ember > Level Workflow**의 **공용 Grid에 방 추가**가 기본으로 켜진다. 지형은 `WorldGeometry/Grid`의 **Terrain / Spikes / Decorations** 한 벌에 이어 그리고, 카메라 방은 `Rooms` 아래에서 나눈다. `LevelTilemaps`가 방과 공용 타일맵을 연결한다. 아래의 방마다 별도 Grid를 만드는 설명은 공용 옵션을 끈 기존 방식의 기록이다.
+
+1. **공용 Grid에 방 추가**를 켠 채 이름·방 중심·크기를 정하고 새 방을 만든다. 새 공용 방에는 **CameraBounds와 Spawn만** 생성되며, 기존 공용 Grid를 재사용한다.
+2. **WorldGeometry > Grid > Terrain**을 선택해 방 경계를 넘어 끊김 없이 칠한다. 가시는 같은 Grid의 **Spikes**, 충돌 없는 장식 타일은 **Decorations**에 그린다. 제작 창의 Terrain/Spikes 선택과 스킨 연결·표시·검사는 공용 타일맵을 사용한다.
+3. 스킨은 Terrain 편집을 따라 자동 갱신된다. 카메라 방 경계는 **CameraBounds**에서 따로 정한다. 공용 맵 전체로 방이 늘어나지 않도록 **타일맵 전체 범위에 맞추기**는 공용 방에서 꺼진다.
+4. 각 방의 **Spawn을 안전한 바닥 위**에 놓는다. CameraRoom의 **Spawn Point**가 연결된 방에 정상 플레이 상태로 들어가면 그 Spawn을 자동 체크포인트로 저장한다. 기존 방은 **Spawn 자동 저장 연결**로 연결할 수 있다.
+
+현재 skin scene의 구조는 다음과 같다.
+
+```text
+WorldGeometry
+└─ Grid                         공용 0.5U Grid
+   ├─ Terrain                   이어지는 고체 지형 + 낙서 스킨
+   ├─ Spikes                    가시
+   └─ Decorations               충돌 없는 장식 타일
+Rooms
+├─ SkinRoom_01
+│  ├─ CameraBounds              공용 LevelTilemaps / Spawn Point 연결
+│  ├─ Spawn
+│  └─ 기존 Mechanics / Paths / DoodleBackdrop 등
+└─ SkinRoom_02
+   ├─ CameraBounds              같은 공용 LevelTilemaps 연결
+   ├─ Spawn
+   └─ 기존 Mechanics / Paths / DoodleBackdrop 등
+```
+
+같은 방에서 별도 중간 체크포인트를 밟은 뒤에는 카메라 갱신만으로 방 시작점에 덮어쓰지 않는다. 연출·조작 잠금·일시정지 중 방이 바뀌면 자동 저장을 정상 플레이까지 미루고, Spawn Point가 연결되지 않은 기존 방은 이전 동작을 유지한다. 예제 `SkinRoom_Example.prefab`의 `Checkpoint_Center`와 `Checkpoint_Finish` 두 개는 제거하고 일반 Spawn을 연결했다. 실제 씬에서는 사용자가 이미 제거한 추가 체크포인트를 다시 삭제하지 않았다.
+
+사용자 승인으로 기존 두 방을 공용 Grid에 합쳤다. Room_02 전체를 **(-0.05, -0.12)U** 옮겨 셀 기준을 맞췄으며 Terrain575칸·Spikes32칸(총607칸), Composite60shape를 보존했다. 사용자 오브젝트32개의 월드 좌표는 승인된 방 이동 외 변경0개다. Room_01 타일맵 tint는 셀 색에 곱해 보존했고, 두 방의 활성 스킨에 맞춰 Terrain 렌더 표시와 빈 Room_02 Spikes 표시를 통일했다. 기존 개별 Grid를 가진 다른 씬·소스 프리팹은 유지한다.
+
+에디터 확인용 구성에서 공용 생성·재사용·병합·Undo/Redo와 셀 색/변환 보존을 확인했고, 실제 런타임 컴포넌트를 분리한 동기 확인에서 체크포인트15항목이 통과했다. 전체 경로의 직접 입력 완주는 하지 않았다. 전후 캡처·`MigrationResult.json`은 `ArtReference/SkinScene/SharedGrid`에 있다. 현재 씬은 **미저장 상태를 유지**하며, 별도 사본 백업은 `Assets/Scenes/Backups/skin_scene_BeforeSharedGrid_20261021.unity`와 `skin_scene_AfterSharedGrid_20261021.unity`다.
+
+## 2026-10-21 최신 — 낙서 스킨룸 지원
+
+기존 **Tools > Ember > Level Workflow** 창을 사용한다. 새 창의 기본 규격은 타일0.5U, 방18×10.125U(36×20.25칸)다. 이전 창에 저장된 값은 **스킨룸 기본 규격** 버튼으로 맞춘다.
+
+1. **낙서 스킨룸으로 생성**을 켜고 방 이름·중심을 지정한 뒤 **새 방 생성**을 누른다. CameraBounds/Grid/Terrain/Spikes/Decorations/Mechanics/Paths/Spawn과 DoodleTerrainSkin을 연결한다. 빈 지형에서 시작하며 예제 프리팹의 기믹·타일 배치를 복제하지 않는다.
+2. 방을 선택하고 **Terrain 선택 + 팔레트**를 누르면 해당 방의 Terrain과 **Ember Doodle** 팔레트가 편집 대상으로 잡힌다. 가시는 **Spikes 선택 + 팔레트**를 사용한다.
+3. 기존 회색 방에는 **선택 방에 스킨 연결 / 복구**를 누른다. 새 스킨의 재질·외곽·풀 설정은 `Assets/Ember/Prefabs/LevelDesign/SkinScene/SkinRoom_Example.prefab`에서 가져온다. 기존 스킨의 사용자 설정은 보존하고 Source와 누락된 Fill Material을 복구한다.
+4. **스킨 표시**를 끄면 원본 그레이박스가 보이고, 켜면 다시 스킨이 따라온다. 재질과 해칭은 **스킨 설정 선택**, 표시 재생성은 **스킨 다시 만들기**를 사용한다.
+5. Terrain 타일을 칠하거나 지우면 기존 DoodleTerrainSkin이 돌·해칭·풀·외곽선을 갱신한다. Terrain의 타일과 충돌을 그대로 사용한다. 같은 정렬 레이어의 Spikes는 스킨보다 위에 보이도록 필요한 경우만 정렬을 올린다.
+
+스킨 생성/연결/표시 변경은 Undo를 지원한다. 생성된 메시·외곽은 저장하지 않고 원본 타일에서 재생성한다. 새 스킨의 Open Bottom Y는 새 방 하단 월드 높이에 맞춘다. 이후 방 전체를 세로로 이동한 경우 Open Bottom Y도 새 하단 높이에 맞춰 조절한다. 새 방 생성은 기존 카메라나 플레이어를 옮기지 않으며 카메라 연결 버튼을 별도로 사용한다.
+
+이번 변경은 컴파일·코드 검토·기존 skin 씬 참조 읽기와 제작 창 캡처 범위다. 새 방 생성·Undo/Redo·실제 타일 칠하기를 이번에 실행한 결과는 아니다. 현재 skin 씬의 미저장 배치와 기존 오브젝트는 보존했다.
+
 작성일: 2026-10-05
 
 대상: `project Ember`의 Unity 2D 씬. 기존 `2.unity`에 방을 추가하고, 카메라 범위와 타일맵을 정한 뒤 이동 경로를 붙이는 작업 순서다.
@@ -281,3 +329,7 @@ Once는 끝에서 바로 멈추므로 끝점 대기 시간을 별도로 사용�
 - [MovementPath](<C:/Users/admin/Desktop/게임 그래픽 게임/project Ember/Assets/EmberPrototype/Runtime/MovementPath.cs>) / [PathMovingBlock](<C:/Users/admin/Desktop/게임 그래픽 게임/project Ember/Assets/EmberPrototype/Runtime/PathMovingBlock.cs>)
 - [주 플레이어 프리팹](<C:/Users/admin/Desktop/게임 그래픽 게임/project Ember/Assets/prefab/player.prefab>) — `Assets/EmberPrototype/Prefabs/Player.prefab`은 별도 예전 프로토타입 프리팹이다.
 - [Mossy Terrain RuleTile](<C:/Users/admin/Desktop/게임 그래픽 게임/project Ember/Assets/tile/Mossy Tileset/Autotile/Mossy Terrain RuleTile.asset>) / [Mossy Terrain Palette](<C:/Users/admin/Desktop/게임 그래픽 게임/project Ember/Assets/tile/Mossy Tileset/Autotile/Mossy Terrain Palette.prefab>)
+# 2026-10-21 밝은 지형 타일
+
+타일의 색과 충돌 유무는 별개다. `GrayboxBackground`는 배경용 Collider Type=None이고, 같은 밝은 그림의 `GrayboxLightSolid`는 지형용 Collider Type=Grid다. Ember Graybox·Ember Doodle 팔레트의 첫 타일 아래 두 칸(0,-2)에 밝은 충돌 타일을 추가했다. Terrain에는 GrayboxSolid/Doodle_Terrain/GrayboxLightSolid처럼 충돌이 있는 타일을 사용한다. Room_02의 기존 Background111칸은 밝은 지형 타일로 교체했고 배치·스킨 모습은 유지했다. 상세 `Docs/SkinScene_Setup.md`의 Room_02 항목을 따른다.
+

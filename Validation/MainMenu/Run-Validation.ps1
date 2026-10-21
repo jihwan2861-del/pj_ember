@@ -17,7 +17,7 @@ if ($Mode -eq 'Generate') {
     # Keep the same predefined Assembly-CSharp as production when serializing the scene.
     # Tests use reflection so no validation-only runtime assembly identity leaks into assets.
     foreach ($taskSuffix in @('.cs','.cs.meta')) {
-        Copy-Item -LiteralPath (Join-Path $taskProject ('Assets/EmberPrototype/Editor/EmberMainMenuSceneBuilder' + $taskSuffix)) -Destination (Join-Path $taskQa 'Assets/Editor')
+        Copy-Item -LiteralPath (Join-Path $taskProject ('Validation/EditorSupport/EmberMainMenuSceneBuilder' + $taskSuffix)) -Destination (Join-Path $taskQa 'Assets/Editor')
     }
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'MainMenuValidationBatch.cs') -Destination (Join-Path $taskQa 'Assets/Editor')
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'MainMenuTests.cs') -Destination (Join-Path $taskQa 'Assets/MainMenuValidation')

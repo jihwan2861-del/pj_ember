@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Asset type: transparent 2D watercolor storybook game platform sprite, healthy past reflection variant.
+Input images: Image 1 is the EDIT TARGET tall gray stone platform. Image 2 is a supporting color reference only for the lush green and blue-green vegetation in the water reflection.
+Primary request: Edit Image 1 only. Keep exactly the same tall stone platform silhouette, dimensions, framing, gray/brown watercolor masonry stones, joints, lighting, hand drawn contours, and transparent background. Replace ONLY the dry golden yellow grass crown and dead twig growth at the top with lush healthy emerald-green, fresh blue-green grass and teal moss with several tiny white daisies with yellow centers. This is the same platform when alive, not a different rock formation.
+Composition/framing: preserve the original portrait canvas, stone positions and shapes, original transparent margins. Keep the rock surface and lower silhouette unchanged; all vegetation remains in the same top band with a similar crown silhouette. Small flowers, not giant flowers.
+Style/medium: match the existing hand drawn black outlines and dappled watercolor pigment.
+Constraints: genuine alpha transparent background. No water, no reflection, no sky, no ground, no background, no text, no watermark, no extra platform, no zooming, no cropping. Maintain the gray rock colors; do not tint the entire image green or blue. Only change the vegetation from dry yellow to healthy green and small white flowers.
+
+Generated with built-in image_gen. Edit target: PPT_Stone_High.png. Supporting reference: user screenshot codex-clipboard-7b68f204-038f-4ae3-b65a-a3e7df1d98f7.png.

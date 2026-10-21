@@ -1,0 +1,6 @@
+User scene dirty before=True
+FlowerRideTutorial/Exercise/Grid/Pollution cells=12 local center=(35.00, 4.00, 0.00) local size=(2.00, 6.00, 0.00) hazard=(2.08, 6.08)
+Scene flower GameplayTutorial_02/Exercise/SunFlower at (118.50, 0.50, 0.00)
+GameplayTutorial_02/Exercise/Grid/Pollution cells=12 local center=(35.00, 4.00, 0.00) local size=(2.00, 6.00, 0.00) hazard=(2.08, 6.08)
+All existing transforms/colliders unchanged; new art + child hazard only
+Scene left dirty: pre-existing unsaved user edits preserved, not saved

@@ -1,0 +1,3 @@
+REJECTED CONCEPT — do not use or regenerate.
+
+The fixed generated FireOrb sprite was rejected because it looked static and AI-generated in motion. Its PNG and meta file were removed from Assets. The accepted direction is to build the projectile from the user's imported, animated Wallcoeur VFX flipbook; see Docs/WallcoeurVFX_Setup.md and ArtReference/WallcoeurVFX/11~14_*.

@@ -1,0 +1,6 @@
+StoryShoreSection[11]/MountainBackdrop[4]|old=Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_Mountains.png|new=Mountains_Doodle_v1.png|position=(66, 1.2169354, 0)|scale=(2.29645085, 1.4976958, 1)
+StoryShoreSection[11]/SteppingStones[11]/Stone_2[1]/Art[0]|old=Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_Mid.png|new=Stone_Mid_Doodle_v1.png|position=(61.4511375, -1.53238642, 0)|scale=(0.279214054, 0.235157162, 1)
+StoryShoreSection[11]/SteppingStones[11]/Stone_2[1]/Art[0]/HealthyReflection[0]|old=Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_Mid_Healthy.png|new=Stone_Mid_Healthy_Doodle_v1.png|position=(61.4511375, -1.53238642, 0)|scale=(1, 1, 1)
+Existing transforms/colliders/water/parallax unchanged; exactly 3 Renderer sprite replacements
+Mountain canvas1915x821 versus original1916x821; center pivot/PPU100 maintained; width difference0.0522%, no Transform adjustment
+Scene dirty before=True; saved=False; unsaved user edits preserved

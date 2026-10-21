@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: a525ca312b079344294b90a135da8498
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2656441970974564833
+    second: Foreground_Sheet_0
+  - first:
+      213: -3107774225334439792
+    second: Foreground_Sheet_1
+  - first:
+      213: 8694285837936714731
+    second: Foreground_Sheet_2
+  - first:
+      213: 2690308230900587213
+    second: Foreground_Sheet_3
+  - first:
+      213: -1818244123985047601
+    second: Foreground_Sheet_4
+  - first:
+      213: -4273612376200672587
+    second: Foreground_Sheet_5
+  - first:
+      213: -7487548279706169729
+    second: Foreground_Sheet_6
+  - first:
+      213: -3605625969475601094
+    second: Foreground_Sheet_7
+  - first:
+      213: -6446679239726226636
+    second: Foreground_Sheet_8
+  - first:
+      213: 6031665152304715013
+    second: Foreground_Sheet_9
+  - first:
+      213: 2224244736689854160
+    second: Foreground_Sheet_10
+  - first:
+      213: 8201405528591450475
+    second: Foreground_Sheet_11
+  - first:
+      213: -903602446090563919
+    second: Foreground_Sheet_12
+  - first:
+      213: -3394533281381777772
+    second: Foreground_Sheet_13
+  - first:
+      213: 5350332830427444485
+    second: Foreground_Sheet_14
+  - first:
+      213: 1516963749327911207
+    second: Foreground_Sheet_15
+  - first:
+      213: -5766893707985483360
+    second: Foreground_Sheet_16
+  - first:
+      213: 4917348972276127840
+    second: Foreground_Sheet_17
+  - first:
+      213: 204680859757642772
+    second: Foreground_Sheet_18
+  - first:
+      213: -2300872679109513678
+    second: Foreground_Sheet_19
+  - first:
+      213: 614234053740057683
+    second: Foreground_Sheet_20
+  - first:
+      213: -5658283330719658348
+    second: Foreground_Sheet_21
+  - first:
+      213: 2769576414814801017
+    second: Foreground_Sheet_22
+  - first:
+      213: 873747777196154707
+    second: Foreground_Sheet_23
+  - first:
+      213: -8028029227016168114
+    second: Foreground_Sheet_24
+  - first:
+      213: 4694444559445274744
+    second: Foreground_Sheet_25
+  - first:
+      213: -6619210397298392764
+    second: Foreground_Sheet_26
+  - first:
+      213: 3573430163484402932
+    second: Foreground_Sheet_27
+  - first:
+      213: 8202614857868887214
+    second: Foreground_Sheet_28
+  - first:
+      213: 8309863086886512372
+    second: Foreground_Sheet_29
+  - first:
+      213: -6203930136033470741
+    second: Foreground_Sheet_30
+  - first:
+      213: -406753679238731482
+    second: Foreground_Sheet_31
+  - first:
+      213: 8612279925988045186
+    second: Foreground_Sheet_32
+  - first:
+      213: 6627339473766671761
+    second: Foreground_Sheet_33
+  - first:
+      213: -6651574088853641744
+    second: Foreground_Sheet_34
+  - first:
+      213: -4381043586484733090
+    second: Foreground_Sheet_35
+  - first:
+      213: 3118088029633100719
+    second: Foreground_Sheet_36
+  - first:
+      213: -6263317859219510972
+    second: Foreground_Sheet_37
+  - first:
+      213: 1413391745738707710
+    second: Foreground_Sheet_38
+  - first:
+      213: 5524673370969307986
+    second: Foreground_Sheet_39
+  - first:
+      213: 8607809511496397143
+    second: Foreground_Sheet_40
+  - first:
+      213: -3285885692529383104
+    second: Foreground_Sheet_41
+  - first:
+      213: 5972138703134852660
+    second: Foreground_Sheet_42
+  - first:
+      213: -8365475805030723022
+    second: Foreground_Sheet_43
+  - first:
+      213: -5325391536163472819
+    second: Foreground_Sheet_44
+  - first:
+      213: -9117108018176083235
+    second: Foreground_Sheet_45
+  - first:
+      213: -7239272996960700924
+    second: Foreground_Sheet_46
+  - first:
+      213: 1388553464738805
+    second: Foreground_Sheet_47
+  - first:
+      213: 3427354690576726329
+    second: Foreground_Sheet_48
+  - first:
+      213: 7160738690065865222
+    second: Foreground_Sheet_49
+  - first:
+      213: -1866326961417958724
+    second: Foreground_Sheet_50
+  - first:
+      213: -6212219352678253545
+    second: Foreground_Sheet_51
+  - first:
+      213: -4829348907232715919
+    second: Foreground_Sheet_52
+  - first:
+      213: -3354106605983289876
+    second: Foreground_Sheet_53
+  - first:
+      213: 3741920492442176146
+    second: Foreground_Sheet_54
+  - first:
+      213: 2423606799609356965
+    second: Foreground_Sheet_55
+  - first:
+      213: -7998482008521454199
+    second: Foreground_Sheet_56
+  - first:
+      213: -1939033129800107856
+    second: Foreground_Sheet_57
+  - first:
+      213: 8180703369690589605
+    second: Foreground_Sheet_58
+  - first:
+      213: 2650275921169202209
+    second: Foreground_Sheet_59
+  - first:
+      213: -8232594554928388052
+    second: Foreground_Sheet_60
+  - first:
+      213: -6785165449866869503
+    second: Foreground_Sheet_61
+  - first:
+      213: 5739289824364696638
+    second: Foreground_Sheet_62
+  - first:
+      213: 7292777568389240555
+    second: Foreground_Sheet_63
+  - first:
+      213: -8765564652165545079
+    second: Foreground_Sheet_64
+  - first:
+      213: 2030696812668117130
+    second: Foreground_Sheet_65
+  - first:
+      213: -2320811595769241219
+    second: Foreground_Sheet_66
+  - first:
+      213: -2895445966192749656
+    second: Foreground_Sheet_67
+  - first:
+      213: -1833991577960719340
+    second: Foreground_Sheet_68
+  - first:
+      213: 9115815686864940062
+    second: Foreground_Sheet_69
+  - first:
+      213: 10517017631560667
+    second: Foreground_Sheet_70
+  - first:
+      213: -6101100091152820204
+    second: Foreground_Sheet_71
+  - first:
+      213: 2220573734578085913
+    second: Foreground_Sheet_72
+  - first:
+      213: 6342649162798642366
+    second: Foreground_Sheet_73
+  - first:
+      213: 1256997205934063307
+    second: Foreground_Sheet_74
+  - first:
+      213: -1609041999680382479
+    second: Foreground_Sheet_75
+  - first:
+      213: -1386572063961456621
+    second: Foreground_Sheet_76
+  - first:
+      213: 2411122708042570741
+    second: Foreground_Sheet_77
+  - first:
+      213: 1787180543548836196
+    second: Foreground_Sheet_78
+  - first:
+      213: -4258125539201458238
+    second: Foreground_Sheet_79
+  - first:
+      213: -3252418867050874536
+    second: Foreground_Sheet_80
+  - first:
+      213: 2499810554185259620
+    second: Foreground_Sheet_81
+  - first:
+      213: 4158640433151333295
+    second: Foreground_Sheet_82
+  - first:
+      213: -1917042502854677953
+    second: Foreground_Sheet_83
+  - first:
+      213: 8033391292752579721
+    second: Foreground_Sheet_84
+  - first:
+      213: 1687941405193636422
+    second: Foreground_Sheet_85
+  - first:
+      213: -8634459690398209385
+    second: Foreground_Sheet_86
+  - first:
+      213: 7568347128615877066
+    second: Foreground_Sheet_87
+  - first:
+      213: 2638258381613974146
+    second: Foreground_Sheet_88
+  - first:
+      213: 5280488349669708233
+    second: Foreground_Sheet_89
+  - first:
+      213: -2144413496280086233
+    second: Foreground_Sheet_90
+  - first:
+      213: -6664392337257507224
+    second: Foreground_Sheet_91
+  - first:
+      213: 5397254350615106456
+    second: Foreground_Sheet_92
+  - first:
+      213: -2658156450745449871
+    second: Foreground_Sheet_93
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Foreground_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 55
+        width: 284
+        height: 118
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5ebd974e33d074c8d7958051de741c
+      internalID: -3107774225334439792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 57
+        width: 394
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0907ecfb4bc76847b6cf60f76cfe88e
+      internalID: 8694285837936714731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 55
+        width: 232
+        height: 371
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f3114ac73f32e4c93e1fc87fa4bcce
+      internalID: 2690308230900587213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 51
+        width: 368
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569e1928d94c488469210e893946b326
+      internalID: -1818244123985047601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 465
+        width: 300
+        height: 188
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c8ac1f4f15bdc428ded1f778d488fe
+      internalID: -4273612376200672587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 461
+        width: 361
+        height: 186
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365b329ace0f19e4fa77f0c7324139c2
+      internalID: -7487548279706169729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 467
+        width: 385
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87e4bdc4abc7914688c949420bd5750
+      internalID: -3605625969475601094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foreground_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 463
+        width: 199
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf23f5bcf71af749a03570d9cda85d8
+      internalID: -6446679239726226636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4e2571f90652b414e9468d5ab703a13a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Foreground_Sheet_1: -3107774225334439792
+      Foreground_Sheet_2: 8694285837936714731
+      Foreground_Sheet_3: 2690308230900587213
+      Foreground_Sheet_4: -1818244123985047601
+      Foreground_Sheet_5: -4273612376200672587
+      Foreground_Sheet_6: -7487548279706169729
+      Foreground_Sheet_7: -3605625969475601094
+      Foreground_Sheet_8: -6446679239726226636
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

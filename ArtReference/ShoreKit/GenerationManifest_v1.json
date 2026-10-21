@@ -1,0 +1,105 @@
+{
+  "tool": "built-in image_gen",
+  "styleReference": "ArtReference/SkinStudy/Opening_DoodleSkin_v1.png",
+  "jobs": [
+    {
+      "name": "Tree_Dry_A",
+      "transparent": true,
+      "width": 6,
+      "height": 5,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. A single full bare crooked deciduous tree, open branching silhouette, medium-thick warm brown trunk, no leaves and no grass. Entire tree fits canvas with safe transparent margins; bottom of the trunk rooted EXACTLY at normalized canvas (0.50,0.10) measured from bottom left. Branches reach upper left and upper right, main fork above middle. This will have a matching healthy counterpart later, keep readable trunk structure. Wide landscape canvas 6:5. Genuine alpha transparent background.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-191f9afa-5fee-4bed-a6f0-84502f9e8744.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Tree_Dry_A.png"
+    },
+    {
+      "name": "Grass_Dry_A",
+      "transparent": true,
+      "width": 2,
+      "height": 1,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. One low horizontal tuft/strip of dry ochre golden grass for an exposed terrain top, asymmetrical little blades, a few simple seed stems. Entire tuft baseline at normalized y=0.10 from bottom, center x=.5. Transparent canvas 2:1, keep margins, width spans x.08-.92. NO earth, rock or flowers. A matching green version will use same silhouette. Genuine alpha.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-ff53d904-9a75-47bc-a69a-9e6376dc9851.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Grass_Dry_A.png"
+    },
+    {
+      "name": "Rock_A",
+      "transparent": true,
+      "width": 1.5,
+      "height": 1,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. ONE small squat rounded charcoal/slate boulder, three simple visible facets, broad crayon shading and uneven thin ink contour. Bottom contact center (.5,.10), 3:2 transparent canvas, completely visible, no plants.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-dd6c175e-3135-432d-9f93-bdae11d0fb82.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Rock_A.png"
+    },
+    {
+      "name": "Rock_B",
+      "transparent": true,
+      "width": 1,
+      "height": 1.5,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. ONE taller angular blue-grey slate rock with slanted triangular peak and two uneven large facets. Clearly different from a round boulder. Bottom contact center (.5,.10), portrait 2:3 transparent canvas, no plants.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-b7771e22-ac25-48fe-87f8-2f25c7fadfab.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Rock_B.png"
+    },
+    {
+      "name": "Bush_Healthy_A",
+      "transparent": true,
+      "width": 2,
+      "height": 1.5,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. ONE low healthy green bush, irregular rounded foliage clusters, 3 tiny ivory daisies and scribbled leaf marks, dark olive outlines. Bottom center (.5,.10), landscape 4:3 transparent canvas, no dirt or stone.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-21ff92ef-1c04-4336-96b3-72246ebdeb94.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Bush_Healthy_A.png"
+    },
+    {
+      "name": "Mountains_A",
+      "transparent": true,
+      "width": 16,
+      "height": 6,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. One continuous distant mountain range silhouette as a single separate 2D parallax backdrop layer. Pale lavender and muted peach crayon facets, strong low contrast atmospheric depth, tallest peaks at about middle height, no trees, water, clouds, sun, buildings or ground. Broad landscape 8:3 canvas. Mountains fill width and lower part with feathered sparse pencil lower edge; upper background and outside range genuinely transparent. Do not draw paper behind mountains.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-d611c220-f98b-4186-bcb4-8c93c5566abe.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Mountains_A.png"
+    },
+    {
+      "name": "Forest_A",
+      "transparent": true,
+      "width": 16,
+      "height": 4,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. One single continuous band of distant pine forest silhouettes as a separate parallax backdrop layer, varying tree heights and gaps, desaturated blue lavender grey, very light low-contrast crayon fill with fine loose outlines. Flat baseline at y=.05. No mountains, ground, sun, clouds or water. Very wide landscape4:1 canvas. Genuine transparent background.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-71230140-76ca-48fb-ba44-e5bdec50daab.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Forest_A.png"
+    },
+    {
+      "name": "Cloud_A",
+      "transparent": true,
+      "width": 4,
+      "height": 1.5,
+      "prompt": "Create one production game art asset for Project Ember. Match ONLY the illustration language of reference: loose irregular dark pen outlines, wax crayon and colored pencil scratch strokes, simple storybook doodle forms, slate charcoal stone, ochre dry plants, muted green healthy plants. Not realistic, not pixel art, not dense watercolor. No text, UI, labels, ground plane, shadow, checkerboard or backdrop. One isolated asset, not a sheet, no other objects. ONE small airy cloud, simple lumpy uneven lavender pencil outline with a few very faint pale peach crayon hatch strokes inside. Horizontal 8:3 canvas, safe margin, no sky or sun. True transparent background including open untouched areas.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-83a83c0b-3f40-4188-9a3e-c376d712b0d5.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Cloud_A.png"
+    },
+    {
+      "name": "Stone_Fill_A",
+      "transparent": false,
+      "width": 1,
+      "height": 1,
+      "prompt": "Create a SQUARE, full-bleed opaque seamless tileable slate-rock texture for the terrain of a hand-drawn crayon storybook 2D game. Match the reference charcoal slate terrain, loose dark ink stone divisions and scratchy warm grey crayon shading. All four edges must tile seamlessly, same mid-dark value across edges, low contrast variation, a few large broad stone facets rather than tiny noise. No border, no grass, no ground edge, no objects, no perspective, no lights/shadow, no letters, no transparent padding. Texture fills the entire square canvas. Used as a repeated stone skin strictly inside an existing collision tilemap.",
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-17ec6354-f6cb-4b96-b92f-e4145d5bc230.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Stone_Fill_A.png"
+    },
+    {
+      "name": "Tree_Healthy_A",
+      "prompt": "Edit this isolated tree asset ONLY by adding healthy muted green crayon foliage around its existing branches. This is the healthy reflection counterpart of the exact same tree. Preserve the full canvas dimensions, framing, trunk, roots, every branch's location, scale, color and silhouette EXACTLY; do not redraw or move the tree or crop/resize the canvas. Add loose open clustered green leaves on the branches with the same irregular dark ink and colored-pencil/crayon style. Leave parts of trunk and branches clearly visible, green foliage must remain inside the current canvas. No ground, grass, flowers, objects, text, shadows or background. Keep genuine transparent alpha. This pair will crossfade in game, so trunk/root alignment is critical.",
+      "transparent": true,
+      "width": 6,
+      "height": 5,
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-8714342d-627f-416a-9c8f-dd665afbba20.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Tree_Healthy_A.png"
+    },
+    {
+      "name": "Grass_Healthy_A",
+      "prompt": "Edit ONLY the color of this isolated grass asset into its healthy counterpart. Preserve exact canvas dimensions, transparent padding, every blade and seed-stem silhouette, positions and baseline, with NO resizing or crop. Replace dry ochre/yellow blades with fresh muted leafy green and olive green pencil/crayon strokes, retaining the same dark hand-drawn outlines. No flowers, extra blades, rocks, soil, background, shadow or glow. Genuine alpha transparency. This will be paired with the original in a water reflection crossfade; geometry must match.",
+      "transparent": true,
+      "width": 2,
+      "height": 1,
+      "generatedSource": "C:\\Users\\kyk04\\.codex\\generated_images\\01a13a03-32d2-7422-af41-04cc07747e6c\\exec-7b475e5d-b4f8-4501-834d-8b1070bddbab.png",
+      "projectPath": "Assets/Ember/Art/Storybook/ShoreKit/Grass_Healthy_A.png"
+    }
+  ]
+}

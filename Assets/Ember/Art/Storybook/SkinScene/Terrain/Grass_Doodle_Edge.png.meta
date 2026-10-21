@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: 3987113751915b54481e755f2c2675af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2841180890479280234
+    second: Grass_Doodle_Edge_0
+  - first:
+      213: 1267373726291382494
+    second: Grass_Doodle_Edge_1
+  - first:
+      213: 1734405126810076084
+    second: Grass_Doodle_Edge_2
+  - first:
+      213: -7478921321852166397
+    second: Grass_Doodle_Edge_3
+  - first:
+      213: -4623053616643733693
+    second: Grass_Doodle_Edge_4
+  - first:
+      213: -3909992236762126289
+    second: Grass_Doodle_Edge_5
+  - first:
+      213: -3041010761989243292
+    second: Grass_Doodle_Edge_6
+  - first:
+      213: 55026921224269768
+    second: Grass_Doodle_Edge_7
+  - first:
+      213: -1475561860675599548
+    second: Grass_Doodle_Edge_8
+  - first:
+      213: -4400374320815775331
+    second: Grass_Doodle_Edge_9
+  - first:
+      213: 6132562254150253245
+    second: Grass_Doodle_Edge_10
+  - first:
+      213: 1836548825179883984
+    second: Grass_Doodle_Edge_11
+  - first:
+      213: -7288855739191017184
+    second: Grass_Doodle_Edge_12
+  - first:
+      213: 8485877671127050688
+    second: Grass_Doodle_Edge_13
+  - first:
+      213: 6637491239570196072
+    second: Grass_Doodle_Edge_14
+  - first:
+      213: 1169243414394643513
+    second: Grass_Doodle_Edge_15
+  - first:
+      213: 593805514475138009
+    second: Grass_Doodle_Edge_16
+  - first:
+      213: -2451267835695122749
+    second: Grass_Doodle_Edge_17
+  - first:
+      213: 1478803153301195403
+    second: Grass_Doodle_Edge_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.21984217}
+  spritePixelsToUnits: 443.5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 1739
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fba5888091298d0800000000000000
+      internalID: -2841180890479280234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 438
+        width: 391
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0d24170bd969110800000000000000
+      internalID: 1267373726291382494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 430
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b381280648d11810800000000000000
+      internalID: 1734405126810076084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 432
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f18ebcea8853890800000000000000
+      internalID: -7478921321852166397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_4
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 434
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3478d5aca3d97dfb0800000000000000
+      internalID: -4623053616643733693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_5
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 390
+        width: 573
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f282245d6caecb9c0800000000000000
+      internalID: -3909992236762126289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_6
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 394
+        width: 221
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ebd7de2d82cc5d0800000000000000
+      internalID: -3041010761989243292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 414
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfe7ac71be73c000800000000000000
+      internalID: 55026921224269768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_8
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 410
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443015a3e40c58be0800000000000000
+      internalID: -1475561860675599548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_9
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 386
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9166019edabee2c0800000000000000
+      internalID: -4400374320815775331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_10
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 372
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba3891e0ec3b1550800000000000000
+      internalID: 6132562254150253245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_11
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 386
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d902811d6bbc7910800000000000000
+      internalID: 1836548825179883984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_12
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 388
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021c37eb258c8da90800000000000000
+      internalID: -7288855739191017184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 87
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c962f228c4e3c570800000000000000
+      internalID: 8485877671127050688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 38
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866495e8d1b1d1c50800000000000000
+      internalID: 6637491239570196072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_15
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 51
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93425f2c0bcf93010800000000000000
+      internalID: 1169243414394643513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_16
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db65f328fe9d3800800000000000000
+      internalID: 593805514475138009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 35
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c63d0c04e85bfdd0800000000000000
+      internalID: -2451267835695122749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Doodle_Edge_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 39
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ace3502a3c58410800000000000000
+      internalID: 1478803153301195403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Grass_Doodle_Edge_0: -2841180890479280234
+      Grass_Doodle_Edge_1: 1267373726291382494
+      Grass_Doodle_Edge_10: 6132562254150253245
+      Grass_Doodle_Edge_11: 1836548825179883984
+      Grass_Doodle_Edge_12: -7288855739191017184
+      Grass_Doodle_Edge_13: 8485877671127050688
+      Grass_Doodle_Edge_14: 6637491239570196072
+      Grass_Doodle_Edge_15: 1169243414394643513
+      Grass_Doodle_Edge_16: 593805514475138009
+      Grass_Doodle_Edge_17: -2451267835695122749
+      Grass_Doodle_Edge_18: 1478803153301195403
+      Grass_Doodle_Edge_2: 1734405126810076084
+      Grass_Doodle_Edge_3: -7478921321852166397
+      Grass_Doodle_Edge_4: -4623053616643733693
+      Grass_Doodle_Edge_5: -3909992236762126289
+      Grass_Doodle_Edge_6: -3041010761989243292
+      Grass_Doodle_Edge_7: 55026921224269768
+      Grass_Doodle_Edge_8: -1475561860675599548
+      Grass_Doodle_Edge_9: -4400374320815775331
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

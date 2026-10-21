@@ -1,0 +1,65 @@
+[
+  {
+    "path": "Assets/Scenes/Storyscene.unity",
+    "roots": [
+      "Main Camera",
+      "Circle",
+      "player",
+      "Global Light 2D",
+      "WorldPivot",
+      "Square",
+      "DistantScenery",
+      "OpeningSuns",
+      "FlatGround",
+      "FlatGroundJoin",
+      "StoryContinuation",
+      "StoryShoreSection",
+      "Room_01",
+      "TutorialSceneTransition"
+    ],
+    "player": "(0.31, -0.91, 0.00)",
+    "cameras": 1,
+    "listeners": 1,
+    "missing": [],
+    "events": [
+      "Circle.onContinued.m_PersistentCalls -> Main Camera.BeginFollowing",
+      "Circle.onContinued.m_PersistentCalls -> Square.SetActive",
+      "Circle.onContinued.m_PersistentCalls -> OpeningSuns.PinCorruptedSunToCamera",
+      "River.onTreeWitheringStarted.m_PersistentCalls -> PastNarration.BeginNarration",
+      "WaterChangeOnLanding.onPlayerEntered.m_PersistentCalls -> River.BeginTreeWithering",
+      "PastNarration.onFinished.m_PersistentCalls -> TutorialSceneTransition.BeginTransition"
+    ]
+  },
+  {
+    "path": "Assets/Scenes/TutorialScene.unity",
+    "roots": [
+      "Main Camera",
+      "player",
+      "Global Light 2D",
+      "GameplayTutorial_01",
+      "GameplayTutorial_02",
+      "GameplayTutorial_03",
+      "TutorialSceneEntry"
+    ],
+    "player": "(102.11, 0.35, 0.00)",
+    "cameras": 1,
+    "listeners": 1,
+    "missing": [],
+    "events": [
+      "GameplayTutorial_01.onBegan.m_PersistentCalls -> player.ShowEmber",
+      "GameplayTutorial_01.onBegan.m_PersistentCalls -> Main Camera.RefreshRooms",
+      "GameplayTutorial_01.onCompleted.m_PersistentCalls -> player.SetRespawnPoint",
+      "GameplayTutorial_01.onCompleted.m_PersistentCalls -> GameplayTutorial_02.ArmTutorial",
+      "EntryTrigger.onPlayerEntered.m_PersistentCalls -> player.SetRespawnPoint",
+      "GameplayTutorial_02.onBegan.m_PersistentCalls -> GameplayTutorial_01.DismissCue",
+      "GameplayTutorial_02.onBegan.m_PersistentCalls -> Main Camera.RefreshRooms",
+      "GameplayTutorial_02.onBegan.m_PersistentCalls -> player.SetRespawnPoint",
+      "GameplayTutorial_02.onCompleted.m_PersistentCalls -> player.SetRespawnPoint",
+      "GameplayTutorial_02.onCompleted.m_PersistentCalls -> GameplayTutorial_03.ArmTutorial",
+      "GameplayTutorial_03.onBegan.m_PersistentCalls -> GameplayTutorial_02.DismissCue",
+      "GameplayTutorial_03.onBegan.m_PersistentCalls -> Main Camera.RefreshRooms",
+      "GameplayTutorial_03.onBegan.m_PersistentCalls -> player.SetRespawnPoint",
+      "GameplayTutorial_03.onCompleted.m_PersistentCalls -> player.SetRespawnPoint"
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+CausticsRGB.png source: SC Post Effects 2.4.0 / Runtime/Caustics/CausticsRGB.png.
+Copied from the user's local supplied package on 2026-10-18.
+Used only as low-strength water light detail by StoryWater2D.shader.
+The incompatible SCPE editor scripts and render passes were not imported.
+Retain the original package license; this source note does not grant redistribution rights.

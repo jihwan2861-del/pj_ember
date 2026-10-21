@@ -1,0 +1,39 @@
+{
+  "scene": "Assets/Scenes/skin scene.unity",
+  "isDirty": true,
+  "mapTintsBakedIntoCells": true,
+  "shifts": [
+    "SkinRoom_01: (0.0000, 0.0000, 0.0000)",
+    "SkinRoom_02: (-0.0500, -0.1200, 0.0000)"
+  ],
+  "preservedObjectCount": 32,
+  "preservedTileCount": 607,
+  "gridCount": 1,
+  "maps": [
+    {
+      "name": "Terrain",
+      "count": 575
+    },
+    {
+      "name": "Spikes",
+      "count": 32
+    },
+    {
+      "name": "Decorations",
+      "count": 0
+    }
+  ],
+  "collisionShapes": 60,
+  "spawns": [
+    {
+      "room": "SkinRoom_01",
+      "spawn": "Spawn"
+    },
+    {
+      "room": "SkinRoom_02",
+      "spawn": "Spawn"
+    }
+  ],
+  "backup": "Assets/Scenes/Backups/skin_scene_BeforeSharedGrid_20261021.unity",
+  "afterSnapshot": "Assets/Scenes/Backups/skin_scene_AfterSharedGrid_20261021.unity"
+}

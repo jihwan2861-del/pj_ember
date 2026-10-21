@@ -1,0 +1,7 @@
+Use case: precise-object-edit. Make a small targeted EDIT to the supplied second tutorial room image.
+Keep the exact full16:9 layout, title "02. 불꽃에 타고 건너기", small "36 × 20.25칸" note, all terrain geometry and water, single open giant sun-flower left, boarded rightward fireball center, corrupted upper-right sun, mountains and plants, thorn pollution on right, X boarding annotation, Z dismount annotation and dotted paths. Preserve the hand-drawn black ink / watercolor paper style, not vector or pixel art.
+
+This second lesson now follows a prior room that taught X igniting and entering stationary combustible wood. Therefore it must include the additional flower firing step IN THIS SAME SECOND IMAGE.
+Add ONE small ivory keyboard "C" keycap to the open sky immediately above and a little right of the flower head, at about27% of screen width and33% of screen height. Near it put a short neat Korean handwritten label EXACTLY: "먼저 C로 꽃 발사". A short thin amber leader arrow points DOWN-LEFT from this label to the flower head. Ensure the C cue does not overlap the X cue or the flower.
+The explanation should read visually left to right: C activates this flower => shot, slow motion => X boarding => Z safe dismount and flower's shot purifies obstruction.
+Do NOT add another player or another flower, do NOT change the fireball direction, do NOT add a direct C purification beam. Apart from that small C keycap and its caption / leader arrow, keep the image unchanged.

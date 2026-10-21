@@ -15,6 +15,6 @@
 
 ## 초기 생성
 
-편집 모드에서 스크립트가 컴파일되면 최초 한 번 자동 생성한다. 팔레트가 없다면 `Tools > Ember > Tiles > Setup Mossy Autotile`을 실행한다. 기존 생성 에셋의 Inspector 편집 내용은 덮어쓰지 않는다.
+기존 RuleTile과 팔레트를 Tile Palette에서 사용한다. 생성·자동 초기화 스크립트와 Setup Mossy Autotile 메뉴는 정리했다.
 
-`Tools > Ember > Tiles > Validate Mossy Autotile`은 주변 8칸의 256가지 배치가 각각 정확히 한 규칙에 연결되는지 검사한다.
+이전 Validate Mossy Autotile 메뉴는 제거했다. 아래 규칙 설명은 기존 애셋의 제작 기록이다.

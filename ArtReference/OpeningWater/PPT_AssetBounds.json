@@ -1,0 +1,365 @@
+{
+  "coordinate_system": "Unity bottom-left origin; bounds arrays are [x,y,width,height]; original PNGs opened read-only; threshold tests alpha >= threshold",
+  "assets": [
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_CorruptedSun.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        30,
+        90,
+        1211,
+        1078
+      ],
+      "alpha_ge_32_bounds": [
+        29,
+        89,
+        1213,
+        1080
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_Descent.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        0,
+        4,
+        1774,
+        762
+      ],
+      "alpha_ge_32_bounds": [
+        0,
+        4,
+        1774,
+        763
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_Descent_Deep.png",
+      "width": 1269,
+      "height": 1240,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        0,
+        0,
+        1263,
+        1197
+      ],
+      "alpha_ge_32_bounds": [
+        0,
+        0,
+        1263,
+        1197
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_Forest.png",
+      "width": 2098,
+      "height": 749,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        0,
+        108,
+        2098,
+        384
+      ],
+      "alpha_ge_32_bounds": [
+        0,
+        107,
+        2098,
+        386
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_Mountains.png",
+      "width": 1916,
+      "height": 821,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        5,
+        174,
+        1909,
+        428
+      ],
+      "alpha_ge_32_bounds": [
+        0,
+        169,
+        1916,
+        434
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_PastSky_NoSun.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "alpha_ge_128_bounds": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "alpha_ge_32_bounds": [
+        0,
+        0,
+        1774,
+        887
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Backgrounds/PPT_WaterPaint.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "alpha_ge_128_bounds": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "alpha_ge_32_bounds": [
+        0,
+        0,
+        1774,
+        887
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_High.png",
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        156,
+        53,
+        836,
+        1124
+      ],
+      "alpha_ge_32_bounds": [
+        156,
+        52,
+        836,
+        1126
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_High_Healthy.png",
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        155,
+        52,
+        839,
+        990
+      ],
+      "alpha_ge_32_bounds": [
+        155,
+        51,
+        839,
+        992
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_Low.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        57,
+        308,
+        1146,
+        577
+      ],
+      "alpha_ge_32_bounds": [
+        56,
+        308,
+        1148,
+        578
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_Low_Healthy.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        58,
+        308,
+        1145,
+        496
+      ],
+      "alpha_ge_32_bounds": [
+        57,
+        307,
+        1147,
+        497
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_Mid.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        161,
+        174,
+        966,
+        857
+      ],
+      "alpha_ge_32_bounds": [
+        161,
+        173,
+        967,
+        859
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Platforms/PPT_Stone_Mid_Healthy.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        161,
+        174,
+        967,
+        785
+      ],
+      "alpha_ge_32_bounds": [
+        161,
+        173,
+        967,
+        787
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_Corruption.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        42,
+        40,
+        1480,
+        912
+      ],
+      "alpha_ge_32_bounds": [
+        42,
+        40,
+        1481,
+        913
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_DeadTree.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        80,
+        14,
+        1425,
+        992
+      ],
+      "alpha_ge_32_bounds": [
+        79,
+        14,
+        1426,
+        992
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_HealthySun.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        70,
+        87,
+        1122,
+        1103
+      ],
+      "alpha_ge_32_bounds": [
+        70,
+        86,
+        1123,
+        1105
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_HealthyTree.png",
+      "width": 1378,
+      "height": 1142,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        15,
+        15,
+        1348,
+        1112
+      ],
+      "alpha_ge_32_bounds": [
+        14,
+        14,
+        1350,
+        1114
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_Shore_Left.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        26,
+        61,
+        1715,
+        727
+      ],
+      "alpha_ge_32_bounds": [
+        25,
+        60,
+        1716,
+        729
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_Shore_Right.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        43,
+        62,
+        1723,
+        625
+      ],
+      "alpha_ge_32_bounds": [
+        42,
+        61,
+        1724,
+        626
+      ]
+    },
+    {
+      "path": "Assets/Ember/Art/Storybook/WaterPPT/Scenery/PPT_SubmergedRocks.png",
+      "width": 2060,
+      "height": 763,
+      "mode": "RGBA",
+      "alpha_ge_128_bounds": [
+        13,
+        13,
+        2034,
+        542
+      ],
+      "alpha_ge_32_bounds": [
+        12,
+        13,
+        2036,
+        542
+      ]
+    }
+  ]
+}

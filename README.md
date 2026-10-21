@@ -1,10 +1,10 @@
 # Project Ember
 
-> **현재 기준 — 2026-10-14:** 사용자가 불의 정령 콘셉트로 복귀해 `1b7a702` 불 버전을 복원했습니다. 다른 세션은 [AGENTS.md](AGENTS.md), [불 버전 인수인계](Docs/AI/FireProject_Handoff.md), [현재 작업 목록](TASKS.md)을 먼저 읽으세요. 바람 단계의 기획과 과거 스펙 체크를 현재 목표로 자동 적용하지 않습니다. 복원 브랜치는 `restore/fire-spirit-1b7a702`이며 원격 기본 브랜치와는 다를 수 있습니다.
+> **복원 당시 기록 — 2026-10-14:** 사용자가 불의 정령 콘셉트로 복귀해 `1b7a702` 불 버전을 복원했습니다. 다른 세션은 [AGENTS.md](AGENTS.md), [불 버전 인수인계](Docs/AI/FireProject_Handoff.md), [현재 작업 목록](TASKS.md)을 먼저 읽으세요. 바람 단계의 기획과 과거 스펙 체크를 현재 목표로 자동 적용하지 않습니다. 복원 브랜치는 `restore/fire-spirit-1b7a702`이며 원격 기본 브랜치와는 다를 수 있습니다.
 
 불꽃이 하늘로 올라가 태양이 되는 정밀 이동 퍼즐 플랫포머의 Unity 프로토타입입니다. 픽셀 표현과 방향키·Z/X/C 조작을 사용합니다.
 
-최신 기본 스테이지 작업은 [구현 계획](Docs/StageImplementationPlan.md), [세계관과 아트 방향](Docs/WorldAndStageDirection.md), [불꽃꽃 배치 설명](Docs/FireFlower_Setup.md)을 참고합니다. 불꽃꽃은 Assets/EmberPrototype/FireFlowerValidation.unity에서 확인할 수 있습니다.
+현재 읽을 문서는 [문서 안내](Docs/README.md)에서 확인합니다. 최신 작업 방식은 [AGENTS.md](AGENTS.md), 기능 배치는 [화염꽃 설명](Docs/FireFlower_Setup.md)을 참고합니다. 이전 구현 계획은 [과거 기록](Docs/Archive/README.md)에 보관했습니다. 불꽃꽃은 Assets/EmberPrototype/FireFlowerValidation.unity에서 확인할 수 있습니다.
 
 ## 열기
 

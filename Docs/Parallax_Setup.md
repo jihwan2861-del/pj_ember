@@ -6,7 +6,7 @@
 
 ## 01 화면 채움용 배경
 
-- Sprite: `Assets/image/WaterlitRuins_01_Atmosphere_v2.png`
+- Sprite: `Assets/Backgrounds/Legacy/WaterlitRuins/WaterlitRuins_01_Atmosphere_v2.png`
 - Camera Transform: Main Camera
 - Follow X / Y: 1 / 1
 - Repeat X: 끔
@@ -14,7 +14,7 @@
 
 ## 02 좌우 반복 동굴
 
-- Sprite: `Assets/image/WaterlitRuins_02_CavernRepeatX_v2.png`
+- Sprite: `Assets/Backgrounds/Legacy/WaterlitRuins/WaterlitRuins_02_CavernRepeatX_v2.png`
 - Camera Transform: Main Camera
 - Follow X / Y: 우선 0.8 / 0.8
 - Repeat X: 켬

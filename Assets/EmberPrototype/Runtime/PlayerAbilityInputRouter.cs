@@ -9,13 +9,11 @@ namespace EmberPrototype
     {
         private FlamePlayerController player;
         private PlayerAbilityUnlocks abilityUnlocks;
-        private FlameShotAbility flameShot;
 
         private void Awake()
         {
             player = GetComponent<FlamePlayerController>();
             abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
-            flameShot = GetComponent<FlameShotAbility>();
         }
 
         private void OnDisable()
@@ -28,7 +26,6 @@ namespace EmberPrototype
             if (GameSessionControls.BlockGameplayInput) return;
             if (player == null) player = GetComponent<FlamePlayerController>();
             if (abilityUnlocks == null) abilityUnlocks = GetComponent<PlayerAbilityUnlocks>();
-            if (flameShot == null) flameShot = GetComponent<FlameShotAbility>();
             if (player == null) return;
 
             Keyboard keyboard = Keyboard.current;
@@ -44,6 +41,28 @@ namespace EmberPrototype
                 return;
             }
 
+            if (player.IsCircularOpening)
+            {
+                if (player.CanUseFreeAbilities && EmberPlayerInput.IgnitionBurstPressed)
+                {
+                    if (!player.TryInteractWithNearbyTrialAltar() && IsUnlocked(PlayerAbility.IgnitionRing))
+                        player.RequestIgnitionRing();
+                }
+                return;
+            }
+            if (player.IsRidingFlower)
+            {
+                if (keyboard.zKey.wasPressedThisFrame) player.TryExitFlowerRide();
+                return;
+            }
+            // An available sunflower carrier takes priority over the existing X actions.
+            if (EmberPlayerInput.ActionPressed && !keyboard.zKey.wasPressedThisFrame
+                && IsUnlocked(PlayerAbility.FireAbsorb) && player.RequestFlowerRide()) return;
+            if (player.IsTravellingToFire)
+            {
+                if (keyboard.zKey.wasPressedThisFrame) player.TryDetachFireTravel();
+                return;
+            }
             if (player.IsInsideFire)
             {
                 // Z always lifts the player: jump outside, launch/kick inside.
@@ -63,21 +82,11 @@ namespace EmberPrototype
                     return;
                 }
 
-                if (player.IsRingShotAiming)
-                {
-                    player.UpdateRingShotAim(ReadHeldDirection());
-                    if (EmberPlayerInput.ActionReleased)
-                        player.ReleaseRingShotAim();
-                    return;
-                }
-
                 if (keyboard.zKey.wasPressedThisFrame) return;
 
-                if (EmberPlayerInput.ActionPressed && IsUnlocked(PlayerAbility.FlameShot))
-                {
-                    player.BeginRingShotAim();
-                    player.UpdateRingShotAim(ReadHeldDirection());
-                }
+                // X keeps its fire-entry action in the C ring; it no longer aims or fires a shot.
+                if (EmberPlayerInput.ActionPressed && IsUnlocked(PlayerAbility.FireAbsorb))
+                    player.RequestFireAbsorb();
                 return;
             }
 
@@ -109,6 +118,5 @@ namespace EmberPrototype
             return abilityUnlocks != null && abilityUnlocks.IsUnlocked(ability);
         }
 
-        private Vector2 ReadHeldDirection() => EmberPlayerInput.AimDirection(player != null ? player.FacingDirection : Vector2.right);
     }
 }

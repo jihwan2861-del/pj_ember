@@ -1,6 +1,6 @@
 # 파도 하나 배치하기
 
-`Assets/EmberPrototype/Prefabs/WaterWave.prefab`을 씬에 드래그한다. 프리팹이 없다면 `Ember Prototype > Create Water Wave Prefab` 메뉴로 생성한다. 위치는 **파도의 바닥 가운데**이고, 크기는 루트 Scale 대신 Height와 Width로 조절한다. 기본 높이는 기존 플레이어 이단 점프 실측에 가까운 2.65유닛이다.
+`Assets/EmberPrototype/Prefabs/WaterWave.prefab`을 씬에 드래그한다. 이전 생성 메뉴는 정리했으며 기존 프리팹을 직접 사용한다. 위치는 **파도의 바닥 가운데**이고, 크기는 루트 Scale 대신 Height와 Width로 조절한다. 기본 높이는 기존 플레이어 이단 점프 실측에 가까운 2.65유닛이다.
 
 - Direction: 좌→우 또는 우→좌.
 - Height / Width: 파도 높이와 폭.

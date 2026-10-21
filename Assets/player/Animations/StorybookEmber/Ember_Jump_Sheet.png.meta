@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 9570be9d72fe09c4a96f0dd0e7e6476d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5885541441127335188
+    second: Ember_Jump_Sheet_0
+  - first:
+      213: 9173041903254880906
+    second: Ember_Jump_Sheet_1
+  - first:
+      213: -963082279027039695
+    second: Ember_Jump_Sheet_2
+  - first:
+      213: 4168174499044599963
+    second: Ember_Jump_Sheet_3
+  - first:
+      213: -6858424312760984445
+    second: Ember_Jump_Sheet_4
+  - first:
+      213: -7207664887462070725
+    second: Ember_Jump_Sheet_5
+  - first:
+      213: 2426047138008342929
+    second: Ember_Jump_Sheet_6
+  - first:
+      213: -8853493306658418790
+    second: Ember_Jump_Sheet_7
+  - first:
+      213: -5836720032516272734
+    second: Ember_Jump_Sheet_8
+  - first:
+      213: -7719883788722144183
+    second: Ember_Jump_Sheet_9
+  - first:
+      213: 7299203861229287675
+    second: Ember_Jump_Sheet_10
+  - first:
+      213: 9168142629592833786
+    second: Ember_Jump_Sheet_11
+  - first:
+      213: -2344113012535664738
+    second: Ember_Jump_Sheet_12
+  - first:
+      213: 1817597623675601249
+    second: Ember_Jump_Sheet_13
+  - first:
+      213: 3018064889127286193
+    second: Ember_Jump_Sheet_14
+  - first:
+      213: -733641093941012117
+    second: Ember_Jump_Sheet_15
+  - first:
+      213: 780154186790097061
+    second: Ember_Jump_Sheet_16
+  - first:
+      213: -5698727503635013694
+    second: Ember_Jump_Sheet_17
+  - first:
+      213: -5781312418788871858
+    second: Ember_Jump_Sheet_18
+  - first:
+      213: -2495413748657590194
+    second: Ember_Jump_Sheet_19
+  - first:
+      213: 1527463355536307251
+    second: Ember_Jump_Sheet_20
+  - first:
+      213: 9209305595432373267
+    second: Ember_Jump_Sheet_21
+  - first:
+      213: -2394607654465849671
+    second: Ember_Jump_Sheet_22
+  - first:
+      213: 1488583791523770367
+    second: Ember_Jump_Sheet_23
+  - first:
+      213: -9130988855203497077
+    second: Ember_Jump_Sheet_24
+  - first:
+      213: -4115522723819323193
+    second: Ember_Jump_Sheet_25
+  - first:
+      213: -1125432911000556749
+    second: Ember_Jump_Sheet_26
+  - first:
+      213: 1579724607844603820
+    second: Ember_Jump_Sheet_27
+  - first:
+      213: -7525177304981790584
+    second: Ember_Jump_Sheet_28
+  - first:
+      213: 2462456251141152987
+    second: Ember_Jump_Sheet_29
+  - first:
+      213: 1394132494587442458
+    second: Ember_Jump_Sheet_30
+  - first:
+      213: 919010463941476384
+    second: Ember_Jump_Sheet_31
+  - first:
+      213: -8175288451473944645
+    second: Ember_Jump_Sheet_32
+  - first:
+      213: 8002281652960922081
+    second: Ember_Jump_Sheet_33
+  - first:
+      213: -1100919154330746616
+    second: Ember_Jump_Sheet_34
+  - first:
+      213: 2387100307732986214
+    second: Ember_Jump_Sheet_35
+  - first:
+      213: 2904108101113716462
+    second: Ember_Jump_Sheet_36
+  - first:
+      213: 2062457637248389545
+    second: Ember_Jump_Sheet_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ember_Jump_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d3c64ef978ab2418b1977bfa2d7dc6
+      internalID: 75270943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ember_Jump_01
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 627
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e0eb17ad1e1ca418035274e0758bca
+      internalID: -2120540131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ember_Jump_02
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51a2577baf60ba44a3f7d895038194b
+      internalID: 1087594230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ember_Jump_03
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 627
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438c8175b19156c43aa01a19996d75d8
+      internalID: 663069897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ecc1caa58649a6c46bc199989cd20732
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ember_Jump_00: 75270943
+      Ember_Jump_01: -2120540131
+      Ember_Jump_02: 1087594230
+      Ember_Jump_03: 663069897
+      Ember_Jump_Sheet_0: -5885541441127335188
+      Ember_Jump_Sheet_1: 9173041903254880906
+      Ember_Jump_Sheet_10: 7299203861229287675
+      Ember_Jump_Sheet_11: 9168142629592833786
+      Ember_Jump_Sheet_12: -2344113012535664738
+      Ember_Jump_Sheet_13: 1817597623675601249
+      Ember_Jump_Sheet_14: 3018064889127286193
+      Ember_Jump_Sheet_15: -733641093941012117
+      Ember_Jump_Sheet_16: 780154186790097061
+      Ember_Jump_Sheet_17: -5698727503635013694
+      Ember_Jump_Sheet_18: -5781312418788871858
+      Ember_Jump_Sheet_19: -2495413748657590194
+      Ember_Jump_Sheet_2: -963082279027039695
+      Ember_Jump_Sheet_20: 1527463355536307251
+      Ember_Jump_Sheet_21: 9209305595432373267
+      Ember_Jump_Sheet_22: -2394607654465849671
+      Ember_Jump_Sheet_23: 1488583791523770367
+      Ember_Jump_Sheet_24: -9130988855203497077
+      Ember_Jump_Sheet_25: -4115522723819323193
+      Ember_Jump_Sheet_26: -1125432911000556749
+      Ember_Jump_Sheet_27: 1579724607844603820
+      Ember_Jump_Sheet_28: -7525177304981790584
+      Ember_Jump_Sheet_29: 2462456251141152987
+      Ember_Jump_Sheet_3: 4168174499044599963
+      Ember_Jump_Sheet_30: 1394132494587442458
+      Ember_Jump_Sheet_31: 919010463941476384
+      Ember_Jump_Sheet_32: -8175288451473944645
+      Ember_Jump_Sheet_33: 8002281652960922081
+      Ember_Jump_Sheet_34: -1100919154330746616
+      Ember_Jump_Sheet_35: 2387100307732986214
+      Ember_Jump_Sheet_36: 2904108101113716462
+      Ember_Jump_Sheet_37: 2062457637248389545
+      Ember_Jump_Sheet_4: -6858424312760984445
+      Ember_Jump_Sheet_5: -7207664887462070725
+      Ember_Jump_Sheet_6: 2426047138008342929
+      Ember_Jump_Sheet_7: -8853493306658418790
+      Ember_Jump_Sheet_8: -5836720032516272734
+      Ember_Jump_Sheet_9: -7719883788722144183
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

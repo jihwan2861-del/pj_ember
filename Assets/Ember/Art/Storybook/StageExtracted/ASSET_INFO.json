@@ -1,0 +1,98 @@
+[
+  {
+    "file": "Assets/Backgrounds/Storybook/01_MountainBackground.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha_range": null
+  },
+  {
+    "file": "Assets/Backgrounds/Storybook/02_Clouds.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "Assets/Backgrounds/Storybook/03_Sun.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "04_HangingFireRope.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "05_SunFlower.png",
+    "size": [
+      1335,
+      1178
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "06_FlamePlayer.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "07_CorruptionVines.png",
+    "size": [
+      1374,
+      1145
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "08_RockTerrainLayer.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "09_SpikeHazards.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_range": [
+      0,
+      254
+    ]
+  }
+]

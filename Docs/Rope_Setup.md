@@ -4,7 +4,7 @@
 
 `Assets/EmberPrototype/RopeValidation.unity`를 열고 Play로 확인한다. 오른쪽 방향키와 X로 시작 불꽃에 들어간 뒤 오른쪽+Z로 발사한다. 다음 줄 끝을 향해 X로 들어가 좌우로 반동을 키우고, 오른쪽 위로 올라갈 때 Z로 나온다. 같은 조작으로 두 번째 줄에 들어가 오른쪽 착지 지점으로 이동한다. R은 처음 상태로 재시작한다.
 
-씬을 새로 생성할 때는 `Ember Prototype > Create Rope Validation Scene` 메뉴를 사용한다. 기존 파일이 있으면 덮어쓰지 않으며 열려 있는 방이나 Build Settings를 변경하지 않는다. 아직 저장하지 않은 새 씬을 열어두었다면 먼저 저장한 뒤 실행한다. 이 씬은 조작 검증용 단순 도형이며 최종 레벨 아트는 아니다.
+이전 로프 검증 씬 생성 메뉴는 제거했다. 검증 씬은 참고용이며 생성 소스는 Validation/EditorSupport에서 격리 검사에만 사용한다. 기존 파일이 있으면 덮어쓰지 않으며 열려 있는 방이나 Build Settings를 변경하지 않는다. 아직 저장하지 않은 새 씬을 열어두었다면 먼저 저장한 뒤 실행한다. 이 씬은 조작 검증용 단순 도형이며 최종 레벨 아트는 아니다.
 
 로프는 고정점 오브젝트의 `BurningRope`와 자식 끝 오브젝트의 `FlammableTile`로 구성한다. 끝에는 작은 Trigger `CircleCollider2D`를 붙이고 부모의 End Fire에 연결한다. 끝의 Absorb Point는 비워 끝 중심을 사용한다. 몸통에는 가연물 컴포넌트를 붙이지 않는다. 고정점은 이동하지 않는 위치에 배치하며 Transform Scale은 (1,1,1)을 사용한다.
 

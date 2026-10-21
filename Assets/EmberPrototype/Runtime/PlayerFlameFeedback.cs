@@ -134,7 +134,11 @@ namespace EmberPrototype
 
         private void EmitActionParticles(int count)
         {
-            if (actionBurstParticles != null && count > 0) actionBurstParticles.Emit(count);
+            if (actionBurstParticles != null && count > 0)
+            {
+                MatchPlayerSorting(actionBurstParticles);
+                actionBurstParticles.Emit(count);
+            }
         }
 
         private void TriggerPulse(float duration, float intensity, float radius)
@@ -150,12 +154,22 @@ namespace EmberPrototype
         {
             EnsureLaunchRingParticles();
             if (launchRingParticles == null) return;
+            MatchPlayerSorting(launchRingParticles);
             launchRingParticles.Clear(true);
             var emission = launchRingParticles.emission;
             emission.rateOverTime = launchRingEmissionRate;
             launchRingParticles.gameObject.SetActive(true);
             launchRingParticles.Emit(36);
             launchRingParticles.Play(true);
+        }
+
+        private void MatchPlayerSorting(ParticleSystem particles)
+        {
+            SpriteRenderer playerVisual = GetComponentInChildren<SpriteRenderer>();
+            ParticleSystemRenderer renderer = particles.GetComponent<ParticleSystemRenderer>();
+            if (playerVisual == null || renderer == null) return;
+            renderer.sortingLayerID = playerVisual.sortingLayerID;
+            renderer.sortingOrder = playerVisual.sortingOrder + 10;
         }
 
         private void UpdateLaunchRing()

@@ -9,6 +9,12 @@ $taskTests = Join-Path $taskQa 'Assets/WaterSpiritValidation'
 New-Item -ItemType Directory -Path $taskTests -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'WaterSpiritTests.cs') -Destination $taskTests
 Copy-Item -LiteralPath (Join-Path $taskProject 'Validation/Movement/EmberMovement.Tests.asmdef') -Destination $taskTests
+# Historical scene/prefab builders compile only inside the isolated QA project.
+$taskSupport = Join-Path $taskQa 'Assets/Editor/ValidationSupport'
+New-Item -ItemType Directory -Path $taskSupport -Force | Out-Null
+Get-ChildItem -LiteralPath (Join-Path $taskProject 'Validation/EditorSupport') -File | Where-Object { $_.Extension -eq '.cs' -or $_.Name.EndsWith('.cs.meta') } | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $taskSupport $_.Name) -Force
+}
 $taskArtifacts = Join-Path $taskProject 'ValidationArtifacts/WaterSpirit'
 New-Item -ItemType Directory -Path $taskArtifacts -Force | Out-Null
 $taskVersion = ((Get-Content (Join-Path $taskProject 'ProjectSettings/ProjectVersion.txt') -TotalCount 1) -split ': ')[1]

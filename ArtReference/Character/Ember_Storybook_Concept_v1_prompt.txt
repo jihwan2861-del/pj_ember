@@ -1,0 +1,10 @@
+Ember 동화풍 낙서 캐릭터 콘셉트 v1
+2026-10-15
+
+내장 image_gen으로 제작한 탐색용 콘셉트 시트. 사용자 최종 선택이나 게임 스프라이트 교체 완료를 뜻하지 않습니다.
+구성: 큰 기본 모습, 앞·옆·뒤, 호기심 표정, 대시, 점화 동작, 색상 5종.
+큰 불꽃 머리와 작은 몸, 단순한 점눈, 불규칙한 잉크선과 색연필·수채화 질감.
+
+PROMPT
+Use case: stylized-concept. Create a polished CHARACTER CONCEPT ART / MODEL SHEET for Project Ember's tiny flame spirit hero who dreams of becoming the sun. The supplied image is a STYLE and CHARACTER REFERENCE: match its storybook doodle, irregular wax-pencil and black/red ink outlines, pale textured paper, loose watercolor coloring. Focus ONLY on the small flame hero, not the scene. Design one CONSISTENT adorable but determined, visually simple hero: large rounded teardrop flame head with three asymmetrical flickering tips, warm cream-yellow face inside orange and vermilion outer flame, two small charcoal dot eyes, tiny expressive mouth, a small soft orange ember body with very short arms and stubby legs, no fingers. Head roughly 65 percent of height. No clothes, armor, weapons or accessories. Clear readable silhouette for a side-view platformer. Minimal detail, hand-drawn charm, no glossy 3D, no pixel art, no anime costume. Composition: wide landscape concept sheet on warm off-white paper, generous whitespace and organized visually, no dense panels. On LEFT one large charming 3/4 hero standing confidently, with two tiny ember sparks. Across UPPER RIGHT show front, right side and back turnaround views with exact same proportions and design. Across LOWER RIGHT show three small expressive/action drawings: curious expression, airborne rightward dash with a short flame trail, and a determined crouch with a simple circular ignition doodle. Bottom-left small five-color palette swatches cream, lemon yellow, amber, vermilion, charcoal. Tiny tasteful pencil annotations permitted ONLY these exact English labels: 'EMBER', 'FRONT', 'SIDE', 'BACK', 'CURIOUS', 'DASH', 'IGNITION'. Do not add lore paragraphs. Do not put text across drawings. Preserve a natural loose hand sketch look throughout. This is an exploratory concept sheet, not a spritesheet or production animation.
+

@@ -1,0 +1,8 @@
+FADE Storyscene alpha=0.932328 frame=2913
+ARRIVE scene=TutorialScene player=(102.11, 0.34, 0.00) grounded=True locked=False phase=EnterFlammable cameras=1 frame=2968
+MOVE_LEFT (101.59, 0.34, 0.00)
+MOVE_RIGHT (102.13, 0.34, 0.00) grounded=True frame=3031
+X_ENTER position=(104.51, 2.00, 0.00) phase=ExitFlammable frame=3058
+FIRST_COMPLETED position=(110.24, 0.81, 0.00) count=1 frame=3340
+SECOND_BEGAN position=(117.31, 0.84, 0.00) phase=ActivateFlower frame=3834
+DEATH_RETRY observed=True position=(145.50, 0.85, 0.00) grounded=True locked=False
